@@ -1,0 +1,1344 @@
+{
+ "pricing_all_fitments": [
+  {
+   "vehicle": "toyota camry 2018-2024",
+   "sizes": [
+    26,
+    20,
+    null
+   ],
+   "prices": [
+    16.99,
+    12.99,
+    0.0
+   ],
+   "subtotal": 29.98,
+   "discount": 3.0,
+   "total": 26.98,
+   "expected_total": 26.98,
+   "haggle_discount": 4.5,
+   "haggle_total": 25.48,
+   "expected_haggle_total": 25.48,
+   "math_ok": true
+  },
+  {
+   "vehicle": "toyota corolla 2019-2024",
+   "sizes": [
+    28,
+    14,
+    null
+   ],
+   "prices": [
+    16.99,
+    12.99,
+    0.0
+   ],
+   "subtotal": 29.98,
+   "discount": 3.0,
+   "total": 26.98,
+   "expected_total": 26.98,
+   "haggle_discount": 4.5,
+   "haggle_total": 25.48,
+   "expected_haggle_total": 25.48,
+   "math_ok": true
+  },
+  {
+   "vehicle": "toyota rav4 2019-2024",
+   "sizes": [
+    26,
+    16,
+    12
+   ],
+   "prices": [
+    16.99,
+    12.99,
+    12.99
+   ],
+   "subtotal": 42.97,
+   "discount": 4.3,
+   "total": 38.67,
+   "expected_total": 38.67,
+   "haggle_discount": 6.45,
+   "haggle_total": 36.52,
+   "expected_haggle_total": 36.52,
+   "math_ok": true
+  },
+  {
+   "vehicle": "honda civic 2016-2021",
+   "sizes": [
+    26,
+    18,
+    null
+   ],
+   "prices": [
+    16.99,
+    12.99,
+    0.0
+   ],
+   "subtotal": 29.98,
+   "discount": 3.0,
+   "total": 26.98,
+   "expected_total": 26.98,
+   "haggle_discount": 4.5,
+   "haggle_total": 25.48,
+   "expected_haggle_total": 25.48,
+   "math_ok": true
+  },
+  {
+   "vehicle": "honda accord 2018-2022",
+   "sizes": [
+    26,
+    18,
+    null
+   ],
+   "prices": [
+    16.99,
+    12.99,
+    0.0
+   ],
+   "subtotal": 29.98,
+   "discount": 3.0,
+   "total": 26.98,
+   "expected_total": 26.98,
+   "haggle_discount": 4.5,
+   "haggle_total": 25.48,
+   "expected_haggle_total": 25.48,
+   "math_ok": true
+  },
+  {
+   "vehicle": "nissan altima 2019-2024",
+   "sizes": [
+    28,
+    17,
+    null
+   ],
+   "prices": [
+    16.99,
+    12.99,
+    0.0
+   ],
+   "subtotal": 29.98,
+   "discount": 3.0,
+   "total": 26.98,
+   "expected_total": 26.98,
+   "haggle_discount": 4.5,
+   "haggle_total": 25.48,
+   "expected_haggle_total": 25.48,
+   "math_ok": true
+  },
+  {
+   "vehicle": "ford f-150 2015-2020",
+   "sizes": [
+    22,
+    22,
+    null
+   ],
+   "prices": [
+    14.99,
+    14.99,
+    0.0
+   ],
+   "subtotal": 29.98,
+   "discount": 3.0,
+   "total": 26.98,
+   "expected_total": 26.98,
+   "haggle_discount": 4.5,
+   "haggle_total": 25.48,
+   "expected_haggle_total": 25.48,
+   "math_ok": true
+  },
+  {
+   "vehicle": "tesla model 3 2017-2024",
+   "sizes": [
+    26,
+    19,
+    null
+   ],
+   "prices": [
+    16.99,
+    12.99,
+    0.0
+   ],
+   "subtotal": 29.98,
+   "discount": 3.0,
+   "total": 26.98,
+   "expected_total": 26.98,
+   "haggle_discount": 4.5,
+   "haggle_total": 25.48,
+   "expected_haggle_total": 25.48,
+   "math_ok": true
+  }
+ ],
+ "blade_price_tiers": {
+  "12": 12.99,
+  "14": 12.99,
+  "20": 12.99,
+  "21": 14.99,
+  "24": 14.99,
+  "25": 16.99,
+  "28": 16.99
+ },
+ "happy_split_zh": [
+  {
+   "msg": "你好",
+   "state_after": "GREETING",
+   "reply": "你好！这里是雨刷小店【演示模式，数据为模拟】。\n请告诉我你的车型和年份，例如：Toyota Camry 2018，我来帮你查雨刷尺寸和报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "Toyota Camry",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "收到，还差年份（如 2018），补充一下我就帮你查尺寸报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "2018",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "怎么安装",
+   "state_after": "QUOTE",
+   "reply": "安装很简单，我们提供安装视频指导；湾区可约上门安装（$10 上门费，买两对以上免上门费）。\n还需要我帮你下单吗？",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "好的，要了",
+   "state_after": "DONE",
+   "reply": "好的！已为你锁定：Toyota Camry 2018，总价 $26.98。\n订单意向已记录，我们会尽快联系你确认安装/取货时间。谢谢惠顾！",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": "confirmed",
+   "language": "zh",
+   "order_intent": {
+    "phone": "b1",
+    "vehicle": {
+     "make": "toyota",
+     "model": "camry",
+     "year": 2018
+    },
+    "quote": {
+     "sizes": {
+      "driver_in": 26,
+      "passenger_in": 20,
+      "rear_in": null
+     },
+     "driver_price": 16.99,
+     "passenger_price": 12.99,
+     "rear_price": 0.0,
+     "discount": 3.0,
+     "total": 26.98,
+     "simulated": true
+    },
+    "intent": "confirmed",
+    "notes": [
+     "detected_language=zh confidence=high (CJK characters present)",
+     "faq: install"
+    ],
+    "detected_language": "zh"
+   }
+  }
+ ],
+ "happy_oneshot": [
+  {
+   "msg": "Toyota Camry 2018",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "要了",
+   "state_after": "DONE",
+   "reply": "好的！已为你锁定：Toyota Camry 2018，总价 $26.98。\n订单意向已记录，我们会尽快联系你确认安装/取货时间。谢谢惠顾！",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": "confirmed",
+   "language": "zh",
+   "order_intent": {
+    "phone": "b2",
+    "vehicle": {
+     "make": "toyota",
+     "model": "camry",
+     "year": 2018
+    },
+    "quote": {
+     "sizes": {
+      "driver_in": 26,
+      "passenger_in": 20,
+      "rear_in": null
+     },
+     "driver_price": 16.99,
+     "passenger_price": 12.99,
+     "rear_price": 0.0,
+     "discount": 3.0,
+     "total": 26.98,
+     "simulated": true
+    },
+    "intent": "confirmed",
+    "notes": [
+     "detected_language=zh confidence=low (no recognizable markers; defaulting to zh (owner's language))"
+    ],
+    "detected_language": "zh"
+   }
+  }
+ ],
+ "happy_spanish": [
+  {
+   "msg": "Hola",
+   "state_after": "GREETING",
+   "reply": "¡Hola! Tienda de limpiaparabrisas [modo demo, datos simulados].\nDime marca, modelo y año de tu coche, por ejemplo Toyota Camry 2018, y te busco tamaño y precio.",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "es",
+   "order_intent": null
+  },
+  {
+   "msg": "Toyota Corolla 2021",
+   "state_after": "QUOTE",
+   "reply": "¡Encontrado! Limpiaparabrisas para Toyota Corolla 2021:\n· Conductor: 28\" $16.99\n· Pasajero: 14\" $12.99\nTotal con descuento por par: $26.98\nResponde «sí» para pedir, o pregúntame de instalación / garantía / pago.",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "es",
+   "order_intent": null
+  },
+  {
+   "msg": "¿Cuánto cuesta?",
+   "state_after": "QUOTE",
+   "reply": "¡Encontrado! Limpiaparabrisas para Toyota Corolla 2021:\n· Conductor: 28\" $16.99\n· Pasajero: 14\" $12.99\nTotal con descuento por par: $26.98\nResponde «sí» para pedir, o pregúntame de instalación / garantía / pago.",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "es",
+   "order_intent": null
+  },
+  {
+   "msg": "¿Incluye instalación?",
+   "state_after": "QUOTE",
+   "reply": "La instalación es fácil — te mandamos un video guía. En el Bay Area ofrecemos instalación a domicilio ($10 por visita, gratis con 2+ pares).\n¿Te ayudo a hacer el pedido?",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "es",
+   "order_intent": null
+  },
+  {
+   "msg": "Vale, sí",
+   "state_after": "DONE",
+   "reply": "¡Listo! Reservado: Toyota Corolla 2021, total $26.98.\nPedido registrado — te contactaremos para confirmar instalación / recogida. ¡Gracias!",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": "confirmed",
+   "language": "es",
+   "order_intent": {
+    "phone": "b3",
+    "vehicle": {
+     "make": "toyota",
+     "model": "corolla",
+     "year": 2021
+    },
+    "quote": {
+     "sizes": {
+      "driver_in": 28,
+      "passenger_in": 14,
+      "rear_in": null
+     },
+     "driver_price": 16.99,
+     "passenger_price": 12.99,
+     "rear_price": 0.0,
+     "discount": 3.0,
+     "total": 26.98,
+     "simulated": true
+    },
+    "intent": "confirmed",
+    "notes": [
+     "detected_language=es confidence=medium (common Spanish words matched)",
+     "faq: install"
+    ],
+    "detected_language": "es"
+   }
+  }
+ ],
+ "lookup_miss_unknown": [
+  {
+   "msg": "BMW X5 2020",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "收到，还差车型（如 Toyota Camry），补充一下我就帮你查尺寸报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "lookup_miss_year": [
+  {
+   "msg": "Toyota Camry 2005",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "抱歉，模拟数据库里暂时查不到 Toyota Camry 2005。\n请确认车型年份是否正确，或直接拍行驶证发我，人工帮你查。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "missing_year_then_complete": [
+  {
+   "msg": "Honda Civic",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "收到，还差年份（如 2018），补充一下我就帮你查尺寸报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "2020",
+   "state_after": "QUOTE",
+   "reply": "查到了！Honda Civic 2020 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：18寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "haggle_twice": [
+  {
+   "msg": "Nissan Altima 2019",
+   "state_after": "QUOTE",
+   "reply": "查到了！Nissan Altima 2019 雨刷尺寸：\n· 主驾：28寸 $16.99\n· 副驾：17寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "太贵了",
+   "state_after": "QUOTE",
+   "reply": "看你这么爽快，再给你 5% 优惠，这是我能给的最低价了：\n查到了！Nissan Altima 2019 雨刷尺寸：\n· 主驾：28寸 $16.99\n· 副驾：17寸 $12.99\n套装优惠后总价：$25.48（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 25.48,
+   "haggled": true,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "再便宜点",
+   "state_after": "QUOTE",
+   "reply": "这已经是最低价了（含套装折扣），实在让不动了😅 要不先定下来？",
+   "quote_total": 25.48,
+   "haggled": true,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "还能便宜吗",
+   "state_after": "QUOTE",
+   "reply": "这已经是最低价了（含套装折扣），实在让不动了😅 要不先定下来？",
+   "quote_total": 25.48,
+   "haggled": true,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "faq_in_quote": {
+  "install": {
+   "msg": "怎么安装",
+   "state_after": "QUOTE",
+   "quote_total_after": 26.98,
+   "reply": "安装很简单，我们提供安装视频指导；湾区可约上门安装（$10 上门费，买两对以上免上门费）。\n还需要我帮你下单吗？"
+  },
+  "warranty": {
+   "msg": "保修多久",
+   "state_after": "QUOTE",
+   "quote_total_after": 26.98,
+   "reply": "雨刷质保 1 年：正常使用下出现刮不干净、异响、胶条开裂，免费换新。\n还需要我帮你下单吗？"
+  },
+  "lifespan": {
+   "msg": "能用多久",
+   "state_after": "QUOTE",
+   "quote_total_after": 26.98,
+   "reply": "一般 6–12 个月换一次。加州日晒强，建议每年入冬前检查一次。\n还需要我帮你下单吗？"
+  },
+  "payment": {
+   "msg": "怎么付款",
+   "state_after": "QUOTE",
+   "quote_total_after": 26.98,
+   "reply": "支持现金、Zelle、Venmo。先付后发货/安装，不接受赊账哦。\n还需要我帮你下单吗？"
+  },
+  "pickup": {
+   "msg": "哪里自取",
+   "state_after": "QUOTE",
+   "quote_total_after": 26.98,
+   "reply": "支持自取，地址下单后私发。湾区部分地区可送货/上门安装。\n还需要我帮你下单吗？"
+  },
+  "shipping": {
+   "msg": "能邮寄吗",
+   "state_after": "QUOTE",
+   "quote_total_after": 26.98,
+   "reply": "可邮寄，全美 USPS 3–5 天，运费 $5，满 $40 免邮。\n还需要我帮你下单吗？"
+  }
+ },
+ "faq_at_greeting": [
+  {
+   "msg": "怎么安装",
+   "state_after": "GREETING",
+   "reply": "你好！这里是雨刷小店【演示模式，数据为模拟】。\n请告诉我你的车型和年份，例如：Toyota Camry 2018，我来帮你查雨刷尺寸和报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "faq_at_collect": [
+  {
+   "msg": "Toyota Camry",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "收到，还差年份（如 2018），补充一下我就帮你查尺寸报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "怎么安装",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "收到，还差年份（如 2018），补充一下我就帮你查尺寸报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "2018",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "decline_at_greeting": [
+  {
+   "msg": "不要了",
+   "state_after": "GREETING",
+   "reply": "你好！这里是雨刷小店【演示模式，数据为模拟】。\n请告诉我你的车型和年份，例如：Toyota Camry 2018，我来帮你查雨刷尺寸和报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "decline_at_collect": [
+  {
+   "msg": "Toyota Camry",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "收到，还差年份（如 2018），补充一下我就帮你查尺寸报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "算了",
+   "state_after": "DONE",
+   "reply": "好的，有需要随时找我！",
+   "quote_total": null,
+   "haggled": false,
+   "result": "declined",
+   "language": "zh",
+   "order_intent": {
+    "phone": "g2",
+    "vehicle": {
+     "make": "toyota",
+     "model": "camry",
+     "year": 0
+    },
+    "quote": null,
+    "intent": "declined",
+    "notes": [
+     "detected_language=zh confidence=low (no recognizable markers; defaulting to zh (owner's language))",
+     "declined during vehicle collection"
+    ],
+    "detected_language": "zh"
+   }
+  }
+ ],
+ "decline_at_quote": [
+  {
+   "msg": "Toyota Camry 2018",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "算了",
+   "state_after": "DONE",
+   "reply": "没关系，有需要随时回来！祝用车愉快。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": "declined",
+   "language": "zh",
+   "order_intent": {
+    "phone": "g3",
+    "vehicle": {
+     "make": "toyota",
+     "model": "camry",
+     "year": 2018
+    },
+    "quote": {
+     "sizes": {
+      "driver_in": 26,
+      "passenger_in": 20,
+      "rear_in": null
+     },
+     "driver_price": 16.99,
+     "passenger_price": 12.99,
+     "rear_price": 0.0,
+     "discount": 3.0,
+     "total": 26.98,
+     "simulated": true
+    },
+    "intent": "declined",
+    "notes": [
+     "detected_language=zh confidence=low (no recognizable markers; defaulting to zh (owner's language))",
+     "declined at quote"
+    ],
+    "detected_language": "zh"
+   }
+  }
+ ],
+ "vehicle_change_valid": [
+  {
+   "msg": "Toyota Camry 2018",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "Honda Civic 2020",
+   "state_after": "QUOTE",
+   "reply": "查到了！Honda Civic 2020 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：18寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "vehicle_change_invalid": {
+  "steps": [
+   {
+    "msg": "Toyota Camry 2018",
+    "state_after": "QUOTE",
+    "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+    "quote_total": 26.98,
+    "haggled": false,
+    "result": null,
+    "language": "zh",
+    "order_intent": null
+   },
+   {
+    "msg": "BMW X5 2020",
+    "state_after": "QUOTE",
+    "reply": "查到了！Toyota Camry 2020 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+    "quote_total": 26.98,
+    "haggled": false,
+    "result": null,
+    "language": "zh",
+    "order_intent": null
+   }
+  ],
+  "stale_quote_total_after_miss": 26.98,
+  "stale_fitment": "toyota camry",
+  "vehicle_now": {
+   "make": "toyota",
+   "model": "camry",
+   "year": 2020
+  },
+  "state": "QUOTE"
+ },
+ "vehicle_change_year_only": [
+  {
+   "msg": "Toyota Camry 2018",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "2025",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "抱歉，模拟数据库里暂时查不到 Toyota Camry 2025。\n请确认车型年份是否正确，或直接拍行驶证发我，人工帮你查。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "intent_collisions_parse": [
+  {
+   "text": "可以便宜点吗",
+   "intent": "CONFIRM",
+   "faq_topic": "",
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  {
+   "text": "不要太贵了",
+   "intent": "DECLINE",
+   "faq_topic": "",
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  {
+   "text": "好的，多少钱",
+   "intent": "CONFIRM",
+   "faq_topic": "",
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  {
+   "text": "我想买，先问问保修",
+   "intent": "CONFIRM",
+   "faq_topic": "warranty",
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  {
+   "text": "能便宜点吗",
+   "intent": "HAGGLE",
+   "faq_topic": "",
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  {
+   "text": "I don't know",
+   "intent": "DECLINE",
+   "faq_topic": "",
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  {
+   "text": "another question",
+   "intent": "DECLINE",
+   "faq_topic": "",
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  {
+   "text": "yes but too expensive",
+   "intent": "CONFIRM",
+   "faq_topic": "",
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  {
+   "text": "no, how much is it",
+   "intent": "DECLINE",
+   "faq_topic": "",
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  {
+   "text": "好的",
+   "intent": "CONFIRM",
+   "faq_topic": "",
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  {
+   "text": "OK",
+   "intent": "CONFIRM",
+   "faq_topic": "",
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  {
+   "text": "先看看保修再说",
+   "intent": "FAQ",
+   "faq_topic": "warranty",
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  {
+   "text": "不买了太贵",
+   "intent": "DECLINE",
+   "faq_topic": "",
+   "make": "",
+   "model": "",
+   "year": 0
+  }
+ ],
+ "agent_collision_haggle_with_keyi": [
+  {
+   "msg": "Toyota Camry 2018",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "可以便宜点吗",
+   "state_after": "DONE",
+   "reply": "好的！已为你锁定：Toyota Camry 2018，总价 $26.98。\n订单意向已记录，我们会尽快联系你确认安装/取货时间。谢谢惠顾！",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": "confirmed",
+   "language": "zh",
+   "order_intent": {
+    "phone": "i1",
+    "vehicle": {
+     "make": "toyota",
+     "model": "camry",
+     "year": 2018
+    },
+    "quote": {
+     "sizes": {
+      "driver_in": 26,
+      "passenger_in": 20,
+      "rear_in": null
+     },
+     "driver_price": 16.99,
+     "passenger_price": 12.99,
+     "rear_price": 0.0,
+     "discount": 3.0,
+     "total": 26.98,
+     "simulated": true
+    },
+    "intent": "confirmed",
+    "notes": [
+     "detected_language=zh confidence=low (no recognizable markers; defaulting to zh (owner's language))"
+    ],
+    "detected_language": "zh"
+   }
+  }
+ ],
+ "agent_collision_buy_then_faq": [
+  {
+   "msg": "Toyota Camry 2018",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "我想买，先问问保修",
+   "state_after": "DONE",
+   "reply": "好的！已为你锁定：Toyota Camry 2018，总价 $26.98。\n订单意向已记录，我们会尽快联系你确认安装/取货时间。谢谢惠顾！",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": "confirmed",
+   "language": "zh",
+   "order_intent": {
+    "phone": "i2",
+    "vehicle": {
+     "make": "toyota",
+     "model": "camry",
+     "year": 2018
+    },
+    "quote": {
+     "sizes": {
+      "driver_in": 26,
+      "passenger_in": 20,
+      "rear_in": null
+     },
+     "driver_price": 16.99,
+     "passenger_price": 12.99,
+     "rear_price": 0.0,
+     "discount": 3.0,
+     "total": 26.98,
+     "simulated": true
+    },
+    "intent": "confirmed",
+    "notes": [
+     "detected_language=zh confidence=low (no recognizable markers; defaulting to zh (owner's language))"
+    ],
+    "detected_language": "zh"
+   }
+  }
+ ],
+ "agent_collision_dont_know_at_quote": [
+  {
+   "msg": "Toyota Camry 2018",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "I don't know",
+   "state_after": "DONE",
+   "reply": "没关系，有需要随时回来！祝用车愉快。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": "declined",
+   "language": "zh",
+   "order_intent": {
+    "phone": "i3",
+    "vehicle": {
+     "make": "toyota",
+     "model": "camry",
+     "year": 2018
+    },
+    "quote": {
+     "sizes": {
+      "driver_in": 26,
+      "passenger_in": 20,
+      "rear_in": null
+     },
+     "driver_price": 16.99,
+     "passenger_price": 12.99,
+     "rear_price": 0.0,
+     "discount": 3.0,
+     "total": 26.98,
+     "simulated": true
+    },
+    "intent": "declined",
+    "notes": [
+     "detected_language=zh confidence=low (no recognizable markers; defaulting to zh (owner's language))",
+     "declined at quote"
+    ],
+    "detected_language": "zh"
+   }
+  }
+ ],
+ "agent_collision_dont_know_at_collect": [
+  {
+   "msg": "Toyota Camry",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "收到，还差年份（如 2018），补充一下我就帮你查尺寸报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "I don't know",
+   "state_after": "DONE",
+   "reply": "好的，有需要随时找我！",
+   "quote_total": null,
+   "haggled": false,
+   "result": "declined",
+   "language": "zh",
+   "order_intent": {
+    "phone": "i4",
+    "vehicle": {
+     "make": "toyota",
+     "model": "camry",
+     "year": 0
+    },
+    "quote": null,
+    "intent": "declined",
+    "notes": [
+     "detected_language=zh confidence=low (no recognizable markers; defaulting to zh (owner's language))",
+     "declined during vehicle collection"
+    ],
+    "detected_language": "zh"
+   }
+  }
+ ],
+ "done_restart": {
+  "steps": [
+   {
+    "msg": "Toyota Camry 2018",
+    "state_after": "QUOTE",
+    "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+    "quote_total": 26.98,
+    "haggled": false,
+    "result": null,
+    "language": "zh",
+    "order_intent": null
+   },
+   {
+    "msg": "要了",
+    "state_after": "DONE",
+    "reply": "好的！已为你锁定：Toyota Camry 2018，总价 $26.98。\n订单意向已记录，我们会尽快联系你确认安装/取货时间。谢谢惠顾！",
+    "quote_total": 26.98,
+    "haggled": false,
+    "result": "confirmed",
+    "language": "zh",
+    "order_intent": {
+     "phone": "j1",
+     "vehicle": {
+      "make": "toyota",
+      "model": "camry",
+      "year": 2018
+     },
+     "quote": {
+      "sizes": {
+       "driver_in": 26,
+       "passenger_in": 20,
+       "rear_in": null
+      },
+      "driver_price": 16.99,
+      "passenger_price": 12.99,
+      "rear_price": 0.0,
+      "discount": 3.0,
+      "total": 26.98,
+      "simulated": true
+     },
+     "intent": "confirmed",
+     "notes": [
+      "detected_language=zh confidence=low (no recognizable markers; defaulting to zh (owner's language))"
+     ],
+     "detected_language": "zh"
+    }
+   },
+   {
+    "msg": "你好",
+    "state_after": "GREETING",
+    "reply": "你好！这里是雨刷小店【演示模式，数据为模拟】。\n请告诉我你的车型和年份，例如：Toyota Camry 2018，我来帮你查雨刷尺寸和报价。",
+    "quote_total": null,
+    "haggled": false,
+    "result": null,
+    "language": "zh",
+    "order_intent": null
+   }
+  ],
+  "vehicle_after_restart": {
+   "make": "",
+   "model": "",
+   "year": 0
+  },
+  "quote_after_restart": null,
+  "haggled_after_restart": false,
+  "history_len_after_restart": 2
+ },
+ "persistence_roundtrip": {
+  "state": "QUOTE",
+  "vehicle": {
+   "make": "toyota",
+   "model": "camry",
+   "year": 2018
+  },
+  "quote_total": 25.48,
+  "haggled": true,
+  "language": "zh",
+  "history_len": 4,
+  "continue_reply_state": "QUOTE"
+ },
+ "isolation": {
+  "a_quote_after_haggle": 25.48,
+  "b_state": "QUOTE",
+  "b_quote": 26.98,
+  "a_vehicle": {
+   "make": "toyota",
+   "model": "camry",
+   "year": 2018
+  },
+  "b_vehicle": {
+   "make": "honda",
+   "model": "civic",
+   "year": 2020
+  }
+ },
+ "gibberish_at_quote": [
+  {
+   "msg": "Toyota Camry 2018",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "asdf qwer",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。\n要下单回复「要了」，有问题随便问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "gibberish_at_greeting": [
+  {
+   "msg": "asdf qwer",
+   "state_after": "GREETING",
+   "reply": "你好！这里是雨刷小店【演示模式，数据为模拟】。\n请告诉我你的车型和年份，例如：Toyota Camry 2018，我来帮你查雨刷尺寸和报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "Toyota Camry 2018",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "haggle_then_change_then_haggle": [
+  {
+   "msg": "Nissan Altima 2019",
+   "state_after": "QUOTE",
+   "reply": "查到了！Nissan Altima 2019 雨刷尺寸：\n· 主驾：28寸 $16.99\n· 副驾：17寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "太贵了",
+   "state_after": "QUOTE",
+   "reply": "看你这么爽快，再给你 5% 优惠，这是我能给的最低价了：\n查到了！Nissan Altima 2019 雨刷尺寸：\n· 主驾：28寸 $16.99\n· 副驾：17寸 $12.99\n套装优惠后总价：$25.48（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 25.48,
+   "haggled": true,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "Honda Civic 2020",
+   "state_after": "QUOTE",
+   "reply": "查到了！Honda Civic 2020 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：18寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": true,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "太贵了",
+   "state_after": "QUOTE",
+   "reply": "这已经是最低价了（含套装折扣），实在让不动了😅 要不先定下来？",
+   "quote_total": 26.98,
+   "haggled": true,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "miss_then_decline_stale_quote": [
+  {
+   "msg": "Toyota Camry 2018",
+   "state_after": "QUOTE",
+   "reply": "查到了！Toyota Camry 2018 雨刷尺寸：\n· 主驾：26寸 $16.99\n· 副驾：20寸 $12.99\n套装优惠后总价：$26.98（含套装折扣）\n要下单回复「要了」，想问安装/保修/付款等问题直接问。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "2025",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "抱歉，模拟数据库里暂时查不到 Toyota Camry 2025。\n请确认车型年份是否正确，或直接拍行驶证发我，人工帮你查。",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "算了",
+   "state_after": "DONE",
+   "reply": "好的，有需要随时找我！",
+   "quote_total": 26.98,
+   "haggled": false,
+   "result": "declined",
+   "language": "zh",
+   "order_intent": {
+    "phone": "x2",
+    "vehicle": {
+     "make": "toyota",
+     "model": "camry",
+     "year": 2025
+    },
+    "quote": {
+     "sizes": {
+      "driver_in": 26,
+      "passenger_in": 20,
+      "rear_in": null
+     },
+     "driver_price": 16.99,
+     "passenger_price": 12.99,
+     "rear_price": 0.0,
+     "discount": 3.0,
+     "total": 26.98,
+     "simulated": true
+    },
+    "intent": "declined",
+    "notes": [
+     "detected_language=zh confidence=low (no recognizable markers; defaulting to zh (owner's language))",
+     "lookup miss: Toyota Camry 2025",
+     "declined during vehicle collection"
+    ],
+    "detected_language": "zh"
+   }
+  }
+ ],
+ "confirm_at_collect": [
+  {
+   "msg": "Toyota Camry",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "收到，还差年份（如 2018），补充一下我就帮你查尺寸报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "好的",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "收到，还差年份（如 2018），补充一下我就帮你查尺寸报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "askprice_at_greeting": [
+  {
+   "msg": "多少钱",
+   "state_after": "GREETING",
+   "reply": "你好！这里是雨刷小店【演示模式，数据为模拟】。\n请告诉我你的车型和年份，例如：Toyota Camry 2018，我来帮你查雨刷尺寸和报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "haggle_at_collect": [
+  {
+   "msg": "Toyota Camry",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "收到，还差年份（如 2018），补充一下我就帮你查尺寸报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  },
+  {
+   "msg": "太贵了",
+   "state_after": "COLLECT_VEHICLE",
+   "reply": "收到，还差年份（如 2018），补充一下我就帮你查尺寸报价。",
+   "quote_total": null,
+   "haggled": false,
+   "result": null,
+   "language": "zh",
+   "order_intent": null
+  }
+ ],
+ "meta": {
+  "catalog_size": 8,
+  "known_models": [
+   [
+    "ford",
+    "f-150"
+   ],
+   [
+    "honda",
+    "accord"
+   ],
+   [
+    "honda",
+    "civic"
+   ],
+   [
+    "nissan",
+    "altima"
+   ],
+   [
+    "tesla",
+    "model 3"
+   ],
+   [
+    "toyota",
+    "camry"
+   ],
+   [
+    "toyota",
+    "corolla"
+   ],
+   [
+    "toyota",
+    "rav4"
+   ]
+  ],
+  "repo_commit": "9675291c799ae4a610afe813cd1b1a69fdfd6818"
+ }
+}
