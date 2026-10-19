@@ -1,0 +1,442 @@
+{
+  "tests": {
+    "returncode": 0,
+    "tail": [
+      "..............                                                           [100%]",
+      "14 passed in 1.09s"
+    ]
+  },
+  "baseline_day": {
+    "observations": 216,
+    "alerts_total": 6,
+    "by_rule": {
+      "sudden_mood_swing": 5,
+      "sustained_negative_mood": 1
+    },
+    "by_level": {
+      "watch": 5,
+      "critical": 1
+    },
+    "alerts_by_person": {
+      "C-01": [
+        [
+          "sudden_mood_swing",
+          "watch"
+        ]
+      ],
+      "C-02": [
+        [
+          "sudden_mood_swing",
+          "watch"
+        ]
+      ],
+      "C-03": [
+        [
+          "sudden_mood_swing",
+          "watch"
+        ]
+      ],
+      "C-04": [
+        [
+          "sustained_negative_mood",
+          "critical"
+        ]
+      ],
+      "C-07": [
+        [
+          "sudden_mood_swing",
+          "watch"
+        ]
+      ],
+      "C-08": [
+        [
+          "sudden_mood_swing",
+          "watch"
+        ]
+      ]
+    }
+  },
+  "false_alarm": {
+    "days": 30,
+    "child_slot_evals": 5040,
+    "sustained_warnings": 33,
+    "sustained_criticals": 0,
+    "child_days_with_warning": 15,
+    "child_days_total": 240,
+    "teacher_days_with_spike_warning": 23
+  },
+  "privacy_static": {
+    "observation_fields": [
+      "person",
+      "timestamp",
+      "emotion",
+      "confidence",
+      "simulated"
+    ],
+    "person_schema_fields": [
+      "person_id",
+      "name",
+      "role"
+    ],
+    "face_image_retained_in_observation": false,
+    "retention_purge_method_exists": false,
+    "delete_method_exists": false,
+    "expire_method_exists": false,
+    "anonymize_exists": false,
+    "consent_field_in_person": false,
+    "retention_keyword_in_code": [],
+    "delete_keyword_in_code": [],
+    "build_report_simulated_hardcoded_true_on_real_data": true
+  },
+  "privacy_report": {
+    "per_person_fields": [
+      "person_id",
+      "name",
+      "role",
+      "observations",
+      "mood",
+      "alerts"
+    ],
+    "name_included": true,
+    "top_level_simulated_hardcoded": true
+  },
+  "retention_volume": {
+    "one_day_bytes_pickle_shared_ref": 9097,
+    "per_obs_bytes_pickle": 42.1,
+    "per_obs_bytes_json_row": 147,
+    "day_30_MB_json": 0.953,
+    "day_180_MB_json": 5.715,
+    "obs_per_day_demo_cadence": 216,
+    "at_1min_cadence_obs_per_day": 4320,
+    "at_1min_cadence_30day_MB_json": 19.05,
+    "at_1min_cadence_180day_MB_json": 114.31
+  },
+  "truncation": {
+    "sustained_full": [
+      "critical"
+    ],
+    "sustained_trunc6_same": [
+      "critical"
+    ],
+    "swing_full_rules": [
+      "sudden_mood_swing"
+    ],
+    "swing_trunc6_rules": [],
+    "mood_summary_uses_all_history": true
+  },
+  "agg_only": {
+    "fields": [
+      "classroom",
+      "classroom_mood",
+      "alert_counts",
+      "n_persons"
+    ],
+    "alert_counts_preserved": true,
+    "name_fields_removed": 9
+  },
+  "confidence_ignored": {
+    "alert_same_at_099_and_051": true,
+    "levels": [
+      "critical"
+    ]
+  },
+  "swing_edge": {
+    "happy_calm_angry_fires": false,
+    "happy_gap40min_angry_fires": false
+  },
+  "modality_audit": {
+    "audio_keyword_files": [],
+    "voice_keyword_files": [],
+    "text_keyword_files": [],
+    "implemented_modalities": [
+      "face_image_only"
+    ],
+    "fer_classifier_implemented": false,
+    "note": "FERClassifier.__init__ raises NotImplementedError; Mock is the only working classifier"
+  },
+  "hash_instability": {
+    "runs_no_fixed_seed": [
+      {
+        "alerts": 8,
+        "by_rule": {
+          "sudden_mood_swing": 7,
+          "sustained_negative_mood": 1
+        },
+        "first6": [
+          [
+            "C-01",
+            "happy"
+          ],
+          [
+            "C-02",
+            "happy"
+          ],
+          [
+            "C-03",
+            "happy"
+          ],
+          [
+            "C-04",
+            "sad"
+          ],
+          [
+            "C-05",
+            "angry"
+          ],
+          [
+            "C-06",
+            "happy"
+          ]
+        ]
+      },
+      {
+        "alerts": 4,
+        "by_rule": {
+          "sudden_mood_swing": 3,
+          "sustained_negative_mood": 1
+        },
+        "first6": [
+          [
+            "C-01",
+            "happy"
+          ],
+          [
+            "C-02",
+            "happy"
+          ],
+          [
+            "C-03",
+            "calm"
+          ],
+          [
+            "C-04",
+            "happy"
+          ],
+          [
+            "C-05",
+            "angry"
+          ],
+          [
+            "C-06",
+            "happy"
+          ]
+        ]
+      },
+      {
+        "alerts": 5,
+        "by_rule": {
+          "sudden_mood_swing": 4,
+          "sustained_negative_mood": 1
+        },
+        "first6": [
+          [
+            "C-01",
+            "happy"
+          ],
+          [
+            "C-02",
+            "calm"
+          ],
+          [
+            "C-03",
+            "happy"
+          ],
+          [
+            "C-04",
+            "happy"
+          ],
+          [
+            "C-05",
+            "calm"
+          ],
+          [
+            "C-06",
+            "happy"
+          ]
+        ]
+      },
+      {
+        "alerts": 6,
+        "by_rule": {
+          "sudden_mood_swing": 5,
+          "sustained_negative_mood": 1
+        },
+        "first6": [
+          [
+            "C-01",
+            "happy"
+          ],
+          [
+            "C-02",
+            "happy"
+          ],
+          [
+            "C-03",
+            "calm"
+          ],
+          [
+            "C-04",
+            "happy"
+          ],
+          [
+            "C-05",
+            "calm"
+          ],
+          [
+            "C-06",
+            "sad"
+          ]
+        ]
+      },
+      {
+        "alerts": 8,
+        "by_rule": {
+          "sudden_mood_swing": 6,
+          "sustained_negative_mood": 1,
+          "teacher_negative_spike": 1
+        },
+        "first6": [
+          [
+            "C-01",
+            "calm"
+          ],
+          [
+            "C-02",
+            "calm"
+          ],
+          [
+            "C-03",
+            "happy"
+          ],
+          [
+            "C-04",
+            "calm"
+          ],
+          [
+            "C-05",
+            "happy"
+          ],
+          [
+            "C-06",
+            "happy"
+          ]
+        ]
+      }
+    ],
+    "distinct_alert_counts_no_fixed_seed": [
+      4,
+      5,
+      6,
+      8
+    ],
+    "distinct_first6_no_fixed_seed": 5,
+    "runs_pythonhashseed0": [
+      {
+        "alerts": 8,
+        "by_rule": {
+          "sudden_mood_swing": 7,
+          "sustained_negative_mood": 1
+        },
+        "first6": [
+          [
+            "C-01",
+            "happy"
+          ],
+          [
+            "C-02",
+            "calm"
+          ],
+          [
+            "C-03",
+            "happy"
+          ],
+          [
+            "C-04",
+            "happy"
+          ],
+          [
+            "C-05",
+            "sad"
+          ],
+          [
+            "C-06",
+            "happy"
+          ]
+        ]
+      },
+      {
+        "alerts": 8,
+        "by_rule": {
+          "sudden_mood_swing": 7,
+          "sustained_negative_mood": 1
+        },
+        "first6": [
+          [
+            "C-01",
+            "happy"
+          ],
+          [
+            "C-02",
+            "calm"
+          ],
+          [
+            "C-03",
+            "happy"
+          ],
+          [
+            "C-04",
+            "happy"
+          ],
+          [
+            "C-05",
+            "sad"
+          ],
+          [
+            "C-06",
+            "happy"
+          ]
+        ]
+      },
+      {
+        "alerts": 8,
+        "by_rule": {
+          "sudden_mood_swing": 7,
+          "sustained_negative_mood": 1
+        },
+        "first6": [
+          [
+            "C-01",
+            "happy"
+          ],
+          [
+            "C-02",
+            "calm"
+          ],
+          [
+            "C-03",
+            "happy"
+          ],
+          [
+            "C-04",
+            "happy"
+          ],
+          [
+            "C-05",
+            "sad"
+          ],
+          [
+            "C-06",
+            "happy"
+          ]
+        ]
+      }
+    ],
+    "distinct_alert_counts_hashseed0": [
+      8
+    ]
+  },
+  "report_bytes": {
+    "full_identified": 2613,
+    "agg_only": 199
+  }
+}
