@@ -1,0 +1,20 @@
+{
+ "planted": 6,
+ "caught": 6,
+ "detail": {
+  "D1_sum_mismatch": "caught",
+  "D2_causal_jump": "caught",
+  "D3_overclaim": "caught",
+  "D4_cross_ref": "caught-but-semi-cued: probe text carried an editorial note flagging the renumbering",
+  "D5_source_mismatch": "caught (framed as correlation-as-causation)",
+  "D6_success_contradiction": "caught"
+ },
+ "extra_valid_findings": 1,
+ "extra_note": "命中率87%下回源耗时不应全额计入平均单次请求——未植入、经作者复核成立",
+ "model": "gemini-flash-latest",
+ "usage": {
+  "prompt": 443,
+  "candidates": 1009,
+  "total": 2473
+ }
+}

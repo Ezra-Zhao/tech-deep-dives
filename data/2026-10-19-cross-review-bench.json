@@ -1,0 +1,134 @@
+{
+ "calls": {
+  "total": 13,
+  "ok": 5,
+  "e503": 6,
+  "e429": 2
+ },
+ "articles_total": 7,
+ "articles_gemini_reviewed": 5,
+ "articles_human_fallback": 2,
+ "articles_same_day_gemini": 4,
+ "opinions": {
+  "total": 40,
+  "gemini": 29,
+  "human": 11
+ },
+ "gemini_categories": {
+  "logic": 6,
+  "overclaim": 6,
+  "method": 5,
+  "scope": 3,
+  "style": 1,
+  "structure": 3,
+  "numeric": 5
+ },
+ "human_categories": {
+  "overclaim": 1,
+  "method": 2,
+  "numeric": 5,
+  "scope": 2,
+  "style": 1
+ },
+ "gemini_outcomes": {
+  "changed": 26,
+  "kept": 1,
+  "rejected": 1,
+  "recheck-changed": 1
+ },
+ "human_outcomes": {
+  "changed": 5,
+  "recheck": 5,
+  "covered": 1
+ },
+ "changed": {
+  "gemini": 27,
+  "human": 5,
+  "gemini_rate": 0.931,
+  "human_rate": 0.455
+ },
+ "per_article": {
+  "rea": {
+   "date": "2026-10-13",
+   "mode": "gemini",
+   "calls": [
+    "503",
+    "ok"
+   ],
+   "n_opinions": 8
+  },
+  "go-diagnoser": {
+   "date": "2026-10-13",
+   "mode": "human-fallback",
+   "calls": [
+    "429"
+   ],
+   "n_opinions": 5
+  },
+  "sentinel": {
+   "date": "2026-10-14",
+   "mode": "gemini-delayed",
+   "calls": [
+    "ok"
+   ],
+   "n_opinions": 5
+  },
+  "vuln-scanner": {
+   "date": "2026-10-15",
+   "mode": "gemini",
+   "calls": [
+    "503",
+    "503",
+    "ok-alt-model"
+   ],
+   "n_opinions": 5
+  },
+  "wiper": {
+   "date": "2026-10-16",
+   "mode": "gemini",
+   "calls": [
+    "ok"
+   ],
+   "n_opinions": 3
+  },
+  "bloom": {
+   "date": "2026-10-17",
+   "mode": "gemini",
+   "calls": [
+    "ok"
+   ],
+   "n_opinions": 8
+  },
+  "emotion-guard": {
+   "date": "2026-10-18",
+   "mode": "human-fallback",
+   "calls": [
+    "503",
+    "503",
+    "503",
+    "429"
+   ],
+   "n_opinions": 6
+  }
+ },
+ "probe": {
+  "planted": 6,
+  "caught": 6,
+  "detail": {
+   "D1_sum_mismatch": "caught",
+   "D2_causal_jump": "caught",
+   "D3_overclaim": "caught",
+   "D4_cross_ref": "caught-but-semi-cued: probe text carried an editorial note flagging the renumbering",
+   "D5_source_mismatch": "caught (framed as correlation-as-causation)",
+   "D6_success_contradiction": "caught"
+  },
+  "extra_valid_findings": 1,
+  "extra_note": "命中率87%下回源耗时不应全额计入平均单次请求——未植入、经作者复核成立",
+  "model": "gemini-flash-latest",
+  "usage": {
+   "prompt": 443,
+   "candidates": 1009,
+   "total": 2473
+  }
+ }
+}
