@@ -1,0 +1,250 @@
+{
+  "s=0.65": {
+    "only_minArea_scaled": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "det_blooms": 134,
+      "det_buds": 76,
+      "bloom_recall": 1.0,
+      "bud_recall": 1.0,
+      "fp": 0
+    },
+    "only_bloomMin_scaled": {
+      "precision": 1.0,
+      "recall": 0.8714,
+      "f1": 0.9313,
+      "det_blooms": 134,
+      "det_buds": 49,
+      "bloom_recall": 1.0,
+      "bud_recall": 0.6447,
+      "fp": 0
+    },
+    "only_kernel_scaled": {
+      "precision": 1.0,
+      "recall": 0.8762,
+      "f1": 0.934,
+      "det_blooms": 134,
+      "det_buds": 50,
+      "bloom_recall": 1.0,
+      "bud_recall": 0.6579,
+      "fp": 0
+    },
+    "thresholds_scaled_kernel_fixed (=A2)": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "det_blooms": 134,
+      "det_buds": 76,
+      "bloom_recall": 1.0,
+      "bud_recall": 1.0,
+      "fp": 0
+    },
+    "all_scaled (=A3)": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "det_blooms": 134,
+      "det_buds": 76,
+      "bloom_recall": 1.0,
+      "bud_recall": 1.0,
+      "fp": 0
+    },
+    "all_fixed (=A1)": {
+      "precision": 1.0,
+      "recall": 0.8714,
+      "f1": 0.9313,
+      "det_blooms": 134,
+      "det_buds": 49,
+      "bloom_recall": 1.0,
+      "bud_recall": 0.6447,
+      "fp": 0
+    }
+  },
+  "s=0.5": {
+    "only_minArea_scaled": {
+      "precision": 0.6938,
+      "recall": 0.6905,
+      "f1": 0.6921,
+      "det_blooms": 69,
+      "det_buds": 140,
+      "bloom_recall": 0.5149,
+      "bud_recall": 1.0,
+      "fp": 64
+    },
+    "only_bloomMin_scaled": {
+      "precision": 1.0,
+      "recall": 0.6333,
+      "f1": 0.7755,
+      "det_blooms": 133,
+      "det_buds": 0,
+      "bloom_recall": 0.9925,
+      "bud_recall": 0.0,
+      "fp": 0
+    },
+    "only_kernel_scaled": {
+      "precision": 0.5149,
+      "recall": 0.3286,
+      "f1": 0.4012,
+      "det_blooms": 69,
+      "det_buds": 65,
+      "bloom_recall": 0.5149,
+      "bud_recall": 0.0,
+      "fp": 65
+    },
+    "thresholds_scaled_kernel_fixed (=A2)": {
+      "precision": 1.0,
+      "recall": 0.9952,
+      "f1": 0.9976,
+      "det_blooms": 133,
+      "det_buds": 76,
+      "bloom_recall": 0.9925,
+      "bud_recall": 1.0,
+      "fp": 0
+    },
+    "all_scaled (=A3)": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "det_blooms": 134,
+      "det_buds": 76,
+      "bloom_recall": 1.0,
+      "bud_recall": 1.0,
+      "fp": 0
+    },
+    "all_fixed (=A1)": {
+      "precision": 0.5188,
+      "recall": 0.3286,
+      "f1": 0.4023,
+      "det_blooms": 69,
+      "det_buds": 64,
+      "bloom_recall": 0.5149,
+      "bud_recall": 0.0,
+      "fp": 64
+    }
+  },
+  "s=0.4": {
+    "only_minArea_scaled": {
+      "precision": 0.3277,
+      "recall": 0.2762,
+      "f1": 0.2997,
+      "det_blooms": 14,
+      "det_buds": 163,
+      "bloom_recall": 0.1045,
+      "bud_recall": 0.579,
+      "fp": 119
+    },
+    "only_bloomMin_scaled": {
+      "precision": 1.0,
+      "recall": 0.6333,
+      "f1": 0.7755,
+      "det_blooms": 133,
+      "det_buds": 0,
+      "bloom_recall": 0.9925,
+      "bud_recall": 0.0,
+      "fp": 0
+    },
+    "only_kernel_scaled": {
+      "precision": 0.0821,
+      "recall": 0.0524,
+      "f1": 0.064,
+      "det_blooms": 11,
+      "det_buds": 123,
+      "bloom_recall": 0.0821,
+      "bud_recall": 0.0,
+      "fp": 123
+    },
+    "thresholds_scaled_kernel_fixed (=A2)": {
+      "precision": 1.0,
+      "recall": 0.8429,
+      "f1": 0.9147,
+      "det_blooms": 133,
+      "det_buds": 44,
+      "bloom_recall": 0.9925,
+      "bud_recall": 0.579,
+      "fp": 0
+    },
+    "all_scaled (=A3)": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "det_blooms": 134,
+      "det_buds": 76,
+      "bloom_recall": 1.0,
+      "bud_recall": 1.0,
+      "fp": 0
+    },
+    "all_fixed (=A1)": {
+      "precision": 0.1053,
+      "recall": 0.0667,
+      "f1": 0.0816,
+      "det_blooms": 14,
+      "det_buds": 119,
+      "bloom_recall": 0.1045,
+      "bud_recall": 0.0,
+      "fp": 119
+    }
+  },
+  "s=0.3": {
+    "only_minArea_scaled": {
+      "precision": 0.0229,
+      "recall": 0.0143,
+      "f1": 0.0176,
+      "det_blooms": 2,
+      "det_buds": 129,
+      "bloom_recall": 0.0149,
+      "bud_recall": 0.0132,
+      "fp": 128
+    },
+    "only_bloomMin_scaled": {
+      "precision": 1.0,
+      "recall": 0.619,
+      "f1": 0.7647,
+      "det_blooms": 130,
+      "det_buds": 0,
+      "bloom_recall": 0.9702,
+      "bud_recall": 0.0,
+      "fp": 0
+    },
+    "only_kernel_scaled": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "det_blooms": 0,
+      "det_buds": 134,
+      "bloom_recall": 0.0,
+      "bud_recall": 0.0,
+      "fp": 134
+    },
+    "thresholds_scaled_kernel_fixed (=A2)": {
+      "precision": 1.0,
+      "recall": 0.6238,
+      "f1": 0.7683,
+      "det_blooms": 130,
+      "det_buds": 1,
+      "bloom_recall": 0.9702,
+      "bud_recall": 0.0132,
+      "fp": 0
+    },
+    "all_scaled (=A3)": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "det_blooms": 134,
+      "det_buds": 76,
+      "bloom_recall": 1.0,
+      "bud_recall": 1.0,
+      "fp": 0
+    },
+    "all_fixed (=A1)": {
+      "precision": 0.0154,
+      "recall": 0.0095,
+      "f1": 0.0118,
+      "det_blooms": 2,
+      "det_buds": 128,
+      "bloom_recall": 0.0149,
+      "bud_recall": 0.0,
+      "fp": 128
+    }
+  }
+}
