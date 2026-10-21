@@ -1,0 +1,527 @@
+{
+  "inventories": {
+    "sqli_payloads": [
+      "'",
+      "\"",
+      "' OR '1'='1",
+      "\" OR \"1\"=\"1"
+    ],
+    "sqli_signature_groups": {
+      "SQLite": [
+        "SQLite",
+        "sqlite3",
+        "syntax error",
+        "unrecognized token"
+      ],
+      "MySQL/MariaDB": [
+        "MySQL",
+        "You have an error in your SQL syntax",
+        "mysql_fetch",
+        "MariaDB"
+      ],
+      "PostgreSQL": [
+        "PostgreSQL",
+        "PG::",
+        "pg_query\\(\\)",
+        "unterminated quoted string"
+      ],
+      "MSSQL": [
+        "Microsoft OLE DB",
+        "SQL Server",
+        "ODBC SQL Server Driver"
+      ],
+      "Oracle": [
+        "ORA-\\d{5}",
+        "Oracle error"
+      ],
+      "Generic SQL": [
+        "SQL syntax",
+        "database error",
+        "DB Error",
+        "\\bJDBC\\b"
+      ]
+    },
+    "expected_headers": {
+      "Content-Security-Policy": "medium",
+      "X-Frame-Options": "low",
+      "X-Content-Type-Options": "low",
+      "Referrer-Policy": "low",
+      "Permissions-Policy": "info"
+    },
+    "sensitive_probes": [
+      "robots.txt",
+      ".git/HEAD",
+      ".env",
+      ".htaccess",
+      ".DS_Store",
+      "admin",
+      "admin/",
+      "backup.zip",
+      "db.sqlite",
+      "database.sql",
+      "phpinfo.php",
+      "server-status",
+      ".svn/entries",
+      "actuator/health"
+    ],
+    "sensitive_probe_count": 14
+  },
+  "pytest": {
+    "exit": 0,
+    "tail": [
+      "...........                                                              [100%]",
+      "11 passed in 1.61s"
+    ]
+  },
+  "scope_probes": {
+    "no_scheme": {
+      "scope_error": "Target must be an explicit http(s) URL, e.g. --target http://127.0.0.1:5000"
+    },
+    "unconfirmed": {
+      "scope_error": "Scan not confirmed. Confirm that you own this target or have explicit written authorization to test it."
+    },
+    "confirmed_localhost": {
+      "result": "http://127.0.0.1:5000"
+    },
+    "allowlist_mismatch": {
+      "scope_error": "Target host '127.0.0.1' is not in allowlist /tmp/bench-allowlist.txt. Refusing to scan."
+    },
+    "allowlist_match": {
+      "result": "http://127.0.0.1:5000"
+    }
+  },
+  "A_demo_vulnerable": {
+    "pages": 4,
+    "forms": 1,
+    "urls_with_params": [
+      "http://127.0.0.1:5010/search?q=phone",
+      "http://127.0.0.1:5010/user?id=1"
+    ],
+    "crawl_seconds": 0.23,
+    "checks": {
+      "reflected-xss": {
+        "seconds": 0.063,
+        "count": 3,
+        "titles": [
+          "Reflected XSS via parameter 'q'",
+          "Reflected XSS via parameter 'id'",
+          "Reflected XSS via form field 'q'"
+        ],
+        "error": null
+      },
+      "error-based-sqli": {
+        "seconds": 0.142,
+        "count": 1,
+        "titles": [
+          "Possible SQL injection via parameter 'id' (SQLite error disclosed)"
+        ],
+        "error": null
+      },
+      "security-headers": {
+        "seconds": 0.042,
+        "count": 6,
+        "titles": [
+          "Missing security header: Content-Security-Policy",
+          "Missing security header: X-Frame-Options",
+          "Missing security header: X-Content-Type-Options",
+          "Missing security header: Referrer-Policy",
+          "Missing security header: Permissions-Policy",
+          "Server header discloses: Werkzeug/3.1.9 Python/3.12.3"
+        ],
+        "error": null
+      },
+      "sensitive-files": {
+        "seconds": 0.185,
+        "count": 3,
+        "titles": [
+          "Accessible sensitive path: /robots.txt",
+          "Accessible sensitive path: /.git/HEAD",
+          "Accessible sensitive path: /admin"
+        ],
+        "error": null
+      }
+    },
+    "total_findings": 13,
+    "by_severity": {
+      "high": 5,
+      "medium": 2,
+      "low": 3,
+      "info": 3
+    }
+  },
+  "A_demo_repeat2": {
+    "pages": 4,
+    "forms": 1,
+    "urls_with_params": [
+      "http://127.0.0.1:5010/search?q=phone",
+      "http://127.0.0.1:5010/user?id=1"
+    ],
+    "crawl_seconds": 0.037,
+    "checks": {
+      "reflected-xss": {
+        "seconds": 0.031,
+        "count": 3,
+        "titles": [
+          "Reflected XSS via parameter 'q'",
+          "Reflected XSS via parameter 'id'",
+          "Reflected XSS via form field 'q'"
+        ],
+        "error": null
+      },
+      "error-based-sqli": {
+        "seconds": 0.138,
+        "count": 1,
+        "titles": [
+          "Possible SQL injection via parameter 'id' (SQLite error disclosed)"
+        ],
+        "error": null
+      },
+      "security-headers": {
+        "seconds": 0.008,
+        "count": 6,
+        "titles": [
+          "Missing security header: Content-Security-Policy",
+          "Missing security header: X-Frame-Options",
+          "Missing security header: X-Content-Type-Options",
+          "Missing security header: Referrer-Policy",
+          "Missing security header: Permissions-Policy",
+          "Server header discloses: Werkzeug/3.1.9 Python/3.12.3"
+        ],
+        "error": null
+      },
+      "sensitive-files": {
+        "seconds": 0.204,
+        "count": 3,
+        "titles": [
+          "Accessible sensitive path: /robots.txt",
+          "Accessible sensitive path: /.git/HEAD",
+          "Accessible sensitive path: /admin"
+        ],
+        "error": null
+      }
+    },
+    "total_findings": 13,
+    "by_severity": {
+      "high": 5,
+      "medium": 2,
+      "low": 3,
+      "info": 3
+    }
+  },
+  "A_demo_repeat3": {
+    "pages": 4,
+    "forms": 1,
+    "urls_with_params": [
+      "http://127.0.0.1:5010/search?q=phone",
+      "http://127.0.0.1:5010/user?id=1"
+    ],
+    "crawl_seconds": 0.08,
+    "checks": {
+      "reflected-xss": {
+        "seconds": 0.041,
+        "count": 3,
+        "titles": [
+          "Reflected XSS via parameter 'q'",
+          "Reflected XSS via parameter 'id'",
+          "Reflected XSS via form field 'q'"
+        ],
+        "error": null
+      },
+      "error-based-sqli": {
+        "seconds": 0.179,
+        "count": 1,
+        "titles": [
+          "Possible SQL injection via parameter 'id' (SQLite error disclosed)"
+        ],
+        "error": null
+      },
+      "security-headers": {
+        "seconds": 0.01,
+        "count": 6,
+        "titles": [
+          "Missing security header: Content-Security-Policy",
+          "Missing security header: X-Frame-Options",
+          "Missing security header: X-Content-Type-Options",
+          "Missing security header: Referrer-Policy",
+          "Missing security header: Permissions-Policy",
+          "Server header discloses: Werkzeug/3.1.9 Python/3.12.3"
+        ],
+        "error": null
+      },
+      "sensitive-files": {
+        "seconds": 0.226,
+        "count": 3,
+        "titles": [
+          "Accessible sensitive path: /robots.txt",
+          "Accessible sensitive path: /.git/HEAD",
+          "Accessible sensitive path: /admin"
+        ],
+        "error": null
+      }
+    },
+    "total_findings": 13,
+    "by_severity": {
+      "high": 5,
+      "medium": 2,
+      "low": 3,
+      "info": 3
+    }
+  },
+  "B_hardened": {
+    "pages": 3,
+    "forms": 1,
+    "urls_with_params": [
+      "http://127.0.0.1:5011/search?q=phone",
+      "http://127.0.0.1:5011/user?id=1"
+    ],
+    "crawl_seconds": 0.055,
+    "checks": {
+      "reflected-xss": {
+        "seconds": 0.071,
+        "count": 0,
+        "titles": [],
+        "error": null
+      },
+      "error-based-sqli": {
+        "seconds": 0.216,
+        "count": 0,
+        "titles": [],
+        "error": null
+      },
+      "security-headers": {
+        "seconds": 0.008,
+        "count": 1,
+        "titles": [
+          "Server header discloses: Werkzeug/3.1.9 Python/3.12.3"
+        ],
+        "error": null
+      },
+      "sensitive-files": {
+        "seconds": 0.134,
+        "count": 0,
+        "titles": [],
+        "error": null
+      }
+    },
+    "total_findings": 1,
+    "by_severity": {
+      "info": 1
+    }
+  },
+  "C_soft404": {
+    "pages": 2,
+    "forms": 0,
+    "urls_with_params": [
+      "http://127.0.0.1:5012/search?q=x"
+    ],
+    "crawl_seconds": 0.041,
+    "checks": {
+      "reflected-xss": {
+        "seconds": 0.025,
+        "count": 0,
+        "titles": [],
+        "error": null
+      },
+      "error-based-sqli": {
+        "seconds": 0.041,
+        "count": 0,
+        "titles": [],
+        "error": null
+      },
+      "security-headers": {
+        "seconds": 0.016,
+        "count": 1,
+        "titles": [
+          "Server header discloses: Werkzeug/3.1.9 Python/3.12.3"
+        ],
+        "error": null
+      },
+      "sensitive-files": {
+        "seconds": 0.169,
+        "count": 14,
+        "titles": [
+          "Accessible sensitive path: /robots.txt",
+          "Accessible sensitive path: /.git/HEAD",
+          "Accessible sensitive path: /.env",
+          "Accessible sensitive path: /.htaccess",
+          "Accessible sensitive path: /.DS_Store",
+          "Accessible sensitive path: /admin",
+          "Accessible sensitive path: /admin/",
+          "Accessible sensitive path: /backup.zip",
+          "Accessible sensitive path: /db.sqlite",
+          "Accessible sensitive path: /database.sql",
+          "Accessible sensitive path: /phpinfo.php",
+          "Accessible sensitive path: /server-status",
+          "Accessible sensitive path: /.svn/entries",
+          "Accessible sensitive path: /actuator/health"
+        ],
+        "error": null
+      }
+    },
+    "total_findings": 15,
+    "by_severity": {
+      "info": 2,
+      "high": 4,
+      "medium": 7,
+      "low": 2
+    }
+  },
+  "D_noisy_text": {
+    "pages": 2,
+    "forms": 0,
+    "urls_with_params": [
+      "http://127.0.0.1:5013/article?topic=errors"
+    ],
+    "crawl_seconds": 0.022,
+    "checks": {
+      "reflected-xss": {
+        "seconds": 0.004,
+        "count": 0,
+        "titles": [],
+        "error": null
+      },
+      "error-based-sqli": {
+        "seconds": 0.004,
+        "count": 1,
+        "titles": [
+          "Possible SQL injection via parameter 'topic' (Generic SQL error disclosed)"
+        ],
+        "error": null
+      },
+      "security-headers": {
+        "seconds": 0.003,
+        "count": 6,
+        "titles": [
+          "Missing security header: Content-Security-Policy",
+          "Missing security header: X-Frame-Options",
+          "Missing security header: X-Content-Type-Options",
+          "Missing security header: Referrer-Policy",
+          "Missing security header: Permissions-Policy",
+          "Server header discloses: Werkzeug/3.1.9 Python/3.12.3"
+        ],
+        "error": null
+      },
+      "sensitive-files": {
+        "seconds": 0.09,
+        "count": 0,
+        "titles": [],
+        "error": null
+      }
+    },
+    "total_findings": 7,
+    "by_severity": {
+      "high": 1,
+      "medium": 1,
+      "low": 3,
+      "info": 2
+    }
+  },
+  "E_post_sqli_form": {
+    "pages": 1,
+    "forms": 1,
+    "urls_with_params": [],
+    "crawl_seconds": 0.008,
+    "checks": {
+      "reflected-xss": {
+        "seconds": 0.01,
+        "count": 1,
+        "titles": [
+          "Reflected XSS via form field 'id'"
+        ],
+        "error": null
+      },
+      "error-based-sqli": {
+        "seconds": 0.0,
+        "count": 0,
+        "titles": [],
+        "error": null
+      },
+      "security-headers": {
+        "seconds": 0.005,
+        "count": 6,
+        "titles": [
+          "Missing security header: Content-Security-Policy",
+          "Missing security header: X-Frame-Options",
+          "Missing security header: X-Content-Type-Options",
+          "Missing security header: Referrer-Policy",
+          "Missing security header: Permissions-Policy",
+          "Server header discloses: Werkzeug/3.1.9 Python/3.12.3"
+        ],
+        "error": null
+      },
+      "sensitive-files": {
+        "seconds": 0.209,
+        "count": 0,
+        "titles": [],
+        "error": null
+      }
+    },
+    "total_findings": 7,
+    "by_severity": {
+      "high": 1,
+      "medium": 1,
+      "low": 3,
+      "info": 2
+    }
+  },
+  "F_json_reflect": {
+    "pages": 1,
+    "forms": 0,
+    "urls_with_params": [],
+    "crawl_seconds": 0.023,
+    "checks": {
+      "reflected-xss": {
+        "seconds": 0.0,
+        "count": 0,
+        "titles": [],
+        "error": null
+      },
+      "error-based-sqli": {
+        "seconds": 0.0,
+        "count": 0,
+        "titles": [],
+        "error": null
+      },
+      "security-headers": {
+        "seconds": 0.004,
+        "count": 6,
+        "titles": [
+          "Missing security header: Content-Security-Policy",
+          "Missing security header: X-Frame-Options",
+          "Missing security header: X-Content-Type-Options",
+          "Missing security header: Referrer-Policy",
+          "Missing security header: Permissions-Policy",
+          "Server header discloses: Werkzeug/3.1.9 Python/3.12.3"
+        ],
+        "error": null
+      },
+      "sensitive-files": {
+        "seconds": 0.136,
+        "count": 0,
+        "titles": [],
+        "error": null
+      }
+    },
+    "total_findings": 6,
+    "by_severity": {
+      "medium": 1,
+      "low": 3,
+      "info": 2
+    }
+  },
+  "A_demo_request_counts": {
+    "crawl": 4,
+    "reflected-xss": 3,
+    "error-based-sqli": 9,
+    "security-headers": 1,
+    "sensitive-files": 14,
+    "total": 31
+  },
+  "F_json_payload_probe": {
+    "status": 200,
+    "content_type": "application/json",
+    "token_in_body": true,
+    "exact_payload_in_body": true,
+    "note": "Endpoint reflects payload verbatim; the check's match condition would pass if probed, but the crawler skipped the non-HTML page so it was never probed."
+  }
+}

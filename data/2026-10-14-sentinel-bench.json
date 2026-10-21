@@ -1,0 +1,246 @@
+{
+  "E1_baseline": [
+    {
+      "nodes": 4,
+      "gpus_per_node": 8,
+      "seed": 42,
+      "events_total": 76,
+      "events_by_kind": {
+        "thermal": 32,
+        "ecc": 32,
+        "xid": 12
+      },
+      "xid_verdicts": 12,
+      "non_xid_events_dropped_from_verdicts": 64,
+      "unknown_xid_verdicts": 1,
+      "severity_breakdown": {
+        "critical": 10,
+        "unknown": 1,
+        "high": 1
+      },
+      "actions": [
+        "NEEDS_HUMAN_REVIEW"
+      ],
+      "confidences": [
+        0.0
+      ],
+      "run_seconds": 0.0001,
+      "events_per_second": 823331
+    },
+    {
+      "nodes": 16,
+      "gpus_per_node": 8,
+      "seed": 42,
+      "events_total": 313,
+      "events_by_kind": {
+        "thermal": 128,
+        "ecc": 128,
+        "xid": 57
+      },
+      "xid_verdicts": 57,
+      "non_xid_events_dropped_from_verdicts": 256,
+      "unknown_xid_verdicts": 5,
+      "severity_breakdown": {
+        "critical": 39,
+        "unknown": 5,
+        "high": 13
+      },
+      "actions": [
+        "NEEDS_HUMAN_REVIEW"
+      ],
+      "confidences": [
+        0.0
+      ],
+      "run_seconds": 0.0002,
+      "events_per_second": 1690183
+    },
+    {
+      "nodes": 64,
+      "gpus_per_node": 8,
+      "seed": 42,
+      "events_total": 1285,
+      "events_by_kind": {
+        "thermal": 512,
+        "ecc": 512,
+        "xid": 261
+      },
+      "xid_verdicts": 261,
+      "non_xid_events_dropped_from_verdicts": 1024,
+      "unknown_xid_verdicts": 34,
+      "severity_breakdown": {
+        "critical": 157,
+        "unknown": 34,
+        "high": 70
+      },
+      "actions": [
+        "NEEDS_HUMAN_REVIEW"
+      ],
+      "confidences": [
+        0.0
+      ],
+      "run_seconds": 0.0007,
+      "events_per_second": 1766782
+    },
+    {
+      "nodes": 64,
+      "gpus_per_node": 8,
+      "seed": 7,
+      "events_total": 1295,
+      "events_by_kind": {
+        "thermal": 512,
+        "ecc": 512,
+        "xid": 271
+      },
+      "xid_verdicts": 271,
+      "non_xid_events_dropped_from_verdicts": 1024,
+      "unknown_xid_verdicts": 35,
+      "severity_breakdown": {
+        "critical": 177,
+        "unknown": 35,
+        "high": 59
+      },
+      "actions": [
+        "NEEDS_HUMAN_REVIEW"
+      ],
+      "confidences": [
+        0.0
+      ],
+      "run_seconds": 0.0007,
+      "events_per_second": 1742313
+    },
+    {
+      "nodes": 64,
+      "gpus_per_node": 8,
+      "seed": 123,
+      "events_total": 1282,
+      "events_by_kind": {
+        "thermal": 512,
+        "ecc": 512,
+        "xid": 258
+      },
+      "xid_verdicts": 258,
+      "non_xid_events_dropped_from_verdicts": 1024,
+      "unknown_xid_verdicts": 28,
+      "severity_breakdown": {
+        "high": 63,
+        "unknown": 28,
+        "critical": 167
+      },
+      "actions": [
+        "NEEDS_HUMAN_REVIEW"
+      ],
+      "confidences": [
+        0.0
+      ],
+      "run_seconds": 0.0007,
+      "events_per_second": 1811551
+    }
+  ],
+  "E2_lookup": {
+    "table_size": 7,
+    "table_codes": [
+      13,
+      31,
+      48,
+      74,
+      79,
+      119,
+      120
+    ],
+    "simulator_pool": [
+      13,
+      31,
+      48,
+      74,
+      79,
+      119,
+      120,
+      999
+    ],
+    "probe_codes_absent_from_table": [
+      43,
+      45,
+      56,
+      63,
+      64,
+      68,
+      92,
+      94,
+      109,
+      154
+    ],
+    "lookup_999": null
+  },
+  "E3_malformed": [
+    {
+      "label": "single good event",
+      "outcome": "completed",
+      "verdicts": 1
+    },
+    {
+      "label": "good + missing-xid-key + good",
+      "outcome": "raised",
+      "exception": "KeyError: 'xid'"
+    },
+    {
+      "label": "good + xid='not-a-number'",
+      "outcome": "raised",
+      "exception": "ValueError: invalid literal for int() with base 10: 'not-a-number'"
+    },
+    {
+      "label": "good + xid=None",
+      "outcome": "raised",
+      "exception": "TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'"
+    }
+  ],
+  "E4_llm_contract": {
+    "fake_llm_returned_action": "DRAIN_NODE",
+    "fake_llm_returned_confidence": 0.95,
+    "verdict_action_after_llm": "NEEDS_HUMAN_REVIEW",
+    "verdict_confidence_after_llm": 0.0,
+    "rationale_tail": "79, \"assessment\": \"GPU fell off the bus.\", \"action\": \"DRAIN_NODE\", \"confidence\": 0.95, \"next_steps\": [\"drain\", \"reset\"]}",
+    "evidence_string_passed_to_llm": "node=node-00 gpu=0 xid=79 name=GPU has fallen off the bus severity=critical ts=2026-10-01T00:00:00+00:00",
+    "evidence_contains_notes_field": false,
+    "evidence_contains_category_field": false,
+    "evidence_contains_thermal_or_ecc": false
+  },
+  "E4_llm_exception": {
+    "outcome": "raised",
+    "exception": "RuntimeError: simulated provider outage"
+  },
+  "E5_cwd": {
+    "cwd": "/tmp",
+    "outcome": "raised",
+    "exception": "FileNotFoundError: [Errno 2] No such file or directory: 'prompts/triage_system.md'"
+  },
+  "E5_langchain_provider": {
+    "outcome": "raised",
+    "exception": "NotImplementedError: LangChainChatProvider is a stub in scaffold v0.1. See prompts/triage_system.md for the system prompt draft."
+  },
+  "E6_flapping": {
+    "same_gpu_xid79_count": 3,
+    "verdicts": [
+      {
+        "action": "NEEDS_HUMAN_REVIEW",
+        "confidence": 0.0
+      },
+      {
+        "action": "NEEDS_HUMAN_REVIEW",
+        "confidence": 0.0
+      },
+      {
+        "action": "NEEDS_HUMAN_REVIEW",
+        "confidence": 0.0
+      }
+    ],
+    "any_escalation": false
+  },
+  "E6_corroboration": {
+    "events_in": 3,
+    "verdicts_out": 1,
+    "verdict_actions": [
+      "NEEDS_HUMAN_REVIEW"
+    ],
+    "note": "ecc(dbe=17) and thermal(104C) events on the same GPU produce no verdict and are not attached to the XID 13 verdict"
+  }
+}
