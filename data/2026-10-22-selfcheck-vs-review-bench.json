@@ -1,0 +1,256 @@
+{
+ "planted": 24,
+ "script": {
+  "tally": {
+   "HIT": 14,
+   "FLAG": 7,
+   "MISS": 3
+  },
+  "by_class": {
+   "absolute": {
+    "n": 3,
+    "HIT": 3
+   },
+   "causal": {
+    "n": 3,
+    "FLAG": 3
+   },
+   "contradiction": {
+    "n": 3,
+    "HIT": 1,
+    "MISS": 2
+   },
+   "numeric": {
+    "n": 8,
+    "HIT": 8
+   },
+   "scope": {
+    "n": 1,
+    "MISS": 1
+   },
+   "source": {
+    "n": 3,
+    "FLAG": 3
+   },
+   "xref": {
+    "n": 3,
+    "HIT": 2,
+    "FLAG": 1
+   }
+  },
+  "n_flags": 21,
+  "false_positives": 0,
+  "note": "21 条 flag 全部落在植入缺陷句上；C3 的值集混入一个合法测量值，计入该条 FLAG 而非误报"
+ },
+ "gemini": {
+  "tally": {
+   "HIT": 23,
+   "FLAG": 1
+  },
+  "by_class": {
+   "absolute": {
+    "n": 3,
+    "HIT": 3
+   },
+   "causal": {
+    "n": 3,
+    "HIT": 3
+   },
+   "contradiction": {
+    "n": 3,
+    "HIT": 3
+   },
+   "numeric": {
+    "n": 8,
+    "HIT": 7,
+    "FLAG": 1
+   },
+   "scope": {
+    "n": 1,
+    "HIT": 1
+   },
+   "source": {
+    "n": 3,
+    "HIT": 3
+   },
+   "xref": {
+    "n": 3,
+    "HIT": 3
+   }
+  },
+  "model": "gemini-flash-latest",
+  "serviceTier": "standard",
+  "usage": {
+   "prompt": 1005,
+   "candidates": 3241
+  },
+  "extra_valid_findings": [
+   "B 篇：由混淆矩阵复算 recall=820/930=0.882，与文中 0.80 不符（未植入、复核成立）",
+   "C 篇：分包后总体积文中另有 450 与 410 两值冲突（未植入、C1/C2 植入数字的二阶后果，复核成立）"
+  ],
+  "false_positives": 0
+ },
+ "union_hit": 24,
+ "both_hit": 13,
+ "script_only_hit": [
+  "B1"
+ ],
+ "gemini_only_hit": [
+  "A5",
+  "A6",
+  "B5",
+  "B6",
+  "B7",
+  "B8",
+  "C3",
+  "C5",
+  "C6",
+  "C7"
+ ],
+ "outcomes": {
+  "A1": {
+   "cls": "numeric",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R1 验算 34!=31；Gemini 第1条同验算"
+  },
+  "A2": {
+   "cls": "numeric",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R2 验算 76.7%；Gemini 第2条同验算"
+  },
+  "A3": {
+   "cls": "xref",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R5 对账 3200/3800；Gemini 第4条并列两值"
+  },
+  "A4": {
+   "cls": "absolute",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R6 逐词摘出彻底/在任何/都不会再；Gemini 第8条同摘"
+  },
+  "A5": {
+   "cls": "causal",
+   "script": "FLAG",
+   "gemini": "HIT",
+   "note": "脚本 R7 只标句式不能判证据；Gemini 第7条指出无对照不能断言零贡献"
+  },
+  "A6": {
+   "cls": "source",
+   "script": "FLAG",
+   "gemini": "HIT",
+   "note": "脚本 R8 只标引用+因此同句；Gemini 第6条指出引文上限50与结论200相反"
+  },
+  "A7": {
+   "cls": "contradiction",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R5 对账重试 0/17（矛盾恰为数值形态）；Gemini 第5条并列两句"
+  },
+  "A8": {
+   "cls": "numeric",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R4 加权验算 5.8ms；Gemini 第3条同验算"
+  },
+  "B1": {
+   "cls": "numeric",
+   "script": "HIT",
+   "gemini": "FLAG",
+   "note": "脚本 R1 验算四格和 1900!=1850；Gemini 第1条只把文中现成总数 5000/1850/4200 互比，未重算四格之和、且把 1850 当作矩阵总和引用"
+  },
+  "B2": {
+   "cls": "numeric",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R3 复算 F1=0.856；Gemini 第2条同复算"
+  },
+  "B3": {
+   "cls": "xref",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R5 对账 5000/4200；Gemini 第1条并列三值判不一致"
+  },
+  "B4": {
+   "cls": "absolute",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R6 逐词摘出；Gemini 第5条指出无分层公平证据"
+  },
+  "B5": {
+   "cls": "causal",
+   "script": "FLAG",
+   "gemini": "HIT",
+   "note": "脚本 R7 只标句式；Gemini 第3条指出双变量同改无消融"
+  },
+  "B6": {
+   "cls": "source",
+   "script": "FLAG",
+   "gemini": "HIT",
+   "note": "脚本 R8 只标句式；Gemini 第4条指出跨语言跨域不可保证"
+  },
+  "B7": {
+   "cls": "contradiction",
+   "script": "MISS",
+   "gemini": "HIT",
+   "note": "脚本无语义矛盾规则；Gemini 第6条并列两句并指出数据泄露"
+  },
+  "B8": {
+   "cls": "scope",
+   "script": "MISS",
+   "gemini": "HIT",
+   "note": "脚本无范围规则；Gemini 第7条指出未测时延并发不能下上线结论"
+  },
+  "C1": {
+   "cls": "numeric",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R1 验算 480!=450；Gemini 第1条同验算"
+  },
+  "C2": {
+   "cls": "numeric",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R2 验算 50.0%；Gemini 第2条同验算"
+  },
+  "C3": {
+   "cls": "xref",
+   "script": "FLAG",
+   "gemini": "HIT",
+   "note": "脚本 R5 值集 [1.5,1.8,2.1] 混入复测组首值、未隔离指称对；Gemini 第5条并列三值判同一构建不一致"
+  },
+  "C4": {
+   "cls": "absolute",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R6 逐词摘出；Gemini 第8条同摘并指出无全矩阵测试"
+  },
+  "C5": {
+   "cls": "causal",
+   "script": "FLAG",
+   "gemini": "HIT",
+   "note": "脚本 R7 只标句式；Gemini 第6条指出 CDN 与 LCP 构成相关、无对照不能断言零贡献"
+  },
+  "C6": {
+   "cls": "source",
+   "script": "FLAG",
+   "gemini": "HIT",
+   "note": "脚本 R8 只标句式；Gemini 第7条指出实验室数据与 RUM p95 无固定线性关系"
+  },
+  "C7": {
+   "cls": "contradiction",
+   "script": "MISS",
+   "gemini": "HIT",
+   "note": "脚本无语义矛盾规则；Gemini 第3条并列两句判直接矛盾"
+  },
+  "C8": {
+   "cls": "numeric",
+   "script": "HIT",
+   "gemini": "HIT",
+   "note": "脚本 R4 验算均值 2.40；Gemini 第4条同验算"
+  }
+ }
+}

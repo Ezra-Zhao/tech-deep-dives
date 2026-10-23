@@ -20,6 +20,7 @@ Author / 作者：Guangyi Zhao
 | 2026-10-19 | [让另一个模型审你的稿子，到底能审出什么：七篇文章、四十条意见的交叉审实测](articles/2026-10-19-cross-model-review-audit.md) | [What a Second Model Actually Catches: Seven Articles, Forty Review Comments, Measured](articles-en/2026-10-19-cross-model-review-audit.md) |
 | 2026-10-20 | [阈值不是常数，是距离的函数：面积阈值检测器的标定漂移实测](articles/2026-10-20-bloom-counter-calibration-drift.md) | [Thresholds Are Not Constants: Calibration Drift in an Area-Threshold Detector, Measured](articles-en/2026-10-20-bloom-counter-calibration-drift.md) |
 | 2026-10-21 | [涨了 1.2 个点的 mAP，量不出少了多少朵花：Chili-Seg 评测口径深读与对照实测](articles/2026-10-21-chili-seg-evaluation-audit.md) | [A 1.2-Point mAP Gain That Cannot Say How Many Flowers Were Missed: An Evaluation Audit of Chili-Seg, With a Controlled Protocol Experiment](articles-en/2026-10-21-chili-seg-evaluation-audit.md) |
+| 2026-10-22 | [给自查挂上脚本，还需要另一个模型吗：24 处植入缺陷的对照实测](articles/2026-10-22-scripted-selfcheck-vs-cross-review.md) | [Give the Self-Check a Script — Do You Still Need a Second Model? A 24-Defect Controlled Comparison](articles-en/2026-10-22-scripted-selfcheck-vs-cross-review.md) |
 
 ## Standards / 写作标准
 

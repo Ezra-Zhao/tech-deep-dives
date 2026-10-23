@@ -1,0 +1,152 @@
+{
+ "n_flags": 21,
+ "flags": [
+  {
+   "probe": "A",
+   "rule": "R1-sum",
+   "tier": "verdict",
+   "sentence": "分项耗时（单次请求）：排队等待 8 ms、获取连接 15 ms、连接校验 11 ms，三项合计 31 ms。",
+   "detail": "分项和=34，文中合计=31"
+  },
+  {
+   "probe": "A",
+   "rule": "R2-pct",
+   "tier": "verdict",
+   "sentence": "240 次压测请求中，有 184 次在 50 ms 内完成（82%）。",
+   "detail": "184/240=76.7%，文中写 82%"
+  },
+  {
+   "probe": "A",
+   "rule": "R4-weighted",
+   "tier": "verdict",
+   "sentence": "缓存命中率为 90%：命中时耗时 2 ms，未命中时耗时 40 ms，因此平均单次耗时为 40 ms。",
+   "detail": "加权均值=5.8 ms，文中写 40 ms"
+  },
+  {
+   "probe": "A",
+   "rule": "R5-xref",
+   "tier": "verdict",
+   "sentence": "指标：吞吐",
+   "detail": "吞吐 出现多个不同值：[3200.0, 3800.0]"
+  },
+  {
+   "probe": "A",
+   "rule": "R5-xref",
+   "tier": "verdict",
+   "sentence": "指标：重试次数",
+   "detail": "重试次数 出现多个不同值：[0.0, 17.0]"
+  },
+  {
+   "probe": "A",
+   "rule": "R6-absolute",
+   "tier": "lexical",
+   "sentence": "这次调整彻底消除了连接超时，在任何负载下都不会再出现排队。",
+   "detail": "绝对化措辞：['彻底', '在任何', '都不会再']"
+  },
+  {
+   "probe": "A",
+   "rule": "R7-causal-flag",
+   "tier": "pointer",
+   "sentence": "延迟下降完全由连接池调整带来，索引优化没有任何贡献。",
+   "detail": "单一归因句式：完全由/来自 X + 他因零贡献（脚本不能判证据是否足够）"
+  },
+  {
+   "probe": "A",
+   "rule": "R8-source-flag",
+   "tier": "pointer",
+   "sentence": "官方文档建议单实例连接数不超过 50（见引用[1]），因此我们把连接池设为 200，即为官方推荐的最优值。",
+   "detail": "引用与强结论同句（脚本不能判出处是否支撑）"
+  },
+  {
+   "probe": "B",
+   "rule": "R1-sum",
+   "tier": "verdict",
+   "sentence": "混淆矩阵：TP 820、FP 70、FN 110、TN 900，四项合计样本 1,850 条。",
+   "detail": "分项和=1900，文中合计=1850"
+  },
+  {
+   "probe": "B",
+   "rule": "R3-f1",
+   "tier": "verdict",
+   "sentence": "precision/recall/F1 同段",
+   "detail": "2*0.92*0.8/(0.92+0.8)=0.856，文中 F1=0.91"
+  },
+  {
+   "probe": "B",
+   "rule": "R5-xref",
+   "tier": "verdict",
+   "sentence": "指标：数据集条数",
+   "detail": "数据集条数 出现多个不同值：[4200.0, 5000.0]"
+  },
+  {
+   "probe": "B",
+   "rule": "R6-absolute",
+   "tier": "lexical",
+   "sentence": "本模型对所有人群都同样公平，不存在任何偏差。",
+   "detail": "绝对化措辞：['在任何', '不存在任何', '同样公平']"
+  },
+  {
+   "probe": "B",
+   "rule": "R7-causal-flag",
+   "tier": "pointer",
+   "sentence": "准确率提升的 4 个百分点完全来自数据增强，阈值调整没有影响。",
+   "detail": "单一归因句式：完全由/来自 X + 他因零贡献（脚本不能判证据是否足够）"
+  },
+  {
+   "probe": "B",
+   "rule": "R8-source-flag",
+   "tier": "pointer",
+   "sentence": "Smith 等人在英文新闻数据上达到 95% 的准确率（见引用[2]），因此本模型在中文客服文本上同样能保证 95%。",
+   "detail": "引用与强结论同句（脚本不能判出处是否支撑）"
+  },
+  {
+   "probe": "C",
+   "rule": "R1-sum",
+   "tier": "verdict",
+   "sentence": "分包后三个 chunk 的体积分别为 210 KB、180 KB、90 KB，打包总体积为 450 KB。",
+   "detail": "分项和=480，文中合计=450"
+  },
+  {
+   "probe": "C",
+   "rule": "R2-pct",
+   "tier": "verdict",
+   "sentence": "总体积从 820 KB 降到 410 KB，下降了 60%。",
+   "detail": "(820-410)/820=50.0%，文中写 60%"
+  },
+  {
+   "probe": "C",
+   "rule": "R4-avg",
+   "tier": "verdict",
+   "sentence": "同一构建复测三次，LCP 分别为 2.1 s、2.3 s、2.8 s，平均 2.2 s；",
+   "detail": "均值=2.40，文中写 2.2"
+  },
+  {
+   "probe": "C",
+   "rule": "R5-xref",
+   "tier": "verdict",
+   "sentence": "指标：LCP",
+   "detail": "LCP 出现多个不同值：[1.5, 1.8, 2.1]"
+  },
+  {
+   "probe": "C",
+   "rule": "R6-absolute",
+   "tier": "lexical",
+   "sentence": "本次优化零兼容性问题，在所有浏览器上表现完全一致。",
+   "detail": "绝对化措辞：['完全一致', '所有浏览器', '零兼容性']"
+  },
+  {
+   "probe": "C",
+   "rule": "R7-causal-flag",
+   "tier": "pointer",
+   "sentence": "LCP 的改善完全来自分包，CDN 更换没有任何贡献。",
+   "detail": "单一归因句式：完全由/来自 X + 他因零贡献（脚本不能判证据是否足够）"
+  },
+  {
+   "probe": "C",
+   "rule": "R8-source-flag",
+   "tier": "pointer",
+   "sentence": "实验室 Lighthouse 跑分显示 LCP 明显改善（见引用[3]），因此真实用户的 p95 也必然改善同样幅度。",
+   "detail": "引用与强结论同句（脚本不能判出处是否支撑）"
+  }
+ ]
+}
