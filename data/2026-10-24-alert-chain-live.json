@@ -1,0 +1,248 @@
+{
+ "started": "2026-10-24 18:56:10 UTC",
+ "steps": [
+  {
+   "tag": "after_35s",
+   "elapsed_s": 62.3,
+   "alerts": [
+    {
+     "name": "NalBaselineP99LatencyHigh",
+     "state": "pending",
+     "severity": "warning",
+     "scenario": "baseline_sustained",
+     "value": "1.20452e+02",
+     "activeAt": "2026-10-24T18:56:33.51665506Z"
+    },
+    {
+     "name": "NalLinkFlapDetected",
+     "state": "firing",
+     "severity": "info",
+     "scenario": null,
+     "value": "1e+00",
+     "activeAt": "2026-10-24T18:56:33.51665506Z"
+    },
+    {
+     "name": "NalResultsStale",
+     "state": "pending",
+     "severity": "warning",
+     "scenario": null,
+     "value": "4.3803434419345856e+05",
+     "activeAt": "2026-10-24T18:56:33.51665506Z"
+    }
+   ]
+  },
+  {
+   "tag": "after_85s",
+   "elapsed_s": 85.0,
+   "alerts": [
+    {
+     "name": "NalBaselineP99LatencyHigh",
+     "state": "firing",
+     "severity": "warning",
+     "scenario": "baseline_sustained",
+     "value": "1.20452e+02",
+     "activeAt": "2026-10-24T18:56:33.51665506Z"
+    },
+    {
+     "name": "NalLinkFlapDetected",
+     "state": "firing",
+     "severity": "info",
+     "scenario": null,
+     "value": "1e+00",
+     "activeAt": "2026-10-24T18:56:33.51665506Z"
+    },
+    {
+     "name": "NalResultsStale",
+     "state": "pending",
+     "severity": "warning",
+     "scenario": null,
+     "value": "4.380643368880749e+05",
+     "activeAt": "2026-10-24T18:56:33.51665506Z"
+    }
+   ]
+  },
+  {
+   "tag": "after_335s_stale_window",
+   "elapsed_s": 335.7,
+   "alerts": [
+    {
+     "name": "NalBaselineP99LatencyHigh",
+     "state": "firing",
+     "severity": "warning",
+     "scenario": "baseline_sustained",
+     "value": "1.20452e+02",
+     "activeAt": "2026-10-24T18:56:33.51665506Z"
+    },
+    {
+     "name": "NalLinkFlapDetected",
+     "state": "firing",
+     "severity": "info",
+     "scenario": null,
+     "value": "1e+00",
+     "activeAt": "2026-10-24T18:56:33.51665506Z"
+    },
+    {
+     "name": "NalResultsStale",
+     "state": "firing",
+     "severity": "warning",
+     "scenario": null,
+     "value": "4.383043353717327e+05",
+     "activeAt": "2026-10-24T18:56:33.51665506Z"
+    }
+   ]
+  },
+  {
+   "tag": "after_recovery_45s",
+   "elapsed_s": 381.0,
+   "alerts": []
+  }
+ ],
+ "rules_loaded": [
+  {
+   "name": "net-assurance-lab.rules",
+   "rules": 10
+  }
+ ],
+ "targets": [
+  {
+   "job": "net-assurance-lab",
+   "health": "up",
+   "target": "127.0.0.1:9108"
+  },
+  {
+   "job": "prometheus",
+   "health": "up",
+   "target": "127.0.0.1:9090"
+  }
+ ],
+ "instant_queries": [
+  {
+   "expr": "nal_fault_proxy_drop_ratio{cause=\"flap\"}",
+   "status": "success",
+   "result": [
+    {
+     "metric": {
+      "__name__": "nal_fault_proxy_drop_ratio",
+      "cause": "flap",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": [
+      1792868233.557,
+      "0.19376904842533016"
+     ]
+    }
+   ]
+  },
+  {
+   "expr": "nal_fault_proxy_drop_ratio{cause=\"loss\"}",
+   "status": "success",
+   "result": [
+    {
+     "metric": {
+      "__name__": "nal_fault_proxy_drop_ratio",
+      "cause": "loss",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": [
+      1792868233.575,
+      "0.15929563156112428"
+     ]
+    }
+   ]
+  },
+  {
+   "expr": "nal_fault_proxy_drop_ratio{cause=\"flap\"} > nal_fault_proxy_drop_ratio{cause=\"loss\"}",
+   "status": "success",
+   "result": []
+  },
+  {
+   "expr": "nal_fault_proxy_drop_ratio{cause=\"flap\"} > ignoring(cause) nal_fault_proxy_drop_ratio{cause=\"loss\"}",
+   "status": "success",
+   "result": [
+    {
+     "metric": {
+      "__name__": "nal_fault_proxy_drop_ratio",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": [
+      1792868233.619,
+      "0.19376904842533016"
+     ]
+    }
+   ]
+  },
+  {
+   "expr": "nal_fault_proxy_drop_ratio{cause=\"flap\"} / ignoring(cause) nal_fault_proxy_drop_ratio{cause=\"loss\"}",
+   "status": "success",
+   "result": [
+    {
+     "metric": {
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": [
+      1792868233.64,
+      "1.2164115646258502"
+     ]
+    }
+   ]
+  },
+  {
+   "expr": "nal_throughput_pps{kind=\"echo\",scenario=~\"baseline_.*\"} < 0.5 * nal_throughput_pps{kind=\"send\",scenario=~\"baseline_.*\"}",
+   "status": "success",
+   "result": []
+  },
+  {
+   "expr": "nal_throughput_pps{kind=\"echo\",scenario=~\"baseline_.*\"} / ignoring(kind) nal_throughput_pps{kind=\"send\",scenario=~\"baseline_.*\"}",
+   "status": "success",
+   "result": [
+    {
+     "metric": {
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab",
+      "mode": "burst",
+      "scenario": "baseline_burst"
+     },
+     "value": [
+      1792868233.68,
+      "1"
+     ]
+    },
+    {
+     "metric": {
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab",
+      "mode": "sustained",
+      "scenario": "baseline_sustained"
+     },
+     "value": [
+      1792868233.68,
+      "1"
+     ]
+    }
+   ]
+  }
+ ],
+ "recovery_patch": {
+  "run_id_set_to": "20261024-190147",
+  "baseline_p99_set_to": 5.0,
+  "dropped_flap_set_to": 0,
+  "note": "scratch copy only; repo untouched"
+ },
+ "finished": "2026-10-24 19:02:32 UTC"
+}

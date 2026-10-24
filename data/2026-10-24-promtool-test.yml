@@ -1,0 +1,77 @@
+rule_files:
+  - /home/hatch/workspace/oxide-proofs/net-assurance-lab/monitoring/rules/alerts.yml
+evaluation_interval: 15s
+tests:
+  # Dead rule 1: flap share intent-true (0.30 vs 0.10) held for 10 minutes.
+  # If the expression could ever match, the alert must fire by 1m+15s.
+  - interval: 15s
+    input_series:
+      - series: 'nal_fault_proxy_drop_ratio{cause="flap"}'
+        values: '0.30x40'
+      - series: 'nal_fault_proxy_drop_ratio{cause="loss"}'
+        values: '0.10x40'
+    alert_rule_test:
+      - eval_time: 10m
+        alertname: NalFlapShareDominatesLoss
+        exp_alerts: []
+  # Dead rule 2: echo at 10% of send, held for 10 minutes.
+  - interval: 15s
+    input_series:
+      - series: 'nal_throughput_pps{kind="echo",mode="sustained",scenario="baseline_sustained"}'
+        values: '100x40'
+      - series: 'nal_throughput_pps{kind="send",mode="sustained",scenario="baseline_sustained"}'
+        values: '1000x40'
+    alert_rule_test:
+      - eval_time: 10m
+        alertname: NalBaselineThroughputCollapse
+        exp_alerts: []
+  # Positive control A: flap detected (for: 15s) fires.
+  - interval: 15s
+    input_series:
+      - series: 'nal_link_flap_detected'
+        values: '1x8'
+    alert_rule_test:
+      - eval_time: 1m
+        alertname: NalLinkFlapDetected
+        exp_alerts:
+          - exp_labels:
+              severity: info
+              team: net-assurance
+            exp_annotations:
+              summary: "Link-flap drops detected in the exported run"
+              description: "The fault proxy dropped packets inside flap windows (dropped_flap > 0 in fault_proxy_log.jsonl). In this lab that is the injected fault being observed as designed; on a real path the same signal (loss clustered in periodic down-windows, see nal_fault_proxy_drop_ratio{cause=\"flap\"}) is the flap signature to localise."
+  # Positive control B: stale (for: 5m) not firing at 4m, firing at 6m.
+  - interval: 15s
+    input_series:
+      - series: 'nal_results_age_seconds'
+        values: '90000x28'
+    alert_rule_test:
+      - eval_time: 4m
+        alertname: NalResultsStale
+        exp_alerts: []
+      - eval_time: 6m
+        alertname: NalResultsStale
+        exp_alerts:
+          - exp_labels:
+              severity: warning
+              team: net-assurance
+            exp_annotations:
+              summary: "Exported lab results are more than 24 h old"
+              description: "The exporter is serving a run older than a day. Dashboards still render, but they describe yesterday's bench, not the current one. Re-run ./run_lab.sh to refresh."
+  # Positive control C: malformed echoed (for: 0s) fires at first eval.
+  - interval: 15s
+    input_series:
+      - series: 'nal_malformed_echoed_total{mode="sustained",scenario="malformed"}'
+        values: '1x4'
+    alert_rule_test:
+      - eval_time: 15s
+        alertname: NalMalformedPacketEchoed
+        exp_alerts:
+          - exp_labels:
+              severity: critical
+              team: net-assurance
+              mode: sustained
+              scenario: malformed
+            exp_annotations:
+              summary: "A malformed packet was echoed by the server"
+              description: "The validating echo server must reject malformed datagrams silently. Any nonzero value is a parser-robustness breach; stop trusting this build's malformed-scenario results."

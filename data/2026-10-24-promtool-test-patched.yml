@@ -1,0 +1,49 @@
+rule_files:
+  - /home/hatch/workspace/.nal-prom-scratch/alerts-patched.yml
+evaluation_interval: 15s
+tests:
+  # Patched FlapShare: same input that produced NO alert for 10m with
+  # the original file must now fire (for: 1m).
+  - interval: 15s
+    input_series:
+      - series: 'nal_fault_proxy_drop_ratio{cause="flap"}'
+        values: '0.30x12'
+      - series: 'nal_fault_proxy_drop_ratio{cause="loss"}'
+        values: '0.10x12'
+    alert_rule_test:
+      - eval_time: 30s
+        alertname: NalFlapShareDominatesLoss
+        exp_alerts: []
+      - eval_time: 2m
+        alertname: NalFlapShareDominatesLoss
+        exp_alerts:
+          - exp_labels:
+              severity: info
+              team: net-assurance
+            exp_annotations:
+              summary: "Flap drops now exceed random-loss drops at the proxy"
+              description: "Localisation aid: when the flap share of drops passes the uniform-loss share, the observed loss pattern is flap-shaped (clustered), not uniform-random. Use it to attribute a loss symptom to link flapping before blaming random loss."
+  # Patched ThroughputCollapse (ratio form): echo at 10% of send must
+  # now fire (for: 1m); with the original file the same input produced
+  # no alert in 10m.
+  - interval: 15s
+    input_series:
+      - series: 'nal_throughput_pps{kind="echo",mode="sustained",scenario="baseline_sustained"}'
+        values: '100x12'
+      - series: 'nal_throughput_pps{kind="send",mode="sustained",scenario="baseline_sustained"}'
+        values: '1000x12'
+    alert_rule_test:
+      - eval_time: 30s
+        alertname: NalBaselineThroughputCollapse
+        exp_alerts: []
+      - eval_time: 2m
+        alertname: NalBaselineThroughputCollapse
+        exp_alerts:
+          - exp_labels:
+              severity: warning
+              team: net-assurance
+              mode: sustained
+              scenario: baseline_sustained
+            exp_annotations:
+              summary: "Echo throughput collapsed below 50% of send throughput in baseline_sustained"
+              description: "The receiver returned less than half of what the generator sent on a healthy path: receive-buffer overflow or receiver stalls under load, the exact failure mode baseline_burst is designed to expose."

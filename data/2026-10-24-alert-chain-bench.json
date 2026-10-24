@@ -1,0 +1,1049 @@
+{
+ "generated_at_local": "2026-10-24 19:19:30 UTC",
+ "lab": "/home/hatch/workspace/oxide-proofs/net-assurance-lab",
+ "rules_group": {
+  "name": "net-assurance-lab.rules",
+  "interval": "15s",
+  "count": 10
+ },
+ "rules": [
+  {
+   "alert": "NalBaselineHighPacketLoss",
+   "expr": "nal_loss_ratio{scenario=~\"baseline_.*\"} > 0.05",
+   "for": "1m",
+   "severity": "warning"
+  },
+  {
+   "alert": "NalBaselineP99LatencyHigh",
+   "expr": "nal_rtt_ms{scenario=~\"baseline_.*\", stat=\"p99\"} > 50",
+   "for": "1m",
+   "severity": "warning"
+  },
+  {
+   "alert": "NalBaselineThroughputCollapse",
+   "expr": "nal_throughput_pps{kind=\"echo\", scenario=~\"baseline_.*\"} < 0.5 * nal_throughput_pps{kind=\"send\", scenario=~\"baseline_.*\"}",
+   "for": "1m",
+   "severity": "warning"
+  },
+  {
+   "alert": "NalFaultLossAboveInjectionBand",
+   "expr": "nal_loss_ratio{scenario=\"fault_sustained\"} > 0.75",
+   "for": "1m",
+   "severity": "warning"
+  },
+  {
+   "alert": "NalFaultP99LatencyExtreme",
+   "expr": "nal_rtt_ms{scenario=\"fault_sustained\", stat=\"p99\"} > 1000",
+   "for": "1m",
+   "severity": "warning"
+  },
+  {
+   "alert": "NalLinkFlapDetected",
+   "expr": "nal_link_flap_detected == 1",
+   "for": "15s",
+   "severity": "info"
+  },
+  {
+   "alert": "NalFlapShareDominatesLoss",
+   "expr": "nal_fault_proxy_drop_ratio{cause=\"flap\"} > nal_fault_proxy_drop_ratio{cause=\"loss\"}",
+   "for": "1m",
+   "severity": "info"
+  },
+  {
+   "alert": "NalMalformedPacketEchoed",
+   "expr": "nal_malformed_echoed_total > 0",
+   "for": "0s",
+   "severity": "critical"
+  },
+  {
+   "alert": "NalResultsStale",
+   "expr": "nal_results_age_seconds > 86400",
+   "for": "5m",
+   "severity": "warning"
+  },
+  {
+   "alert": "NalExporterResultsMissing",
+   "expr": "nal_exporter_results_present == 0",
+   "for": "1m",
+   "severity": "critical"
+  }
+ ],
+ "prometheus_config": {
+  "scrape_interval": "5s",
+  "evaluation_interval": "5s",
+  "alertmanagers": [],
+  "rule_files": [
+   "rules/*.yml"
+  ]
+ },
+ "runs": {
+  "R0_latest_20261019-171627": {
+   "run_dir": "/home/hatch/workspace/oxide-proofs/net-assurance-lab/results/20261019-171627",
+   "exporter_series_total": 156,
+   "results_age_seconds_at_eval": 439383.37675499916,
+   "intent": {
+    "NalBaselineHighPacketLoss": {
+     "baseline_burst": 0.0,
+     "baseline_sustained": 0.0
+    },
+    "NalBaselineP99LatencyHigh": {
+     "baseline_burst": 12.486,
+     "baseline_sustained": 120.452
+    },
+    "NalBaselineThroughputCollapse": {
+     "baseline_burst": {
+      "echo": 1940.8,
+      "send": 1940.8,
+      "ratio": 1.0
+     },
+     "baseline_sustained": {
+      "echo": 2998.4,
+      "send": 2998.4,
+      "ratio": 1.0
+     }
+    },
+    "NalFaultLossAboveInjectionBand": 0.5897,
+    "NalFaultP99LatencyExtreme": 443.359,
+    "NalLinkFlapDetected": 2861,
+    "NalFlapShareDominatesLoss": {
+     "flap_ratio": 0.19376904842533016,
+     "loss_ratio": 0.15929563156112428,
+     "dropped_flap": 2861,
+     "dropped_loss": 2352,
+     "total_in": 14765
+    },
+    "NalMalformedPacketEchoed": 0
+   },
+   "promql": {
+    "NalBaselineHighPacketLoss": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalBaselineP99LatencyHigh": {
+     "instances": 1,
+     "values": [
+      120.452
+     ],
+     "label_sets": [
+      {
+       "scenario": "baseline_sustained",
+       "mode": "sustained",
+       "stat": "p99"
+      }
+     ]
+    },
+    "NalBaselineThroughputCollapse": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalFaultLossAboveInjectionBand": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalFaultP99LatencyExtreme": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalLinkFlapDetected": {
+     "instances": 1,
+     "values": [
+      1.0
+     ],
+     "label_sets": [
+      {}
+     ]
+    },
+    "NalFlapShareDominatesLoss": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalMalformedPacketEchoed": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalResultsStale": {
+     "instances": 1,
+     "values": [
+      439383.37675499916
+     ],
+     "label_sets": [
+      {}
+     ]
+    },
+    "NalExporterResultsMissing": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    }
+   },
+   "promql_corrected": {
+    "NalBaselineHighPacketLoss": {
+     "instances": 0,
+     "values": []
+    },
+    "NalBaselineP99LatencyHigh": {
+     "instances": 1,
+     "values": [
+      120.452
+     ]
+    },
+    "NalBaselineThroughputCollapse": {
+     "instances": 0,
+     "values": []
+    },
+    "NalFaultLossAboveInjectionBand": {
+     "instances": 0,
+     "values": []
+    },
+    "NalFaultP99LatencyExtreme": {
+     "instances": 0,
+     "values": []
+    },
+    "NalLinkFlapDetected": {
+     "instances": 1,
+     "values": [
+      1.0
+     ]
+    },
+    "NalFlapShareDominatesLoss": {
+     "instances": 1,
+     "values": [
+      0.19376904842533016
+     ]
+    },
+    "NalMalformedPacketEchoed": {
+     "instances": 0,
+     "values": []
+    },
+    "NalResultsStale": {
+     "instances": 1,
+     "values": [
+      439383.37675499916
+     ]
+    },
+    "NalExporterResultsMissing": {
+     "instances": 0,
+     "values": []
+    }
+   }
+  },
+  "R1_first_20261019-154535": {
+   "run_dir": "/home/hatch/workspace/oxide-proofs/net-assurance-lab/results/20261019-154535",
+   "exporter_series_total": 156,
+   "results_age_seconds_at_eval": 444836.26456809044,
+   "intent": {
+    "NalBaselineHighPacketLoss": {
+     "baseline_burst": 0.0,
+     "baseline_sustained": 0.0
+    },
+    "NalBaselineP99LatencyHigh": {
+     "baseline_burst": 5.517,
+     "baseline_sustained": 6.952
+    },
+    "NalBaselineThroughputCollapse": {
+     "baseline_burst": {
+      "echo": 1958.5,
+      "send": 1958.5,
+      "ratio": 1.0
+     },
+     "baseline_sustained": {
+      "echo": 3000.3,
+      "send": 3000.3,
+      "ratio": 1.0
+     }
+    },
+    "NalFaultLossAboveInjectionBand": 0.5275,
+    "NalFaultP99LatencyExtreme": 245.775,
+    "NalLinkFlapDetected": 2595,
+    "NalFlapShareDominatesLoss": {
+     "flap_ratio": 0.16115009625535615,
+     "loss_ratio": 0.16642861578587842,
+     "dropped_flap": 2595,
+     "dropped_loss": 2680,
+     "total_in": 16103
+    },
+    "NalMalformedPacketEchoed": 0
+   },
+   "promql": {
+    "NalBaselineHighPacketLoss": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalBaselineP99LatencyHigh": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalBaselineThroughputCollapse": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalFaultLossAboveInjectionBand": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalFaultP99LatencyExtreme": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalLinkFlapDetected": {
+     "instances": 1,
+     "values": [
+      1.0
+     ],
+     "label_sets": [
+      {}
+     ]
+    },
+    "NalFlapShareDominatesLoss": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalMalformedPacketEchoed": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    },
+    "NalResultsStale": {
+     "instances": 1,
+     "values": [
+      444836.26456809044
+     ],
+     "label_sets": [
+      {}
+     ]
+    },
+    "NalExporterResultsMissing": {
+     "instances": 0,
+     "values": [],
+     "label_sets": []
+    }
+   },
+   "promql_corrected": {
+    "NalBaselineHighPacketLoss": {
+     "instances": 0,
+     "values": []
+    },
+    "NalBaselineP99LatencyHigh": {
+     "instances": 0,
+     "values": []
+    },
+    "NalBaselineThroughputCollapse": {
+     "instances": 0,
+     "values": []
+    },
+    "NalFaultLossAboveInjectionBand": {
+     "instances": 0,
+     "values": []
+    },
+    "NalFaultP99LatencyExtreme": {
+     "instances": 0,
+     "values": []
+    },
+    "NalLinkFlapDetected": {
+     "instances": 1,
+     "values": [
+      1.0
+     ]
+    },
+    "NalFlapShareDominatesLoss": {
+     "instances": 0,
+     "values": []
+    },
+    "NalMalformedPacketEchoed": {
+     "instances": 0,
+     "values": []
+    },
+    "NalResultsStale": {
+     "instances": 1,
+     "values": [
+      444836.26456809044
+     ]
+    },
+    "NalExporterResultsMissing": {
+     "instances": 0,
+     "values": []
+    }
+   }
+  }
+ },
+ "fixtures": [
+  {
+   "case": "baseline_loss_at_threshold_0.05",
+   "rule": "NalBaselineHighPacketLoss",
+   "note": "expr is >, equality must not fire",
+   "promql_instances": 0,
+   "promql_values": [],
+   "promql_corrected_instances": 0,
+   "promql_corrected_values": [],
+   "age_seconds": 0.671851634979248
+  },
+  {
+   "case": "baseline_loss_above_0.06",
+   "rule": "NalBaselineHighPacketLoss",
+   "note": "",
+   "promql_instances": 2,
+   "promql_values": [
+    0.06,
+    0.06
+   ],
+   "promql_corrected_instances": 2,
+   "promql_corrected_values": [
+    0.06,
+    0.06
+   ],
+   "age_seconds": 0.6776158809661865
+  },
+  {
+   "case": "baseline_p99_at_50",
+   "rule": "NalBaselineP99LatencyHigh",
+   "note": "equality must not fire",
+   "promql_instances": 0,
+   "promql_values": [],
+   "promql_corrected_instances": 0,
+   "promql_corrected_values": [],
+   "age_seconds": 0.6826596260070801
+  },
+  {
+   "case": "baseline_p99_above_60",
+   "rule": "NalBaselineP99LatencyHigh",
+   "note": "",
+   "promql_instances": 2,
+   "promql_values": [
+    60.0,
+    60.0
+   ],
+   "promql_corrected_instances": 2,
+   "promql_corrected_values": [
+    60.0,
+    60.0
+   ],
+   "age_seconds": 0.6886630058288574
+  },
+  {
+   "case": "throughput_collapse_extreme_echo_10pct",
+   "rule": "NalBaselineThroughputCollapse",
+   "note": "intent condition strongly true (echo = 10% of send)",
+   "promql_instances": 0,
+   "promql_values": [],
+   "promql_corrected_instances": 2,
+   "promql_corrected_values": [
+    100.0,
+    100.0
+   ],
+   "age_seconds": 0.6937687397003174
+  },
+  {
+   "case": "fault_loss_at_0.75",
+   "rule": "NalFaultLossAboveInjectionBand",
+   "note": "equality must not fire",
+   "promql_instances": 0,
+   "promql_values": [],
+   "promql_corrected_instances": 0,
+   "promql_corrected_values": [],
+   "age_seconds": 0.7016525268554688
+  },
+  {
+   "case": "fault_loss_above_0.80",
+   "rule": "NalFaultLossAboveInjectionBand",
+   "note": "",
+   "promql_instances": 1,
+   "promql_values": [
+    0.8
+   ],
+   "promql_corrected_instances": 1,
+   "promql_corrected_values": [
+    0.8
+   ],
+   "age_seconds": 0.707756757736206
+  },
+  {
+   "case": "fault_p99_at_1000",
+   "rule": "NalFaultP99LatencyExtreme",
+   "note": "equality must not fire",
+   "promql_instances": 0,
+   "promql_values": [],
+   "promql_corrected_instances": 0,
+   "promql_corrected_values": [],
+   "age_seconds": 0.7206292152404785
+  },
+  {
+   "case": "fault_p99_above_1200",
+   "rule": "NalFaultP99LatencyExtreme",
+   "note": "",
+   "promql_instances": 1,
+   "promql_values": [
+    1200.0
+   ],
+   "promql_corrected_instances": 1,
+   "promql_corrected_values": [
+    1200.0
+   ],
+   "age_seconds": 0.726555347442627
+  },
+  {
+   "case": "flap_zero_drops",
+   "rule": "NalLinkFlapDetected",
+   "note": "no flap drops -> detected must be 0",
+   "promql_instances": 0,
+   "promql_values": [],
+   "promql_corrected_instances": 0,
+   "promql_corrected_values": [],
+   "age_seconds": 0.7343263626098633
+  },
+  {
+   "case": "flap_share_3x_loss",
+   "rule": "NalFlapShareDominatesLoss",
+   "note": "intent condition strongly true (flap share 0.3 vs loss share 0.1)",
+   "promql_instances": 0,
+   "promql_values": [],
+   "promql_corrected_instances": 1,
+   "promql_corrected_values": [
+    0.3
+   ],
+   "age_seconds": 0.7376270294189453
+  },
+  {
+   "case": "malformed_echoed_1",
+   "rule": "NalMalformedPacketEchoed",
+   "note": "a single echoed malformed packet",
+   "promql_instances": 1,
+   "promql_values": [
+    1.0
+   ],
+   "promql_corrected_instances": 1,
+   "promql_corrected_values": [
+    1.0
+   ],
+   "age_seconds": 0.7433691024780273
+  },
+  {
+   "case": "results_fresh_today",
+   "rule": "NalResultsStale",
+   "note": "run_id = now",
+   "promql_instances": 0,
+   "promql_values": [],
+   "promql_corrected_instances": 0,
+   "promql_corrected_values": [],
+   "age_seconds": 0.7491915225982666
+  },
+  {
+   "case": "results_old_yesterday_plus",
+   "rule": "NalResultsStale",
+   "note": "run_id = 25 h ago",
+   "promql_instances": 1,
+   "promql_values": [
+    90000.75891828537
+   ],
+   "promql_corrected_instances": 1,
+   "promql_corrected_values": [
+    90000.75891828537
+   ],
+   "age_seconds": 90000.75891828537
+  },
+  {
+   "case": "exporter_missing_one_scenario",
+   "rule": "NalExporterResultsMissing",
+   "note": "one scenario summary deleted",
+   "promql_instances": 1,
+   "promql_values": [
+    0.0
+   ],
+   "promql_corrected_instances": 1,
+   "promql_corrected_values": [
+    0.0
+   ],
+   "age_seconds": 0.8241879940032959
+  }
+ ],
+ "for_recovery_simulation": {
+  "eval_interval_seconds": 15,
+  "sustained_true_firing_delay_per_rule": [
+   {
+    "rule": "NalBaselineHighPacketLoss",
+    "for": "1m",
+    "for_seconds": 60,
+    "fires_at_eval_t": 60
+   },
+   {
+    "rule": "NalBaselineP99LatencyHigh",
+    "for": "1m",
+    "for_seconds": 60,
+    "fires_at_eval_t": 60
+   },
+   {
+    "rule": "NalBaselineThroughputCollapse",
+    "for": "1m",
+    "for_seconds": 60,
+    "fires_at_eval_t": 60
+   },
+   {
+    "rule": "NalFaultLossAboveInjectionBand",
+    "for": "1m",
+    "for_seconds": 60,
+    "fires_at_eval_t": 60
+   },
+   {
+    "rule": "NalFaultP99LatencyExtreme",
+    "for": "1m",
+    "for_seconds": 60,
+    "fires_at_eval_t": 60
+   },
+   {
+    "rule": "NalLinkFlapDetected",
+    "for": "15s",
+    "for_seconds": 15,
+    "fires_at_eval_t": 15
+   },
+   {
+    "rule": "NalFlapShareDominatesLoss",
+    "for": "1m",
+    "for_seconds": 60,
+    "fires_at_eval_t": 60
+   },
+   {
+    "rule": "NalMalformedPacketEchoed",
+    "for": "0s",
+    "for_seconds": 0,
+    "fires_at_eval_t": 0
+   },
+   {
+    "rule": "NalResultsStale",
+    "for": "5m",
+    "for_seconds": 300,
+    "fires_at_eval_t": 300
+   },
+   {
+    "rule": "NalExporterResultsMissing",
+    "for": "1m",
+    "for_seconds": 60,
+    "fires_at_eval_t": 60
+   }
+  ],
+  "transient_spike_45s_baseline_p99": {
+   "rule": "NalBaselineP99LatencyHigh",
+   "for_seconds": 60,
+   "events": [
+    {
+     "t": 0,
+     "event": "pending"
+    },
+    {
+     "t": 45,
+     "event": "resolved",
+     "was": "pending"
+    }
+   ]
+  },
+  "fire_then_recover_baseline_p99": {
+   "rule": "NalBaselineP99LatencyHigh",
+   "for_seconds": 60,
+   "events": [
+    {
+     "t": 0,
+     "event": "pending"
+    },
+    {
+     "t": 60,
+     "event": "firing",
+     "held_seconds": 60
+    },
+    {
+     "t": 180,
+     "event": "resolved",
+     "was": "firing"
+    }
+   ]
+  },
+  "flap_detected_fastest_path": {
+   "rule": "NalLinkFlapDetected",
+   "for_seconds": 15,
+   "events": [
+    {
+     "t": 0,
+     "event": "pending"
+    },
+    {
+     "t": 15,
+     "event": "firing",
+     "held_seconds": 15
+    },
+    {
+     "t": 180,
+     "event": "resolved",
+     "was": "firing"
+    }
+   ]
+  },
+  "malformed_immediate": {
+   "rule": "NalMalformedPacketEchoed",
+   "for_seconds": 0,
+   "events": [
+    {
+     "t": 0,
+     "event": "pending"
+    },
+    {
+     "t": 0,
+     "event": "firing",
+     "held_seconds": 0
+    },
+    {
+     "t": 180,
+     "event": "resolved",
+     "was": "firing"
+    }
+   ]
+  },
+  "stale_slowest_path": {
+   "rule": "NalResultsStale",
+   "for_seconds": 300,
+   "events": [
+    {
+     "t": 0,
+     "event": "pending"
+    },
+    {
+     "t": 300,
+     "event": "firing",
+     "held_seconds": 300
+    },
+    {
+     "t": 600,
+     "event": "resolved",
+     "was": "firing"
+    }
+   ]
+  }
+ },
+ "dashboards": {
+  "dashboards": [
+   {
+    "file": "service-overview.json",
+    "title": "net-assurance-lab - Service Overview",
+    "uid": "nal-service-overview",
+    "panels": 12,
+    "targets": [
+     {
+      "panel": "Loss ratio by scenario",
+      "expr": "nal_loss_ratio",
+      "series_matched": 4,
+      "values": [
+       0.0,
+       0.0,
+       0.5897,
+       0.0
+      ]
+     },
+     {
+      "panel": "RTT p99 by scenario (ms)",
+      "expr": "nal_rtt_ms{stat=\"p99\"}",
+      "series_matched": 4,
+      "values": [
+       12.486,
+       120.452,
+       443.359,
+       4.452
+      ]
+     },
+     {
+      "panel": "Echo throughput - baseline sustained (pps)",
+      "expr": "nal_throughput_pps{scenario=\"baseline_sustained\", kind=\"echo\"}",
+      "series_matched": 1,
+      "values": [
+       2998.4
+      ]
+     },
+     {
+      "panel": "Results age (s)",
+      "expr": "nal_results_age_seconds",
+      "series_matched": 1,
+      "values": [
+       439384.85370516777
+      ]
+     },
+     {
+      "panel": "Throughput over time (pps)",
+      "expr": "nal_throughput_pps",
+      "series_matched": 8,
+      "values": [
+       1940.8,
+       1940.8,
+       2998.4,
+       2998.4,
+       1980.5,
+       812.6,
+       2004.7,
+       1002.4
+      ]
+     },
+     {
+      "panel": "Loss ratio over time",
+      "expr": "nal_loss_ratio",
+      "series_matched": 4,
+      "values": [
+       0.0,
+       0.0,
+       0.5897,
+       0.0
+      ]
+     },
+     {
+      "panel": "RTT percentiles over time (ms)",
+      "expr": "nal_rtt_ms{stat=~\"p50|p95|p99\"}",
+      "series_matched": 12,
+      "values": [
+       3.786,
+       9.348,
+       12.486,
+       2.703,
+       41.96,
+       120.452,
+       149.537,
+       364.273
+      ]
+     },
+     {
+      "panel": "RTT mean / min / max (ms)",
+      "expr": "nal_rtt_ms{stat=~\"mean|min|max\"}",
+      "series_matched": 12,
+      "values": [
+       0.854,
+       4.559,
+       12.614,
+       0.002,
+       9.492,
+       124.303,
+       80.579,
+       178.77
+      ]
+     },
+     {
+      "panel": "Packets sent / echoed / lost",
+      "expr": "nal_packets_sent_total",
+      "series_matched": 4,
+      "values": [
+       2000.0,
+       9000.0,
+       10000.0,
+       400.0
+      ]
+     },
+     {
+      "panel": "Packets sent / echoed / lost",
+      "expr": "nal_packets_echoed_total",
+      "series_matched": 4,
+      "values": [
+       2000.0,
+       9000.0,
+       4103.0,
+       200.0
+      ]
+     },
+     {
+      "panel": "Packets sent / echoed / lost",
+      "expr": "nal_packets_lost_total",
+      "series_matched": 4,
+      "values": [
+       0.0,
+       0.0,
+       5897.0,
+       0.0
+      ]
+     },
+     {
+      "panel": "Server-side packet counters",
+      "expr": "nal_server_packets_total",
+      "series_matched": 16,
+      "values": [
+       2000.0,
+       2000.0,
+       0.0,
+       2000.0,
+       9000.0,
+       9000.0,
+       0.0,
+       9000.0
+      ]
+     },
+     {
+      "panel": "RTT histogram - echoed packets (cumulative, latest run)",
+      "expr": "nal_rtt_histogram_ms_bucket{scenario=\"baseline_sustained\"}",
+      "series_matched": 11,
+      "values": [
+       3425.0,
+       5504.0,
+       6988.0,
+       8006.0,
+       8637.0,
+       8890.0,
+       9000.0,
+       9000.0
+      ]
+     }
+    ]
+   },
+   {
+    "file": "fault-comparison.json",
+    "title": "net-assurance-lab - Fault Injection Comparison",
+    "uid": "nal-fault-comparison",
+    "panels": 12,
+    "targets": [
+     {
+      "panel": "Loss ratio - baseline vs fault",
+      "expr": "nal_loss_ratio{scenario=~\"baseline_sustained|fault_sustained\"}",
+      "series_matched": 2,
+      "values": [
+       0.0,
+       0.5897
+      ]
+     },
+     {
+      "panel": "Link flap detected (1 = yes)",
+      "expr": "nal_link_flap_detected",
+      "series_matched": 1,
+      "values": [
+       1.0
+      ]
+     },
+     {
+      "panel": "p99 RTT - baseline vs fault (ms)",
+      "expr": "nal_rtt_ms{stat=\"p99\", scenario=~\"baseline_sustained|fault_sustained\"}",
+      "series_matched": 2,
+      "values": [
+       120.452,
+       443.359
+      ]
+     },
+     {
+      "panel": "RTT percentiles - baseline vs fault (ms)",
+      "expr": "nal_rtt_ms{scenario=~\"baseline_sustained|fault_sustained\", stat=~\"p50|p95|p99\"}",
+      "series_matched": 6,
+      "values": [
+       2.703,
+       41.96,
+       120.452,
+       149.537,
+       364.273,
+       443.359
+      ]
+     },
+     {
+      "panel": "Throughput - baseline vs fault (pps)",
+      "expr": "nal_throughput_pps{scenario=~\"baseline_sustained|fault_sustained\"}",
+      "series_matched": 4,
+      "values": [
+       2998.4,
+       2998.4,
+       1980.5,
+       812.6
+      ]
+     },
+     {
+      "panel": "Loss ratio over time - baseline vs fault",
+      "expr": "nal_loss_ratio{scenario=~\"baseline_sustained|fault_sustained\"}",
+      "series_matched": 2,
+      "values": [
+       0.0,
+       0.5897
+      ]
+     },
+     {
+      "panel": "p99 RTT over time - baseline vs fault (ms)",
+      "expr": "nal_rtt_ms{stat=\"p99\", scenario=~\"baseline_sustained|fault_sustained\"}",
+      "series_matched": 2,
+      "values": [
+       120.452,
+       443.359
+      ]
+     },
+     {
+      "panel": "Proxy outcomes - forwarded vs dropped",
+      "expr": "nal_fault_proxy_packets_total{kind=~\"forwarded|dropped_loss|dropped_flap\"}",
+      "series_matched": 3,
+      "values": [
+       2352.0,
+       2861.0,
+       9552.0
+      ]
+     },
+     {
+      "panel": "Proxy drop share by cause",
+      "expr": "nal_fault_proxy_drop_ratio",
+      "series_matched": 2,
+      "values": [
+       0.15929563156112428,
+       0.19376904842533016
+      ]
+     },
+     {
+      "panel": "Injected fault configuration (configured, not measured)",
+      "expr": "nal_fault_injection_config",
+      "series_matched": 5,
+      "values": [
+       0.2,
+       40.0,
+       30.0,
+       2.5,
+       0.6
+      ]
+     },
+     {
+      "panel": "Packets sent / echoed / lost - baseline vs fault",
+      "expr": "nal_packets_sent_total{scenario=~\"baseline_sustained|fault_sustained\"}",
+      "series_matched": 2,
+      "values": [
+       9000.0,
+       10000.0
+      ]
+     },
+     {
+      "panel": "Packets sent / echoed / lost - baseline vs fault",
+      "expr": "nal_packets_echoed_total{scenario=~\"baseline_sustained|fault_sustained\"}",
+      "series_matched": 2,
+      "values": [
+       9000.0,
+       4103.0
+      ]
+     },
+     {
+      "panel": "Packets sent / echoed / lost - baseline vs fault",
+      "expr": "nal_packets_lost_total{scenario=~\"baseline_sustained|fault_sustained\"}",
+      "series_matched": 2,
+      "values": [
+       0.0,
+       5897.0
+      ]
+     }
+    ]
+   }
+  ],
+  "targets_total": 26,
+  "targets_with_series": 26,
+  "targets_empty": [],
+  "spot_checks": {
+   "fault_loss_ratio_exporter_vs_json": {
+    "json": 0.5897,
+    "note": "threshold input; exporter series checked in runs.R0"
+   },
+   "flap_share_intent": {
+    "flap_ratio": 0.19376904842533016,
+    "loss_ratio": 0.15929563156112428,
+    "dropped_flap": 2861,
+    "dropped_loss": 2352,
+    "total_in": 14765
+   }
+  }
+ }
+}
