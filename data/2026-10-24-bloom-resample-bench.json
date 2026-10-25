@@ -1,0 +1,1732 @@
+{
+  "detector": "color-segmentation-v0.1",
+  "base_params": {
+    "min_area": 120,
+    "bloom_area_min": 900,
+    "morph_kernel": 7
+  },
+  "n_scenes": 4,
+  "n_objects": 210,
+  "scoring": "greedy centre matching, label must match, tol=max(38*geom_scale, 1.1*r) in fed-image coordinates",
+  "native_down": "INTER_AREA",
+  "scales": [
+    1.0,
+    0.8,
+    0.65,
+    0.5,
+    0.4,
+    0.3,
+    0.22,
+    0.15,
+    0.1,
+    0.07
+  ],
+  "note": "U routes feed an image pixel-identical to the 2026-10-20 part-B down-up chain at r=s; P route is the 2026-10-20 A3 recipe.",
+  "baseline_sanity": {
+    "tp": 210,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "det_blooms": 134,
+    "true_blooms": 134,
+    "det_buds": 76,
+    "true_buds": 76,
+    "bloom_recall": 1.0,
+    "bud_recall": 1.0,
+    "count_err_pct": 0.0
+  },
+  "results": {
+    "s=1.0": {
+      "native_size": [
+        1280,
+        960
+      ],
+      "kernel_P": 7,
+      "min_area_P": 120,
+      "bloom_min_P": 900,
+      "P_param_scaling": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0187,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3806.0,
+            "median_short_axis_post_morph": 76.5,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 343.8,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_LINEAR": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0141,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3806.0,
+            "median_short_axis_post_morph": 76.5,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 343.8,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_CUBIC": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0138,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3806.0,
+            "median_short_axis_post_morph": 76.5,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 343.8,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_NEAREST": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0243,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3806.0,
+            "median_short_axis_post_morph": 76.5,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 343.8,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      }
+    },
+    "s=0.8": {
+      "native_size": [
+        1024,
+        768
+      ],
+      "kernel_P": 7,
+      "min_area_P": 77,
+      "bloom_min_P": 576,
+      "P_param_scaling": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0083,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 2402.5,
+            "median_short_axis_post_morph": 61.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 211.2,
+            "median_short_axis_post_morph": 15.5,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_LINEAR": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0347,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3847.5,
+            "median_short_axis_post_morph": 76.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 342.8,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_CUBIC": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0131,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3820.0,
+            "median_short_axis_post_morph": 76.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 343.5,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_NEAREST": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.013,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3786.2,
+            "median_short_axis_post_morph": 77.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 340.0,
+            "median_short_axis_post_morph": 20.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      }
+    },
+    "s=0.65": {
+      "native_size": [
+        832,
+        624
+      ],
+      "kernel_P": 5,
+      "min_area_P": 51,
+      "bloom_min_P": 380,
+      "P_param_scaling": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0078,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 1568.8,
+            "median_short_axis_post_morph": 49.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 133.8,
+            "median_short_axis_post_morph": 12.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_LINEAR": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0109,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3846.5,
+            "median_short_axis_post_morph": 76.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 341.8,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_CUBIC": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0106,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3830.5,
+            "median_short_axis_post_morph": 76.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 343.0,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_NEAREST": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0106,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3812.8,
+            "median_short_axis_post_morph": 76.5,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 342.8,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      }
+    },
+    "s=0.5": {
+      "native_size": [
+        640,
+        480
+      ],
+      "kernel_P": 5,
+      "min_area_P": 30,
+      "bloom_min_P": 225,
+      "P_param_scaling": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0062,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 905.2,
+            "median_short_axis_post_morph": 37.5,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 73.8,
+            "median_short_axis_post_morph": 9.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_LINEAR": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0112,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3863.2,
+            "median_short_axis_post_morph": 76.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 340.8,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_CUBIC": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.011,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3813.8,
+            "median_short_axis_post_morph": 76.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 345.2,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_NEAREST": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0165,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3767.5,
+            "median_short_axis_post_morph": 76.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 352.8,
+            "median_short_axis_post_morph": 18.5,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      }
+    },
+    "s=0.4": {
+      "native_size": [
+        512,
+        384
+      ],
+      "kernel_P": 3,
+      "min_area_P": 19,
+      "bloom_min_P": 144,
+      "P_param_scaling": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0031,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 573.0,
+            "median_short_axis_post_morph": 31.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 46.8,
+            "median_short_axis_post_morph": 8.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_LINEAR": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0132,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3863.8,
+            "median_short_axis_post_morph": 76.5,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 337.2,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_CUBIC": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0151,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3840.2,
+            "median_short_axis_post_morph": 76.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 340.8,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_NEAREST": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0097,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3807.0,
+            "median_short_axis_post_morph": 76.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 342.5,
+            "median_short_axis_post_morph": 20.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      }
+    },
+    "s=0.3": {
+      "native_size": [
+        384,
+        288
+      ],
+      "kernel_P": 3,
+      "min_area_P": 11,
+      "bloom_min_P": 81,
+      "P_param_scaling": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0017,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 313.2,
+            "median_short_axis_post_morph": 23.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 23.0,
+            "median_short_axis_post_morph": 6.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_LINEAR": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0121,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3926.5,
+            "median_short_axis_post_morph": 77.5,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 329.8,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_CUBIC": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0109,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3855.8,
+            "median_short_axis_post_morph": 76.5,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 336.5,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_NEAREST": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0143,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3756.8,
+            "median_short_axis_post_morph": 76.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 330.0,
+            "median_short_axis_post_morph": 19.5,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      }
+    },
+    "s=0.22": {
+      "native_size": [
+        282,
+        211
+      ],
+      "kernel_P": 3,
+      "min_area_P": 6,
+      "bloom_min_P": 44,
+      "P_param_scaling": {
+        "tp": 202,
+        "fp": 0,
+        "fn": 8,
+        "precision": 1.0,
+        "recall": 0.9619,
+        "f1": 0.9806,
+        "det_blooms": 133,
+        "true_blooms": 134,
+        "det_buds": 69,
+        "true_buds": 76,
+        "bloom_recall": 0.9925,
+        "bud_recall": 0.9079,
+        "count_err_pct": -3.81,
+        "median_detect_s_per_image": 0.0015,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 133,
+            "s3_minarea": 133,
+            "median_area_post_morph": 163.5,
+            "median_short_axis_post_morph": 17.0,
+            "final_correct": 133,
+            "final_migrated": 0,
+            "final_lost": 1
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 69,
+            "median_area_post_morph": 9.5,
+            "median_short_axis_post_morph": 4.0,
+            "final_correct": 69,
+            "final_migrated": 0,
+            "final_lost": 7
+          }
+        }
+      },
+      "U_LINEAR": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0106,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 4025.2,
+            "median_short_axis_post_morph": 78.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 319.2,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_CUBIC": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0105,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3919.8,
+            "median_short_axis_post_morph": 78.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 330.8,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_NEAREST": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0105,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3787.2,
+            "median_short_axis_post_morph": 76.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 320.2,
+            "median_short_axis_post_morph": 18.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      }
+    },
+    "s=0.15": {
+      "native_size": [
+        192,
+        144
+      ],
+      "kernel_P": 3,
+      "min_area_P": 3,
+      "bloom_min_P": 20,
+      "P_param_scaling": {
+        "tp": 154,
+        "fp": 0,
+        "fn": 56,
+        "precision": 1.0,
+        "recall": 0.7333,
+        "f1": 0.8462,
+        "det_blooms": 133,
+        "true_blooms": 134,
+        "det_buds": 21,
+        "true_buds": 76,
+        "bloom_recall": 0.9925,
+        "bud_recall": 0.2763,
+        "count_err_pct": -26.67,
+        "median_detect_s_per_image": 0.001,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 133,
+            "s3_minarea": 133,
+            "median_area_post_morph": 73.0,
+            "median_short_axis_post_morph": 11.0,
+            "final_correct": 133,
+            "final_migrated": 0,
+            "final_lost": 1
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 43,
+            "s3_minarea": 21,
+            "median_area_post_morph": 2.0,
+            "median_short_axis_post_morph": 3.0,
+            "final_correct": 21,
+            "final_migrated": 0,
+            "final_lost": 55
+          }
+        }
+      },
+      "U_LINEAR": {
+        "tp": 209,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.9952,
+        "f1": 0.9976,
+        "det_blooms": 133,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 0.9925,
+        "bud_recall": 1.0,
+        "count_err_pct": -0.48,
+        "median_detect_s_per_image": 0.0114,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 133,
+            "s3_minarea": 133,
+            "median_area_post_morph": 4146.5,
+            "median_short_axis_post_morph": 78.0,
+            "final_correct": 133,
+            "final_migrated": 0,
+            "final_lost": 1
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 314.8,
+            "median_short_axis_post_morph": 18.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_CUBIC": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0215,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 4077.8,
+            "median_short_axis_post_morph": 78.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 323.5,
+            "median_short_axis_post_morph": 19.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_NEAREST": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0,
+        "median_detect_s_per_image": 0.0155,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 134,
+            "median_area_post_morph": 3802.0,
+            "median_short_axis_post_morph": 74.0,
+            "final_correct": 134,
+            "final_migrated": 0,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 289.8,
+            "median_short_axis_post_morph": 20.0,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      }
+    },
+    "s=0.1": {
+      "native_size": [
+        128,
+        96
+      ],
+      "kernel_P": 3,
+      "min_area_P": 1,
+      "bloom_min_P": 9,
+      "P_param_scaling": {
+        "tp": 127,
+        "fp": 2,
+        "fn": 83,
+        "precision": 0.9845,
+        "recall": 0.6048,
+        "f1": 0.7493,
+        "det_blooms": 128,
+        "true_blooms": 134,
+        "det_buds": 1,
+        "true_buds": 76,
+        "bloom_recall": 0.9403,
+        "bud_recall": 0.0132,
+        "count_err_pct": -38.57,
+        "median_detect_s_per_image": 0.0011,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 127,
+            "s3_minarea": 127,
+            "median_area_post_morph": 28.5,
+            "median_short_axis_post_morph": 7.0,
+            "final_correct": 127,
+            "final_migrated": 0,
+            "final_lost": 7
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 1,
+            "s3_minarea": 1,
+            "median_area_post_morph": 2.0,
+            "median_short_axis_post_morph": 3.0,
+            "final_correct": 1,
+            "final_migrated": 0,
+            "final_lost": 75
+          }
+        }
+      },
+      "U_LINEAR": {
+        "tp": 197,
+        "fp": 3,
+        "fn": 13,
+        "precision": 0.985,
+        "recall": 0.9381,
+        "f1": 0.961,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 66,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 0.8289,
+        "count_err_pct": -4.76,
+        "median_detect_s_per_image": 0.0462,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 130,
+            "median_area_post_morph": 4192.8,
+            "median_short_axis_post_morph": 77.5,
+            "final_correct": 132,
+            "final_migrated": 2,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 75,
+            "s3_minarea": 63,
+            "median_area_post_morph": 243.5,
+            "median_short_axis_post_morph": 18.0,
+            "final_correct": 64,
+            "final_migrated": 0,
+            "final_lost": 12
+          }
+        }
+      },
+      "U_CUBIC": {
+        "tp": 209,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.9858,
+        "recall": 0.9952,
+        "f1": 0.9905,
+        "det_blooms": 133,
+        "true_blooms": 134,
+        "det_buds": 79,
+        "true_buds": 76,
+        "bloom_recall": 0.9925,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.95,
+        "median_detect_s_per_image": 0.0849,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 133,
+            "s3_minarea": 133,
+            "median_area_post_morph": 4224.0,
+            "median_short_axis_post_morph": 79.0,
+            "final_correct": 131,
+            "final_migrated": 2,
+            "final_lost": 1
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 76,
+            "median_area_post_morph": 315.0,
+            "median_short_axis_post_morph": 19.5,
+            "final_correct": 76,
+            "final_migrated": 0,
+            "final_lost": 0
+          }
+        }
+      },
+      "U_NEAREST": {
+        "tp": 206,
+        "fp": 6,
+        "fn": 4,
+        "precision": 0.9717,
+        "recall": 0.981,
+        "f1": 0.9763,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 78,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 0.9474,
+        "count_err_pct": 0.95,
+        "median_detect_s_per_image": 0.0137,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 132,
+            "median_area_post_morph": 3791.5,
+            "median_short_axis_post_morph": 70.0,
+            "final_correct": 133,
+            "final_migrated": 1,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 76,
+            "s3_minarea": 72,
+            "median_area_post_morph": 251.5,
+            "median_short_axis_post_morph": 20.0,
+            "final_correct": 72,
+            "final_migrated": 0,
+            "final_lost": 4
+          }
+        }
+      }
+    },
+    "s=0.07": {
+      "native_size": [
+        90,
+        67
+      ],
+      "kernel_P": 3,
+      "min_area_P": 1,
+      "bloom_min_P": 4,
+      "P_param_scaling": {
+        "tp": 118,
+        "fp": 4,
+        "fn": 92,
+        "precision": 0.9672,
+        "recall": 0.5619,
+        "f1": 0.7108,
+        "det_blooms": 122,
+        "true_blooms": 134,
+        "det_buds": 0,
+        "true_buds": 76,
+        "bloom_recall": 0.8806,
+        "bud_recall": 0.0,
+        "count_err_pct": -41.9,
+        "median_detect_s_per_image": 0.0016,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 130,
+            "s2_morph": 119,
+            "s3_minarea": 119,
+            "median_area_post_morph": 11.5,
+            "median_short_axis_post_morph": 5.0,
+            "final_correct": 119,
+            "final_migrated": 0,
+            "final_lost": 15
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 72,
+            "s2_morph": 0,
+            "s3_minarea": 0,
+            "median_area_post_morph": null,
+            "median_short_axis_post_morph": null,
+            "final_correct": 0,
+            "final_migrated": 0,
+            "final_lost": 76
+          }
+        }
+      },
+      "U_LINEAR": {
+        "tp": 158,
+        "fp": 33,
+        "fn": 52,
+        "precision": 0.8272,
+        "recall": 0.7524,
+        "f1": 0.788,
+        "det_blooms": 127,
+        "true_blooms": 134,
+        "det_buds": 64,
+        "true_buds": 76,
+        "bloom_recall": 0.9328,
+        "bud_recall": 0.4342,
+        "count_err_pct": -9.05,
+        "median_detect_s_per_image": 0.0329,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 133,
+            "s3_minarea": 124,
+            "median_area_post_morph": 3977.5,
+            "median_short_axis_post_morph": 75.0,
+            "final_correct": 123,
+            "final_migrated": 10,
+            "final_lost": 1
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 73,
+            "s2_morph": 61,
+            "s3_minarea": 33,
+            "median_area_post_morph": 127.0,
+            "median_short_axis_post_morph": 13.0,
+            "final_correct": 33,
+            "final_migrated": 0,
+            "final_lost": 43
+          }
+        }
+      },
+      "U_CUBIC": {
+        "tp": 197,
+        "fp": 6,
+        "fn": 13,
+        "precision": 0.9704,
+        "recall": 0.9381,
+        "f1": 0.954,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 69,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 0.8289,
+        "count_err_pct": -3.33,
+        "median_detect_s_per_image": 0.0148,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 134,
+            "s2_morph": 134,
+            "s3_minarea": 126,
+            "median_area_post_morph": 4201.2,
+            "median_short_axis_post_morph": 77.0,
+            "final_correct": 130,
+            "final_migrated": 4,
+            "final_lost": 0
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 76,
+            "s2_morph": 73,
+            "s3_minarea": 63,
+            "median_area_post_morph": 254.0,
+            "median_short_axis_post_morph": 17.0,
+            "final_correct": 63,
+            "final_migrated": 0,
+            "final_lost": 13
+          }
+        }
+      },
+      "U_NEAREST": {
+        "tp": 204,
+        "fp": 57,
+        "fn": 6,
+        "precision": 0.7816,
+        "recall": 0.9714,
+        "f1": 0.8662,
+        "det_blooms": 139,
+        "true_blooms": 134,
+        "det_buds": 122,
+        "true_buds": 76,
+        "bloom_recall": 0.9776,
+        "bud_recall": 0.9605,
+        "count_err_pct": 24.29,
+        "median_detect_s_per_image": 0.0134,
+        "stages": {
+          "bloom": {
+            "n": 134,
+            "s1_mask": 131,
+            "s2_morph": 132,
+            "s3_minarea": 132,
+            "median_area_post_morph": 3228.2,
+            "median_short_axis_post_morph": 71.0,
+            "final_correct": 125,
+            "final_migrated": 7,
+            "final_lost": 2
+          },
+          "bud": {
+            "n": 76,
+            "s1_mask": 72,
+            "s2_morph": 73,
+            "s3_minarea": 73,
+            "median_area_post_morph": 170.0,
+            "median_short_axis_post_morph": 14.0,
+            "final_correct": 73,
+            "final_migrated": 0,
+            "final_lost": 3
+          }
+        }
+      }
+    }
+  }
+}

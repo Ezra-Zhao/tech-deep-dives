@@ -22,6 +22,7 @@ Author / 作者：Guangyi Zhao
 | 2026-10-21 | [涨了 1.2 个点的 mAP，量不出少了多少朵花：Chili-Seg 评测口径深读与对照实测](articles/2026-10-21-chili-seg-evaluation-audit.md) | [A 1.2-Point mAP Gain That Cannot Say How Many Flowers Were Missed: An Evaluation Audit of Chili-Seg, With a Controlled Protocol Experiment](articles-en/2026-10-21-chili-seg-evaluation-audit.md) |
 | 2026-10-22 | [给自查挂上脚本，还需要另一个模型吗：24 处植入缺陷的对照实测](articles/2026-10-22-scripted-selfcheck-vs-cross-review.md) | [Give the Self-Check a Script — Do You Still Need a Second Model? A 24-Defect Controlled Comparison](articles-en/2026-10-22-scripted-selfcheck-vs-cross-review.md) |
 | 2026-10-24 | [十条告警规则，两条永远不会响：net-assurance-lab 告警链路实测](articles/2026-10-24-net-assurance-alert-chain-audit.md) | [Ten Alert Rules, Two That Can Never Fire: An End-to-End Audit of the net-assurance-lab Alert Chain](articles-en/2026-10-24-net-assurance-alert-chain-audit.md) |
+| 2026-10-24 | [放大回原尺寸再检测，反而赢了：输入重采样 vs 参数缩放对照实测](articles/2026-10-24-bloom-resampling-vs-param-scaling.md) | [Upscaling Back to Calibration Size Wins: Input Resampling vs. Parameter Scaling, Measured](articles-en/2026-10-24-bloom-resampling-vs-param-scaling.md) |
 
 ## Standards / 写作标准
 
