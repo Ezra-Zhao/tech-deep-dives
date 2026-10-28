@@ -1,0 +1,137 @@
+{
+ "generated_at_local": "2026-10-28 01:18:56 UTC",
+ "candidate_group": {
+  "name": "net-assurance-lab.anti-blind",
+  "interval": "15s",
+  "count": 3
+ },
+ "candidate_rules": [
+  {
+   "alert": "NalExporterResultsMissing",
+   "expr": "nal_exporter_results_present == 0",
+   "for": "1m",
+   "severity": "critical"
+  },
+  {
+   "alert": "NalExporterDown",
+   "expr": "up{job=\"net-assurance-lab\"} == 0",
+   "for": "1m",
+   "severity": "critical"
+  },
+  {
+   "alert": "NalExporterSeriesAbsent",
+   "expr": "absent(nal_exporter_results_present{group=\"scenario_summaries\"})",
+   "for": "1m",
+   "severity": "critical"
+  }
+ ],
+ "existing_rule_verbatim": {
+  "expr_equal": true,
+  "for_equal": true,
+  "labels_equal": true,
+  "annotations_equal": true
+ },
+ "lab_prometheus_config": {
+  "scrape_interval": "5s",
+  "scrape_timeout": "4s",
+  "evaluation_interval_global": "5s",
+  "alertmanagers": []
+ },
+ "truth_table": {
+  "healthy": {
+   "desc": "Exporter alive, complete artifact set.",
+   "rules": {
+    "NalExporterResultsMissing": {
+     "can_fire": false,
+     "detail": "groups at 0: []"
+    },
+    "NalExporterDown": {
+     "can_fire": false,
+     "detail": "up = 1"
+    },
+    "NalExporterSeriesAbsent": {
+     "can_fire": false,
+     "detail": "series still visible"
+    }
+   }
+  },
+  "artifacts_deleted_exporter_alive": {
+   "desc": "One scenario summary deleted; exporter alive and scraped; the scenario_summaries group flips to 0.",
+   "rules": {
+    "NalExporterResultsMissing": {
+     "can_fire": true,
+     "detail": "groups at 0: ['scenario_summaries']"
+    },
+    "NalExporterDown": {
+     "can_fire": false,
+     "detail": "up = 1"
+    },
+    "NalExporterSeriesAbsent": {
+     "can_fire": false,
+     "detail": "series still visible"
+    }
+   }
+  },
+  "exporter_killed_within_lookback": {
+   "desc": "Exporter dead <5m: up already 0, but the last present sample (1) is still inside the lookback window.",
+   "rules": {
+    "NalExporterResultsMissing": {
+     "can_fire": false,
+     "detail": "groups at 0: []"
+    },
+    "NalExporterDown": {
+     "can_fire": true,
+     "detail": "up = 0"
+    },
+    "NalExporterSeriesAbsent": {
+     "can_fire": false,
+     "detail": "series still visible"
+    }
+   }
+  },
+  "exporter_killed_past_lookback": {
+   "desc": "Exporter dead >5m: every nal_* series has gone stale and vanished from instant queries; up stays 0.",
+   "rules": {
+    "NalExporterResultsMissing": {
+     "can_fire": false,
+     "detail": "series empty: == 0 yields no result"
+    },
+    "NalExporterDown": {
+     "can_fire": true,
+     "detail": "up = 0"
+    },
+    "NalExporterSeriesAbsent": {
+     "can_fire": true,
+     "detail": "instant vector empty"
+    }
+   }
+  }
+ },
+ "timing_parameters": {
+  "scrape_interval_s": 5,
+  "rule_group_interval_s": 15,
+  "for_s": 60,
+  "lookback_delta_s_default": 300
+ },
+ "theoretical_blind_windows": {
+  "artifacts_deleted": {
+   "NalExporterResultsMissing": [
+    60,
+    80
+   ],
+   "NalExporterDown": null,
+   "NalExporterSeriesAbsent": null
+  },
+  "exporter_killed": {
+   "NalExporterResultsMissing": null,
+   "NalExporterDown": [
+    60,
+    80
+   ],
+   "NalExporterSeriesAbsent": [
+    360,
+    380
+   ]
+  }
+ }
+}

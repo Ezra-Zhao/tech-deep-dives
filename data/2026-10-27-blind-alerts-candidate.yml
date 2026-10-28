@@ -1,0 +1,52 @@
+# Candidate anti-blind rules for net-assurance-lab (2026-10-27 article).
+#
+# Preregistered design (frozen before the live run):
+#   * All three rules use for: 1m and the same rules-group interval (15s),
+#     so the comparison isolates expression semantics, not for: tuning.
+#     The for: 1m matches the existing NalExporterResultsMissing rule.
+#   * Rule 1 is the existing rule, copied verbatim from
+#     monitoring/rules/alerts.yml (same expr, labels, annotations).
+#   * Rule 2 is the scrape-layer candidate: Prometheus synthesises `up`
+#     for every target, so it exists even when the exporter is dead.
+#   * Rule 3 is the absent() candidate on the same series rule 1 watches.
+groups:
+  - name: net-assurance-lab.anti-blind
+    interval: 15s
+    rules:
+      - alert: NalExporterResultsMissing
+        expr: nal_exporter_results_present == 0
+        for: 1m
+        labels:
+          severity: critical
+          team: net-assurance
+        annotations:
+          summary: "Exporter cannot find a complete set of run artifacts (group {{ $labels.group }})"
+          description: >-
+            A results group failed to load at scrape time. All other
+            nal_* alerts go blind for the affected scenarios; check
+            results/latest on the bench host first.
+
+      - alert: NalExporterDown
+        expr: up{job="net-assurance-lab"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          team: net-assurance
+        annotations:
+          summary: "net-assurance-lab exporter target is down"
+          description: >-
+            Prometheus cannot scrape the exporter. Every nal_* series is
+            frozen at its last sample; check the exporter process first.
+
+      - alert: NalExporterSeriesAbsent
+        expr: absent(nal_exporter_results_present{group="scenario_summaries"})
+        for: 1m
+        labels:
+          severity: critical
+          team: net-assurance
+        annotations:
+          summary: "Exporter series nal_exporter_results_present has disappeared"
+          description: >-
+            No sample of the exporter's self-report series is visible.
+            The exporter or the scrape path is gone; check the exporter
+            process and the Prometheus target health first.

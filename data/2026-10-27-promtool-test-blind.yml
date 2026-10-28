@@ -1,0 +1,113 @@
+# promtool test rules for the 2026-10-27 anti-blind candidates.
+# Three synthetic worlds, all series held constant from t=0:
+#   1. artifacts deleted, exporter alive  (present=0, up=1)
+#   2. exporter never existed             (up=0, no present series at all)
+#   3. healthy                            (up=1, present=1)
+# World 2 is deliberately NOT the live kill: promtool input has no
+# scrape history, so there is no lookback window for absent() to wait
+# out. The live run (2026-10-27-blind-live.py) measures that case; the
+# contrast between the two is part of the article's evidence.
+rule_files:
+  - 2026-10-27-blind-alerts-candidate.yml
+
+evaluation_interval: 15s
+
+tests:
+  - interval: 15s
+    input_series:
+      - series: 'up{job="net-assurance-lab", instance="127.0.0.1:9108"}'
+        values: '1x80'
+      - series: 'nal_exporter_results_present{job="net-assurance-lab", instance="127.0.0.1:9108", group="scenario_summaries"}'
+        values: '0x80'
+      - series: 'nal_exporter_results_present{job="net-assurance-lab", instance="127.0.0.1:9108", group="run_meta"}'
+        values: '1x80'
+      - series: 'nal_exporter_results_present{job="net-assurance-lab", instance="127.0.0.1:9108", group="fault_proxy_log"}'
+        values: '1x80'
+    alert_rule_test:
+      - eval_time: 30s
+        alertname: NalExporterResultsMissing
+        exp_alerts: []
+      - eval_time: 2m
+        alertname: NalExporterResultsMissing
+        exp_alerts:
+          - exp_labels:
+              severity: critical
+              team: net-assurance
+              job: net-assurance-lab
+              instance: "127.0.0.1:9108"
+              group: scenario_summaries
+            exp_annotations:
+              summary: "Exporter cannot find a complete set of run artifacts (group scenario_summaries)"
+              description: "A results group failed to load at scrape time. All other nal_* alerts go blind for the affected scenarios; check results/latest on the bench host first."
+      - eval_time: 10m
+        alertname: NalExporterDown
+        exp_alerts: []
+      - eval_time: 10m
+        alertname: NalExporterSeriesAbsent
+        exp_alerts: []
+
+  - interval: 15s
+    input_series:
+      - series: 'up{job="net-assurance-lab", instance="127.0.0.1:9108"}'
+        values: '0x80'
+    alert_rule_test:
+      - eval_time: 30s
+        alertname: NalExporterDown
+        exp_alerts: []
+      - eval_time: 30s
+        alertname: NalExporterSeriesAbsent
+        exp_alerts: []
+      - eval_time: 2m
+        alertname: NalExporterDown
+        exp_alerts:
+          - exp_labels:
+              severity: critical
+              team: net-assurance
+              job: net-assurance-lab
+              instance: "127.0.0.1:9108"
+            exp_annotations:
+              summary: "net-assurance-lab exporter target is down"
+              description: "Prometheus cannot scrape the exporter. Every nal_* series is frozen at its last sample; check the exporter process first."
+      - eval_time: 2m
+        alertname: NalExporterSeriesAbsent
+        exp_alerts:
+          - exp_labels:
+              severity: critical
+              team: net-assurance
+              group: scenario_summaries
+            exp_annotations:
+              summary: "Exporter series nal_exporter_results_present has disappeared"
+              description: "No sample of the exporter's self-report series is visible. The exporter or the scrape path is gone; check the exporter process and the Prometheus target health first."
+      - eval_time: 10m
+        alertname: NalExporterResultsMissing
+        exp_alerts: []
+
+  - interval: 15s
+    input_series:
+      - series: 'up{job="net-assurance-lab", instance="127.0.0.1:9108"}'
+        values: '1x80'
+      - series: 'nal_exporter_results_present{job="net-assurance-lab", instance="127.0.0.1:9108", group="scenario_summaries"}'
+        values: '1x80'
+      - series: 'nal_exporter_results_present{job="net-assurance-lab", instance="127.0.0.1:9108", group="run_meta"}'
+        values: '1x80'
+      - series: 'nal_exporter_results_present{job="net-assurance-lab", instance="127.0.0.1:9108", group="fault_proxy_log"}'
+        values: '1x80'
+    alert_rule_test:
+      - eval_time: 2m
+        alertname: NalExporterResultsMissing
+        exp_alerts: []
+      - eval_time: 2m
+        alertname: NalExporterDown
+        exp_alerts: []
+      - eval_time: 2m
+        alertname: NalExporterSeriesAbsent
+        exp_alerts: []
+      - eval_time: 10m
+        alertname: NalExporterResultsMissing
+        exp_alerts: []
+      - eval_time: 10m
+        alertname: NalExporterDown
+        exp_alerts: []
+      - eval_time: 10m
+        alertname: NalExporterSeriesAbsent
+        exp_alerts: []

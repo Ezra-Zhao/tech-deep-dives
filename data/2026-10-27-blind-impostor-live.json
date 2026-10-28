@@ -1,0 +1,608 @@
+{
+ "absent_firing_poll_t_rel_s": 65.1,
+ "records": [
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 0.1,
+   "t_epoch": 1793150916.8507426,
+   "t_wall": "2026-10-28T01:28:36.850747+00:00",
+   "up": {
+    "error": "<urlopen error [Errno 111] Connection refused>"
+   },
+   "present": {
+    "error": "<urlopen error [Errno 111] Connection refused>"
+   },
+   "absent": {
+    "error": "<urlopen error [Errno 111] Connection refused>"
+   },
+   "alerts": {
+    "error": "<urlopen error [Errno 111] Connection refused>"
+   }
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 5.1,
+   "t_epoch": 1793150921.8549232,
+   "t_wall": "2026-10-28T01:28:41.854927+00:00",
+   "up": [],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "pending",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 10.1,
+   "t_epoch": 1793150926.8645637,
+   "t_wall": "2026-10-28T01:28:46.864567+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "pending",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 15.1,
+   "t_epoch": 1793150931.869888,
+   "t_wall": "2026-10-28T01:28:51.869891+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "pending",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 20.1,
+   "t_epoch": 1793150936.8742692,
+   "t_wall": "2026-10-28T01:28:56.874272+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "pending",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 25.1,
+   "t_epoch": 1793150941.878863,
+   "t_wall": "2026-10-28T01:29:01.878866+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "pending",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 30.1,
+   "t_epoch": 1793150946.8825946,
+   "t_wall": "2026-10-28T01:29:06.882597+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "pending",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 35.1,
+   "t_epoch": 1793150951.8863277,
+   "t_wall": "2026-10-28T01:29:11.886330+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "pending",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 40.1,
+   "t_epoch": 1793150956.890385,
+   "t_wall": "2026-10-28T01:29:16.890388+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "pending",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 45.1,
+   "t_epoch": 1793150961.8946407,
+   "t_wall": "2026-10-28T01:29:21.894669+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "pending",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 50.1,
+   "t_epoch": 1793150966.899419,
+   "t_wall": "2026-10-28T01:29:26.899423+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "pending",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 55.1,
+   "t_epoch": 1793150971.9052267,
+   "t_wall": "2026-10-28T01:29:31.905229+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "pending",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 60.1,
+   "t_epoch": 1793150976.9100168,
+   "t_wall": "2026-10-28T01:29:36.910020+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "pending",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor",
+   "t_rel_s": 65.1,
+   "t_epoch": 1793150981.9135177,
+   "t_wall": "2026-10-28T01:29:41.913520+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "firing",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor_hold",
+   "t_rel_s": 70.1,
+   "t_epoch": 1793150986.9173753,
+   "t_wall": "2026-10-28T01:29:46.917378+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "firing",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor_hold",
+   "t_rel_s": 75.1,
+   "t_epoch": 1793150991.9210064,
+   "t_wall": "2026-10-28T01:29:51.921009+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "firing",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor_hold",
+   "t_rel_s": 80.1,
+   "t_epoch": 1793150996.9247298,
+   "t_wall": "2026-10-28T01:29:56.924732+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "firing",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  },
+  {
+   "type": "poll",
+   "phase": "impostor_hold",
+   "t_rel_s": 85.1,
+   "t_epoch": 1793151001.9284647,
+   "t_wall": "2026-10-28T01:30:01.928467+00:00",
+   "up": [
+    {
+     "labels": {
+      "__name__": "up",
+      "env": "local-loopback",
+      "instance": "127.0.0.1:9108",
+      "job": "net-assurance-lab",
+      "lab": "net-assurance-lab"
+     },
+     "value": 1.0
+    }
+   ],
+   "present": [],
+   "absent": [
+    {
+     "labels": {
+      "group": "scenario_summaries"
+     },
+     "value": 1.0
+    }
+   ],
+   "alerts": [
+    {
+     "name": "NalExporterSeriesAbsent",
+     "state": "firing",
+     "activeAt": "2026-10-28T01:28:38.818857154Z"
+    }
+   ]
+  }
+ ]
+}

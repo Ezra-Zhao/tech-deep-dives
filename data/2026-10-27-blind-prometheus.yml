@@ -1,0 +1,28 @@
+# Prometheus config for the 2026-10-27 anti-blind live run.
+# Identical scrape/eval timing to the lab's monitoring/prometheus.yml
+# (global scrape 5s, scrape timeout 4s); only the rule file, storage
+# path and listen address are run-specific. The candidate rule group
+# carries its own 15s interval, as the lab's alerts.yml group does.
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+  scrape_timeout: 4s
+
+rule_files:
+  - "2026-10-27-blind-alerts-candidate.yml"
+
+alerting:
+  alertmanagers: []
+
+scrape_configs:
+  - job_name: "net-assurance-lab"
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["127.0.0.1:9108"]
+        labels:
+          lab: "net-assurance-lab"
+          env: "local-loopback"
+
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["127.0.0.1:9090"]

@@ -23,6 +23,9 @@ Author / 作者：Guangyi Zhao
 | 2026-10-22 | [给自查挂上脚本，还需要另一个模型吗：24 处植入缺陷的对照实测](articles/2026-10-22-scripted-selfcheck-vs-cross-review.md) | [Give the Self-Check a Script — Do You Still Need a Second Model? A 24-Defect Controlled Comparison](articles-en/2026-10-22-scripted-selfcheck-vs-cross-review.md) |
 | 2026-10-24 | [十条告警规则，两条永远不会响：net-assurance-lab 告警链路实测](articles/2026-10-24-net-assurance-alert-chain-audit.md) | [Ten Alert Rules, Two That Can Never Fire: An End-to-End Audit of the net-assurance-lab Alert Chain](articles-en/2026-10-24-net-assurance-alert-chain-audit.md) |
 | 2026-10-24 | [放大回原尺寸再检测，反而赢了：输入重采样 vs 参数缩放对照实测](articles/2026-10-24-bloom-resampling-vs-param-scaling.md) | [Upscaling Back to Calibration Size Wins: Input Resampling vs. Parameter Scaling, Measured](articles-en/2026-10-24-bloom-resampling-vs-param-scaling.md) |
+| 2026-10-25 | [估出来的 s 敢不敢用：面积中位数反推缩放系数的端到端误差链实测](articles/2026-10-25-bloom-s-estimation-error-chain.md) | [Can You Trust an Estimated s? The End-to-End Error Chain of Median-Area Scale Estimation, Measured](articles-en/2026-10-25-bloom-s-estimation-error-chain.md) |
+| 2026-10-26 | [凑近了反而简单：s 大于 1 方向的对称性实测——塌的只有分类门槛，出框是取景账不是检测账](articles/2026-10-26-bloom-zoom-in-symmetry.md) | [Moving Closer Turned Out Simpler: A Symmetry Test for s > 1 — Only the Class Threshold Collapses, and Going Out of Frame Is a Framing Cost, Not a Detection Cost](articles-en/2026-10-26-bloom-zoom-in-symmetry.md) |
+| 2026-10-27 | [防盲告警实测：我以为 absent() 要等五分钟——三条规则、三种死法，没有一条全看见](articles/2026-10-27-blind-alert-three-deaths.md) | [Blind-Spot Alerts, Measured: I Expected absent() to Take Five Minutes — Three Guard Rules, Three Ways to Die, and None Sees Them All](articles-en/2026-10-27-blind-alert-three-deaths.md) |
 
 ## Standards / 写作标准
 
