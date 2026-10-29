@@ -1,0 +1,1658 @@
+{
+  "analytic": {
+    "e2e_loss_flap_fully_correlated": 0.5135999999999998,
+    "e2e_loss_legs_independent": 0.6303359999999999,
+    "flap_duty": 0.24,
+    "per_leg_loss": 0.3919999999999999,
+    "per_leg_survival": 0.6080000000000001,
+    "q_needed_by_injection_loss": {
+      "0.5": 0.5,
+      "0.5275": 0.4709,
+      "0.55": 0.4444,
+      "0.5897": 0.3907,
+      "0.6": 0.375,
+      "0.6303": 0.3238,
+      "0.65": 0.2857
+    }
+  },
+  "archived_runs_reference": {
+    "R0_20261019-171627_loss": 0.5897,
+    "R1_20261019-154535_loss": 0.5275
+  },
+  "generated_at_local": "2026-10-29 01:26:02 UTC",
+  "lab": "/home/hatch/workspace/oxide-proofs/net-assurance-lab",
+  "live_by_q": {
+    "0.0": {
+      "fire_rate": 0.0,
+      "loss_max": 0.5381,
+      "loss_mean": 0.5315,
+      "loss_min": 0.5252,
+      "loss_values": [
+        0.5252,
+        0.5295,
+        0.5334,
+        0.5381
+      ],
+      "n": 4,
+      "n_fire": 0
+    },
+    "0.1": {
+      "fire_rate": 0.0,
+      "loss_max": 0.6941,
+      "loss_mean": 0.6447,
+      "loss_min": 0.6109,
+      "loss_values": [
+        0.6109,
+        0.6417,
+        0.632,
+        0.6941
+      ],
+      "n": 4,
+      "n_fire": 0
+    },
+    "0.2": {
+      "fire_rate": 0.25,
+      "loss_max": 0.7655,
+      "loss_mean": 0.7184,
+      "loss_min": 0.6838,
+      "loss_values": [
+        0.6838,
+        0.7655,
+        0.7278,
+        0.6964
+      ],
+      "n": 4,
+      "n_fire": 1
+    },
+    "0.3": {
+      "fire_rate": 0.25,
+      "loss_max": 0.7693,
+      "loss_mean": 0.7298,
+      "loss_min": 0.7053,
+      "loss_values": [
+        0.7234,
+        0.7053,
+        0.7212,
+        0.7693
+      ],
+      "n": 4,
+      "n_fire": 1
+    },
+    "0.4": {
+      "fire_rate": 0.75,
+      "loss_max": 0.7982,
+      "loss_mean": 0.7618,
+      "loss_min": 0.7418,
+      "loss_values": [
+        0.7418,
+        0.7982,
+        0.7502,
+        0.757
+      ],
+      "n": 4,
+      "n_fire": 3
+    },
+    "0.5": {
+      "fire_rate": 1.0,
+      "loss_max": 0.8012,
+      "loss_mean": 0.7875,
+      "loss_min": 0.7698,
+      "loss_values": [
+        0.7698,
+        0.8012,
+        0.7932,
+        0.7858
+      ],
+      "n": 4,
+      "n_fire": 4
+    },
+    "0.6": {
+      "fire_rate": 1.0,
+      "loss_max": 0.8336,
+      "loss_mean": 0.8283,
+      "loss_min": 0.8248,
+      "loss_values": [
+        0.8336,
+        0.826,
+        0.829,
+        0.8248
+      ],
+      "n": 4,
+      "n_fire": 4
+    }
+  },
+  "live_runs": [
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 4748,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.5252,
+      "extra_seed": 20101,
+      "gen_rc": 0,
+      "loss_rate": 0.5252,
+      "lost": 5252,
+      "ports": {
+        "proxy": 17101,
+        "server": 15101,
+        "shim": 16101
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2322,
+        "c2s:drop_loss": 1525,
+        "c2s:forward": 6121,
+        "s2c:drop_flap": 206,
+        "s2c:drop_loss": 1167,
+        "s2c:forward": 4748
+      },
+      "proxy_summary": {
+        "delayed": 10869,
+        "dropped_flap": 2528,
+        "dropped_loss": 2692,
+        "forwarded": 10869,
+        "in_client": 9968,
+        "in_server": 6121
+      },
+      "q": 0.0,
+      "rep": 1,
+      "rtt_p99_ms": 253.645,
+      "run_index": 1,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6121,
+        "malformed": 0,
+        "received_total": 6121,
+        "valid": 6121
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6121,
+        "forwarded_server": 6121,
+        "in_client": 6121,
+        "in_server": 6121
+      },
+      "tag": "q00-r1"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 4705,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.5295,
+      "extra_seed": 20202,
+      "gen_rc": 0,
+      "loss_rate": 0.5295,
+      "lost": 5295,
+      "ports": {
+        "proxy": 17102,
+        "server": 15102,
+        "shim": 16102
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2411,
+        "c2s:drop_loss": 1489,
+        "c2s:forward": 6100,
+        "s2c:drop_flap": 212,
+        "s2c:drop_loss": 1183,
+        "s2c:forward": 4705
+      },
+      "proxy_summary": {
+        "delayed": 10805,
+        "dropped_flap": 2623,
+        "dropped_loss": 2672,
+        "forwarded": 10805,
+        "in_client": 10000,
+        "in_server": 6100
+      },
+      "q": 0.0,
+      "rep": 2,
+      "rtt_p99_ms": 215.105,
+      "run_index": 2,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6100,
+        "malformed": 0,
+        "received_total": 6100,
+        "valid": 6100
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6100,
+        "forwarded_server": 6100,
+        "in_client": 6100,
+        "in_server": 6100
+      },
+      "tag": "q00-r2"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 4666,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.5334,
+      "extra_seed": 20303,
+      "gen_rc": 0,
+      "loss_rate": 0.5334,
+      "lost": 5334,
+      "ports": {
+        "proxy": 17103,
+        "server": 15103,
+        "shim": 16103
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2373,
+        "c2s:drop_loss": 1476,
+        "c2s:forward": 6022,
+        "s2c:drop_flap": 187,
+        "s2c:drop_loss": 1169,
+        "s2c:forward": 4666
+      },
+      "proxy_summary": {
+        "delayed": 10688,
+        "dropped_flap": 2560,
+        "dropped_loss": 2645,
+        "forwarded": 10688,
+        "in_client": 9871,
+        "in_server": 6022
+      },
+      "q": 0.0,
+      "rep": 3,
+      "rtt_p99_ms": 268.351,
+      "run_index": 3,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6022,
+        "malformed": 0,
+        "received_total": 6022,
+        "valid": 6022
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6022,
+        "forwarded_server": 6022,
+        "in_client": 6022,
+        "in_server": 6022
+      },
+      "tag": "q00-r3"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 4619,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.5381,
+      "extra_seed": 20404,
+      "gen_rc": 0,
+      "loss_rate": 0.5381,
+      "lost": 5381,
+      "ports": {
+        "proxy": 17104,
+        "server": 15104,
+        "shim": 16104
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2412,
+        "c2s:drop_loss": 1442,
+        "c2s:forward": 6007,
+        "s2c:drop_flap": 196,
+        "s2c:drop_loss": 1192,
+        "s2c:forward": 4619
+      },
+      "proxy_summary": {
+        "delayed": 10626,
+        "dropped_flap": 2608,
+        "dropped_loss": 2634,
+        "forwarded": 10626,
+        "in_client": 9861,
+        "in_server": 6007
+      },
+      "q": 0.0,
+      "rep": 4,
+      "rtt_p99_ms": 264.729,
+      "run_index": 4,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6007,
+        "malformed": 0,
+        "received_total": 6007,
+        "valid": 6007
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6007,
+        "forwarded_server": 6007,
+        "in_client": 6007,
+        "in_server": 6007
+      },
+      "tag": "q00-r4"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 3891,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.6109,
+      "extra_seed": 20501,
+      "gen_rc": 0,
+      "loss_rate": 0.6109,
+      "lost": 6109,
+      "ports": {
+        "proxy": 17105,
+        "server": 15105,
+        "shim": 16105
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2490,
+        "c2s:drop_loss": 1350,
+        "c2s:forward": 5606,
+        "s2c:drop_flap": 210,
+        "s2c:drop_loss": 985,
+        "s2c:forward": 3891
+      },
+      "proxy_summary": {
+        "delayed": 9497,
+        "dropped_flap": 2700,
+        "dropped_loss": 2335,
+        "forwarded": 9497,
+        "in_client": 9446,
+        "in_server": 5086
+      },
+      "q": 0.1,
+      "rep": 1,
+      "rtt_p99_ms": 469.603,
+      "run_index": 5,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 5086,
+        "malformed": 0,
+        "received_total": 5086,
+        "valid": 5086
+      },
+      "shim_stats": {
+        "dropped_extra": 520,
+        "forwarded_client": 5086,
+        "forwarded_server": 5086,
+        "in_client": 5606,
+        "in_server": 5086
+      },
+      "tag": "q10-r1"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 3583,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.6417,
+      "extra_seed": 20602,
+      "gen_rc": 0,
+      "loss_rate": 0.6417,
+      "lost": 6417,
+      "ports": {
+        "proxy": 17106,
+        "server": 15106,
+        "shim": 16106
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2461,
+        "c2s:drop_loss": 1324,
+        "c2s:forward": 5459,
+        "s2c:drop_flap": 315,
+        "s2c:drop_loss": 891,
+        "s2c:forward": 3583
+      },
+      "proxy_summary": {
+        "delayed": 9042,
+        "dropped_flap": 2776,
+        "dropped_loss": 2215,
+        "forwarded": 9042,
+        "in_client": 9244,
+        "in_server": 4789
+      },
+      "q": 0.1,
+      "rep": 2,
+      "rtt_p99_ms": 400.288,
+      "run_index": 6,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 4789,
+        "malformed": 0,
+        "received_total": 4789,
+        "valid": 4789
+      },
+      "shim_stats": {
+        "dropped_extra": 525,
+        "forwarded_client": 4789,
+        "forwarded_server": 4789,
+        "in_client": 5314,
+        "in_server": 4789
+      },
+      "tag": "q10-r2"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 3680,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.632,
+      "extra_seed": 20703,
+      "gen_rc": 0,
+      "loss_rate": 0.632,
+      "lost": 6320,
+      "ports": {
+        "proxy": 17107,
+        "server": 15107,
+        "shim": 16107
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2263,
+        "c2s:drop_loss": 1330,
+        "c2s:forward": 5412,
+        "s2c:drop_flap": 282,
+        "s2c:drop_loss": 911,
+        "s2c:forward": 3680
+      },
+      "proxy_summary": {
+        "delayed": 9092,
+        "dropped_flap": 2545,
+        "dropped_loss": 2241,
+        "forwarded": 9092,
+        "in_client": 9005,
+        "in_server": 4873
+      },
+      "q": 0.1,
+      "rep": 3,
+      "rtt_p99_ms": 410.167,
+      "run_index": 7,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 4873,
+        "malformed": 0,
+        "received_total": 4873,
+        "valid": 4873
+      },
+      "shim_stats": {
+        "dropped_extra": 539,
+        "forwarded_client": 4873,
+        "forwarded_server": 4873,
+        "in_client": 5412,
+        "in_server": 4873
+      },
+      "tag": "q10-r3"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 3059,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.6941,
+      "extra_seed": 20804,
+      "gen_rc": 0,
+      "loss_rate": 0.6941,
+      "lost": 6941,
+      "ports": {
+        "proxy": 17108,
+        "server": 15108,
+        "shim": 16108
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2644,
+        "c2s:drop_loss": 1084,
+        "c2s:forward": 4441,
+        "s2c:drop_flap": 207,
+        "s2c:drop_loss": 742,
+        "s2c:forward": 3059
+      },
+      "proxy_summary": {
+        "delayed": 7500,
+        "dropped_flap": 2851,
+        "dropped_loss": 1826,
+        "forwarded": 7500,
+        "in_client": 8169,
+        "in_server": 4008
+      },
+      "q": 0.1,
+      "rep": 4,
+      "rtt_p99_ms": 380.668,
+      "run_index": 8,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 4008,
+        "malformed": 0,
+        "received_total": 4008,
+        "valid": 4008
+      },
+      "shim_stats": {
+        "dropped_extra": 433,
+        "forwarded_client": 4008,
+        "forwarded_server": 4008,
+        "in_client": 4441,
+        "in_server": 4008
+      },
+      "tag": "q10-r4"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 3162,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.6838,
+      "extra_seed": 20901,
+      "gen_rc": 0,
+      "loss_rate": 0.6838,
+      "lost": 6838,
+      "ports": {
+        "proxy": 17109,
+        "server": 15109,
+        "shim": 16109
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2691,
+        "c2s:drop_loss": 1283,
+        "c2s:forward": 5096,
+        "s2c:drop_flap": 189,
+        "s2c:drop_loss": 728,
+        "s2c:forward": 3162
+      },
+      "proxy_summary": {
+        "delayed": 8258,
+        "dropped_flap": 2880,
+        "dropped_loss": 2011,
+        "forwarded": 8258,
+        "in_client": 9070,
+        "in_server": 4079
+      },
+      "q": 0.2,
+      "rep": 1,
+      "rtt_p99_ms": 525.338,
+      "run_index": 9,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 4079,
+        "malformed": 0,
+        "received_total": 4079,
+        "valid": 4079
+      },
+      "shim_stats": {
+        "dropped_extra": 1017,
+        "forwarded_client": 4079,
+        "forwarded_server": 4079,
+        "in_client": 5096,
+        "in_server": 4079
+      },
+      "tag": "q20-r1"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 2345,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.7655,
+      "extra_seed": 21002,
+      "gen_rc": 0,
+      "loss_rate": 0.7655,
+      "lost": 7655,
+      "ports": {
+        "proxy": 17110,
+        "server": 15110,
+        "shim": 16110
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2277,
+        "c2s:drop_loss": 933,
+        "c2s:forward": 3807,
+        "s2c:drop_flap": 151,
+        "s2c:drop_loss": 528,
+        "s2c:forward": 2345
+      },
+      "proxy_summary": {
+        "delayed": 6152,
+        "dropped_flap": 2428,
+        "dropped_loss": 1461,
+        "forwarded": 6152,
+        "in_client": 7017,
+        "in_server": 3024
+      },
+      "q": 0.2,
+      "rep": 2,
+      "rtt_p99_ms": 890.508,
+      "run_index": 10,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 3024,
+        "malformed": 0,
+        "received_total": 3024,
+        "valid": 3024
+      },
+      "shim_stats": {
+        "dropped_extra": 783,
+        "forwarded_client": 3024,
+        "forwarded_server": 3024,
+        "in_client": 3807,
+        "in_server": 3024
+      },
+      "tag": "q20-r2"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 2722,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.7278,
+      "extra_seed": 21103,
+      "gen_rc": 0,
+      "loss_rate": 0.7278,
+      "lost": 7278,
+      "ports": {
+        "proxy": 17111,
+        "server": 15111,
+        "shim": 16111
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2605,
+        "c2s:drop_loss": 1080,
+        "c2s:forward": 4423,
+        "s2c:drop_flap": 188,
+        "s2c:drop_loss": 652,
+        "s2c:forward": 2722
+      },
+      "proxy_summary": {
+        "delayed": 7145,
+        "dropped_flap": 2793,
+        "dropped_loss": 1732,
+        "forwarded": 7145,
+        "in_client": 8108,
+        "in_server": 3562
+      },
+      "q": 0.2,
+      "rep": 3,
+      "rtt_p99_ms": 426.134,
+      "run_index": 11,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 3562,
+        "malformed": 0,
+        "received_total": 3562,
+        "valid": 3562
+      },
+      "shim_stats": {
+        "dropped_extra": 861,
+        "forwarded_client": 3562,
+        "forwarded_server": 3562,
+        "in_client": 4423,
+        "in_server": 3562
+      },
+      "tag": "q20-r3"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 3036,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.6964,
+      "extra_seed": 21204,
+      "gen_rc": 0,
+      "loss_rate": 0.6964,
+      "lost": 6964,
+      "ports": {
+        "proxy": 17112,
+        "server": 15112,
+        "shim": 16112
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2194,
+        "c2s:drop_loss": 1233,
+        "c2s:forward": 4965,
+        "s2c:drop_flap": 218,
+        "s2c:drop_loss": 708,
+        "s2c:forward": 3036
+      },
+      "proxy_summary": {
+        "delayed": 8001,
+        "dropped_flap": 2412,
+        "dropped_loss": 1941,
+        "forwarded": 8001,
+        "in_client": 8392,
+        "in_server": 3962
+      },
+      "q": 0.2,
+      "rep": 4,
+      "rtt_p99_ms": 383.368,
+      "run_index": 12,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 3962,
+        "malformed": 0,
+        "received_total": 3962,
+        "valid": 3962
+      },
+      "shim_stats": {
+        "dropped_extra": 1003,
+        "forwarded_client": 3962,
+        "forwarded_server": 3962,
+        "in_client": 4965,
+        "in_server": 3962
+      },
+      "tag": "q20-r4"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 2766,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.7234,
+      "extra_seed": 21301,
+      "gen_rc": 0,
+      "loss_rate": 0.7234,
+      "lost": 7234,
+      "ports": {
+        "proxy": 17113,
+        "server": 15113,
+        "shim": 16113
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2615,
+        "c2s:drop_loss": 1288,
+        "c2s:forward": 5203,
+        "s2c:drop_flap": 207,
+        "s2c:drop_loss": 648,
+        "s2c:forward": 2766
+      },
+      "proxy_summary": {
+        "delayed": 7969,
+        "dropped_flap": 2822,
+        "dropped_loss": 1936,
+        "forwarded": 7969,
+        "in_client": 9106,
+        "in_server": 3621
+      },
+      "q": 0.3,
+      "rep": 1,
+      "rtt_p99_ms": 378.933,
+      "run_index": 13,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 3621,
+        "malformed": 0,
+        "received_total": 3621,
+        "valid": 3621
+      },
+      "shim_stats": {
+        "dropped_extra": 1582,
+        "forwarded_client": 3621,
+        "forwarded_server": 3621,
+        "in_client": 5203,
+        "in_server": 3621
+      },
+      "tag": "q30-r1"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 2947,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.7053,
+      "extra_seed": 21402,
+      "gen_rc": 0,
+      "loss_rate": 0.7053,
+      "lost": 7053,
+      "ports": {
+        "proxy": 17114,
+        "server": 15114,
+        "shim": 16114
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2426,
+        "c2s:drop_loss": 1386,
+        "c2s:forward": 5566,
+        "s2c:drop_flap": 274,
+        "s2c:drop_loss": 695,
+        "s2c:forward": 2947
+      },
+      "proxy_summary": {
+        "delayed": 8513,
+        "dropped_flap": 2700,
+        "dropped_loss": 2081,
+        "forwarded": 8513,
+        "in_client": 9378,
+        "in_server": 3916
+      },
+      "q": 0.3,
+      "rep": 2,
+      "rtt_p99_ms": 336.297,
+      "run_index": 14,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 3916,
+        "malformed": 0,
+        "received_total": 3916,
+        "valid": 3916
+      },
+      "shim_stats": {
+        "dropped_extra": 1650,
+        "forwarded_client": 3916,
+        "forwarded_server": 3916,
+        "in_client": 5566,
+        "in_server": 3916
+      },
+      "tag": "q30-r2"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 2788,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.7212,
+      "extra_seed": 21503,
+      "gen_rc": 0,
+      "loss_rate": 0.7212,
+      "lost": 7212,
+      "ports": {
+        "proxy": 17115,
+        "server": 15115,
+        "shim": 16115
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2494,
+        "c2s:drop_loss": 1275,
+        "c2s:forward": 5179,
+        "s2c:drop_flap": 203,
+        "s2c:drop_loss": 661,
+        "s2c:forward": 2788
+      },
+      "proxy_summary": {
+        "delayed": 7967,
+        "dropped_flap": 2697,
+        "dropped_loss": 1936,
+        "forwarded": 7967,
+        "in_client": 8948,
+        "in_server": 3652
+      },
+      "q": 0.3,
+      "rep": 3,
+      "rtt_p99_ms": 349.414,
+      "run_index": 15,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 3652,
+        "malformed": 0,
+        "received_total": 3652,
+        "valid": 3652
+      },
+      "shim_stats": {
+        "dropped_extra": 1527,
+        "forwarded_client": 3652,
+        "forwarded_server": 3652,
+        "in_client": 5179,
+        "in_server": 3652
+      },
+      "tag": "q30-r3"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 2307,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.7693,
+      "extra_seed": 21604,
+      "gen_rc": 0,
+      "loss_rate": 0.7693,
+      "lost": 7693,
+      "ports": {
+        "proxy": 17116,
+        "server": 15116,
+        "shim": 16116
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2379,
+        "c2s:drop_loss": 1051,
+        "c2s:forward": 4393,
+        "s2c:drop_flap": 178,
+        "s2c:drop_loss": 561,
+        "s2c:forward": 2307
+      },
+      "proxy_summary": {
+        "delayed": 6700,
+        "dropped_flap": 2557,
+        "dropped_loss": 1612,
+        "forwarded": 6700,
+        "in_client": 7823,
+        "in_server": 3046
+      },
+      "q": 0.3,
+      "rep": 4,
+      "rtt_p99_ms": 683.973,
+      "run_index": 16,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 3046,
+        "malformed": 0,
+        "received_total": 3046,
+        "valid": 3046
+      },
+      "shim_stats": {
+        "dropped_extra": 1347,
+        "forwarded_client": 3046,
+        "forwarded_server": 3046,
+        "in_client": 4393,
+        "in_server": 3046
+      },
+      "tag": "q30-r4"
+    },
+    {
+      "alert_fires_on_exporter": false,
+      "alert_fires_on_summary": false,
+      "echoed": 2582,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.7418,
+      "extra_seed": 21701,
+      "gen_rc": 0,
+      "loss_rate": 0.7418,
+      "lost": 7418,
+      "ports": {
+        "proxy": 17117,
+        "server": 15117,
+        "shim": 16117
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2502,
+        "c2s:drop_loss": 1406,
+        "c2s:forward": 5699,
+        "s2c:drop_flap": 162,
+        "s2c:drop_loss": 614,
+        "s2c:forward": 2582
+      },
+      "proxy_summary": {
+        "delayed": 8281,
+        "dropped_flap": 2664,
+        "dropped_loss": 2020,
+        "forwarded": 8281,
+        "in_client": 9607,
+        "in_server": 3358
+      },
+      "q": 0.4,
+      "rep": 1,
+      "rtt_p99_ms": 402.863,
+      "run_index": 17,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 3358,
+        "malformed": 0,
+        "received_total": 3358,
+        "valid": 3358
+      },
+      "shim_stats": {
+        "dropped_extra": 2341,
+        "forwarded_client": 3358,
+        "forwarded_server": 3358,
+        "in_client": 5699,
+        "in_server": 3358
+      },
+      "tag": "q40-r1"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 2018,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.7982,
+      "extra_seed": 21802,
+      "gen_rc": 0,
+      "loss_rate": 0.7982,
+      "lost": 7982,
+      "ports": {
+        "proxy": 17118,
+        "server": 15118,
+        "shim": 16118
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2049,
+        "c2s:drop_loss": 1004,
+        "c2s:forward": 4487,
+        "s2c:drop_flap": 133,
+        "s2c:drop_loss": 552,
+        "s2c:forward": 2018
+      },
+      "proxy_summary": {
+        "delayed": 6505,
+        "dropped_flap": 2182,
+        "dropped_loss": 1556,
+        "forwarded": 6505,
+        "in_client": 7540,
+        "in_server": 2703
+      },
+      "q": 0.4,
+      "rep": 2,
+      "rtt_p99_ms": 405.499,
+      "run_index": 18,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 2703,
+        "malformed": 0,
+        "received_total": 2703,
+        "valid": 2703
+      },
+      "shim_stats": {
+        "dropped_extra": 1784,
+        "forwarded_client": 2703,
+        "forwarded_server": 2703,
+        "in_client": 4487,
+        "in_server": 2703
+      },
+      "tag": "q40-r2"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 2498,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.7502,
+      "extra_seed": 21903,
+      "gen_rc": 0,
+      "loss_rate": 0.7502,
+      "lost": 7502,
+      "ports": {
+        "proxy": 17119,
+        "server": 15119,
+        "shim": 16119
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2595,
+        "c2s:drop_loss": 1309,
+        "c2s:forward": 5395,
+        "s2c:drop_flap": 107,
+        "s2c:drop_loss": 605,
+        "s2c:forward": 2498
+      },
+      "proxy_summary": {
+        "delayed": 7893,
+        "dropped_flap": 2702,
+        "dropped_loss": 1914,
+        "forwarded": 7893,
+        "in_client": 9299,
+        "in_server": 3210
+      },
+      "q": 0.4,
+      "rep": 3,
+      "rtt_p99_ms": 333.267,
+      "run_index": 19,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 3210,
+        "malformed": 0,
+        "received_total": 3210,
+        "valid": 3210
+      },
+      "shim_stats": {
+        "dropped_extra": 2185,
+        "forwarded_client": 3210,
+        "forwarded_server": 3210,
+        "in_client": 5395,
+        "in_server": 3210
+      },
+      "tag": "q40-r3"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 2430,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.757,
+      "extra_seed": 22004,
+      "gen_rc": 0,
+      "loss_rate": 0.757,
+      "lost": 7570,
+      "ports": {
+        "proxy": 17120,
+        "server": 15120,
+        "shim": 16120
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2297,
+        "c2s:drop_loss": 1287,
+        "c2s:forward": 5245,
+        "s2c:drop_flap": 182,
+        "s2c:drop_loss": 571,
+        "s2c:forward": 2430
+      },
+      "proxy_summary": {
+        "delayed": 7675,
+        "dropped_flap": 2479,
+        "dropped_loss": 1858,
+        "forwarded": 7675,
+        "in_client": 8829,
+        "in_server": 3183
+      },
+      "q": 0.4,
+      "rep": 4,
+      "rtt_p99_ms": 396.679,
+      "run_index": 20,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 3183,
+        "malformed": 0,
+        "received_total": 3183,
+        "valid": 3183
+      },
+      "shim_stats": {
+        "dropped_extra": 2062,
+        "forwarded_client": 3183,
+        "forwarded_server": 3183,
+        "in_client": 5245,
+        "in_server": 3183
+      },
+      "tag": "q40-r4"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 2302,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.7698,
+      "extra_seed": 20201,
+      "gen_rc": 0,
+      "loss_rate": 0.7698,
+      "lost": 7698,
+      "ports": {
+        "proxy": 17102,
+        "server": 15102,
+        "shim": 16102
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2459,
+        "c2s:drop_loss": 1488,
+        "c2s:forward": 5967,
+        "s2c:drop_flap": 107,
+        "s2c:drop_loss": 527,
+        "s2c:forward": 2302
+      },
+      "proxy_summary": {
+        "delayed": 8269,
+        "dropped_flap": 2566,
+        "dropped_loss": 2015,
+        "forwarded": 8269,
+        "in_client": 9914,
+        "in_server": 2936
+      },
+      "q": 0.5,
+      "rep": 1,
+      "rtt_p99_ms": 256.51,
+      "run_index": 2,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 2936,
+        "malformed": 0,
+        "received_total": 2936,
+        "valid": 2936
+      },
+      "shim_stats": {
+        "dropped_extra": 3031,
+        "forwarded_client": 2936,
+        "forwarded_server": 2936,
+        "in_client": 5967,
+        "in_server": 2936
+      },
+      "tag": "q50-r1"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 1988,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.8012,
+      "extra_seed": 22202,
+      "gen_rc": 0,
+      "loss_rate": 0.8012,
+      "lost": 8012,
+      "ports": {
+        "proxy": 17122,
+        "server": 15122,
+        "shim": 16122
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2575,
+        "c2s:drop_loss": 1225,
+        "c2s:forward": 5125,
+        "s2c:drop_flap": 105,
+        "s2c:drop_loss": 491,
+        "s2c:forward": 1988
+      },
+      "proxy_summary": {
+        "delayed": 7113,
+        "dropped_flap": 2680,
+        "dropped_loss": 1716,
+        "forwarded": 7113,
+        "in_client": 8925,
+        "in_server": 2584
+      },
+      "q": 0.5,
+      "rep": 2,
+      "rtt_p99_ms": 374.012,
+      "run_index": 22,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 2584,
+        "malformed": 0,
+        "received_total": 2584,
+        "valid": 2584
+      },
+      "shim_stats": {
+        "dropped_extra": 2541,
+        "forwarded_client": 2584,
+        "forwarded_server": 2584,
+        "in_client": 5125,
+        "in_server": 2584
+      },
+      "tag": "q50-r2"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 2068,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.7932,
+      "extra_seed": 22303,
+      "gen_rc": 0,
+      "loss_rate": 0.7932,
+      "lost": 7932,
+      "ports": {
+        "proxy": 17123,
+        "server": 15123,
+        "shim": 16123
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2767,
+        "c2s:drop_loss": 1279,
+        "c2s:forward": 5406,
+        "s2c:drop_flap": 54,
+        "s2c:drop_loss": 543,
+        "s2c:forward": 2068
+      },
+      "proxy_summary": {
+        "delayed": 7474,
+        "dropped_flap": 2821,
+        "dropped_loss": 1822,
+        "forwarded": 7474,
+        "in_client": 9452,
+        "in_server": 2665
+      },
+      "q": 0.5,
+      "rep": 3,
+      "rtt_p99_ms": 298.224,
+      "run_index": 23,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 2665,
+        "malformed": 0,
+        "received_total": 2665,
+        "valid": 2665
+      },
+      "shim_stats": {
+        "dropped_extra": 2741,
+        "forwarded_client": 2665,
+        "forwarded_server": 2665,
+        "in_client": 5406,
+        "in_server": 2665
+      },
+      "tag": "q50-r3"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 2142,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.7858,
+      "extra_seed": 22404,
+      "gen_rc": 0,
+      "loss_rate": 0.7858,
+      "lost": 7858,
+      "ports": {
+        "proxy": 17124,
+        "server": 15124,
+        "shim": 16124
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2423,
+        "c2s:drop_loss": 1378,
+        "c2s:forward": 5617,
+        "s2c:drop_flap": 149,
+        "s2c:drop_loss": 500,
+        "s2c:forward": 2142
+      },
+      "proxy_summary": {
+        "delayed": 7759,
+        "dropped_flap": 2572,
+        "dropped_loss": 1878,
+        "forwarded": 7759,
+        "in_client": 9418,
+        "in_server": 2791
+      },
+      "q": 0.5,
+      "rep": 4,
+      "rtt_p99_ms": 465.59,
+      "run_index": 24,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 2791,
+        "malformed": 0,
+        "received_total": 2791,
+        "valid": 2791
+      },
+      "shim_stats": {
+        "dropped_extra": 2826,
+        "forwarded_client": 2791,
+        "forwarded_server": 2791,
+        "in_client": 5617,
+        "in_server": 2791
+      },
+      "tag": "q50-r4"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 1664,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.8336,
+      "extra_seed": 22501,
+      "gen_rc": 0,
+      "loss_rate": 0.8336,
+      "lost": 8336,
+      "ports": {
+        "proxy": 17125,
+        "server": 15125,
+        "shim": 16125
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2262,
+        "c2s:drop_loss": 1333,
+        "c2s:forward": 5372,
+        "s2c:drop_flap": 131,
+        "s2c:drop_loss": 368,
+        "s2c:forward": 1664
+      },
+      "proxy_summary": {
+        "delayed": 7036,
+        "dropped_flap": 2393,
+        "dropped_loss": 1701,
+        "forwarded": 7036,
+        "in_client": 8967,
+        "in_server": 2163
+      },
+      "q": 0.6,
+      "rep": 1,
+      "rtt_p99_ms": 382.682,
+      "run_index": 25,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 2163,
+        "malformed": 0,
+        "received_total": 2163,
+        "valid": 2163
+      },
+      "shim_stats": {
+        "dropped_extra": 3209,
+        "forwarded_client": 2163,
+        "forwarded_server": 2163,
+        "in_client": 5372,
+        "in_server": 2163
+      },
+      "tag": "q60-r1"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 1740,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.826,
+      "extra_seed": 22602,
+      "gen_rc": 0,
+      "loss_rate": 0.826,
+      "lost": 8260,
+      "ports": {
+        "proxy": 17126,
+        "server": 15126,
+        "shim": 16126
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2597,
+        "c2s:drop_loss": 1342,
+        "c2s:forward": 5393,
+        "s2c:drop_flap": 49,
+        "s2c:drop_loss": 383,
+        "s2c:forward": 1740
+      },
+      "proxy_summary": {
+        "delayed": 7133,
+        "dropped_flap": 2646,
+        "dropped_loss": 1725,
+        "forwarded": 7133,
+        "in_client": 9332,
+        "in_server": 2172
+      },
+      "q": 0.6,
+      "rep": 2,
+      "rtt_p99_ms": 351.133,
+      "run_index": 26,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 2172,
+        "malformed": 0,
+        "received_total": 2172,
+        "valid": 2172
+      },
+      "shim_stats": {
+        "dropped_extra": 3221,
+        "forwarded_client": 2172,
+        "forwarded_server": 2172,
+        "in_client": 5393,
+        "in_server": 2172
+      },
+      "tag": "q60-r2"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 1710,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.829,
+      "extra_seed": 22703,
+      "gen_rc": 0,
+      "loss_rate": 0.829,
+      "lost": 8290,
+      "ports": {
+        "proxy": 17127,
+        "server": 15127,
+        "shim": 16127
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2108,
+        "c2s:drop_loss": 1288,
+        "c2s:forward": 5374,
+        "s2c:drop_flap": 79,
+        "s2c:drop_loss": 422,
+        "s2c:forward": 1710
+      },
+      "proxy_summary": {
+        "delayed": 7084,
+        "dropped_flap": 2187,
+        "dropped_loss": 1710,
+        "forwarded": 7084,
+        "in_client": 8770,
+        "in_server": 2211
+      },
+      "q": 0.6,
+      "rep": 3,
+      "rtt_p99_ms": 375.652,
+      "run_index": 27,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 2211,
+        "malformed": 0,
+        "received_total": 2211,
+        "valid": 2211
+      },
+      "shim_stats": {
+        "dropped_extra": 3163,
+        "forwarded_client": 2211,
+        "forwarded_server": 2211,
+        "in_client": 5374,
+        "in_server": 2211
+      },
+      "tag": "q60-r3"
+    },
+    {
+      "alert_fires_on_exporter": true,
+      "alert_fires_on_summary": true,
+      "echoed": 1752,
+      "exporter_error": null,
+      "exporter_loss_ratio": 0.8248,
+      "extra_seed": 22804,
+      "gen_rc": 0,
+      "loss_rate": 0.8248,
+      "lost": 8248,
+      "ports": {
+        "proxy": 17128,
+        "server": 15128,
+        "shim": 16128
+      },
+      "proxy_decisions": {
+        "c2s:drop_flap": 2521,
+        "c2s:drop_loss": 1359,
+        "c2s:forward": 5657,
+        "s2c:drop_flap": 78,
+        "s2c:drop_loss": 451,
+        "s2c:forward": 1752
+      },
+      "proxy_summary": {
+        "delayed": 7409,
+        "dropped_flap": 2599,
+        "dropped_loss": 1810,
+        "forwarded": 7409,
+        "in_client": 9537,
+        "in_server": 2281
+      },
+      "q": 0.6,
+      "rep": 4,
+      "rtt_p99_ms": 372.147,
+      "run_index": 28,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 2281,
+        "malformed": 0,
+        "received_total": 2281,
+        "valid": 2281
+      },
+      "shim_stats": {
+        "dropped_extra": 3376,
+        "forwarded_client": 2281,
+        "forwarded_server": 2281,
+        "in_client": 5657,
+        "in_server": 2281
+      },
+      "tag": "q60-r4"
+    }
+  ],
+  "q_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6
+  ],
+  "reps_per_q": 4,
+  "simulation": [
+    {
+      "loss_max": 0.5424,
+      "loss_mean": 0.5277,
+      "loss_min": 0.5143,
+      "loss_p05": 0.5208,
+      "loss_p50": 0.5276,
+      "loss_p95": 0.5344,
+      "loss_sd": 0.0041,
+      "n_fire": 0,
+      "p_fire": 0.0,
+      "q": 0.0,
+      "trials": 2000
+    },
+    {
+      "loss_max": 0.5892,
+      "loss_mean": 0.5751,
+      "loss_min": 0.5579,
+      "loss_p05": 0.5679,
+      "loss_p50": 0.5751,
+      "loss_p95": 0.5821,
+      "loss_sd": 0.0043,
+      "n_fire": 0,
+      "p_fire": 0.0,
+      "q": 0.1,
+      "trials": 2000
+    },
+    {
+      "loss_max": 0.6368,
+      "loss_mean": 0.6223,
+      "loss_min": 0.6084,
+      "loss_p05": 0.6151,
+      "loss_p50": 0.6222,
+      "loss_p95": 0.6293,
+      "loss_sd": 0.0043,
+      "n_fire": 0,
+      "p_fire": 0.0,
+      "q": 0.2,
+      "trials": 2000
+    },
+    {
+      "loss_max": 0.6851,
+      "loss_mean": 0.6694,
+      "loss_min": 0.6559,
+      "loss_p05": 0.6622,
+      "loss_p50": 0.6693,
+      "loss_p95": 0.6767,
+      "loss_sd": 0.0044,
+      "n_fire": 0,
+      "p_fire": 0.0,
+      "q": 0.3,
+      "trials": 2000
+    },
+    {
+      "loss_max": 0.7305,
+      "loss_mean": 0.7166,
+      "loss_min": 0.7039,
+      "loss_p05": 0.7098,
+      "loss_p50": 0.7166,
+      "loss_p95": 0.7233,
+      "loss_sd": 0.0042,
+      "n_fire": 0,
+      "p_fire": 0.0,
+      "q": 0.4,
+      "trials": 2000
+    },
+    {
+      "loss_max": 0.777,
+      "loss_mean": 0.764,
+      "loss_min": 0.7519,
+      "loss_p05": 0.7575,
+      "loss_p50": 0.7639,
+      "loss_p95": 0.7704,
+      "loss_sd": 0.0039,
+      "n_fire": 2000,
+      "p_fire": 1.0,
+      "q": 0.5,
+      "trials": 2000
+    },
+    {
+      "loss_max": 0.8216,
+      "loss_mean": 0.8111,
+      "loss_min": 0.7991,
+      "loss_p05": 0.8052,
+      "loss_p50": 0.811,
+      "loss_p95": 0.8173,
+      "loss_sd": 0.0037,
+      "n_fire": 2000,
+      "p_fire": 1.0,
+      "q": 0.6,
+      "trials": 2000
+    }
+  ],
+  "threshold": 0.75
+}
