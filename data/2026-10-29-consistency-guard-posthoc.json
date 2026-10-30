@@ -1,0 +1,290 @@
+{
+  "replication": {
+    "alerts": {
+      "unguarded": {
+        "alert_correct": 1,
+        "alert_missed": 2,
+        "alert_false": 0
+      },
+      "cons_rescue": {
+        "alert_correct": 3,
+        "alert_missed": 0,
+        "alert_false": 1
+      }
+    },
+    "bad_threshold_sensitivity": {
+      "0.05": {
+        "CONS": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "tn": 6,
+          "acc": 1.0
+        },
+        "SEP": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 3,
+          "tn": 6,
+          "acc": 0.8
+        },
+        "COUNT": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "tn": 6,
+          "acc": 1.0
+        }
+      },
+      "0.09": {
+        "CONS": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "tn": 6,
+          "acc": 1.0
+        },
+        "SEP": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 3,
+          "tn": 6,
+          "acc": 0.8
+        },
+        "COUNT": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "tn": 6,
+          "acc": 1.0
+        }
+      },
+      "0.1": {
+        "CONS": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "tn": 6,
+          "acc": 1.0
+        },
+        "SEP": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 3,
+          "tn": 6,
+          "acc": 0.8
+        },
+        "COUNT": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "tn": 6,
+          "acc": 1.0
+        }
+      },
+      "0.12": {
+        "CONS": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "tn": 6,
+          "acc": 1.0
+        },
+        "SEP": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 3,
+          "tn": 6,
+          "acc": 0.8
+        },
+        "COUNT": {
+          "tp": 9,
+          "fp": 0,
+          "fn": 0,
+          "tn": 6,
+          "acc": 1.0
+        }
+      }
+    },
+    "cons_count_agree_pooled": "15/15",
+    "cons_count_agree_perscene": "60/60",
+    "perscene_cons_fn": [],
+    "perscene_cons_fp_by_s": {
+      "s=0.3": 1,
+      "s=0.28": 1,
+      "s=0.25": 1,
+      "s=0.22": 2,
+      "s=0.18": 1,
+      "s=0.15": 1,
+      "s=0.12": 2
+    },
+    "perscene_sep_fn_count": 5,
+    "perscene_cons_fn_detail": [],
+    "deployment_U_or_guarded_note": "see deployment_summary in bench json",
+    "unguarded_losses": {
+      "s=0.28": 0.0169
+    },
+    "rescue_losses": {}
+  },
+  "holdout": {
+    "alerts": {
+      "unguarded": {
+        "alert_correct": 1,
+        "alert_missed": 2,
+        "alert_false": 0
+      },
+      "cons_rescue": {
+        "alert_correct": 3,
+        "alert_missed": 0,
+        "alert_false": 1
+      }
+    },
+    "bad_threshold_sensitivity": {
+      "0.05": {
+        "CONS": {
+          "tp": 8,
+          "fp": 1,
+          "fn": 0,
+          "tn": 6,
+          "acc": 0.933
+        },
+        "SEP": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 2,
+          "tn": 6,
+          "acc": 0.8
+        },
+        "COUNT": {
+          "tp": 8,
+          "fp": 1,
+          "fn": 0,
+          "tn": 6,
+          "acc": 0.933
+        }
+      },
+      "0.09": {
+        "CONS": {
+          "tp": 7,
+          "fp": 2,
+          "fn": 0,
+          "tn": 6,
+          "acc": 0.867
+        },
+        "SEP": {
+          "tp": 5,
+          "fp": 2,
+          "fn": 2,
+          "tn": 6,
+          "acc": 0.733
+        },
+        "COUNT": {
+          "tp": 7,
+          "fp": 2,
+          "fn": 0,
+          "tn": 6,
+          "acc": 0.867
+        }
+      },
+      "0.1": {
+        "CONS": {
+          "tp": 4,
+          "fp": 5,
+          "fn": 0,
+          "tn": 6,
+          "acc": 0.667
+        },
+        "SEP": {
+          "tp": 2,
+          "fp": 5,
+          "fn": 2,
+          "tn": 6,
+          "acc": 0.533
+        },
+        "COUNT": {
+          "tp": 4,
+          "fp": 5,
+          "fn": 0,
+          "tn": 6,
+          "acc": 0.667
+        }
+      },
+      "0.12": {
+        "CONS": {
+          "tp": 2,
+          "fp": 7,
+          "fn": 0,
+          "tn": 6,
+          "acc": 0.533
+        },
+        "SEP": {
+          "tp": 0,
+          "fp": 7,
+          "fn": 2,
+          "tn": 6,
+          "acc": 0.4
+        },
+        "COUNT": {
+          "tp": 2,
+          "fp": 7,
+          "fn": 0,
+          "tn": 6,
+          "acc": 0.533
+        }
+      }
+    },
+    "cons_count_agree_pooled": "15/15",
+    "cons_count_agree_perscene": "55/60",
+    "perscene_cons_fn": [
+      {
+        "scene_seed": 606,
+        "s_hat7": 0.3084,
+        "s_hat3": 0.2942,
+        "err7": 0.1014,
+        "bad": true,
+        "divergence": 0.0483,
+        "sep7": 0.54,
+        "n7": 31,
+        "rejects": {
+          "CONS": false,
+          "SEP": true,
+          "COUNT": true,
+          "CONS_or_SEP": true,
+          "CONS_or_COUNT": true,
+          "SEP_or_COUNT": true,
+          "ANY_OR": true,
+          "CONS_and_SEP": false,
+          "CONS_and_COUNT": false,
+          "ALL_AND": false
+        }
+      }
+    ],
+    "perscene_cons_fp_by_s": {
+      "s=0.3": 1,
+      "s=0.28": 2,
+      "s=0.25": 1,
+      "s=0.22": 2,
+      "s=0.18": 2,
+      "s=0.15": 2,
+      "s=0.12": 2
+    },
+    "perscene_sep_fn_count": 4,
+    "perscene_cons_fn_detail": [
+      [
+        "s=0.28",
+        606,
+        0.3084,
+        0.2942,
+        0.1014,
+        0.0483
+      ]
+    ],
+    "deployment_U_or_guarded_note": "see deployment_summary in bench json",
+    "unguarded_losses": {
+      "s=0.28": 0.0025
+    },
+    "rescue_losses": {
+      "s=0.3": -0.0025
+    }
+  }
+}

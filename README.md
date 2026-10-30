@@ -26,6 +26,8 @@ Author / 作者：Guangyi Zhao
 | 2026-10-25 | [估出来的 s 敢不敢用：面积中位数反推缩放系数的端到端误差链实测](articles/2026-10-25-bloom-s-estimation-error-chain.md) | [Can You Trust an Estimated s? The End-to-End Error Chain of Median-Area Scale Estimation, Measured](articles-en/2026-10-25-bloom-s-estimation-error-chain.md) |
 | 2026-10-26 | [凑近了反而简单：s 大于 1 方向的对称性实测——塌的只有分类门槛，出框是取景账不是检测账](articles/2026-10-26-bloom-zoom-in-symmetry.md) | [Moving Closer Turned Out Simpler: A Symmetry Test for s > 1 — Only the Class Threshold Collapses, and Going Out of Frame Is a Framing Cost, Not a Detection Cost](articles-en/2026-10-26-bloom-zoom-in-symmetry.md) |
 | 2026-10-27 | [防盲告警实测：我以为 absent() 要等五分钟——三条规则、三种死法，没有一条全看见](articles/2026-10-27-blind-alert-three-deaths.md) | [Blind-Spot Alerts, Measured: I Expected absent() to Take Five Minutes — Three Guard Rules, Three Ways to Die, and None Sees Them All](articles-en/2026-10-27-blind-alert-three-deaths.md) |
+| 2026-10-28 | [再丢四成七才报警：注入带 0.75 上界的判别力实测](articles/2026-10-28-injection-band-discrimination.md) | [It Takes Another 47% Before It Complains: Measuring the Discrimination of the 0.75 Injection-Band Alert](articles-en/2026-10-28-injection-band-discrimination.md) |
+| 2026-10-29 | [分歧 0.4% 到 170%：多估计器一致性守卫实测——复测集满分，留出集只答对三分之二](articles/2026-10-29-consistency-guard-validation.md) | [Divergence from 0.4% to 170%: Validating a Multi-Estimator Consistency Guard — Perfect on the Replication Set, Two-Thirds on Holdout](articles-en/2026-10-29-consistency-guard-validation.md) |
 
 ## Standards / 写作标准
 
