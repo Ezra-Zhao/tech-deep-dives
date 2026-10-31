@@ -1,0 +1,3307 @@
+{
+  "detector": "color-segmentation-v0.1",
+  "base_params": {
+    "min_area": 120,
+    "bloom_area_min": 900,
+    "morph_kernel": 7
+  },
+  "scales": [
+    1.0,
+    1.25,
+    1.5,
+    2.0,
+    2.5,
+    3.0
+  ],
+  "plant_report": {
+    "101": {
+      "planted": 64,
+      "by_stratum": {
+        "subfloor": 32,
+        "mid": 16,
+        "large": 8,
+        "control_blue": 8
+      }
+    },
+    "202": {
+      "planted": 64,
+      "by_stratum": {
+        "subfloor": 32,
+        "mid": 16,
+        "large": 8,
+        "control_blue": 8
+      }
+    },
+    "303": {
+      "planted": 64,
+      "by_stratum": {
+        "subfloor": 32,
+        "mid": 16,
+        "large": 8,
+        "control_blue": 8
+      }
+    },
+    "404": {
+      "planted": 64,
+      "by_stratum": {
+        "subfloor": 32,
+        "mid": 16,
+        "large": 8,
+        "control_blue": 8
+      }
+    }
+  },
+  "arms": {
+    "A_fixed_min": "min/bloom/kernel per lambda in script",
+    "B_scaled_min": "min/bloom/kernel per lambda in script",
+    "C_scaled_min_kernel": "min/bloom/kernel per lambda in script",
+    "D_fully_fixed": "min/bloom/kernel per lambda in script"
+  },
+  "prereg": "data/2026-10-30-noise-floor-prereg.md",
+  "clean": {
+    "s=1.0": {
+      "A_fixed_min": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0,
+        "micro_f1": 1.0
+      },
+      "B_scaled_min": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0,
+        "micro_f1": 1.0
+      }
+    },
+    "s=1.25": {
+      "A_fixed_min": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0,
+        "micro_f1": 1.0
+      },
+      "B_scaled_min": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0,
+        "micro_f1": 1.0
+      }
+    },
+    "s=1.5": {
+      "A_fixed_min": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0,
+        "micro_f1": 1.0
+      },
+      "B_scaled_min": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0,
+        "micro_f1": 1.0
+      }
+    },
+    "s=2.0": {
+      "A_fixed_min": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0,
+        "micro_f1": 1.0
+      },
+      "B_scaled_min": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0,
+        "micro_f1": 1.0
+      }
+    },
+    "s=2.5": {
+      "A_fixed_min": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0,
+        "micro_f1": 1.0
+      },
+      "B_scaled_min": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0,
+        "micro_f1": 1.0
+      }
+    },
+    "s=3.0": {
+      "A_fixed_min": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0,
+        "micro_f1": 1.0
+      },
+      "B_scaled_min": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "f1": 1.0,
+        "micro_f1": 1.0
+      }
+    }
+  },
+  "main": {
+    "s=1.0": {
+      "A_fixed_min": {
+        "tp": 210,
+        "fp": 96,
+        "fn": 0,
+        "precision": 0.6863,
+        "recall": 1.0,
+        "f1": 0.814,
+        "det_total": 306,
+        "clutter_passed": 96,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.375,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 32,
+            "total": 76,
+            "rate": 0.4211
+          },
+          "white": {
+            "passed": 32,
+            "total": 76,
+            "rate": 0.4211
+          },
+          "yellow": {
+            "passed": 32,
+            "total": 72,
+            "rate": 0.4444
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          },
+          "square": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 900,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          24,
+          24,
+          24,
+          24
+        ]
+      },
+      "B_scaled_min": {
+        "tp": 210,
+        "fp": 96,
+        "fn": 0,
+        "precision": 0.6863,
+        "recall": 1.0,
+        "f1": 0.814,
+        "det_total": 306,
+        "clutter_passed": 96,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.375,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 32,
+            "total": 76,
+            "rate": 0.4211
+          },
+          "white": {
+            "passed": 32,
+            "total": 76,
+            "rate": 0.4211
+          },
+          "yellow": {
+            "passed": 32,
+            "total": 72,
+            "rate": 0.4444
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          },
+          "square": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 900,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          24,
+          24,
+          24,
+          24
+        ]
+      },
+      "C_scaled_min_kernel": {
+        "tp": 210,
+        "fp": 96,
+        "fn": 0,
+        "precision": 0.6863,
+        "recall": 1.0,
+        "f1": 0.814,
+        "det_total": 306,
+        "clutter_passed": 96,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.375,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 32,
+            "total": 76,
+            "rate": 0.4211
+          },
+          "white": {
+            "passed": 32,
+            "total": 76,
+            "rate": 0.4211
+          },
+          "yellow": {
+            "passed": 32,
+            "total": 72,
+            "rate": 0.4444
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          },
+          "square": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 900,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          24,
+          24,
+          24,
+          24
+        ]
+      },
+      "D_fully_fixed": {
+        "tp": 210,
+        "fp": 96,
+        "fn": 0,
+        "precision": 0.6863,
+        "recall": 1.0,
+        "f1": 0.814,
+        "det_total": 306,
+        "clutter_passed": 96,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.375,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 32,
+            "total": 76,
+            "rate": 0.4211
+          },
+          "white": {
+            "passed": 32,
+            "total": 76,
+            "rate": 0.4211
+          },
+          "yellow": {
+            "passed": 32,
+            "total": 72,
+            "rate": 0.4444
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          },
+          "square": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 900,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          24,
+          24,
+          24,
+          24
+        ]
+      }
+    },
+    "s=1.25": {
+      "A_fixed_min": {
+        "tp": 210,
+        "fp": 141,
+        "fn": 0,
+        "precision": 0.5983,
+        "recall": 1.0,
+        "f1": 0.7487,
+        "det_total": 351,
+        "clutter_passed": 141,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.5508,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 45,
+            "total": 128,
+            "rate": 0.3516
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 13,
+            "total": 32,
+            "rate": 0.4062
+          },
+          "r=6": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 47,
+            "total": 76,
+            "rate": 0.6184
+          },
+          "white": {
+            "passed": 46,
+            "total": 76,
+            "rate": 0.6053
+          },
+          "yellow": {
+            "passed": 48,
+            "total": 72,
+            "rate": 0.6667
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 64,
+            "total": 112,
+            "rate": 0.5714
+          },
+          "square": {
+            "passed": 77,
+            "total": 112,
+            "rate": 0.6875
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 1406,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          35,
+          36,
+          34,
+          36
+        ]
+      },
+      "B_scaled_min": {
+        "tp": 210,
+        "fp": 101,
+        "fn": 0,
+        "precision": 0.6752,
+        "recall": 1.0,
+        "f1": 0.8061,
+        "det_total": 311,
+        "clutter_passed": 101,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.3945,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 5,
+            "total": 128,
+            "rate": 0.0391
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 5,
+            "total": 32,
+            "rate": 0.1562
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 32,
+            "total": 76,
+            "rate": 0.4211
+          },
+          "white": {
+            "passed": 34,
+            "total": 76,
+            "rate": 0.4474
+          },
+          "yellow": {
+            "passed": 35,
+            "total": 72,
+            "rate": 0.4861
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          },
+          "square": {
+            "passed": 53,
+            "total": 112,
+            "rate": 0.4732
+          }
+        },
+        "params": {
+          "min_area": 188,
+          "bloom_min": 1406,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          25,
+          26,
+          25,
+          25
+        ]
+      },
+      "C_scaled_min_kernel": {
+        "tp": 210,
+        "fp": 101,
+        "fn": 0,
+        "precision": 0.6752,
+        "recall": 1.0,
+        "f1": 0.8061,
+        "det_total": 311,
+        "clutter_passed": 101,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.3945,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 5,
+            "total": 128,
+            "rate": 0.0391
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 5,
+            "total": 32,
+            "rate": 0.1562
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 32,
+            "total": 76,
+            "rate": 0.4211
+          },
+          "white": {
+            "passed": 34,
+            "total": 76,
+            "rate": 0.4474
+          },
+          "yellow": {
+            "passed": 35,
+            "total": 72,
+            "rate": 0.4861
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          },
+          "square": {
+            "passed": 53,
+            "total": 112,
+            "rate": 0.4732
+          }
+        },
+        "params": {
+          "min_area": 188,
+          "bloom_min": 1406,
+          "kernel": 9
+        },
+        "per_scene_pass": [
+          25,
+          26,
+          25,
+          25
+        ]
+      },
+      "D_fully_fixed": {
+        "tp": 210,
+        "fp": 141,
+        "fn": 0,
+        "precision": 0.5983,
+        "recall": 1.0,
+        "f1": 0.7487,
+        "det_total": 351,
+        "clutter_passed": 141,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.5508,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 45,
+            "total": 128,
+            "rate": 0.3516
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 13,
+            "total": 32,
+            "rate": 0.4062
+          },
+          "r=6": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 47,
+            "total": 76,
+            "rate": 0.6184
+          },
+          "white": {
+            "passed": 46,
+            "total": 76,
+            "rate": 0.6053
+          },
+          "yellow": {
+            "passed": 48,
+            "total": 72,
+            "rate": 0.6667
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 64,
+            "total": 112,
+            "rate": 0.5714
+          },
+          "square": {
+            "passed": 77,
+            "total": 112,
+            "rate": 0.6875
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 900,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          35,
+          36,
+          34,
+          36
+        ]
+      }
+    },
+    "s=1.5": {
+      "A_fixed_min": {
+        "tp": 210,
+        "fp": 168,
+        "fn": 0,
+        "precision": 0.5556,
+        "recall": 1.0,
+        "f1": 0.7143,
+        "det_total": 378,
+        "clutter_passed": 168,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.6562,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 72,
+            "total": 128,
+            "rate": 0.5625
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 8,
+            "total": 32,
+            "rate": 0.25
+          },
+          "r=5": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=6": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 55,
+            "total": 76,
+            "rate": 0.7237
+          },
+          "white": {
+            "passed": 58,
+            "total": 76,
+            "rate": 0.7632
+          },
+          "yellow": {
+            "passed": 55,
+            "total": 72,
+            "rate": 0.7639
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 80,
+            "total": 112,
+            "rate": 0.7143
+          },
+          "square": {
+            "passed": 88,
+            "total": 112,
+            "rate": 0.7857
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 2025,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          42,
+          43,
+          41,
+          42
+        ]
+      },
+      "B_scaled_min": {
+        "tp": 210,
+        "fp": 112,
+        "fn": 0,
+        "precision": 0.6522,
+        "recall": 1.0,
+        "f1": 0.7895,
+        "det_total": 322,
+        "clutter_passed": 112,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.4375,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 16,
+            "total": 128,
+            "rate": 0.125
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 16,
+            "total": 32,
+            "rate": 0.5
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 36,
+            "total": 76,
+            "rate": 0.4737
+          },
+          "white": {
+            "passed": 40,
+            "total": 76,
+            "rate": 0.5263
+          },
+          "yellow": {
+            "passed": 36,
+            "total": 72,
+            "rate": 0.5
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          },
+          "square": {
+            "passed": 64,
+            "total": 112,
+            "rate": 0.5714
+          }
+        },
+        "params": {
+          "min_area": 270,
+          "bloom_min": 2025,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          28,
+          28,
+          28,
+          28
+        ]
+      },
+      "C_scaled_min_kernel": {
+        "tp": 210,
+        "fp": 104,
+        "fn": 0,
+        "precision": 0.6688,
+        "recall": 1.0,
+        "f1": 0.8015,
+        "det_total": 314,
+        "clutter_passed": 104,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.4062,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 8,
+            "total": 128,
+            "rate": 0.0625
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 8,
+            "total": 32,
+            "rate": 0.25
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 35,
+            "total": 76,
+            "rate": 0.4605
+          },
+          "white": {
+            "passed": 34,
+            "total": 76,
+            "rate": 0.4474
+          },
+          "yellow": {
+            "passed": 35,
+            "total": 72,
+            "rate": 0.4861
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          },
+          "square": {
+            "passed": 56,
+            "total": 112,
+            "rate": 0.5
+          }
+        },
+        "params": {
+          "min_area": 270,
+          "bloom_min": 2025,
+          "kernel": 11
+        },
+        "per_scene_pass": [
+          26,
+          26,
+          26,
+          26
+        ]
+      },
+      "D_fully_fixed": {
+        "tp": 189,
+        "fp": 189,
+        "fn": 21,
+        "precision": 0.5,
+        "recall": 0.9,
+        "f1": 0.6429,
+        "det_total": 378,
+        "clutter_passed": 168,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 21,
+        "pass_rate": 0.6562,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 72,
+            "total": 128,
+            "rate": 0.5625
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 8,
+            "total": 32,
+            "rate": 0.25
+          },
+          "r=5": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=6": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 55,
+            "total": 76,
+            "rate": 0.7237
+          },
+          "white": {
+            "passed": 58,
+            "total": 76,
+            "rate": 0.7632
+          },
+          "yellow": {
+            "passed": 55,
+            "total": 72,
+            "rate": 0.7639
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 80,
+            "total": 112,
+            "rate": 0.7143
+          },
+          "square": {
+            "passed": 88,
+            "total": 112,
+            "rate": 0.7857
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 900,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          42,
+          43,
+          41,
+          42
+        ]
+      }
+    },
+    "s=2.0": {
+      "A_fixed_min": {
+        "tp": 210,
+        "fp": 197,
+        "fn": 0,
+        "precision": 0.516,
+        "recall": 1.0,
+        "f1": 0.6807,
+        "det_total": 407,
+        "clutter_passed": 197,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.7695,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 101,
+            "total": 128,
+            "rate": 0.7891
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 5,
+            "total": 32,
+            "rate": 0.1562
+          },
+          "r=4": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=5": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=6": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 68,
+            "total": 76,
+            "rate": 0.8947
+          },
+          "white": {
+            "passed": 64,
+            "total": 76,
+            "rate": 0.8421
+          },
+          "yellow": {
+            "passed": 65,
+            "total": 72,
+            "rate": 0.9028
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 101,
+            "total": 112,
+            "rate": 0.9018
+          },
+          "square": {
+            "passed": 96,
+            "total": 112,
+            "rate": 0.8571
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 3600,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          49,
+          48,
+          50,
+          50
+        ]
+      },
+      "B_scaled_min": {
+        "tp": 210,
+        "fp": 114,
+        "fn": 0,
+        "precision": 0.6481,
+        "recall": 1.0,
+        "f1": 0.7865,
+        "det_total": 324,
+        "clutter_passed": 114,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.4453,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 18,
+            "total": 128,
+            "rate": 0.1406
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 18,
+            "total": 32,
+            "rate": 0.5625
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 36,
+            "total": 76,
+            "rate": 0.4737
+          },
+          "white": {
+            "passed": 40,
+            "total": 76,
+            "rate": 0.5263
+          },
+          "yellow": {
+            "passed": 38,
+            "total": 72,
+            "rate": 0.5278
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 50,
+            "total": 112,
+            "rate": 0.4464
+          },
+          "square": {
+            "passed": 64,
+            "total": 112,
+            "rate": 0.5714
+          }
+        },
+        "params": {
+          "min_area": 480,
+          "bloom_min": 3600,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          29,
+          28,
+          29,
+          28
+        ]
+      },
+      "C_scaled_min_kernel": {
+        "tp": 210,
+        "fp": 114,
+        "fn": 0,
+        "precision": 0.6481,
+        "recall": 1.0,
+        "f1": 0.7865,
+        "det_total": 324,
+        "clutter_passed": 114,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.4453,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 18,
+            "total": 128,
+            "rate": 0.1406
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 18,
+            "total": 32,
+            "rate": 0.5625
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 36,
+            "total": 76,
+            "rate": 0.4737
+          },
+          "white": {
+            "passed": 40,
+            "total": 76,
+            "rate": 0.5263
+          },
+          "yellow": {
+            "passed": 38,
+            "total": 72,
+            "rate": 0.5278
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 50,
+            "total": 112,
+            "rate": 0.4464
+          },
+          "square": {
+            "passed": 64,
+            "total": 112,
+            "rate": 0.5714
+          }
+        },
+        "params": {
+          "min_area": 480,
+          "bloom_min": 3600,
+          "kernel": 15
+        },
+        "per_scene_pass": [
+          29,
+          28,
+          29,
+          28
+        ]
+      },
+      "D_fully_fixed": {
+        "tp": 134,
+        "fp": 273,
+        "fn": 76,
+        "precision": 0.3292,
+        "recall": 0.6381,
+        "f1": 0.4344,
+        "det_total": 407,
+        "clutter_passed": 197,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 76,
+        "pass_rate": 0.7695,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 101,
+            "total": 128,
+            "rate": 0.7891
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 5,
+            "total": 32,
+            "rate": 0.1562
+          },
+          "r=4": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=5": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=6": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 68,
+            "total": 76,
+            "rate": 0.8947
+          },
+          "white": {
+            "passed": 64,
+            "total": 76,
+            "rate": 0.8421
+          },
+          "yellow": {
+            "passed": 65,
+            "total": 72,
+            "rate": 0.9028
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 101,
+            "total": 112,
+            "rate": 0.9018
+          },
+          "square": {
+            "passed": 96,
+            "total": 112,
+            "rate": 0.8571
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 900,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          49,
+          48,
+          50,
+          50
+        ]
+      }
+    },
+    "s=2.5": {
+      "A_fixed_min": {
+        "tp": 210,
+        "fp": 224,
+        "fn": 0,
+        "precision": 0.4839,
+        "recall": 1.0,
+        "f1": 0.6522,
+        "det_total": 434,
+        "clutter_passed": 224,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.875,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 128,
+            "total": 128,
+            "rate": 1.0
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=4": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=5": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=6": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 76,
+            "total": 76,
+            "rate": 1.0
+          },
+          "white": {
+            "passed": 76,
+            "total": 76,
+            "rate": 1.0
+          },
+          "yellow": {
+            "passed": 72,
+            "total": 72,
+            "rate": 1.0
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 112,
+            "total": 112,
+            "rate": 1.0
+          },
+          "square": {
+            "passed": 112,
+            "total": 112,
+            "rate": 1.0
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 5625,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      "B_scaled_min": {
+        "tp": 210,
+        "fp": 114,
+        "fn": 0,
+        "precision": 0.6481,
+        "recall": 1.0,
+        "f1": 0.7865,
+        "det_total": 324,
+        "clutter_passed": 114,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.4453,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 18,
+            "total": 128,
+            "rate": 0.1406
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 18,
+            "total": 32,
+            "rate": 0.5625
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 36,
+            "total": 76,
+            "rate": 0.4737
+          },
+          "white": {
+            "passed": 40,
+            "total": 76,
+            "rate": 0.5263
+          },
+          "yellow": {
+            "passed": 38,
+            "total": 72,
+            "rate": 0.5278
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 50,
+            "total": 112,
+            "rate": 0.4464
+          },
+          "square": {
+            "passed": 64,
+            "total": 112,
+            "rate": 0.5714
+          }
+        },
+        "params": {
+          "min_area": 750,
+          "bloom_min": 5625,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          29,
+          28,
+          29,
+          28
+        ]
+      },
+      "C_scaled_min_kernel": {
+        "tp": 210,
+        "fp": 111,
+        "fn": 0,
+        "precision": 0.6542,
+        "recall": 1.0,
+        "f1": 0.791,
+        "det_total": 321,
+        "clutter_passed": 111,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.4336,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 15,
+            "total": 128,
+            "rate": 0.1172
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 15,
+            "total": 32,
+            "rate": 0.4688
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 35,
+            "total": 76,
+            "rate": 0.4605
+          },
+          "white": {
+            "passed": 40,
+            "total": 76,
+            "rate": 0.5263
+          },
+          "yellow": {
+            "passed": 36,
+            "total": 72,
+            "rate": 0.5
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 48,
+            "total": 112,
+            "rate": 0.4286
+          },
+          "square": {
+            "passed": 63,
+            "total": 112,
+            "rate": 0.5625
+          }
+        },
+        "params": {
+          "min_area": 750,
+          "bloom_min": 5625,
+          "kernel": 19
+        },
+        "per_scene_pass": [
+          27,
+          28,
+          28,
+          28
+        ]
+      },
+      "D_fully_fixed": {
+        "tp": 134,
+        "fp": 300,
+        "fn": 76,
+        "precision": 0.3088,
+        "recall": 0.6381,
+        "f1": 0.4161,
+        "det_total": 434,
+        "clutter_passed": 224,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 76,
+        "pass_rate": 0.875,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 128,
+            "total": 128,
+            "rate": 1.0
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=4": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=5": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=6": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 76,
+            "total": 76,
+            "rate": 1.0
+          },
+          "white": {
+            "passed": 76,
+            "total": 76,
+            "rate": 1.0
+          },
+          "yellow": {
+            "passed": 72,
+            "total": 72,
+            "rate": 1.0
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 112,
+            "total": 112,
+            "rate": 1.0
+          },
+          "square": {
+            "passed": 112,
+            "total": 112,
+            "rate": 1.0
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 900,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          56,
+          56,
+          56,
+          56
+        ]
+      }
+    },
+    "s=3.0": {
+      "A_fixed_min": {
+        "tp": 210,
+        "fp": 224,
+        "fn": 0,
+        "precision": 0.4839,
+        "recall": 1.0,
+        "f1": 0.6522,
+        "det_total": 434,
+        "clutter_passed": 224,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.875,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 128,
+            "total": 128,
+            "rate": 1.0
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=4": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=5": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=6": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 76,
+            "total": 76,
+            "rate": 1.0
+          },
+          "white": {
+            "passed": 76,
+            "total": 76,
+            "rate": 1.0
+          },
+          "yellow": {
+            "passed": 72,
+            "total": 72,
+            "rate": 1.0
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 112,
+            "total": 112,
+            "rate": 1.0
+          },
+          "square": {
+            "passed": 112,
+            "total": 112,
+            "rate": 1.0
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 8100,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      "B_scaled_min": {
+        "tp": 210,
+        "fp": 114,
+        "fn": 0,
+        "precision": 0.6481,
+        "recall": 1.0,
+        "f1": 0.7865,
+        "det_total": 324,
+        "clutter_passed": 114,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.4453,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 18,
+            "total": 128,
+            "rate": 0.1406
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 18,
+            "total": 32,
+            "rate": 0.5625
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 36,
+            "total": 76,
+            "rate": 0.4737
+          },
+          "white": {
+            "passed": 40,
+            "total": 76,
+            "rate": 0.5263
+          },
+          "yellow": {
+            "passed": 38,
+            "total": 72,
+            "rate": 0.5278
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 50,
+            "total": 112,
+            "rate": 0.4464
+          },
+          "square": {
+            "passed": 64,
+            "total": 112,
+            "rate": 0.5714
+          }
+        },
+        "params": {
+          "min_area": 1080,
+          "bloom_min": 8100,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          29,
+          28,
+          29,
+          28
+        ]
+      },
+      "C_scaled_min_kernel": {
+        "tp": 210,
+        "fp": 114,
+        "fn": 0,
+        "precision": 0.6481,
+        "recall": 1.0,
+        "f1": 0.7865,
+        "det_total": 324,
+        "clutter_passed": 114,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 0,
+        "pass_rate": 0.4453,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 18,
+            "total": 128,
+            "rate": 0.1406
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=4": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=5": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "r=6": {
+            "passed": 18,
+            "total": 32,
+            "rate": 0.5625
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 36,
+            "total": 76,
+            "rate": 0.4737
+          },
+          "white": {
+            "passed": 40,
+            "total": 76,
+            "rate": 0.5263
+          },
+          "yellow": {
+            "passed": 38,
+            "total": 72,
+            "rate": 0.5278
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 50,
+            "total": 112,
+            "rate": 0.4464
+          },
+          "square": {
+            "passed": 64,
+            "total": 112,
+            "rate": 0.5714
+          }
+        },
+        "params": {
+          "min_area": 1080,
+          "bloom_min": 8100,
+          "kernel": 21
+        },
+        "per_scene_pass": [
+          29,
+          28,
+          29,
+          28
+        ]
+      },
+      "D_fully_fixed": {
+        "tp": 134,
+        "fp": 300,
+        "fn": 76,
+        "precision": 0.3088,
+        "recall": 0.6381,
+        "f1": 0.4161,
+        "det_total": 434,
+        "clutter_passed": 224,
+        "clutter_total": 256,
+        "fp_unmatched_to_clutter": 76,
+        "pass_rate": 0.875,
+        "pass_by_stratum": {
+          "subfloor": {
+            "passed": 128,
+            "total": 128,
+            "rate": 1.0
+          },
+          "mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "control_blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_radius": {
+          "r=3": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=4": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=5": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=6": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=7": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=10": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "r=14": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          }
+        },
+        "pass_by_colour": {
+          "pink": {
+            "passed": 76,
+            "total": 76,
+            "rate": 1.0
+          },
+          "white": {
+            "passed": 76,
+            "total": 76,
+            "rate": 1.0
+          },
+          "yellow": {
+            "passed": 72,
+            "total": 72,
+            "rate": 1.0
+          },
+          "blue": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          }
+        },
+        "pass_by_shape": {
+          "circle": {
+            "passed": 112,
+            "total": 112,
+            "rate": 1.0
+          },
+          "square": {
+            "passed": 112,
+            "total": 112,
+            "rate": 1.0
+          }
+        },
+        "params": {
+          "min_area": 120,
+          "bloom_min": 900,
+          "kernel": 7
+        },
+        "per_scene_pass": [
+          56,
+          56,
+          56,
+          56
+        ]
+      }
+    }
+  },
+  "morph": {
+    "s=1.0": {
+      "k7": {
+        "subfloor": {
+          "survived": 96,
+          "total": 128,
+          "rate": 0.75,
+          "median_area": 63.5
+        },
+        "mid": {
+          "survived": 64,
+          "total": 64,
+          "rate": 1.0,
+          "median_area": 209.0
+        },
+        "large": {
+          "survived": 32,
+          "total": 32,
+          "rate": 1.0,
+          "median_area": 592.5
+        },
+        "control_blue": {
+          "survived": 0,
+          "total": 32,
+          "rate": 0.0,
+          "median_area": null
+        }
+      },
+      "kScaled": {
+        "subfloor": {
+          "survived": 96,
+          "total": 128,
+          "rate": 0.75,
+          "median_area": 63.5
+        },
+        "mid": {
+          "survived": 64,
+          "total": 64,
+          "rate": 1.0,
+          "median_area": 209.0
+        },
+        "large": {
+          "survived": 32,
+          "total": 32,
+          "rate": 1.0,
+          "median_area": 592.5
+        },
+        "control_blue": {
+          "survived": 0,
+          "total": 32,
+          "rate": 0.0,
+          "median_area": null
+        }
+      }
+    },
+    "s=1.25": {
+      "k7": {
+        "subfloor": {
+          "survived": 126,
+          "total": 128,
+          "rate": 0.9844,
+          "median_area": 92.0
+        },
+        "mid": {
+          "survived": 64,
+          "total": 64,
+          "rate": 1.0,
+          "median_area": 345.0
+        },
+        "large": {
+          "survived": 32,
+          "total": 32,
+          "rate": 1.0,
+          "median_area": 968.5
+        },
+        "control_blue": {
+          "survived": 0,
+          "total": 32,
+          "rate": 0.0,
+          "median_area": null
+        }
+      },
+      "kScaled": {
+        "subfloor": {
+          "survived": 95,
+          "total": 128,
+          "rate": 0.7422,
+          "median_area": 112.0
+        },
+        "mid": {
+          "survived": 64,
+          "total": 64,
+          "rate": 1.0,
+          "median_area": 338.5
+        },
+        "large": {
+          "survived": 32,
+          "total": 32,
+          "rate": 1.0,
+          "median_area": 962.5
+        },
+        "control_blue": {
+          "survived": 0,
+          "total": 32,
+          "rate": 0.0,
+          "median_area": null
+        }
+      }
+    },
+    "s=1.5": {
+      "k7": {
+        "subfloor": {
+          "survived": 128,
+          "total": 128,
+          "rate": 1.0,
+          "median_area": 138.5
+        },
+        "mid": {
+          "survived": 64,
+          "total": 64,
+          "rate": 1.0,
+          "median_area": 521.2
+        },
+        "large": {
+          "survived": 32,
+          "total": 32,
+          "rate": 1.0,
+          "median_area": 1389.5
+        },
+        "control_blue": {
+          "survived": 0,
+          "total": 32,
+          "rate": 0.0,
+          "median_area": null
+        }
+      },
+      "kScaled": {
+        "subfloor": {
+          "survived": 94,
+          "total": 128,
+          "rate": 0.7344,
+          "median_area": 164.2
+        },
+        "mid": {
+          "survived": 64,
+          "total": 64,
+          "rate": 1.0,
+          "median_area": 511.8
+        },
+        "large": {
+          "survived": 32,
+          "total": 32,
+          "rate": 1.0,
+          "median_area": 1389.5
+        },
+        "control_blue": {
+          "survived": 0,
+          "total": 32,
+          "rate": 0.0,
+          "median_area": null
+        }
+      }
+    },
+    "s=2.0": {
+      "k7": {
+        "subfloor": {
+          "survived": 128,
+          "total": 128,
+          "rate": 1.0,
+          "median_area": 286.5
+        },
+        "mid": {
+          "survived": 64,
+          "total": 64,
+          "rate": 1.0,
+          "median_area": 975.0
+        },
+        "large": {
+          "survived": 32,
+          "total": 32,
+          "rate": 1.0,
+          "median_area": 2577.0
+        },
+        "control_blue": {
+          "survived": 0,
+          "total": 32,
+          "rate": 0.0,
+          "median_area": null
+        }
+      },
+      "kScaled": {
+        "subfloor": {
+          "survived": 96,
+          "total": 128,
+          "rate": 0.75,
+          "median_area": 313.0
+        },
+        "mid": {
+          "survived": 64,
+          "total": 64,
+          "rate": 1.0,
+          "median_area": 964.0
+        },
+        "large": {
+          "survived": 32,
+          "total": 32,
+          "rate": 1.0,
+          "median_area": 2553.0
+        },
+        "control_blue": {
+          "survived": 0,
+          "total": 32,
+          "rate": 0.0,
+          "median_area": null
+        }
+      }
+    },
+    "s=2.5": {
+      "k7": {
+        "subfloor": {
+          "survived": 128,
+          "total": 128,
+          "rate": 1.0,
+          "median_area": 436.5
+        },
+        "mid": {
+          "survived": 64,
+          "total": 64,
+          "rate": 1.0,
+          "median_area": 1481.2
+        },
+        "large": {
+          "survived": 32,
+          "total": 32,
+          "rate": 1.0,
+          "median_area": 3987.8
+        },
+        "control_blue": {
+          "survived": 0,
+          "total": 32,
+          "rate": 0.0,
+          "median_area": null
+        }
+      },
+      "kScaled": {
+        "subfloor": {
+          "survived": 96,
+          "total": 128,
+          "rate": 0.75,
+          "median_area": 500.2
+        },
+        "mid": {
+          "survived": 64,
+          "total": 64,
+          "rate": 1.0,
+          "median_area": 1457.2
+        },
+        "large": {
+          "survived": 32,
+          "total": 32,
+          "rate": 1.0,
+          "median_area": 3961.8
+        },
+        "control_blue": {
+          "survived": 0,
+          "total": 32,
+          "rate": 0.0,
+          "median_area": null
+        }
+      }
+    },
+    "s=3.0": {
+      "k7": {
+        "subfloor": {
+          "survived": 128,
+          "total": 128,
+          "rate": 1.0,
+          "median_area": 644.5
+        },
+        "mid": {
+          "survived": 64,
+          "total": 64,
+          "rate": 1.0,
+          "median_area": 2173.0
+        },
+        "large": {
+          "survived": 32,
+          "total": 32,
+          "rate": 1.0,
+          "median_area": 5828.5
+        },
+        "control_blue": {
+          "survived": 0,
+          "total": 32,
+          "rate": 0.0,
+          "median_area": null
+        }
+      },
+      "kScaled": {
+        "subfloor": {
+          "survived": 96,
+          "total": 128,
+          "rate": 0.75,
+          "median_area": 745.0
+        },
+        "mid": {
+          "survived": 64,
+          "total": 64,
+          "rate": 1.0,
+          "median_area": 2134.0
+        },
+        "large": {
+          "survived": 32,
+          "total": 32,
+          "rate": 1.0,
+          "median_area": 5781.5
+        },
+        "control_blue": {
+          "survived": 0,
+          "total": 32,
+          "rate": 0.0,
+          "median_area": null
+        }
+      }
+    }
+  }
+}

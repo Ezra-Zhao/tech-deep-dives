@@ -1,0 +1,391 @@
+{
+  "note": "Nominal-area correction: r=6 squares have side round(6*sqrt(pi))=11, nominal area 121 > min_area 120, so by planted area they are NOT subfloor; the bench JSON stratifies by radius label. Corrected true-subfloor = visible items with nominal area < 120 (112 items: r3/r4/r5 circles+squares + r6 circles). Cross radius x shape counts are not stored per-item; they are inferred where mid/large strata saturate at 100% in every arm/scale (verified in bench JSON), so subfloor passes by shape = shape total - saturated mid/large shape totals (circles 48, squares 48).",
+  "nominal_areas": {
+    "circle": {
+      "3": 28.3,
+      "4": 50.3,
+      "5": 78.5,
+      "6": 113.1,
+      "7": 153.9,
+      "10": 314.2,
+      "14": 615.8
+    },
+    "square_side": {
+      "3": 5,
+      "4": 7,
+      "5": 9,
+      "6": 11,
+      "7": 12,
+      "10": 18,
+      "14": 25
+    },
+    "square_area": {
+      "3": 25,
+      "4": 49,
+      "5": 81,
+      "6": 121,
+      "7": 144,
+      "10": 324,
+      "14": 625
+    }
+  },
+  "switch_on_predicted_sqrt_120_over_nominal": {
+    "r3_circle": 2.06,
+    "r4_circle": 1.55,
+    "r5_circle": 1.24,
+    "r6_circle": 1.03,
+    "r6_square": 1.0
+  },
+  "corrected": {
+    "s=1.0": {
+      "A_fixed_min": {
+        "subfloor_by_radius_label": {
+          "passed": 0,
+          "total": 128,
+          "rate": 0.0
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 0,
+          "square": 0
+        }
+      },
+      "B_scaled_min": {
+        "subfloor_by_radius_label": {
+          "passed": 0,
+          "total": 128,
+          "rate": 0.0
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 0,
+          "square": 0
+        }
+      },
+      "C_scaled_min_kernel": {
+        "subfloor_by_radius_label": {
+          "passed": 0,
+          "total": 128,
+          "rate": 0.0
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 0,
+          "square": 0
+        }
+      },
+      "D_fully_fixed": {
+        "subfloor_by_radius_label": {
+          "passed": 0,
+          "total": 128,
+          "rate": 0.0
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 0,
+          "square": 0
+        }
+      },
+      "B_true_subfloor_nominal": {
+        "passed": 0,
+        "total": 112,
+        "rate": 0.0
+      },
+      "B_r6_square_passes_inferred": 0
+    },
+    "s=1.25": {
+      "A_fixed_min": {
+        "subfloor_by_radius_label": {
+          "passed": 45,
+          "total": 128,
+          "rate": 0.3516
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 16,
+          "square": 29
+        }
+      },
+      "B_scaled_min": {
+        "subfloor_by_radius_label": {
+          "passed": 5,
+          "total": 128,
+          "rate": 0.0391
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 0,
+          "square": 5
+        }
+      },
+      "C_scaled_min_kernel": {
+        "subfloor_by_radius_label": {
+          "passed": 5,
+          "total": 128,
+          "rate": 0.0391
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 0,
+          "square": 5
+        }
+      },
+      "D_fully_fixed": {
+        "subfloor_by_radius_label": {
+          "passed": 45,
+          "total": 128,
+          "rate": 0.3516
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 16,
+          "square": 29
+        }
+      },
+      "B_true_subfloor_nominal": {
+        "passed": 0,
+        "total": 112,
+        "rate": 0.0
+      },
+      "B_r6_square_passes_inferred": 5
+    },
+    "s=1.5": {
+      "A_fixed_min": {
+        "subfloor_by_radius_label": {
+          "passed": 72,
+          "total": 128,
+          "rate": 0.5625
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 32,
+          "square": 40
+        }
+      },
+      "B_scaled_min": {
+        "subfloor_by_radius_label": {
+          "passed": 16,
+          "total": 128,
+          "rate": 0.125
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 0,
+          "square": 16
+        }
+      },
+      "C_scaled_min_kernel": {
+        "subfloor_by_radius_label": {
+          "passed": 8,
+          "total": 128,
+          "rate": 0.0625
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 0,
+          "square": 8
+        }
+      },
+      "D_fully_fixed": {
+        "subfloor_by_radius_label": {
+          "passed": 72,
+          "total": 128,
+          "rate": 0.5625
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 32,
+          "square": 40
+        }
+      },
+      "B_true_subfloor_nominal": {
+        "passed": 0,
+        "total": 112,
+        "rate": 0.0
+      },
+      "B_r6_square_passes_inferred": 16
+    },
+    "s=2.0": {
+      "A_fixed_min": {
+        "subfloor_by_radius_label": {
+          "passed": 101,
+          "total": 128,
+          "rate": 0.7891
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 53,
+          "square": 48
+        }
+      },
+      "B_scaled_min": {
+        "subfloor_by_radius_label": {
+          "passed": 18,
+          "total": 128,
+          "rate": 0.1406
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 2,
+          "square": 16
+        }
+      },
+      "C_scaled_min_kernel": {
+        "subfloor_by_radius_label": {
+          "passed": 18,
+          "total": 128,
+          "rate": 0.1406
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 2,
+          "square": 16
+        }
+      },
+      "D_fully_fixed": {
+        "subfloor_by_radius_label": {
+          "passed": 101,
+          "total": 128,
+          "rate": 0.7891
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 53,
+          "square": 48
+        }
+      },
+      "B_true_subfloor_nominal": {
+        "passed": 2,
+        "total": 112,
+        "rate": 0.0179
+      },
+      "B_r6_square_passes_inferred": 16
+    },
+    "s=2.5": {
+      "A_fixed_min": {
+        "subfloor_by_radius_label": {
+          "passed": 128,
+          "total": 128,
+          "rate": 1.0
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 64,
+          "square": 64
+        }
+      },
+      "B_scaled_min": {
+        "subfloor_by_radius_label": {
+          "passed": 18,
+          "total": 128,
+          "rate": 0.1406
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 2,
+          "square": 16
+        }
+      },
+      "C_scaled_min_kernel": {
+        "subfloor_by_radius_label": {
+          "passed": 15,
+          "total": 128,
+          "rate": 0.1172
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 0,
+          "square": 15
+        }
+      },
+      "D_fully_fixed": {
+        "subfloor_by_radius_label": {
+          "passed": 128,
+          "total": 128,
+          "rate": 1.0
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 64,
+          "square": 64
+        }
+      },
+      "B_true_subfloor_nominal": {
+        "passed": 2,
+        "total": 112,
+        "rate": 0.0179
+      },
+      "B_r6_square_passes_inferred": 16
+    },
+    "s=3.0": {
+      "A_fixed_min": {
+        "subfloor_by_radius_label": {
+          "passed": 128,
+          "total": 128,
+          "rate": 1.0
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 64,
+          "square": 64
+        }
+      },
+      "B_scaled_min": {
+        "subfloor_by_radius_label": {
+          "passed": 18,
+          "total": 128,
+          "rate": 0.1406
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 2,
+          "square": 16
+        }
+      },
+      "C_scaled_min_kernel": {
+        "subfloor_by_radius_label": {
+          "passed": 18,
+          "total": 128,
+          "rate": 0.1406
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 2,
+          "square": 16
+        }
+      },
+      "D_fully_fixed": {
+        "subfloor_by_radius_label": {
+          "passed": 128,
+          "total": 128,
+          "rate": 1.0
+        },
+        "subfloor_passes_by_shape_inferred": {
+          "circle": 64,
+          "square": 64
+        }
+      },
+      "B_true_subfloor_nominal": {
+        "passed": 2,
+        "total": 112,
+        "rate": 0.0179
+      },
+      "B_r6_square_passes_inferred": 16
+    }
+  },
+  "count_error_pct": {
+    "s=1.0": {
+      "A_fixed_min": 45.7,
+      "B_scaled_min": 45.7,
+      "C_scaled_min_kernel": 45.7,
+      "D_fully_fixed": 45.7
+    },
+    "s=1.25": {
+      "A_fixed_min": 67.1,
+      "B_scaled_min": 48.1,
+      "C_scaled_min_kernel": 48.1,
+      "D_fully_fixed": 67.1
+    },
+    "s=1.5": {
+      "A_fixed_min": 80.0,
+      "B_scaled_min": 53.3,
+      "C_scaled_min_kernel": 49.5,
+      "D_fully_fixed": 80.0
+    },
+    "s=2.0": {
+      "A_fixed_min": 93.8,
+      "B_scaled_min": 54.3,
+      "C_scaled_min_kernel": 54.3,
+      "D_fully_fixed": 93.8
+    },
+    "s=2.5": {
+      "A_fixed_min": 106.7,
+      "B_scaled_min": 54.3,
+      "C_scaled_min_kernel": 52.9,
+      "D_fully_fixed": 106.7
+    },
+    "s=3.0": {
+      "A_fixed_min": 106.7,
+      "B_scaled_min": 54.3,
+      "C_scaled_min_kernel": 54.3,
+      "D_fully_fixed": 106.7
+    }
+  }
+}
