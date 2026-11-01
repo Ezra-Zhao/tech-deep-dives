@@ -1,0 +1,36 @@
+# Rules for the 2026-10-31 staleness-boundary live run, recorded (R)
+# phase: a recording rule replicates the present series under a new
+# name, and two absent alerts run side by side in the same kill event -
+# one on the scraped original, one on the recorded replica.
+groups:
+  - name: stale.record
+    interval: 15s
+    rules:
+      - record: nal_present_recorded
+        expr: nal_exporter_results_present{group="scenario_summaries"}
+
+  - name: net-assurance-lab.anti-blind-stale
+    interval: 15s
+    rules:
+      - alert: NalExporterSeriesAbsent
+        expr: absent(nal_exporter_results_present{group="scenario_summaries"})
+        for: 1m
+        labels:
+          severity: critical
+          team: net-assurance
+        annotations:
+          summary: "Exporter series nal_exporter_results_present has disappeared"
+          description: >-
+            No sample of the exporter's self-report series is visible.
+
+      - alert: NalRecordedSeriesAbsent
+        expr: absent(nal_present_recorded)
+        for: 1m
+        labels:
+          severity: critical
+          team: net-assurance
+        annotations:
+          summary: "Recorded replica nal_present_recorded has disappeared"
+          description: >-
+            The recording rule no longer produces the replicated
+            present series; the source series or the rule path is gone.

@@ -1,0 +1,20 @@
+# Alert rules for the 2026-10-31 staleness-boundary live run,
+# control (C) and timestamped (T) phases. The absent expression is
+# verbatim the one measured in the 2026-10-27 article; for: 1m and the
+# 15s group interval match that article and the lab alerts.yml group.
+groups:
+  - name: net-assurance-lab.anti-blind-stale
+    interval: 15s
+    rules:
+      - alert: NalExporterSeriesAbsent
+        expr: absent(nal_exporter_results_present{group="scenario_summaries"})
+        for: 1m
+        labels:
+          severity: critical
+          team: net-assurance
+        annotations:
+          summary: "Exporter series nal_exporter_results_present has disappeared"
+          description: >-
+            No sample of the exporter's self-report series is visible.
+            The exporter or the scrape path is gone; check the exporter
+            process and the Prometheus target health first.

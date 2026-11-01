@@ -1,0 +1,60 @@
+{
+ "summary": {
+  "control": {
+   "exporter": "lab prom_exporter.py (no sample timestamps)",
+   "polls": 29,
+   "baseline_alert_polls": 0,
+   "absent_alert": {
+    "pending_after_kill_s": 14.2,
+    "firing_interval_s": [
+     74.2,
+     75.5
+    ]
+   },
+   "present_first_empty_poll_after_kill_s": 5.1,
+   "absent_first_nonempty_poll_after_kill_s": 5.1,
+   "up_first_zero_poll_after_kill_s": 5.1
+  },
+  "timestamped": {
+   "exporter": "minimal ts exporter (explicit ms timestamp per sample)",
+   "polls": 88,
+   "baseline_note": "startup race: absent alert pending in 4 early baseline polls (series not yet scraped at first evaluation), resolved by the poll 20 s before the kill, never fired",
+   "absent_alert": {
+    "pending_after_kill_s": 309.4,
+    "firing_interval_s": [
+     369.4,
+     373.8
+    ]
+   },
+   "present_first_empty_poll_after_kill_s": 303.1,
+   "absent_first_nonempty_poll_after_kill_s": 303.1,
+   "up_first_zero_poll_after_kill_s": 5.0
+  },
+  "recorded": {
+   "exporter": "lab prom_exporter.py + recording rule nal_present_recorded",
+   "polls": 29,
+   "baseline_alert_polls": 0,
+   "absent_alert_original": {
+    "pending_after_kill_s": 14.1,
+    "firing_interval_s": [
+     74.1,
+     75.2
+    ]
+   },
+   "absent_alert_recorded": {
+    "pending_after_kill_s": 14.1,
+    "firing_interval_s": [
+     74.1,
+     75.2
+    ],
+    "activeAt_identical_to_original": true
+   },
+   "present_first_empty_poll_after_kill_s": 5.0,
+   "recorded_first_empty_poll_after_kill_s": 5.0,
+   "absent_first_nonempty_poll_after_kill_s": 5.0,
+   "absent_recorded_first_nonempty_poll_after_kill_s": 5.0,
+   "up_first_zero_poll_after_kill_s": 5.0
+  },
+  "provenance": "control and timestamped phases completed in the first run (progress: 2026-10-31-stale-live-progress.jsonl); the host restarted during the recorded phase of that run, 5.1 s after its kill event, so the recorded phase was rerun in full with identical code except plan list and output names (script: 2026-10-31-stale-recorded-live.py; progress: 2026-10-31-stale-recorded-progress.jsonl). This summary was extracted offline from the two progress files using the live script's definitions (pending = alert activeAt minus kill epoch; firing interval = [activeAt + 60 s, first poll seeing firing])."
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "prometheus": {
+  "version": "3.15.0",
+  "tar_bytes": 111651578,
+  "gzip_check": "pass"
+ },
+ "promtool": {
+  "check_rules_control": "SUCCESS: 1 rules found",
+  "check_rules_recorded": "SUCCESS: 3 rules found"
+ },
+ "timing": {
+  "scrape_interval_s": 5,
+  "scrape_timeout_s": 4,
+  "rule_group_interval_s": 15,
+  "for_s": 60,
+  "lookback_delta_s": 300
+ },
+ "prereg_verdicts": {
+  "P-C": "hit: firing interval [74.2, 75.5] s inside predicted 60-85 s",
+  "P-T": "hit: firing interval [369.4, 373.8] s inside predicted 355-390 s; present first empty at 303.1 s",
+  "P-R": "hit: recorded firing interval [74.1, 75.2] s inside predicted 65-100 s; recorded series first empty at first post-kill poll (5.0 s); recorded alert activeAt identical to the original-series alert in the same run",
+  "P-R2": "hit: same-run original [74.1, 75.2] s vs control run [74.2, 75.5] s, difference 0.3 s at most"
+ },
+ "derived": {
+  "timestamped_vs_control_firing_lower_bound_ratio": 4.98,
+  "timestamped_present_visibility_after_kill_s": [
+   303.1,
+   308.1
+  ],
+  "note_on_visibility_bracket": "last successful scrape occurred at most one scrape interval (5 s) before the kill; the first empty poll was 303.1 s after the kill, so the last sample stayed visible 303.1-308.1 s after its own timestamp: the 300 s lookback plus query/evaluation alignment"
+ }
+}
