@@ -1,0 +1,98 @@
+{
+  "note": "post-hoc analysis, computed 2026-11-02 after bench; not preregistered predictions",
+  "return_bench_gap_nonzero_runs": 0,
+  "return_hop_gaps_all_zero": true,
+  "server_echoed_eq_Fc_runs": 28,
+  "algebra_check": {
+    "return": {
+      "0.1": {
+        "pred_from_own_q0_and_Dmean": 0.5751,
+        "measured_L_iso_mean": 0.5749,
+        "diff": -0.0002
+      },
+      "0.2": {
+        "pred_from_own_q0_and_Dmean": 0.6207,
+        "measured_L_iso_mean": 0.62,
+        "diff": -0.0007
+      },
+      "0.3": {
+        "pred_from_own_q0_and_Dmean": 0.6698,
+        "measured_L_iso_mean": 0.6688,
+        "diff": -0.001
+      },
+      "0.4": {
+        "pred_from_own_q0_and_Dmean": 0.7173,
+        "measured_L_iso_mean": 0.7143,
+        "diff": -0.003
+      },
+      "0.5": {
+        "pred_from_own_q0_and_Dmean": 0.7642,
+        "measured_L_iso_mean": 0.7624,
+        "diff": -0.0018
+      },
+      "0.6": {
+        "pred_from_own_q0_and_Dmean": 0.8096,
+        "measured_L_iso_mean": 0.8081,
+        "diff": -0.0015
+      }
+    },
+    "forward": {
+      "0.1": {
+        "pred_from_own_q0_and_Dmean": 0.5767,
+        "measured_L_iso_mean": 0.6043,
+        "diff": 0.0276
+      },
+      "0.2": {
+        "pred_from_own_q0_and_Dmean": 0.6226,
+        "measured_L_iso_mean": 0.6549,
+        "diff": 0.0323
+      },
+      "0.3": {
+        "pred_from_own_q0_and_Dmean": 0.6698,
+        "measured_L_iso_mean": 0.6939,
+        "diff": 0.0241
+      },
+      "0.4": {
+        "pred_from_own_q0_and_Dmean": 0.7176,
+        "measured_L_iso_mean": 0.7299,
+        "diff": 0.0123
+      },
+      "0.5": {
+        "pred_from_own_q0_and_Dmean": 0.7657,
+        "measured_L_iso_mean": 0.7747,
+        "diff": 0.009
+      },
+      "0.6": {
+        "pred_from_own_q0_and_Dmean": 0.8088,
+        "measured_L_iso_mean": 0.8123,
+        "diff": 0.0035
+      }
+    }
+  },
+  "flap_shares": {
+    "return_all": {
+      "c2s_flap_share": 0.2399,
+      "c2s_loss_share": 0.1504,
+      "s2c_flap_share": 0.0299,
+      "s2c_loss_share": 0.1903
+    },
+    "return_q0": {
+      "c2s_flap_share": 0.2399,
+      "c2s_loss_share": 0.1516,
+      "s2c_flap_share": 0.0306,
+      "s2c_loss_share": 0.1913
+    },
+    "forward_all": {
+      "c2s_flap_share": 0.2696,
+      "c2s_loss_share": 0.1433,
+      "s2c_flap_share": 0.0457,
+      "s2c_loss_share": 0.1868
+    },
+    "forward_q0": {
+      "c2s_flap_share": 0.2397,
+      "c2s_loss_share": 0.1494,
+      "s2c_flap_share": 0.033,
+      "s2c_loss_share": 0.1943
+    }
+  }
+}
