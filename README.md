@@ -44,3 +44,11 @@ All code and experiments in this repository are my own clean-room work, written 
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+---
+
+## 支持与订阅 / Support & Subscribe
+
+这些内容免费开放。如果对您有帮助，欢迎通过 [GitHub Sponsors](https://github.com/sponsors/Ezra-Zhao) 支持我继续创作；每日更新见 [Telegram 频道《代码与诗篇》](https://t.me/EzraZhao777)，邮件周刊见 [《代码与诗篇》Code & Psalms](https://codeandpsalms.beehiiv.com)。
+
+These notes are free. If they help you, you can support the work via [GitHub Sponsors](https://github.com/sponsors/Ezra-Zhao); daily updates on [Telegram](https://t.me/EzraZhao777) and a weekly newsletter, [Code & Psalms](https://codeandpsalms.beehiiv.com).
