@@ -1,0 +1,5644 @@
+{
+  "prereg": {
+    "bad_err_threshold": 0.1,
+    "refs": {
+      "morph7": 3806.0,
+      "morph3": 3740.0,
+      "raw": 3718.5
+    },
+    "doc": "data/2026-11-05-median-vote-prereg.md"
+  },
+  "scales": [
+    1.0,
+    0.8,
+    0.65,
+    0.5,
+    0.4,
+    0.35,
+    0.3,
+    0.28,
+    0.25,
+    0.22,
+    0.18,
+    0.15,
+    0.12,
+    0.1,
+    0.07
+  ],
+  "datasets": {
+    "replication": {
+      "scenes": [
+        101,
+        202,
+        303,
+        404
+      ],
+      "n_objects": 210,
+      "baseline_sanity": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 134,
+        "true_blooms": 134,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0
+      },
+      "results": {
+        "s=1.0": {
+          "pooled": {
+            "sh7": 1.0,
+            "sh3": 1.0,
+            "shraw": 0.4494,
+            "err7": 0.0,
+            "err3": 0.0,
+            "errraw": -0.5506,
+            "med": 1.0,
+            "med_ident": "BLIND7",
+            "med_degraded": false,
+            "errmed": 0.0,
+            "cl7": {
+              "upper_median": 3806.0,
+              "lower_median": 343.8,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.404
+            },
+            "cl3": {
+              "upper_median": 3740.0,
+              "lower_median": 346.2,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.38
+            },
+            "clraw": {
+              "upper_median": 751.0,
+              "lower_median": 1.0,
+              "n_upper": 297,
+              "n_lower": 148,
+              "n_total": 445,
+              "separation_log": 6.621
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 1.0142,
+              "sh3": 1.0159,
+              "shraw": 0.4497,
+              "err7": 0.0142,
+              "err3": 0.0159,
+              "errraw": -0.5503,
+              "med": 1.0142,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0142
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 1.0039,
+              "sh3": 1.0059,
+              "shraw": 0.4792,
+              "err7": 0.0039,
+              "err3": 0.0059,
+              "errraw": -0.5208,
+              "med": 1.0039,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0039
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.9911,
+              "sh3": 0.9943,
+              "shraw": 0.4027,
+              "err7": -0.0089,
+              "err3": -0.0057,
+              "errraw": -0.5973,
+              "med": 0.9911,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0089
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 1.0017,
+              "sh3": 1.0064,
+              "shraw": 0.4337,
+              "err7": 0.0017,
+              "err3": 0.0064,
+              "errraw": -0.5663,
+              "med": 1.0017,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0017
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 0.6381,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.8": {
+          "pooled": {
+            "sh7": 0.7945,
+            "sh3": 0.7975,
+            "shraw": 0.7646,
+            "err7": -0.0069,
+            "err3": -0.0031,
+            "errraw": -0.0443,
+            "med": 0.7945,
+            "med_ident": "BLIND7",
+            "med_degraded": false,
+            "errmed": -0.0069,
+            "cl7": {
+              "upper_median": 2402.5,
+              "lower_median": 211.2,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.431
+            },
+            "cl3": {
+              "upper_median": 2378.5,
+              "lower_median": 214.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.408
+            },
+            "clraw": {
+              "upper_median": 2174.0,
+              "lower_median": 232.0,
+              "n_upper": 151,
+              "n_lower": 157,
+              "n_total": 308,
+              "separation_log": 2.238
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.8083,
+              "sh3": 0.8118,
+              "shraw": 0.7842,
+              "err7": 0.0104,
+              "err3": 0.0147,
+              "errraw": -0.0198,
+              "med": 0.8083,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0104
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.8014,
+              "sh3": 0.8036,
+              "shraw": 0.5652,
+              "err7": 0.0017,
+              "err3": 0.0045,
+              "errraw": -0.2935,
+              "med": 0.8014,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0017
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.7924,
+              "sh3": 0.7949,
+              "shraw": 0.7708,
+              "err7": -0.0095,
+              "err3": -0.0064,
+              "errraw": -0.0365,
+              "med": 0.7924,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0095
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.8025,
+              "sh3": 0.8053,
+              "shraw": 0.357,
+              "err7": 0.0031,
+              "err3": 0.0066,
+              "errraw": -0.5537,
+              "med": 0.8025,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0031
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.65": {
+          "pooled": {
+            "sh7": 0.6445,
+            "sh3": 0.6453,
+            "shraw": 0.6473,
+            "err7": -0.0085,
+            "err3": -0.0072,
+            "errraw": -0.0042,
+            "med": 0.6453,
+            "med_ident": "BLIND3",
+            "med_degraded": false,
+            "errmed": -0.0072,
+            "cl7": {
+              "upper_median": 1581.0,
+              "lower_median": 132.5,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.479
+            },
+            "cl3": {
+              "upper_median": 1557.2,
+              "lower_median": 136.8,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.433
+            },
+            "clraw": {
+              "upper_median": 1558.0,
+              "lower_median": 157.5,
+              "n_upper": 134,
+              "n_lower": 86,
+              "n_total": 220,
+              "separation_log": 2.292
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.6568,
+              "sh3": 0.6566,
+              "shraw": 0.6593,
+              "err7": 0.0105,
+              "err3": 0.0102,
+              "errraw": 0.0143,
+              "med": 0.6568,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0105
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.6483,
+              "sh3": 0.6479,
+              "shraw": 0.6544,
+              "err7": -0.0026,
+              "err3": -0.0032,
+              "errraw": 0.0068,
+              "med": 0.6483,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0026
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.6399,
+              "sh3": 0.642,
+              "shraw": 0.6393,
+              "err7": -0.0155,
+              "err3": -0.0123,
+              "errraw": -0.0165,
+              "med": 0.6399,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0155
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.6502,
+              "sh3": 0.6514,
+              "shraw": 0.6576,
+              "err7": 0.0003,
+              "err3": 0.0022,
+              "errraw": 0.0117,
+              "med": 0.6514,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.0022
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.5": {
+          "pooled": {
+            "sh7": 0.4898,
+            "sh3": 0.4901,
+            "shraw": 0.5021,
+            "err7": -0.0204,
+            "err3": -0.0198,
+            "errraw": 0.0042,
+            "med": 0.4901,
+            "med_ident": "BLIND3",
+            "med_degraded": false,
+            "errmed": -0.0198,
+            "cl7": {
+              "upper_median": 913.0,
+              "lower_median": 69.5,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.575
+            },
+            "cl3": {
+              "upper_median": 898.2,
+              "lower_median": 77.5,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.45
+            },
+            "clraw": {
+              "upper_median": 937.5,
+              "lower_median": 94.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.3
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.491,
+              "sh3": 0.4999,
+              "shraw": 0.5081,
+              "err7": -0.018,
+              "err3": -0.0002,
+              "errraw": 0.0162,
+              "med": 0.4999,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0002
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.4929,
+              "sh3": 0.493,
+              "shraw": 0.5052,
+              "err7": -0.0142,
+              "err3": -0.014,
+              "errraw": 0.0104,
+              "med": 0.493,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.014
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.489,
+              "sh3": 0.4889,
+              "shraw": 0.5,
+              "err7": -0.022,
+              "err3": -0.0222,
+              "errraw": 0.0,
+              "med": 0.489,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.022
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.4954,
+              "sh3": 0.4963,
+              "shraw": 0.5049,
+              "err7": -0.0092,
+              "err3": -0.0074,
+              "errraw": 0.0098,
+              "med": 0.4963,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0074
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.4": {
+          "pooled": {
+            "sh7": 0.3899,
+            "sh3": 0.3914,
+            "shraw": 0.4017,
+            "err7": -0.0252,
+            "err3": -0.0215,
+            "errraw": 0.0042,
+            "med": 0.3914,
+            "med_ident": "BLIND3",
+            "med_degraded": false,
+            "errmed": -0.0215,
+            "cl7": {
+              "upper_median": 578.5,
+              "lower_median": 37.0,
+              "n_upper": 133,
+              "n_lower": 44,
+              "n_total": 177,
+              "separation_log": 2.75
+            },
+            "cl3": {
+              "upper_median": 573.0,
+              "lower_median": 46.8,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.506
+            },
+            "clraw": {
+              "upper_median": 600.0,
+              "lower_median": 60.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.303
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.3863,
+              "sh3": 0.398,
+              "shraw": 0.406,
+              "err7": -0.0343,
+              "err3": -0.005,
+              "errraw": 0.015,
+              "med": 0.398,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.005
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.3937,
+              "sh3": 0.3942,
+              "shraw": 0.4044,
+              "err7": -0.0158,
+              "err3": -0.0145,
+              "errraw": 0.011,
+              "med": 0.3942,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0145
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.3895,
+              "sh3": 0.3902,
+              "shraw": 0.3998,
+              "err7": -0.0262,
+              "err3": -0.0245,
+              "errraw": -0.0005,
+              "med": 0.3902,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0245
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.3957,
+              "sh3": 0.395,
+              "shraw": 0.4039,
+              "err7": -0.0108,
+              "err3": -0.0125,
+              "errraw": 0.0097,
+              "med": 0.3957,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0108
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.35": {
+          "pooled": {
+            "sh7": 0.3419,
+            "sh3": 0.3411,
+            "shraw": 0.3494,
+            "err7": -0.0231,
+            "err3": -0.0254,
+            "errraw": -0.0017,
+            "med": 0.3419,
+            "med_ident": "BLIND7",
+            "med_degraded": false,
+            "errmed": -0.0231,
+            "cl7": {
+              "upper_median": 444.8,
+              "lower_median": 31.0,
+              "n_upper": 132,
+              "n_lower": 18,
+              "n_total": 150,
+              "separation_log": 2.664
+            },
+            "cl3": {
+              "upper_median": 435.2,
+              "lower_median": 34.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.55
+            },
+            "clraw": {
+              "upper_median": 454.0,
+              "lower_median": 46.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.289
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.3379,
+              "sh3": 0.3456,
+              "shraw": 0.3548,
+              "err7": -0.0346,
+              "err3": -0.0126,
+              "errraw": 0.0137,
+              "med": 0.3456,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0126
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.3435,
+              "sh3": 0.3439,
+              "shraw": 0.3534,
+              "err7": -0.0186,
+              "err3": -0.0174,
+              "errraw": 0.0097,
+              "med": 0.3439,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0174
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.34,
+              "sh3": 0.341,
+              "shraw": 0.3477,
+              "err7": -0.0286,
+              "err3": -0.0257,
+              "errraw": -0.0066,
+              "med": 0.341,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0257
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.3533,
+              "sh3": 0.3457,
+              "shraw": 0.3546,
+              "err7": 0.0094,
+              "err3": -0.0123,
+              "errraw": 0.0131,
+              "med": 0.3533,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0094
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.3": {
+          "pooled": {
+            "sh7": 0.3398,
+            "sh3": 0.2894,
+            "shraw": 0.3006,
+            "err7": 0.1327,
+            "err3": -0.0353,
+            "errraw": 0.002,
+            "med": 0.3006,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.002,
+            "cl7": {
+              "upper_median": 439.5,
+              "lower_median": 242.5,
+              "n_upper": 63,
+              "n_lower": 68,
+              "n_total": 131,
+              "separation_log": 0.595
+            },
+            "cl3": {
+              "upper_median": 313.2,
+              "lower_median": 23.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.612
+            },
+            "clraw": {
+              "upper_median": 336.0,
+              "lower_median": 34.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.291
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.3446,
+              "sh3": 0.2951,
+              "shraw": 0.3046,
+              "err7": 0.1487,
+              "err3": -0.0163,
+              "errraw": 0.0153,
+              "med": 0.3046,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0153
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.3595,
+              "sh3": 0.2932,
+              "shraw": 0.3019,
+              "err7": 0.1983,
+              "err3": -0.0227,
+              "errraw": 0.0063,
+              "med": 0.3019,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0063
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.31,
+              "sh3": 0.2881,
+              "shraw": 0.2977,
+              "err7": 0.0333,
+              "err3": -0.0397,
+              "errraw": -0.0077,
+              "med": 0.2977,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0077
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.3431,
+              "sh3": 0.2934,
+              "shraw": 0.3017,
+              "err7": 0.1437,
+              "err3": -0.022,
+              "errraw": 0.0057,
+              "med": 0.3017,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0057
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "U",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.28": {
+          "pooled": {
+            "sh7": 0.3187,
+            "sh3": 0.2699,
+            "shraw": 0.2824,
+            "err7": 0.1382,
+            "err3": -0.0361,
+            "errraw": 0.0086,
+            "med": 0.2824,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0086,
+            "cl7": {
+              "upper_median": 386.5,
+              "lower_median": 210.0,
+              "n_upper": 62,
+              "n_lower": 66,
+              "n_total": 128,
+              "separation_log": 0.61
+            },
+            "cl3": {
+              "upper_median": 272.5,
+              "lower_median": 19.5,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.637
+            },
+            "clraw": {
+              "upper_median": 296.5,
+              "lower_median": 29.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.325
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.309,
+              "sh3": 0.2687,
+              "shraw": 0.2852,
+              "err7": 0.1036,
+              "err3": -0.0404,
+              "errraw": 0.0186,
+              "med": 0.2852,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0186
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.3353,
+              "sh3": 0.2736,
+              "shraw": 0.2819,
+              "err7": 0.1975,
+              "err3": -0.0229,
+              "errraw": 0.0068,
+              "med": 0.2819,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0068
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.3022,
+              "sh3": 0.2693,
+              "shraw": 0.2797,
+              "err7": 0.0793,
+              "err3": -0.0382,
+              "errraw": -0.0011,
+              "med": 0.2797,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0011
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.3178,
+              "sh3": 0.2756,
+              "shraw": 0.2833,
+              "err7": 0.135,
+              "err3": -0.0157,
+              "errraw": 0.0118,
+              "med": 0.2833,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0118
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 0.9831,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "P",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.25": {
+          "pooled": {
+            "sh7": 0.281,
+            "sh3": 0.2389,
+            "shraw": 0.2525,
+            "err7": 0.124,
+            "err3": -0.0444,
+            "errraw": 0.01,
+            "med": 0.2525,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.01,
+            "cl7": {
+              "upper_median": 300.5,
+              "lower_median": 164.8,
+              "n_upper": 61,
+              "n_lower": 66,
+              "n_total": 127,
+              "separation_log": 0.601
+            },
+            "cl3": {
+              "upper_median": 213.5,
+              "lower_median": 14.2,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.707
+            },
+            "clraw": {
+              "upper_median": 237.0,
+              "lower_median": 23.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.333
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.2796,
+              "sh3": 0.24,
+              "shraw": 0.2554,
+              "err7": 0.1184,
+              "err3": -0.04,
+              "errraw": 0.0216,
+              "med": 0.2554,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0216
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.2938,
+              "sh3": 0.2381,
+              "shraw": 0.2519,
+              "err7": 0.1752,
+              "err3": -0.0476,
+              "errraw": 0.0076,
+              "med": 0.2519,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0076
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.2668,
+              "sh3": 0.2386,
+              "shraw": 0.2487,
+              "err7": 0.0672,
+              "err3": -0.0456,
+              "errraw": -0.0052,
+              "med": 0.2487,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0052
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.2826,
+              "sh3": 0.2425,
+              "shraw": 0.2519,
+              "err7": 0.1304,
+              "err3": -0.03,
+              "errraw": 0.0076,
+              "med": 0.2519,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0076
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "U",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.22": {
+          "pooled": {
+            "sh7": 0.248,
+            "sh3": 0.2091,
+            "shraw": 0.2215,
+            "err7": 0.1273,
+            "err3": -0.0495,
+            "errraw": 0.0068,
+            "med": 0.2215,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0068,
+            "cl7": {
+              "upper_median": 234.0,
+              "lower_median": 124.8,
+              "n_upper": 62,
+              "n_lower": 64,
+              "n_total": 126,
+              "separation_log": 0.629
+            },
+            "cl3": {
+              "upper_median": 163.5,
+              "lower_median": 9.5,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.846
+            },
+            "clraw": {
+              "upper_median": 182.5,
+              "lower_median": 18.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.316
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.2392,
+              "sh3": 0.2094,
+              "shraw": 0.2221,
+              "err7": 0.0873,
+              "err3": -0.0482,
+              "errraw": 0.0095,
+              "med": 0.2221,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0095
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.2535,
+              "sh3": 0.2108,
+              "shraw": 0.2234,
+              "err7": 0.1523,
+              "err3": -0.0418,
+              "errraw": 0.0155,
+              "med": 0.2234,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0155
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.2415,
+              "sh3": 0.2078,
+              "shraw": 0.2172,
+              "err7": 0.0977,
+              "err3": -0.0555,
+              "errraw": -0.0127,
+              "med": 0.2172,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0127
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.2553,
+              "sh3": 0.2106,
+              "shraw": 0.2203,
+              "err7": 0.1605,
+              "err3": -0.0427,
+              "errraw": 0.0014,
+              "med": 0.2203,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0014
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "U",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.18": {
+          "pooled": {
+            "sh7": 0.2047,
+            "sh3": 0.1695,
+            "shraw": 0.1804,
+            "err7": 0.1372,
+            "err3": -0.0583,
+            "errraw": 0.0022,
+            "med": 0.1804,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0022,
+            "cl7": {
+              "upper_median": 159.5,
+              "lower_median": 82.8,
+              "n_upper": 49,
+              "n_lower": 74,
+              "n_total": 123,
+              "separation_log": 0.656
+            },
+            "cl3": {
+              "upper_median": 107.5,
+              "lower_median": 4.0,
+              "n_upper": 133,
+              "n_lower": 71,
+              "n_total": 204,
+              "separation_log": 3.291
+            },
+            "clraw": {
+              "upper_median": 121.0,
+              "lower_median": 12.0,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.311
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.218,
+              "sh3": 0.1668,
+              "shraw": 0.1804,
+              "err7": 0.2111,
+              "err3": -0.0733,
+              "errraw": 0.0022,
+              "med": 0.1804,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0022
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.2041,
+              "sh3": 0.1724,
+              "shraw": 0.1808,
+              "err7": 0.1339,
+              "err3": -0.0422,
+              "errraw": 0.0044,
+              "med": 0.1808,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0044
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.1869,
+              "sh3": 0.168,
+              "shraw": 0.177,
+              "err7": 0.0383,
+              "err3": -0.0667,
+              "errraw": -0.0167,
+              "med": 0.177,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0167
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.2166,
+              "sh3": 0.1721,
+              "shraw": 0.18,
+              "err7": 0.2033,
+              "err3": -0.0439,
+              "errraw": 0.0,
+              "med": 0.18,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "U",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.15": {
+          "pooled": {
+            "sh7": 0.1734,
+            "sh3": 0.1397,
+            "shraw": 0.1507,
+            "err7": 0.156,
+            "err3": -0.0687,
+            "errraw": 0.0047,
+            "med": 0.1507,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0047,
+            "cl7": {
+              "upper_median": 114.5,
+              "lower_median": 55.2,
+              "n_upper": 41,
+              "n_lower": 78,
+              "n_total": 119,
+              "separation_log": 0.729
+            },
+            "cl3": {
+              "upper_median": 73.0,
+              "lower_median": 2.0,
+              "n_upper": 133,
+              "n_lower": 43,
+              "n_total": 176,
+              "separation_log": 3.597
+            },
+            "clraw": {
+              "upper_median": 84.5,
+              "lower_median": 8.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.357
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.175,
+              "sh3": 0.1397,
+              "shraw": 0.1512,
+              "err7": 0.1667,
+              "err3": -0.0687,
+              "errraw": 0.008,
+              "med": 0.1512,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.008
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.1609,
+              "sh3": 0.1376,
+              "shraw": 0.1503,
+              "err7": 0.0727,
+              "err3": -0.0827,
+              "errraw": 0.002,
+              "med": 0.1503,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.002
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.1772,
+              "sh3": 0.1407,
+              "shraw": 0.149,
+              "err7": 0.1813,
+              "err3": -0.062,
+              "errraw": -0.0067,
+              "med": 0.149,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0067
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.1742,
+              "sh3": 0.1397,
+              "shraw": 0.1507,
+              "err7": 0.1613,
+              "err3": -0.0687,
+              "errraw": 0.0047,
+              "med": 0.1507,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0047
+            }
+          ],
+          "U_f1": 0.9976,
+          "deployment": {
+            "ORACLE": 0.9976,
+            "U_ONLY": 0.9976,
+            "B7": 0.9976,
+            "B3": 0.9976,
+            "RAW": 0.9976,
+            "MED3": 0.9976
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "U",
+            "B3": "U_alert",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.12": {
+          "pooled": {
+            "sh7": 0.1346,
+            "sh3": 0.1091,
+            "shraw": 0.1205,
+            "err7": 0.1217,
+            "err3": -0.0908,
+            "errraw": 0.0042,
+            "med": 0.1205,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0042,
+            "cl7": {
+              "upper_median": 69.0,
+              "lower_median": 30.0,
+              "n_upper": 40,
+              "n_lower": 59,
+              "n_total": 99,
+              "separation_log": 0.833
+            },
+            "cl3": {
+              "upper_median": 44.5,
+              "lower_median": 2.0,
+              "n_upper": 130,
+              "n_lower": 9,
+              "n_total": 139,
+              "separation_log": 3.102
+            },
+            "clraw": {
+              "upper_median": 54.0,
+              "lower_median": 5.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.38
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.1418,
+              "sh3": 0.1097,
+              "shraw": 0.1227,
+              "err7": 0.1817,
+              "err3": -0.0858,
+              "errraw": 0.0225,
+              "med": 0.1227,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0225
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.1266,
+              "sh3": 0.1085,
+              "shraw": 0.1205,
+              "err7": 0.055,
+              "err3": -0.0958,
+              "errraw": 0.0042,
+              "med": 0.1205,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0042
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.1202,
+              "sh3": 0.107,
+              "shraw": 0.1177,
+              "err7": 0.0017,
+              "err3": -0.1083,
+              "errraw": -0.0192,
+              "med": 0.1177,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0192
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.1816,
+              "sh3": 0.1293,
+              "shraw": 0.1205,
+              "err7": 0.5133,
+              "err3": 0.0775,
+              "errraw": 0.0042,
+              "med": 0.1293,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.0775
+            }
+          ],
+          "U_f1": 0.9928,
+          "deployment": {
+            "ORACLE": 0.9928,
+            "U_ONLY": 0.9928,
+            "B7": 0.9928,
+            "B3": 0.9928,
+            "RAW": 0.9928,
+            "MED3": 0.9928
+          },
+          "oracle_route": "U_alert",
+          "routes": {
+            "B7": "U_alert",
+            "B3": "U_alert",
+            "RAW": "U_alert",
+            "MED3": "U_alert"
+          }
+        },
+        "s=0.1": {
+          "pooled": {
+            "sh7": 0.1809,
+            "sh3": 0.1005,
+            "shraw": 0.0998,
+            "err7": 0.809,
+            "err3": 0.005,
+            "errraw": -0.002,
+            "med": 0.1005,
+            "med_ident": "BLIND3",
+            "med_degraded": false,
+            "errmed": 0.005,
+            "cl7": {
+              "upper_median": 124.5,
+              "lower_median": 32.0,
+              "n_upper": 11,
+              "n_lower": 38,
+              "n_total": 49,
+              "separation_log": 1.359
+            },
+            "cl3": {
+              "upper_median": 37.8,
+              "lower_median": 20.5,
+              "n_upper": 66,
+              "n_lower": 63,
+              "n_total": 129,
+              "separation_log": 0.611
+            },
+            "clraw": {
+              "upper_median": 37.0,
+              "lower_median": 3.0,
+              "n_upper": 134,
+              "n_lower": 76,
+              "n_total": 210,
+              "separation_log": 2.512
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": 0.1135,
+              "sh3": 0.0984,
+              "shraw": 0.1018,
+              "err7": 0.135,
+              "err3": -0.016,
+              "errraw": 0.018,
+              "med": 0.1018,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.018
+            },
+            {
+              "scene_seed": 202,
+              "sh7": 0.1761,
+              "sh3": 0.1037,
+              "shraw": 0.0998,
+              "err7": 0.761,
+              "err3": 0.037,
+              "errraw": -0.002,
+              "med": 0.1037,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.037
+            },
+            {
+              "scene_seed": 303,
+              "sh7": 0.1155,
+              "sh3": 0.1008,
+              "shraw": 0.0956,
+              "err7": 0.155,
+              "err3": 0.008,
+              "errraw": -0.044,
+              "med": 0.1008,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.008
+            },
+            {
+              "scene_seed": 404,
+              "sh7": 0.2157,
+              "sh3": 0.1015,
+              "shraw": 0.0998,
+              "err7": 1.157,
+              "err3": 0.015,
+              "errraw": -0.002,
+              "med": 0.1015,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.015
+            }
+          ],
+          "U_f1": 0.961,
+          "deployment": {
+            "ORACLE": 0.961,
+            "U_ONLY": 0.961,
+            "B7": 0.961,
+            "B3": 0.961,
+            "RAW": 0.961,
+            "MED3": 0.961
+          },
+          "oracle_route": "U_alert",
+          "routes": {
+            "B7": "U",
+            "B3": "U_alert",
+            "RAW": "U_alert",
+            "MED3": "U_alert"
+          }
+        },
+        "s=0.07": {
+          "pooled": {
+            "sh7": 0.1834,
+            "sh3": 0.0678,
+            "shraw": 0.0676,
+            "err7": 1.62,
+            "err3": -0.0314,
+            "errraw": -0.0343,
+            "med": 0.0678,
+            "med_ident": "BLIND3",
+            "med_degraded": false,
+            "errmed": -0.0314,
+            "cl7": {
+              "upper_median": 128.0,
+              "lower_median": 46.0,
+              "n_upper": 6,
+              "n_lower": 7,
+              "n_total": 13,
+              "separation_log": 1.023
+            },
+            "cl3": {
+              "upper_median": 17.2,
+              "lower_median": 8.0,
+              "n_upper": 60,
+              "n_lower": 62,
+              "n_total": 122,
+              "separation_log": 0.768
+            },
+            "clraw": {
+              "upper_median": 17.0,
+              "lower_median": 1.0,
+              "n_upper": 131,
+              "n_lower": 73,
+              "n_total": 204,
+              "separation_log": 2.833
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 101,
+              "sh7": null,
+              "sh3": 0.0623,
+              "shraw": 0.0705,
+              "err7": null,
+              "err3": -0.11,
+              "errraw": 0.0071,
+              "med": 0.0664,
+              "med_ident": "MEAN_OF_TWO",
+              "med_degraded": true,
+              "errmed": -0.0514
+            },
+            {
+              "scene_seed": 202,
+              "sh7": null,
+              "sh3": 0.0722,
+              "shraw": 0.0696,
+              "err7": null,
+              "err3": 0.0314,
+              "errraw": -0.0057,
+              "med": 0.0709,
+              "med_ident": "MEAN_OF_TWO",
+              "med_degraded": true,
+              "errmed": 0.0129
+            },
+            {
+              "scene_seed": 303,
+              "sh7": null,
+              "sh3": 0.0633,
+              "shraw": 0.0656,
+              "err7": null,
+              "err3": -0.0957,
+              "errraw": -0.0629,
+              "med": 0.0645,
+              "med_ident": "MEAN_OF_TWO",
+              "med_degraded": true,
+              "errmed": -0.0786
+            },
+            {
+              "scene_seed": 404,
+              "sh7": null,
+              "sh3": 0.0703,
+              "shraw": 0.0676,
+              "err7": null,
+              "err3": 0.0043,
+              "errraw": -0.0343,
+              "med": 0.0689,
+              "med_ident": "MEAN_OF_TWO",
+              "med_degraded": true,
+              "errmed": -0.0157
+            }
+          ],
+          "U_f1": 0.788,
+          "deployment": {
+            "ORACLE": 0.788,
+            "U_ONLY": 0.788,
+            "B7": 0.788,
+            "B3": 0.788,
+            "RAW": 0.788,
+            "MED3": 0.788
+          },
+          "oracle_route": "U_alert",
+          "routes": {
+            "B7": "U",
+            "B3": "U_alert",
+            "RAW": "U_alert",
+            "MED3": "U_alert"
+          }
+        }
+      },
+      "summary": {
+        "deployment": {
+          "ORACLE": {
+            "total_loss_vs_oracle": 0.0,
+            "per_scale_f1": {
+              "s=1.0": 1.0,
+              "s=0.8": 1.0,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 1.0,
+              "s=0.35": 1.0,
+              "s=0.3": 1.0,
+              "s=0.28": 1.0,
+              "s=0.25": 1.0,
+              "s=0.22": 1.0,
+              "s=0.18": 1.0,
+              "s=0.15": 0.9976,
+              "s=0.12": 0.9928,
+              "s=0.1": 0.961,
+              "s=0.07": 0.788
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.0,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": 0.0,
+              "s=0.28": 0.0,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          },
+          "B7": {
+            "total_loss_vs_oracle": 0.0169,
+            "per_scale_f1": {
+              "s=1.0": 1.0,
+              "s=0.8": 1.0,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 1.0,
+              "s=0.35": 1.0,
+              "s=0.3": 1.0,
+              "s=0.28": 0.9831,
+              "s=0.25": 1.0,
+              "s=0.22": 1.0,
+              "s=0.18": 1.0,
+              "s=0.15": 0.9976,
+              "s=0.12": 0.9928,
+              "s=0.1": 0.961,
+              "s=0.07": 0.788
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.0,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": 0.0,
+              "s=0.28": 0.0169,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          },
+          "B3": {
+            "total_loss_vs_oracle": 0.0,
+            "per_scale_f1": {
+              "s=1.0": 1.0,
+              "s=0.8": 1.0,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 1.0,
+              "s=0.35": 1.0,
+              "s=0.3": 1.0,
+              "s=0.28": 1.0,
+              "s=0.25": 1.0,
+              "s=0.22": 1.0,
+              "s=0.18": 1.0,
+              "s=0.15": 0.9976,
+              "s=0.12": 0.9928,
+              "s=0.1": 0.961,
+              "s=0.07": 0.788
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.0,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": 0.0,
+              "s=0.28": 0.0,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          },
+          "RAW": {
+            "total_loss_vs_oracle": 0.3619,
+            "per_scale_f1": {
+              "s=1.0": 0.6381,
+              "s=0.8": 1.0,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 1.0,
+              "s=0.35": 1.0,
+              "s=0.3": 1.0,
+              "s=0.28": 1.0,
+              "s=0.25": 1.0,
+              "s=0.22": 1.0,
+              "s=0.18": 1.0,
+              "s=0.15": 0.9976,
+              "s=0.12": 0.9928,
+              "s=0.1": 0.961,
+              "s=0.07": 0.788
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.3619,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": 0.0,
+              "s=0.28": 0.0,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          },
+          "MED3": {
+            "total_loss_vs_oracle": 0.0,
+            "per_scale_f1": {
+              "s=1.0": 1.0,
+              "s=0.8": 1.0,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 1.0,
+              "s=0.35": 1.0,
+              "s=0.3": 1.0,
+              "s=0.28": 1.0,
+              "s=0.25": 1.0,
+              "s=0.22": 1.0,
+              "s=0.18": 1.0,
+              "s=0.15": 0.9976,
+              "s=0.12": 0.9928,
+              "s=0.1": 0.961,
+              "s=0.07": 0.788
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.0,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": 0.0,
+              "s=0.28": 0.0,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          }
+        },
+        "pooled_bad": {
+          "B7": 9,
+          "B3": 0,
+          "RAW": 1,
+          "MED3": 0
+        },
+        "alert_hits_of_3": {
+          "B7": 1,
+          "B3": 3,
+          "RAW": 3,
+          "MED3": 3
+        },
+        "per_scene_bad": {
+          "B7": 27,
+          "B3": 2,
+          "RAW": 6,
+          "MED3": 0,
+          "n": 60
+        },
+        "med_ident_pooled": {
+          "s=1.0": "BLIND7",
+          "s=0.8": "BLIND7",
+          "s=0.65": "BLIND3",
+          "s=0.5": "BLIND3",
+          "s=0.4": "BLIND3",
+          "s=0.35": "BLIND7",
+          "s=0.3": "BLINDRAW",
+          "s=0.28": "BLINDRAW",
+          "s=0.25": "BLINDRAW",
+          "s=0.22": "BLINDRAW",
+          "s=0.18": "BLINDRAW",
+          "s=0.15": "BLINDRAW",
+          "s=0.12": "BLINDRAW",
+          "s=0.1": "BLIND3",
+          "s=0.07": "BLIND3"
+        }
+      }
+    },
+    "holdout1": {
+      "scenes": [
+        505,
+        606,
+        707,
+        808
+      ],
+      "n_objects": 203,
+      "baseline_sanity": {
+        "tp": 203,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 131,
+        "true_blooms": 131,
+        "det_buds": 72,
+        "true_buds": 72,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0
+      },
+      "results": {
+        "s=1.0": {
+          "pooled": {
+            "sh7": 1.023,
+            "sh3": 1.0246,
+            "shraw": 0.465,
+            "err7": 0.023,
+            "err3": 0.0246,
+            "errraw": -0.535,
+            "med": 1.023,
+            "med_ident": "BLIND7",
+            "med_degraded": false,
+            "errmed": 0.023,
+            "cl7": {
+              "upper_median": 3983.0,
+              "lower_median": 347.5,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.439
+            },
+            "cl3": {
+              "upper_median": 3926.5,
+              "lower_median": 349.5,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.419
+            },
+            "clraw": {
+              "upper_median": 804.0,
+              "lower_median": 1.0,
+              "n_upper": 274,
+              "n_lower": 103,
+              "n_total": 377,
+              "separation_log": 6.69
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 1.023,
+              "sh3": 1.0246,
+              "shraw": 0.4798,
+              "err7": 0.023,
+              "err3": 0.0246,
+              "errraw": -0.5202,
+              "med": 1.023,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.023
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 1.0792,
+              "sh3": 1.0807,
+              "shraw": 0.4509,
+              "err7": 0.0792,
+              "err3": 0.0807,
+              "errraw": -0.5491,
+              "med": 1.0792,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0792
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.9797,
+              "sh3": 0.9826,
+              "shraw": 0.4345,
+              "err7": -0.0203,
+              "err3": -0.0174,
+              "errraw": -0.5655,
+              "med": 0.9797,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0203
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 1.009,
+              "sh3": 1.011,
+              "shraw": 0.465,
+              "err7": 0.009,
+              "err3": 0.011,
+              "errraw": -0.535,
+              "med": 1.009,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.009
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 0.6453,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.8": {
+          "pooled": {
+            "sh7": 0.8196,
+            "sh3": 0.8191,
+            "shraw": 0.7965,
+            "err7": 0.0245,
+            "err3": 0.0239,
+            "errraw": -0.0044,
+            "med": 0.8191,
+            "med_ident": "BLIND3",
+            "med_degraded": false,
+            "errmed": 0.0239,
+            "cl7": {
+              "upper_median": 2556.5,
+              "lower_median": 213.0,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.485
+            },
+            "cl3": {
+              "upper_median": 2509.0,
+              "lower_median": 215.8,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.454
+            },
+            "clraw": {
+              "upper_median": 2359.0,
+              "lower_median": 237.0,
+              "n_upper": 141,
+              "n_lower": 141,
+              "n_total": 282,
+              "separation_log": 2.298
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.8196,
+              "sh3": 0.8191,
+              "shraw": 0.7919,
+              "err7": 0.0245,
+              "err3": 0.0239,
+              "errraw": -0.0101,
+              "med": 0.8191,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.0239
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.8684,
+              "sh3": 0.8677,
+              "shraw": 0.8727,
+              "err7": 0.0855,
+              "err3": 0.0846,
+              "errraw": 0.0909,
+              "med": 0.8684,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0855
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.7826,
+              "sh3": 0.7859,
+              "shraw": 0.3589,
+              "err7": -0.0218,
+              "err3": -0.0176,
+              "errraw": -0.5514,
+              "med": 0.7826,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0218
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.8093,
+              "sh3": 0.8106,
+              "shraw": 0.7951,
+              "err7": 0.0116,
+              "err3": 0.0132,
+              "errraw": -0.0061,
+              "med": 0.8093,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0116
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.65": {
+          "pooled": {
+            "sh7": 0.6672,
+            "sh3": 0.6637,
+            "shraw": 0.6734,
+            "err7": 0.0265,
+            "err3": 0.0211,
+            "errraw": 0.036,
+            "med": 0.6672,
+            "med_ident": "BLIND7",
+            "med_degraded": false,
+            "errmed": 0.0265,
+            "cl7": {
+              "upper_median": 1694.5,
+              "lower_median": 134.0,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.537
+            },
+            "cl3": {
+              "upper_median": 1647.5,
+              "lower_median": 138.8,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.474
+            },
+            "clraw": {
+              "upper_median": 1686.0,
+              "lower_median": 160.0,
+              "n_upper": 131,
+              "n_lower": 76,
+              "n_total": 207,
+              "separation_log": 2.355
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.6672,
+              "sh3": 0.6637,
+              "shraw": 0.6663,
+              "err7": 0.0265,
+              "err3": 0.0211,
+              "errraw": 0.0251,
+              "med": 0.6663,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0251
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.7058,
+              "sh3": 0.7032,
+              "shraw": 0.7195,
+              "err7": 0.0858,
+              "err3": 0.0818,
+              "errraw": 0.1069,
+              "med": 0.7058,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0858
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.6357,
+              "sh3": 0.6356,
+              "shraw": 0.6423,
+              "err7": -0.022,
+              "err3": -0.0222,
+              "errraw": -0.0118,
+              "med": 0.6357,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.022
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.6537,
+              "sh3": 0.6566,
+              "shraw": 0.6734,
+              "err7": 0.0057,
+              "err3": 0.0102,
+              "errraw": 0.036,
+              "med": 0.6566,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.0102
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.5": {
+          "pooled": {
+            "sh7": 0.5091,
+            "sh3": 0.5055,
+            "shraw": 0.5199,
+            "err7": 0.0182,
+            "err3": 0.011,
+            "errraw": 0.0398,
+            "med": 0.5091,
+            "med_ident": "BLIND7",
+            "med_degraded": false,
+            "errmed": 0.0182,
+            "cl7": {
+              "upper_median": 986.5,
+              "lower_median": 70.2,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.642
+            },
+            "cl3": {
+              "upper_median": 955.8,
+              "lower_median": 78.0,
+              "n_upper": 130,
+              "n_lower": 72,
+              "n_total": 202,
+              "separation_log": 2.506
+            },
+            "clraw": {
+              "upper_median": 1005.0,
+              "lower_median": 95.5,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.354
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.5042,
+              "sh3": 0.5048,
+              "shraw": 0.511,
+              "err7": 0.0084,
+              "err3": 0.0096,
+              "errraw": 0.022,
+              "med": 0.5048,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.0096
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.5393,
+              "sh3": 0.5327,
+              "shraw": 0.5542,
+              "err7": 0.0786,
+              "err3": 0.0654,
+              "errraw": 0.1084,
+              "med": 0.5393,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0786
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.4866,
+              "sh3": 0.4863,
+              "shraw": 0.4959,
+              "err7": -0.0268,
+              "err3": -0.0274,
+              "errraw": -0.0082,
+              "med": 0.4866,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0268
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.5028,
+              "sh3": 0.5035,
+              "shraw": 0.5199,
+              "err7": 0.0056,
+              "err3": 0.007,
+              "errraw": 0.0398,
+              "med": 0.5035,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.007
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.4": {
+          "pooled": {
+            "sh7": 0.4034,
+            "sh3": 0.4014,
+            "shraw": 0.4145,
+            "err7": 0.0085,
+            "err3": 0.0035,
+            "errraw": 0.0362,
+            "med": 0.4034,
+            "med_ident": "BLIND7",
+            "med_degraded": false,
+            "errmed": 0.0085,
+            "cl7": {
+              "upper_median": 619.5,
+              "lower_median": 47.0,
+              "n_upper": 131,
+              "n_lower": 44,
+              "n_total": 175,
+              "separation_log": 2.579
+            },
+            "cl3": {
+              "upper_median": 602.5,
+              "lower_median": 46.5,
+              "n_upper": 130,
+              "n_lower": 72,
+              "n_total": 202,
+              "separation_log": 2.562
+            },
+            "clraw": {
+              "upper_median": 639.0,
+              "lower_median": 60.0,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.366
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.4034,
+              "sh3": 0.4009,
+              "shraw": 0.4077,
+              "err7": 0.0085,
+              "err3": 0.0022,
+              "errraw": 0.0192,
+              "med": 0.4034,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0085
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.4298,
+              "sh3": 0.4248,
+              "shraw": 0.4434,
+              "err7": 0.0745,
+              "err3": 0.062,
+              "errraw": 0.1085,
+              "med": 0.4298,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0745
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.3874,
+              "sh3": 0.3871,
+              "shraw": 0.3963,
+              "err7": -0.0315,
+              "err3": -0.0323,
+              "errraw": -0.0093,
+              "med": 0.3874,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0315
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.4023,
+              "sh3": 0.4019,
+              "shraw": 0.4165,
+              "err7": 0.0057,
+              "err3": 0.0047,
+              "errraw": 0.0412,
+              "med": 0.4023,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0057
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 0.9975,
+            "U_ONLY": 1.0,
+            "B7": 0.9975,
+            "B3": 0.9975,
+            "RAW": 0.9975,
+            "MED3": 0.9975
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.35": {
+          "pooled": {
+            "sh7": 0.3529,
+            "sh3": 0.3501,
+            "shraw": 0.3626,
+            "err7": 0.0083,
+            "err3": 0.0003,
+            "errraw": 0.036,
+            "med": 0.3529,
+            "med_ident": "BLIND7",
+            "med_degraded": false,
+            "errmed": 0.0083,
+            "cl7": {
+              "upper_median": 474.0,
+              "lower_median": 33.2,
+              "n_upper": 131,
+              "n_lower": 22,
+              "n_total": 153,
+              "separation_log": 2.657
+            },
+            "cl3": {
+              "upper_median": 458.5,
+              "lower_median": 35.0,
+              "n_upper": 130,
+              "n_lower": 72,
+              "n_total": 202,
+              "separation_log": 2.573
+            },
+            "clraw": {
+              "upper_median": 489.0,
+              "lower_median": 46.5,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.353
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.3529,
+              "sh3": 0.3503,
+              "shraw": 0.3578,
+              "err7": 0.0083,
+              "err3": 0.0009,
+              "errraw": 0.0223,
+              "med": 0.3529,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0083
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.3756,
+              "sh3": 0.3721,
+              "shraw": 0.3908,
+              "err7": 0.0731,
+              "err3": 0.0631,
+              "errraw": 0.1166,
+              "med": 0.3756,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0731
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.3346,
+              "sh3": 0.3371,
+              "shraw": 0.3469,
+              "err7": -0.044,
+              "err3": -0.0369,
+              "errraw": -0.0089,
+              "med": 0.3371,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0369
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.3465,
+              "sh3": 0.3499,
+              "shraw": 0.3637,
+              "err7": -0.01,
+              "err3": -0.0003,
+              "errraw": 0.0391,
+              "med": 0.3499,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0003
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 0.9975,
+            "U_ONLY": 1.0,
+            "B7": 0.9975,
+            "B3": 0.9975,
+            "RAW": 0.9975,
+            "MED3": 0.9975
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.3": {
+          "pooled": {
+            "sh7": 0.3282,
+            "sh3": 0.2995,
+            "shraw": 0.3124,
+            "err7": 0.094,
+            "err3": -0.0017,
+            "errraw": 0.0413,
+            "med": 0.3124,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0413,
+            "cl7": {
+              "upper_median": 410.0,
+              "lower_median": 251.5,
+              "n_upper": 71,
+              "n_lower": 60,
+              "n_total": 131,
+              "separation_log": 0.489
+            },
+            "cl3": {
+              "upper_median": 335.5,
+              "lower_median": 23.8,
+              "n_upper": 130,
+              "n_lower": 72,
+              "n_total": 202,
+              "separation_log": 2.648
+            },
+            "clraw": {
+              "upper_median": 363.0,
+              "lower_median": 34.0,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.368
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.3201,
+              "sh3": 0.2993,
+              "shraw": 0.3055,
+              "err7": 0.067,
+              "err3": -0.0023,
+              "errraw": 0.0183,
+              "med": 0.3055,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0183
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.3332,
+              "sh3": 0.3155,
+              "shraw": 0.3345,
+              "err7": 0.1107,
+              "err3": 0.0517,
+              "errraw": 0.115,
+              "med": 0.3332,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.1107
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.3338,
+              "sh3": 0.2881,
+              "shraw": 0.2961,
+              "err7": 0.1127,
+              "err3": -0.0397,
+              "errraw": -0.013,
+              "med": 0.2961,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.013
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.3322,
+              "sh3": 0.2995,
+              "shraw": 0.3133,
+              "err7": 0.1073,
+              "err3": -0.0017,
+              "errraw": 0.0443,
+              "med": 0.3133,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0443
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 0.9975,
+            "U_ONLY": 1.0,
+            "B7": 0.9975,
+            "B3": 1.0,
+            "RAW": 0.9975,
+            "MED3": 0.9975
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "U",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.28": {
+          "pooled": {
+            "sh7": 0.3071,
+            "sh3": 0.2798,
+            "shraw": 0.292,
+            "err7": 0.0968,
+            "err3": -0.0007,
+            "errraw": 0.0429,
+            "med": 0.292,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0429,
+            "cl7": {
+              "upper_median": 359.0,
+              "lower_median": 219.2,
+              "n_upper": 68,
+              "n_lower": 62,
+              "n_total": 130,
+              "separation_log": 0.493
+            },
+            "cl3": {
+              "upper_median": 292.8,
+              "lower_median": 20.0,
+              "n_upper": 130,
+              "n_lower": 72,
+              "n_total": 202,
+              "separation_log": 2.684
+            },
+            "clraw": {
+              "upper_median": 317.0,
+              "lower_median": 29.5,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.375
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.2976,
+              "sh3": 0.2832,
+              "shraw": 0.2883,
+              "err7": 0.0629,
+              "err3": 0.0114,
+              "errraw": 0.0296,
+              "med": 0.2883,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0296
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.3084,
+              "sh3": 0.2942,
+              "shraw": 0.3116,
+              "err7": 0.1014,
+              "err3": 0.0507,
+              "errraw": 0.1129,
+              "med": 0.3084,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.1014
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.3096,
+              "sh3": 0.2664,
+              "shraw": 0.2764,
+              "err7": 0.1057,
+              "err3": -0.0486,
+              "errraw": -0.0129,
+              "med": 0.2764,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0129
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.3078,
+              "sh3": 0.2789,
+              "shraw": 0.2924,
+              "err7": 0.0993,
+              "err3": -0.0039,
+              "errraw": 0.0443,
+              "med": 0.2924,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0443
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 0.9975,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "P",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.25": {
+          "pooled": {
+            "sh7": 0.2782,
+            "sh3": 0.2459,
+            "shraw": 0.2603,
+            "err7": 0.1128,
+            "err3": -0.0164,
+            "errraw": 0.0412,
+            "med": 0.2603,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0412,
+            "cl7": {
+              "upper_median": 294.5,
+              "lower_median": 169.5,
+              "n_upper": 61,
+              "n_lower": 63,
+              "n_total": 124,
+              "separation_log": 0.552
+            },
+            "cl3": {
+              "upper_median": 226.2,
+              "lower_median": 15.2,
+              "n_upper": 130,
+              "n_lower": 72,
+              "n_total": 202,
+              "separation_log": 2.697
+            },
+            "clraw": {
+              "upper_median": 252.0,
+              "lower_median": 23.5,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.372
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.2835,
+              "sh3": 0.2461,
+              "shraw": 0.2535,
+              "err7": 0.134,
+              "err3": -0.0156,
+              "errraw": 0.014,
+              "med": 0.2535,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.014
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.2758,
+              "sh3": 0.261,
+              "shraw": 0.2764,
+              "err7": 0.1032,
+              "err3": 0.044,
+              "errraw": 0.1056,
+              "med": 0.2758,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.1032
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.2782,
+              "sh3": 0.2375,
+              "shraw": 0.2454,
+              "err7": 0.1128,
+              "err3": -0.05,
+              "errraw": -0.0184,
+              "med": 0.2454,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0184
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.2734,
+              "sh3": 0.2458,
+              "shraw": 0.2619,
+              "err7": 0.0936,
+              "err3": -0.0168,
+              "errraw": 0.0476,
+              "med": 0.2619,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0476
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "U",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.22": {
+          "pooled": {
+            "sh7": 0.241,
+            "sh3": 0.2164,
+            "shraw": 0.2278,
+            "err7": 0.0955,
+            "err3": -0.0164,
+            "errraw": 0.0355,
+            "med": 0.2278,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0355,
+            "cl7": {
+              "upper_median": 221.0,
+              "lower_median": 129.0,
+              "n_upper": 63,
+              "n_lower": 61,
+              "n_total": 124,
+              "separation_log": 0.538
+            },
+            "cl3": {
+              "upper_median": 175.2,
+              "lower_median": 10.0,
+              "n_upper": 130,
+              "n_lower": 72,
+              "n_total": 202,
+              "separation_log": 2.864
+            },
+            "clraw": {
+              "upper_median": 193.0,
+              "lower_median": 18.0,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.372
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.2568,
+              "sh3": 0.2169,
+              "shraw": 0.2224,
+              "err7": 0.1673,
+              "err3": -0.0141,
+              "errraw": 0.0109,
+              "med": 0.2224,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0109
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.2396,
+              "sh3": 0.2276,
+              "shraw": 0.2449,
+              "err7": 0.0891,
+              "err3": 0.0345,
+              "errraw": 0.1132,
+              "med": 0.2396,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0891
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.2426,
+              "sh3": 0.2097,
+              "shraw": 0.2169,
+              "err7": 0.1027,
+              "err3": -0.0468,
+              "errraw": -0.0141,
+              "med": 0.2169,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0141
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.2368,
+              "sh3": 0.216,
+              "shraw": 0.2302,
+              "err7": 0.0764,
+              "err3": -0.0182,
+              "errraw": 0.0464,
+              "med": 0.2302,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0464
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "U",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.18": {
+          "pooled": {
+            "sh7": 0.1985,
+            "sh3": 0.1754,
+            "shraw": 0.1848,
+            "err7": 0.1028,
+            "err3": -0.0256,
+            "errraw": 0.0267,
+            "med": 0.1848,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0267,
+            "cl7": {
+              "upper_median": 150.0,
+              "lower_median": 81.0,
+              "n_upper": 58,
+              "n_lower": 62,
+              "n_total": 120,
+              "separation_log": 0.616
+            },
+            "cl3": {
+              "upper_median": 115.0,
+              "lower_median": 6.0,
+              "n_upper": 129,
+              "n_lower": 65,
+              "n_total": 194,
+              "separation_log": 2.953
+            },
+            "clraw": {
+              "upper_median": 127.0,
+              "lower_median": 12.0,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.359
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.228,
+              "sh3": 0.1767,
+              "shraw": 0.1833,
+              "err7": 0.2667,
+              "err3": -0.0183,
+              "errraw": 0.0183,
+              "med": 0.1833,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0183
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.1942,
+              "sh3": 0.1851,
+              "shraw": 0.1981,
+              "err7": 0.0789,
+              "err3": 0.0283,
+              "errraw": 0.1006,
+              "med": 0.1942,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0789
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.1971,
+              "sh3": 0.1655,
+              "shraw": 0.1762,
+              "err7": 0.095,
+              "err3": -0.0806,
+              "errraw": -0.0211,
+              "med": 0.1762,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0211
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.1942,
+              "sh3": 0.1742,
+              "shraw": 0.1898,
+              "err7": 0.0789,
+              "err3": -0.0322,
+              "errraw": 0.0544,
+              "med": 0.1898,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0544
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "U",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.15": {
+          "pooled": {
+            "sh7": 0.1573,
+            "sh3": 0.144,
+            "shraw": 0.1547,
+            "err7": 0.0487,
+            "err3": -0.04,
+            "errraw": 0.0313,
+            "med": 0.1547,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0313,
+            "cl7": {
+              "upper_median": 94.2,
+              "lower_median": 49.0,
+              "n_upper": 64,
+              "n_lower": 56,
+              "n_total": 120,
+              "separation_log": 0.654
+            },
+            "cl3": {
+              "upper_median": 77.5,
+              "lower_median": 4.0,
+              "n_upper": 129,
+              "n_lower": 45,
+              "n_total": 174,
+              "separation_log": 2.964
+            },
+            "clraw": {
+              "upper_median": 89.0,
+              "lower_median": 8.0,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.409
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.1918,
+              "sh3": 0.1453,
+              "shraw": 0.153,
+              "err7": 0.2787,
+              "err3": -0.0313,
+              "errraw": 0.02,
+              "med": 0.153,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.02
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.1573,
+              "sh3": 0.1525,
+              "shraw": 0.1632,
+              "err7": 0.0487,
+              "err3": 0.0167,
+              "errraw": 0.088,
+              "med": 0.1573,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0487
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.1542,
+              "sh3": 0.1383,
+              "shraw": 0.149,
+              "err7": 0.028,
+              "err3": -0.078,
+              "errraw": -0.0067,
+              "med": 0.149,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0067
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.1553,
+              "sh3": 0.1421,
+              "shraw": 0.1573,
+              "err7": 0.0353,
+              "err3": -0.0527,
+              "errraw": 0.0487,
+              "med": 0.1553,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0353
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "U",
+            "B3": "U_alert",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.12": {
+          "pooled": {
+            "sh7": 0.1274,
+            "sh3": 0.1121,
+            "shraw": 0.1249,
+            "err7": 0.0617,
+            "err3": -0.0658,
+            "errraw": 0.0408,
+            "med": 0.1249,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0408,
+            "cl7": {
+              "upper_median": 61.8,
+              "lower_median": 34.5,
+              "n_upper": 48,
+              "n_lower": 52,
+              "n_total": 100,
+              "separation_log": 0.582
+            },
+            "cl3": {
+              "upper_median": 47.0,
+              "lower_median": 2.0,
+              "n_upper": 128,
+              "n_lower": 8,
+              "n_total": 136,
+              "separation_log": 3.157
+            },
+            "clraw": {
+              "upper_median": 58.0,
+              "lower_median": 5.0,
+              "n_upper": 131,
+              "n_lower": 72,
+              "n_total": 203,
+              "separation_log": 2.451
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.1454,
+              "sh3": 0.1224,
+              "shraw": 0.1238,
+              "err7": 0.2117,
+              "err3": 0.02,
+              "errraw": 0.0317,
+              "med": 0.1238,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0317
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.1271,
+              "sh3": 0.121,
+              "shraw": 0.1312,
+              "err7": 0.0592,
+              "err3": 0.0083,
+              "errraw": 0.0933,
+              "med": 0.1271,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0592
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.1237,
+              "sh3": 0.1282,
+              "shraw": 0.1188,
+              "err7": 0.0308,
+              "err3": 0.0683,
+              "errraw": -0.01,
+              "med": 0.1237,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0308
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.1261,
+              "sh3": 0.1103,
+              "shraw": 0.127,
+              "err7": 0.0508,
+              "err3": -0.0808,
+              "errraw": 0.0583,
+              "med": 0.1261,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0508
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "U_alert",
+          "routes": {
+            "B7": "U_alert",
+            "B3": "U_alert",
+            "RAW": "U_alert",
+            "MED3": "U_alert"
+          }
+        },
+        "s=0.1": {
+          "pooled": {
+            "sh7": 0.1977,
+            "sh3": 0.0995,
+            "shraw": 0.1024,
+            "err7": 0.977,
+            "err3": -0.005,
+            "errraw": 0.024,
+            "med": 0.1024,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.024,
+            "cl7": {
+              "upper_median": 148.8,
+              "lower_median": 32.0,
+              "n_upper": 6,
+              "n_lower": 58,
+              "n_total": 64,
+              "separation_log": 1.537
+            },
+            "cl3": {
+              "upper_median": 37.0,
+              "lower_median": 20.5,
+              "n_upper": 75,
+              "n_lower": 53,
+              "n_total": 128,
+              "separation_log": 0.59
+            },
+            "clraw": {
+              "upper_median": 39.0,
+              "lower_median": 3.0,
+              "n_upper": 130,
+              "n_lower": 72,
+              "n_total": 202,
+              "separation_log": 2.565
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": 0.1158,
+              "sh3": 0.0988,
+              "shraw": 0.105,
+              "err7": 0.158,
+              "err3": -0.012,
+              "errraw": 0.05,
+              "med": 0.105,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.05
+            },
+            {
+              "scene_seed": 606,
+              "sh7": 0.1105,
+              "sh3": 0.1028,
+              "shraw": 0.1063,
+              "err7": 0.105,
+              "err3": 0.028,
+              "errraw": 0.063,
+              "med": 0.1063,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.063
+            },
+            {
+              "scene_seed": 707,
+              "sh7": 0.1982,
+              "sh3": 0.1001,
+              "shraw": 0.0991,
+              "err7": 0.982,
+              "err3": 0.001,
+              "errraw": -0.009,
+              "med": 0.1001,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.001
+            },
+            {
+              "scene_seed": 808,
+              "sh7": 0.1044,
+              "sh3": 0.1019,
+              "shraw": 0.1011,
+              "err7": 0.044,
+              "err3": 0.019,
+              "errraw": 0.011,
+              "med": 0.1019,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.019
+            }
+          ],
+          "U_f1": 0.9828,
+          "deployment": {
+            "ORACLE": 0.9828,
+            "U_ONLY": 0.9828,
+            "B7": 0.9828,
+            "B3": 0.9828,
+            "RAW": 0.9828,
+            "MED3": 0.9828
+          },
+          "oracle_route": "U_alert",
+          "routes": {
+            "B7": "U",
+            "B3": "U_alert",
+            "RAW": "U_alert",
+            "MED3": "U_alert"
+          }
+        },
+        "s=0.07": {
+          "pooled": {
+            "sh7": 0.1675,
+            "sh3": 0.0664,
+            "shraw": 0.0715,
+            "err7": 1.3929,
+            "err3": -0.0514,
+            "errraw": 0.0214,
+            "med": 0.0715,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": 0.0214,
+            "cl7": {
+              "upper_median": 106.8,
+              "lower_median": 35.0,
+              "n_upper": 6,
+              "n_lower": 5,
+              "n_total": 11,
+              "separation_log": 1.115
+            },
+            "cl3": {
+              "upper_median": 16.5,
+              "lower_median": 8.5,
+              "n_upper": 66,
+              "n_lower": 56,
+              "n_total": 122,
+              "separation_log": 0.663
+            },
+            "clraw": {
+              "upper_median": 19.0,
+              "lower_median": 2.0,
+              "n_upper": 129,
+              "n_lower": 72,
+              "n_total": 201,
+              "separation_log": 2.251
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 505,
+              "sh7": null,
+              "sh3": 0.0793,
+              "shraw": 0.0686,
+              "err7": null,
+              "err3": 0.1329,
+              "errraw": -0.02,
+              "med": 0.0739,
+              "med_ident": "MEAN_OF_TWO",
+              "med_degraded": true,
+              "errmed": 0.0557
+            },
+            {
+              "scene_seed": 606,
+              "sh7": null,
+              "sh3": 0.0658,
+              "shraw": 0.0769,
+              "err7": null,
+              "err3": -0.06,
+              "errraw": 0.0986,
+              "med": 0.0713,
+              "med_ident": "MEAN_OF_TWO",
+              "med_degraded": true,
+              "errmed": 0.0186
+            },
+            {
+              "scene_seed": 707,
+              "sh7": null,
+              "sh3": 0.0644,
+              "shraw": 0.0696,
+              "err7": null,
+              "err3": -0.08,
+              "errraw": -0.0057,
+              "med": 0.067,
+              "med_ident": "MEAN_OF_TWO",
+              "med_degraded": true,
+              "errmed": -0.0429
+            },
+            {
+              "scene_seed": 808,
+              "sh7": null,
+              "sh3": 0.0684,
+              "shraw": 0.0715,
+              "err7": null,
+              "err3": -0.0229,
+              "errraw": 0.0214,
+              "med": 0.0699,
+              "med_ident": "MEAN_OF_TWO",
+              "med_degraded": true,
+              "errmed": -0.0014
+            }
+          ],
+          "U_f1": 0.8399,
+          "deployment": {
+            "ORACLE": 0.8399,
+            "U_ONLY": 0.8399,
+            "B7": 0.8399,
+            "B3": 0.8399,
+            "RAW": 0.8399,
+            "MED3": 0.8399
+          },
+          "oracle_route": "U_alert",
+          "routes": {
+            "B7": "U",
+            "B3": "U_alert",
+            "RAW": "U_alert",
+            "MED3": "U_alert"
+          }
+        }
+      },
+      "summary": {
+        "deployment": {
+          "ORACLE": {
+            "total_loss_vs_oracle": 0.0,
+            "per_scale_f1": {
+              "s=1.0": 1.0,
+              "s=0.8": 1.0,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 0.9975,
+              "s=0.35": 0.9975,
+              "s=0.3": 0.9975,
+              "s=0.28": 1.0,
+              "s=0.25": 1.0,
+              "s=0.22": 1.0,
+              "s=0.18": 1.0,
+              "s=0.15": 1.0,
+              "s=0.12": 1.0,
+              "s=0.1": 0.9828,
+              "s=0.07": 0.8399
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.0,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": 0.0,
+              "s=0.28": 0.0,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          },
+          "B7": {
+            "total_loss_vs_oracle": 0.0025,
+            "per_scale_f1": {
+              "s=1.0": 1.0,
+              "s=0.8": 1.0,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 0.9975,
+              "s=0.35": 0.9975,
+              "s=0.3": 0.9975,
+              "s=0.28": 0.9975,
+              "s=0.25": 1.0,
+              "s=0.22": 1.0,
+              "s=0.18": 1.0,
+              "s=0.15": 1.0,
+              "s=0.12": 1.0,
+              "s=0.1": 0.9828,
+              "s=0.07": 0.8399
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.0,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": 0.0,
+              "s=0.28": 0.0025,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          },
+          "B3": {
+            "total_loss_vs_oracle": -0.0025,
+            "per_scale_f1": {
+              "s=1.0": 1.0,
+              "s=0.8": 1.0,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 0.9975,
+              "s=0.35": 0.9975,
+              "s=0.3": 1.0,
+              "s=0.28": 1.0,
+              "s=0.25": 1.0,
+              "s=0.22": 1.0,
+              "s=0.18": 1.0,
+              "s=0.15": 1.0,
+              "s=0.12": 1.0,
+              "s=0.1": 0.9828,
+              "s=0.07": 0.8399
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.0,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": -0.0025,
+              "s=0.28": 0.0,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          },
+          "RAW": {
+            "total_loss_vs_oracle": 0.3547,
+            "per_scale_f1": {
+              "s=1.0": 0.6453,
+              "s=0.8": 1.0,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 0.9975,
+              "s=0.35": 0.9975,
+              "s=0.3": 0.9975,
+              "s=0.28": 1.0,
+              "s=0.25": 1.0,
+              "s=0.22": 1.0,
+              "s=0.18": 1.0,
+              "s=0.15": 1.0,
+              "s=0.12": 1.0,
+              "s=0.1": 0.9828,
+              "s=0.07": 0.8399
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.3547,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": 0.0,
+              "s=0.28": 0.0,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          },
+          "MED3": {
+            "total_loss_vs_oracle": 0.0,
+            "per_scale_f1": {
+              "s=1.0": 1.0,
+              "s=0.8": 1.0,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 0.9975,
+              "s=0.35": 0.9975,
+              "s=0.3": 0.9975,
+              "s=0.28": 1.0,
+              "s=0.25": 1.0,
+              "s=0.22": 1.0,
+              "s=0.18": 1.0,
+              "s=0.15": 1.0,
+              "s=0.12": 1.0,
+              "s=0.1": 0.9828,
+              "s=0.07": 0.8399
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.0,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": 0.0,
+              "s=0.28": 0.0,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          }
+        },
+        "pooled_bad": {
+          "B7": 4,
+          "B3": 0,
+          "RAW": 1,
+          "MED3": 0
+        },
+        "alert_hits_of_3": {
+          "B7": 1,
+          "B3": 3,
+          "RAW": 3,
+          "MED3": 3
+        },
+        "per_scene_bad": {
+          "B7": 20,
+          "B3": 1,
+          "RAW": 14,
+          "MED3": 3,
+          "n": 60
+        },
+        "med_ident_pooled": {
+          "s=1.0": "BLIND7",
+          "s=0.8": "BLIND3",
+          "s=0.65": "BLIND7",
+          "s=0.5": "BLIND7",
+          "s=0.4": "BLIND7",
+          "s=0.35": "BLIND7",
+          "s=0.3": "BLINDRAW",
+          "s=0.28": "BLINDRAW",
+          "s=0.25": "BLINDRAW",
+          "s=0.22": "BLINDRAW",
+          "s=0.18": "BLINDRAW",
+          "s=0.15": "BLINDRAW",
+          "s=0.12": "BLINDRAW",
+          "s=0.1": "BLINDRAW",
+          "s=0.07": "BLINDRAW"
+        }
+      }
+    },
+    "holdout2": {
+      "scenes": [
+        909,
+        1010,
+        1111,
+        1212
+      ],
+      "n_objects": 209,
+      "baseline_sanity": {
+        "tp": 209,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "det_blooms": 133,
+        "true_blooms": 133,
+        "det_buds": 76,
+        "true_buds": 76,
+        "bloom_recall": 1.0,
+        "bud_recall": 1.0,
+        "count_err_pct": 0.0
+      },
+      "results": {
+        "s=1.0": {
+          "pooled": {
+            "sh7": 0.9862,
+            "sh3": 0.9875,
+            "shraw": 0.4494,
+            "err7": -0.0138,
+            "err3": -0.0125,
+            "errraw": -0.5506,
+            "med": 0.9862,
+            "med_ident": "BLIND7",
+            "med_degraded": false,
+            "errmed": -0.0138,
+            "cl7": {
+              "upper_median": 3702.0,
+              "lower_median": 369.8,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.304
+            },
+            "cl3": {
+              "upper_median": 3647.0,
+              "lower_median": 369.0,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.291
+            },
+            "clraw": {
+              "upper_median": 751.0,
+              "lower_median": 1.0,
+              "n_upper": 292,
+              "n_lower": 118,
+              "n_total": 410,
+              "separation_log": 6.621
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.9877,
+              "sh3": 0.9895,
+              "shraw": 0.4339,
+              "err7": -0.0123,
+              "err3": -0.0105,
+              "errraw": -0.5661,
+              "med": 0.9877,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0123
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.96,
+              "sh3": 0.9625,
+              "shraw": 0.4158,
+              "err7": -0.04,
+              "err3": -0.0375,
+              "errraw": -0.5842,
+              "med": 0.96,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.04
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.9818,
+              "sh3": 0.9821,
+              "shraw": 0.4653,
+              "err7": -0.0182,
+              "err3": -0.0179,
+              "errraw": -0.5347,
+              "med": 0.9818,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0182
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 1.0299,
+              "sh3": 1.0341,
+              "shraw": 0.4482,
+              "err7": 0.0299,
+              "err3": 0.0341,
+              "errraw": -0.5518,
+              "med": 1.0299,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0299
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 0.6364,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.8": {
+          "pooled": {
+            "sh7": 0.7879,
+            "sh3": 0.7887,
+            "shraw": 0.5869,
+            "err7": -0.0151,
+            "err3": -0.0141,
+            "errraw": -0.2664,
+            "med": 0.7879,
+            "med_ident": "BLIND7",
+            "med_degraded": false,
+            "errmed": -0.0151,
+            "cl7": {
+              "upper_median": 2363.0,
+              "lower_median": 224.0,
+              "n_upper": 132,
+              "n_lower": 76,
+              "n_total": 208,
+              "separation_log": 2.356
+            },
+            "cl3": {
+              "upper_median": 2326.5,
+              "lower_median": 228.8,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.319
+            },
+            "clraw": {
+              "upper_median": 1281.0,
+              "lower_median": 1.0,
+              "n_upper": 262,
+              "n_lower": 66,
+              "n_total": 328,
+              "separation_log": 7.155
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.79,
+              "sh3": 0.7905,
+              "shraw": 0.6013,
+              "err7": -0.0125,
+              "err3": -0.0119,
+              "errraw": -0.2484,
+              "med": 0.79,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0125
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.7684,
+              "sh3": 0.7692,
+              "shraw": 0.3434,
+              "err7": -0.0395,
+              "err3": -0.0385,
+              "errraw": -0.5708,
+              "med": 0.7684,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0395
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.7863,
+              "sh3": 0.7832,
+              "shraw": 0.5869,
+              "err7": -0.0171,
+              "err3": -0.021,
+              "errraw": -0.2664,
+              "med": 0.7832,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.021
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.8221,
+              "sh3": 0.8241,
+              "shraw": 0.4969,
+              "err7": 0.0276,
+              "err3": 0.0301,
+              "errraw": -0.3789,
+              "med": 0.8221,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0276
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 0.9976,
+            "U_ONLY": 1.0,
+            "B7": 0.9976,
+            "B3": 0.9976,
+            "RAW": 0.9904,
+            "MED3": 0.9976
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.65": {
+          "pooled": {
+            "sh7": 0.6381,
+            "sh3": 0.6386,
+            "shraw": 0.6458,
+            "err7": -0.0183,
+            "err3": -0.0175,
+            "errraw": -0.0065,
+            "med": 0.6386,
+            "med_ident": "BLIND3",
+            "med_degraded": false,
+            "errmed": -0.0175,
+            "cl7": {
+              "upper_median": 1549.8,
+              "lower_median": 136.0,
+              "n_upper": 132,
+              "n_lower": 76,
+              "n_total": 208,
+              "separation_log": 2.433
+            },
+            "cl3": {
+              "upper_median": 1525.0,
+              "lower_median": 140.5,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.385
+            },
+            "clraw": {
+              "upper_median": 1551.0,
+              "lower_median": 160.0,
+              "n_upper": 133,
+              "n_lower": 85,
+              "n_total": 218,
+              "separation_log": 2.271
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.6417,
+              "sh3": 0.6394,
+              "shraw": 0.6446,
+              "err7": -0.0128,
+              "err3": -0.0163,
+              "errraw": -0.0083,
+              "med": 0.6417,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0128
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.6231,
+              "sh3": 0.6229,
+              "shraw": 0.6242,
+              "err7": -0.0414,
+              "err3": -0.0417,
+              "errraw": -0.0397,
+              "med": 0.6231,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0414
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.6373,
+              "sh3": 0.6333,
+              "shraw": 0.6498,
+              "err7": -0.0195,
+              "err3": -0.0257,
+              "errraw": -0.0003,
+              "med": 0.6373,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.0195
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.6682,
+              "sh3": 0.6679,
+              "shraw": 0.6793,
+              "err7": 0.028,
+              "err3": 0.0275,
+              "errraw": 0.0451,
+              "med": 0.6682,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.028
+            }
+          ],
+          "U_f1": 0.9976,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 0.9976,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.5": {
+          "pooled": {
+            "sh7": 0.4875,
+            "sh3": 0.486,
+            "shraw": 0.4974,
+            "err7": -0.025,
+            "err3": -0.028,
+            "errraw": -0.0052,
+            "med": 0.4875,
+            "med_ident": "BLIND7",
+            "med_degraded": false,
+            "errmed": -0.025,
+            "cl7": {
+              "upper_median": 904.5,
+              "lower_median": 74.0,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.503
+            },
+            "cl3": {
+              "upper_median": 883.5,
+              "lower_median": 80.5,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.396
+            },
+            "clraw": {
+              "upper_median": 920.0,
+              "lower_median": 98.0,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.239
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.489,
+              "sh3": 0.488,
+              "shraw": 0.4963,
+              "err7": -0.022,
+              "err3": -0.024,
+              "errraw": -0.0074,
+              "med": 0.489,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.022
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.4729,
+              "sh3": 0.4748,
+              "shraw": 0.4819,
+              "err7": -0.0542,
+              "err3": -0.0504,
+              "errraw": -0.0362,
+              "med": 0.4748,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0504
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.4836,
+              "sh3": 0.4838,
+              "shraw": 0.4996,
+              "err7": -0.0328,
+              "err3": -0.0324,
+              "errraw": -0.0008,
+              "med": 0.4838,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0324
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.5086,
+              "sh3": 0.51,
+              "shraw": 0.5226,
+              "err7": 0.0172,
+              "err3": 0.02,
+              "errraw": 0.0452,
+              "med": 0.51,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.02
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.4": {
+          "pooled": {
+            "sh7": 0.3864,
+            "sh3": 0.3875,
+            "shraw": 0.3956,
+            "err7": -0.034,
+            "err3": -0.0312,
+            "errraw": -0.011,
+            "med": 0.3875,
+            "med_ident": "BLIND3",
+            "med_degraded": false,
+            "errmed": -0.0312,
+            "cl7": {
+              "upper_median": 568.2,
+              "lower_median": 51.0,
+              "n_upper": 132,
+              "n_lower": 49,
+              "n_total": 181,
+              "separation_log": 2.411
+            },
+            "cl3": {
+              "upper_median": 561.5,
+              "lower_median": 49.0,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.439
+            },
+            "clraw": {
+              "upper_median": 582.0,
+              "lower_median": 63.0,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.223
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.3882,
+              "sh3": 0.3887,
+              "shraw": 0.3954,
+              "err7": -0.0295,
+              "err3": -0.0283,
+              "errraw": -0.0115,
+              "med": 0.3887,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0283
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.3759,
+              "sh3": 0.3775,
+              "shraw": 0.3834,
+              "err7": -0.0603,
+              "err3": -0.0563,
+              "errraw": -0.0415,
+              "med": 0.3775,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0563
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.3844,
+              "sh3": 0.385,
+              "shraw": 0.399,
+              "err7": -0.039,
+              "err3": -0.0375,
+              "errraw": -0.0025,
+              "med": 0.385,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0375
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.4061,
+              "sh3": 0.4046,
+              "shraw": 0.4168,
+              "err7": 0.0152,
+              "err3": 0.0115,
+              "errraw": 0.042,
+              "med": 0.4061,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": 0.0152
+            }
+          ],
+          "U_f1": 0.9976,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 0.9976,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.35": {
+          "pooled": {
+            "sh7": 0.3363,
+            "sh3": 0.338,
+            "shraw": 0.3486,
+            "err7": -0.0391,
+            "err3": -0.0343,
+            "errraw": -0.004,
+            "med": 0.338,
+            "med_ident": "BLIND3",
+            "med_degraded": false,
+            "errmed": -0.0343,
+            "cl7": {
+              "upper_median": 430.5,
+              "lower_median": 32.0,
+              "n_upper": 133,
+              "n_lower": 32,
+              "n_total": 165,
+              "separation_log": 2.599
+            },
+            "cl3": {
+              "upper_median": 427.2,
+              "lower_median": 35.2,
+              "n_upper": 132,
+              "n_lower": 76,
+              "n_total": 208,
+              "separation_log": 2.495
+            },
+            "clraw": {
+              "upper_median": 452.0,
+              "lower_median": 47.0,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.264
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.3388,
+              "sh3": 0.338,
+              "shraw": 0.3465,
+              "err7": -0.032,
+              "err3": -0.0343,
+              "errraw": -0.01,
+              "med": 0.3388,
+              "med_ident": "BLIND7",
+              "med_degraded": false,
+              "errmed": -0.032
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.3286,
+              "sh3": 0.3291,
+              "shraw": 0.3339,
+              "err7": -0.0611,
+              "err3": -0.0597,
+              "errraw": -0.046,
+              "med": 0.3291,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0597
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.3357,
+              "sh3": 0.338,
+              "shraw": 0.3498,
+              "err7": -0.0409,
+              "err3": -0.0343,
+              "errraw": -0.0006,
+              "med": 0.338,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": -0.0343
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.3522,
+              "sh3": 0.3537,
+              "shraw": 0.3639,
+              "err7": 0.0063,
+              "err3": 0.0106,
+              "errraw": 0.0397,
+              "med": 0.3537,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.0106
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 0.9976,
+            "U_ONLY": 1.0,
+            "B7": 0.9976,
+            "B3": 0.9976,
+            "RAW": 0.9976,
+            "MED3": 0.9976
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "P",
+            "RAW": "P",
+            "MED3": "P"
+          }
+        },
+        "s=0.3": {
+          "pooled": {
+            "sh7": 0.3351,
+            "sh3": 0.287,
+            "shraw": 0.2984,
+            "err7": 0.117,
+            "err3": -0.0433,
+            "errraw": -0.0053,
+            "med": 0.2984,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": -0.0053,
+            "cl7": {
+              "upper_median": 427.5,
+              "lower_median": 236.0,
+              "n_upper": 63,
+              "n_lower": 66,
+              "n_total": 129,
+              "separation_log": 0.594
+            },
+            "cl3": {
+              "upper_median": 308.0,
+              "lower_median": 24.2,
+              "n_upper": 132,
+              "n_lower": 76,
+              "n_total": 208,
+              "separation_log": 2.542
+            },
+            "clraw": {
+              "upper_median": 331.0,
+              "lower_median": 34.0,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.276
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.3156,
+              "sh3": 0.2888,
+              "shraw": 0.2979,
+              "err7": 0.052,
+              "err3": -0.0373,
+              "errraw": -0.007,
+              "med": 0.2979,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.007
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.3446,
+              "sh3": 0.2801,
+              "shraw": 0.2873,
+              "err7": 0.1487,
+              "err3": -0.0663,
+              "errraw": -0.0423,
+              "med": 0.2873,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0423
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.318,
+              "sh3": 0.2871,
+              "shraw": 0.2993,
+              "err7": 0.06,
+              "err3": -0.043,
+              "errraw": -0.0023,
+              "med": 0.2993,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0023
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.3505,
+              "sh3": 0.3013,
+              "shraw": 0.3131,
+              "err7": 0.1683,
+              "err3": 0.0043,
+              "errraw": 0.0437,
+              "med": 0.3131,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0437
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 0.9976,
+            "U_ONLY": 1.0,
+            "B7": 0.9976,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "P",
+          "routes": {
+            "B7": "P",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.28": {
+          "pooled": {
+            "sh7": 0.3173,
+            "sh3": 0.2668,
+            "shraw": 0.2768,
+            "err7": 0.1332,
+            "err3": -0.0471,
+            "errraw": -0.0114,
+            "med": 0.2768,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": -0.0114,
+            "cl7": {
+              "upper_median": 383.2,
+              "lower_median": 212.0,
+              "n_upper": 56,
+              "n_lower": 72,
+              "n_total": 128,
+              "separation_log": 0.592
+            },
+            "cl3": {
+              "upper_median": 266.2,
+              "lower_median": 20.8,
+              "n_upper": 132,
+              "n_lower": 76,
+              "n_total": 208,
+              "separation_log": 2.552
+            },
+            "clraw": {
+              "upper_median": 285.0,
+              "lower_median": 31.0,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.219
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.294,
+              "sh3": 0.2671,
+              "shraw": 0.2754,
+              "err7": 0.05,
+              "err3": -0.0461,
+              "errraw": -0.0164,
+              "med": 0.2754,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0164
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.3236,
+              "sh3": 0.2612,
+              "shraw": 0.2682,
+              "err7": 0.1557,
+              "err3": -0.0671,
+              "errraw": -0.0421,
+              "med": 0.2682,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0421
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.322,
+              "sh3": 0.2667,
+              "shraw": 0.2788,
+              "err7": 0.15,
+              "err3": -0.0475,
+              "errraw": -0.0043,
+              "med": 0.2788,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0043
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.3246,
+              "sh3": 0.2809,
+              "shraw": 0.2922,
+              "err7": 0.1593,
+              "err3": 0.0032,
+              "errraw": 0.0436,
+              "med": 0.2922,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0436
+            }
+          ],
+          "U_f1": 0.9976,
+          "deployment": {
+            "ORACLE": 0.9976,
+            "U_ONLY": 0.9976,
+            "B7": 0.9854,
+            "B3": 0.9976,
+            "RAW": 0.9976,
+            "MED3": 0.9976
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "P",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.25": {
+          "pooled": {
+            "sh7": 0.2793,
+            "sh3": 0.2381,
+            "shraw": 0.2454,
+            "err7": 0.1172,
+            "err3": -0.0476,
+            "errraw": -0.0184,
+            "med": 0.2454,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": -0.0184,
+            "cl7": {
+              "upper_median": 297.0,
+              "lower_median": 160.2,
+              "n_upper": 61,
+              "n_lower": 66,
+              "n_total": 127,
+              "separation_log": 0.617
+            },
+            "cl3": {
+              "upper_median": 212.0,
+              "lower_median": 14.2,
+              "n_upper": 132,
+              "n_lower": 76,
+              "n_total": 208,
+              "separation_log": 2.7
+            },
+            "clraw": {
+              "upper_median": 224.0,
+              "lower_median": 23.5,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.255
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.2639,
+              "sh3": 0.2381,
+              "shraw": 0.2446,
+              "err7": 0.0556,
+              "err3": -0.0476,
+              "errraw": -0.0216,
+              "med": 0.2446,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0216
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.281,
+              "sh3": 0.2301,
+              "shraw": 0.2379,
+              "err7": 0.124,
+              "err3": -0.0796,
+              "errraw": -0.0484,
+              "med": 0.2379,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0484
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.2822,
+              "sh3": 0.2381,
+              "shraw": 0.2503,
+              "err7": 0.1288,
+              "err3": -0.0476,
+              "errraw": 0.0012,
+              "med": 0.2503,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0012
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.2947,
+              "sh3": 0.249,
+              "shraw": 0.2595,
+              "err7": 0.1788,
+              "err3": -0.004,
+              "errraw": 0.038,
+              "med": 0.2595,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.038
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "U",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.22": {
+          "pooled": {
+            "sh7": 0.2461,
+            "sh3": 0.2075,
+            "shraw": 0.2176,
+            "err7": 0.1186,
+            "err3": -0.0568,
+            "errraw": -0.0109,
+            "med": 0.2176,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": -0.0109,
+            "cl7": {
+              "upper_median": 230.5,
+              "lower_median": 125.0,
+              "n_upper": 53,
+              "n_lower": 73,
+              "n_total": 126,
+              "separation_log": 0.612
+            },
+            "cl3": {
+              "upper_median": 161.0,
+              "lower_median": 11.5,
+              "n_upper": 132,
+              "n_lower": 76,
+              "n_total": 208,
+              "separation_log": 2.639
+            },
+            "clraw": {
+              "upper_median": 176.0,
+              "lower_median": 19.0,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.226
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.2329,
+              "sh3": 0.208,
+              "shraw": 0.2172,
+              "err7": 0.0586,
+              "err3": -0.0545,
+              "errraw": -0.0127,
+              "med": 0.2172,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0127
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.2502,
+              "sh3": 0.2034,
+              "shraw": 0.2097,
+              "err7": 0.1373,
+              "err3": -0.0755,
+              "errraw": -0.0468,
+              "med": 0.2097,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0468
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.2531,
+              "sh3": 0.2068,
+              "shraw": 0.2188,
+              "err7": 0.1505,
+              "err3": -0.06,
+              "errraw": -0.0055,
+              "med": 0.2188,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0055
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.2498,
+              "sh3": 0.2172,
+              "shraw": 0.2278,
+              "err7": 0.1355,
+              "err3": -0.0127,
+              "errraw": 0.0355,
+              "med": 0.2278,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0355
+            }
+          ],
+          "U_f1": 0.9976,
+          "deployment": {
+            "ORACLE": 0.9976,
+            "U_ONLY": 0.9976,
+            "B7": 0.9976,
+            "B3": 0.9976,
+            "RAW": 0.9976,
+            "MED3": 0.9976
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "U",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.18": {
+          "pooled": {
+            "sh7": 0.2028,
+            "sh3": 0.168,
+            "shraw": 0.1774,
+            "err7": 0.1267,
+            "err3": -0.0667,
+            "errraw": -0.0144,
+            "med": 0.1774,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": -0.0144,
+            "cl7": {
+              "upper_median": 156.5,
+              "lower_median": 83.0,
+              "n_upper": 49,
+              "n_lower": 71,
+              "n_total": 120,
+              "separation_log": 0.634
+            },
+            "cl3": {
+              "upper_median": 105.5,
+              "lower_median": 6.0,
+              "n_upper": 132,
+              "n_lower": 70,
+              "n_total": 202,
+              "separation_log": 2.867
+            },
+            "clraw": {
+              "upper_median": 117.0,
+              "lower_median": 12.0,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.277
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.1868,
+              "sh3": 0.1676,
+              "shraw": 0.1766,
+              "err7": 0.0378,
+              "err3": -0.0689,
+              "errraw": -0.0189,
+              "med": 0.1766,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0189
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.2018,
+              "sh3": 0.1625,
+              "shraw": 0.1684,
+              "err7": 0.1211,
+              "err3": -0.0972,
+              "errraw": -0.0644,
+              "med": 0.1684,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0644
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.2127,
+              "sh3": 0.168,
+              "shraw": 0.1781,
+              "err7": 0.1817,
+              "err3": -0.0667,
+              "errraw": -0.0106,
+              "med": 0.1781,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0106
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.2044,
+              "sh3": 0.177,
+              "shraw": 0.1863,
+              "err7": 0.1356,
+              "err3": -0.0167,
+              "errraw": 0.035,
+              "med": 0.1863,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.035
+            }
+          ],
+          "U_f1": 1.0,
+          "deployment": {
+            "ORACLE": 1.0,
+            "U_ONLY": 1.0,
+            "B7": 1.0,
+            "B3": 1.0,
+            "RAW": 1.0,
+            "MED3": 1.0
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "U",
+            "B3": "U",
+            "RAW": "U",
+            "MED3": "U"
+          }
+        },
+        "s=0.15": {
+          "pooled": {
+            "sh7": 0.1649,
+            "sh3": 0.1378,
+            "shraw": 0.1467,
+            "err7": 0.0993,
+            "err3": -0.0813,
+            "errraw": -0.022,
+            "med": 0.1467,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": -0.022,
+            "cl7": {
+              "upper_median": 103.5,
+              "lower_median": 51.8,
+              "n_upper": 56,
+              "n_lower": 62,
+              "n_total": 118,
+              "separation_log": 0.693
+            },
+            "cl3": {
+              "upper_median": 71.0,
+              "lower_median": 4.0,
+              "n_upper": 131,
+              "n_lower": 49,
+              "n_total": 180,
+              "separation_log": 2.876
+            },
+            "clraw": {
+              "upper_median": 80.0,
+              "lower_median": 9.0,
+              "n_upper": 133,
+              "n_lower": 76,
+              "n_total": 209,
+              "separation_log": 2.185
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.1527,
+              "sh3": 0.1378,
+              "shraw": 0.1476,
+              "err7": 0.018,
+              "err3": -0.0813,
+              "errraw": -0.016,
+              "med": 0.1476,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.016
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.1629,
+              "sh3": 0.1348,
+              "shraw": 0.1411,
+              "err7": 0.086,
+              "err3": -0.1013,
+              "errraw": -0.0593,
+              "med": 0.1411,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0593
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.1755,
+              "sh3": 0.1368,
+              "shraw": 0.1476,
+              "err7": 0.17,
+              "err3": -0.088,
+              "errraw": -0.016,
+              "med": 0.1476,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.016
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.167,
+              "sh3": 0.1424,
+              "shraw": 0.1543,
+              "err7": 0.1133,
+              "err3": -0.0507,
+              "errraw": 0.0287,
+              "med": 0.1543,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0287
+            }
+          ],
+          "U_f1": 0.9976,
+          "deployment": {
+            "ORACLE": 0.9976,
+            "U_ONLY": 0.9976,
+            "B7": 0.9976,
+            "B3": 0.9976,
+            "RAW": 0.9976,
+            "MED3": 0.9976
+          },
+          "oracle_route": "U",
+          "routes": {
+            "B7": "U",
+            "B3": "U_alert",
+            "RAW": "U_alert",
+            "MED3": "U_alert"
+          }
+        },
+        "s=0.12": {
+          "pooled": {
+            "sh7": 0.1329,
+            "sh3": 0.1091,
+            "shraw": 0.1183,
+            "err7": 0.1075,
+            "err3": -0.0908,
+            "errraw": -0.0142,
+            "med": 0.1183,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": -0.0142,
+            "cl7": {
+              "upper_median": 67.2,
+              "lower_median": 34.5,
+              "n_upper": 46,
+              "n_lower": 47,
+              "n_total": 93,
+              "separation_log": 0.667
+            },
+            "cl3": {
+              "upper_median": 44.5,
+              "lower_median": 2.0,
+              "n_upper": 129,
+              "n_lower": 12,
+              "n_total": 141,
+              "separation_log": 3.102
+            },
+            "clraw": {
+              "upper_median": 52.0,
+              "lower_median": 5.0,
+              "n_upper": 132,
+              "n_lower": 76,
+              "n_total": 208,
+              "separation_log": 2.342
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.1327,
+              "sh3": 0.1072,
+              "shraw": 0.1183,
+              "err7": 0.1058,
+              "err3": -0.1067,
+              "errraw": -0.0142,
+              "med": 0.1183,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.0142
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.1317,
+              "sh3": 0.1235,
+              "shraw": 0.1118,
+              "err7": 0.0975,
+              "err3": 0.0292,
+              "errraw": -0.0683,
+              "med": 0.1235,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.0292
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.1653,
+              "sh3": 0.1078,
+              "shraw": 0.1188,
+              "err7": 0.3775,
+              "err3": -0.1017,
+              "errraw": -0.01,
+              "med": 0.1188,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.01
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.1325,
+              "sh3": 0.1196,
+              "shraw": 0.1244,
+              "err7": 0.1042,
+              "err3": -0.0033,
+              "errraw": 0.0367,
+              "med": 0.1244,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": 0.0367
+            }
+          ],
+          "U_f1": 0.9976,
+          "deployment": {
+            "ORACLE": 0.9976,
+            "U_ONLY": 0.9976,
+            "B7": 0.9976,
+            "B3": 0.9976,
+            "RAW": 0.9976,
+            "MED3": 0.9976
+          },
+          "oracle_route": "U_alert",
+          "routes": {
+            "B7": "U_alert",
+            "B3": "U_alert",
+            "RAW": "U_alert",
+            "MED3": "U_alert"
+          }
+        },
+        "s=0.1": {
+          "pooled": {
+            "sh7": 0.1375,
+            "sh3": 0.1021,
+            "shraw": 0.0984,
+            "err7": 0.375,
+            "err3": 0.021,
+            "errraw": -0.016,
+            "med": 0.1021,
+            "med_ident": "BLIND3",
+            "med_degraded": false,
+            "errmed": 0.021,
+            "cl7": {
+              "upper_median": 72.0,
+              "lower_median": 30.0,
+              "n_upper": 14,
+              "n_lower": 41,
+              "n_total": 55,
+              "separation_log": 0.875
+            },
+            "cl3": {
+              "upper_median": 39.0,
+              "lower_median": 20.5,
+              "n_upper": 68,
+              "n_lower": 62,
+              "n_total": 130,
+              "separation_log": 0.643
+            },
+            "clraw": {
+              "upper_median": 36.0,
+              "lower_median": 3.0,
+              "n_upper": 132,
+              "n_lower": 76,
+              "n_total": 208,
+              "separation_log": 2.485
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": 0.1989,
+              "sh3": 0.0831,
+              "shraw": 0.0984,
+              "err7": 0.989,
+              "err3": -0.169,
+              "errraw": -0.016,
+              "med": 0.0984,
+              "med_ident": "BLINDRAW",
+              "med_degraded": false,
+              "errmed": -0.016
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": 0.1588,
+              "sh3": 0.1053,
+              "shraw": 0.092,
+              "err7": 0.588,
+              "err3": 0.053,
+              "errraw": -0.08,
+              "med": 0.1053,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.053
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": 0.138,
+              "sh3": 0.1028,
+              "shraw": 0.0984,
+              "err7": 0.38,
+              "err3": 0.028,
+              "errraw": -0.016,
+              "med": 0.1028,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.028
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": 0.1312,
+              "sh3": 0.1053,
+              "shraw": 0.1024,
+              "err7": 0.312,
+              "err3": 0.053,
+              "errraw": 0.024,
+              "med": 0.1053,
+              "med_ident": "BLIND3",
+              "med_degraded": false,
+              "errmed": 0.053
+            }
+          ],
+          "U_f1": 0.9714,
+          "deployment": {
+            "ORACLE": 0.9714,
+            "U_ONLY": 0.9714,
+            "B7": 0.9714,
+            "B3": 0.9714,
+            "RAW": 0.9714,
+            "MED3": 0.9714
+          },
+          "oracle_route": "U_alert",
+          "routes": {
+            "B7": "U_alert",
+            "B3": "U_alert",
+            "RAW": "U_alert",
+            "MED3": "U_alert"
+          }
+        },
+        "s=0.07": {
+          "pooled": {
+            "sh7": 0.1454,
+            "sh3": 0.0654,
+            "shraw": 0.0696,
+            "err7": 1.0771,
+            "err3": -0.0657,
+            "errraw": -0.0057,
+            "med": 0.0696,
+            "med_ident": "BLINDRAW",
+            "med_degraded": false,
+            "errmed": -0.0057,
+            "cl7": {
+              "upper_median": 80.5,
+              "lower_median": 24.0,
+              "n_upper": 7,
+              "n_lower": 5,
+              "n_total": 12,
+              "separation_log": 1.21
+            },
+            "cl3": {
+              "upper_median": 16.0,
+              "lower_median": 8.5,
+              "n_upper": 63,
+              "n_lower": 56,
+              "n_total": 119,
+              "separation_log": 0.633
+            },
+            "clraw": {
+              "upper_median": 18.0,
+              "lower_median": 1.0,
+              "n_upper": 127,
+              "n_lower": 74,
+              "n_total": 201,
+              "separation_log": 2.89
+            }
+          },
+          "per_scene": [
+            {
+              "scene_seed": 909,
+              "sh7": null,
+              "sh3": 0.0654,
+              "shraw": 0.0696,
+              "err7": null,
+              "err3": -0.0657,
+              "errraw": -0.0057,
+              "med": 0.0675,
+              "med_ident": "MEAN_OF_TWO",
+              "med_degraded": true,
+              "errmed": -0.0357
+            },
+            {
+              "scene_seed": 1010,
+              "sh7": null,
+              "sh3": 0.0684,
+              "shraw": 0.0676,
+              "err7": null,
+              "err3": -0.0229,
+              "errraw": -0.0343,
+              "med": 0.068,
+              "med_ident": "MEAN_OF_TWO",
+              "med_degraded": true,
+              "errmed": -0.0286
+            },
+            {
+              "scene_seed": 1111,
+              "sh7": null,
+              "sh3": 0.0746,
+              "shraw": 0.0705,
+              "err7": null,
+              "err3": 0.0657,
+              "errraw": 0.0071,
+              "med": 0.0726,
+              "med_ident": "MEAN_OF_TWO",
+              "med_degraded": true,
+              "errmed": 0.0371
+            },
+            {
+              "scene_seed": 1212,
+              "sh7": null,
+              "sh3": 0.0684,
+              "shraw": 0.0733,
+              "err7": null,
+              "err3": -0.0229,
+              "errraw": 0.0471,
+              "med": 0.0708,
+              "med_ident": "MEAN_OF_TWO",
+              "med_degraded": true,
+              "errmed": 0.0114
+            }
+          ],
+          "U_f1": 0.815,
+          "deployment": {
+            "ORACLE": 0.815,
+            "U_ONLY": 0.815,
+            "B7": 0.815,
+            "B3": 0.815,
+            "RAW": 0.815,
+            "MED3": 0.815
+          },
+          "oracle_route": "U_alert",
+          "routes": {
+            "B7": "U_alert",
+            "B3": "U_alert",
+            "RAW": "U_alert",
+            "MED3": "U_alert"
+          }
+        }
+      },
+      "summary": {
+        "deployment": {
+          "ORACLE": {
+            "total_loss_vs_oracle": 0.0,
+            "per_scale_f1": {
+              "s=1.0": 1.0,
+              "s=0.8": 0.9976,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 1.0,
+              "s=0.35": 0.9976,
+              "s=0.3": 0.9976,
+              "s=0.28": 0.9976,
+              "s=0.25": 1.0,
+              "s=0.22": 0.9976,
+              "s=0.18": 1.0,
+              "s=0.15": 0.9976,
+              "s=0.12": 0.9976,
+              "s=0.1": 0.9714,
+              "s=0.07": 0.815
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.0,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": 0.0,
+              "s=0.28": 0.0,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          },
+          "B7": {
+            "total_loss_vs_oracle": 0.0122,
+            "per_scale_f1": {
+              "s=1.0": 1.0,
+              "s=0.8": 0.9976,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 1.0,
+              "s=0.35": 0.9976,
+              "s=0.3": 0.9976,
+              "s=0.28": 0.9854,
+              "s=0.25": 1.0,
+              "s=0.22": 0.9976,
+              "s=0.18": 1.0,
+              "s=0.15": 0.9976,
+              "s=0.12": 0.9976,
+              "s=0.1": 0.9714,
+              "s=0.07": 0.815
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.0,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": 0.0,
+              "s=0.28": 0.0122,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          },
+          "B3": {
+            "total_loss_vs_oracle": -0.0024,
+            "per_scale_f1": {
+              "s=1.0": 1.0,
+              "s=0.8": 0.9976,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 1.0,
+              "s=0.35": 0.9976,
+              "s=0.3": 1.0,
+              "s=0.28": 0.9976,
+              "s=0.25": 1.0,
+              "s=0.22": 0.9976,
+              "s=0.18": 1.0,
+              "s=0.15": 0.9976,
+              "s=0.12": 0.9976,
+              "s=0.1": 0.9714,
+              "s=0.07": 0.815
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.0,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": -0.0024,
+              "s=0.28": 0.0,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          },
+          "RAW": {
+            "total_loss_vs_oracle": 0.3684,
+            "per_scale_f1": {
+              "s=1.0": 0.6364,
+              "s=0.8": 0.9904,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 1.0,
+              "s=0.35": 0.9976,
+              "s=0.3": 1.0,
+              "s=0.28": 0.9976,
+              "s=0.25": 1.0,
+              "s=0.22": 0.9976,
+              "s=0.18": 1.0,
+              "s=0.15": 0.9976,
+              "s=0.12": 0.9976,
+              "s=0.1": 0.9714,
+              "s=0.07": 0.815
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.3636,
+              "s=0.8": 0.0072,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": -0.0024,
+              "s=0.28": 0.0,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          },
+          "MED3": {
+            "total_loss_vs_oracle": -0.0024,
+            "per_scale_f1": {
+              "s=1.0": 1.0,
+              "s=0.8": 0.9976,
+              "s=0.65": 1.0,
+              "s=0.5": 1.0,
+              "s=0.4": 1.0,
+              "s=0.35": 0.9976,
+              "s=0.3": 1.0,
+              "s=0.28": 0.9976,
+              "s=0.25": 1.0,
+              "s=0.22": 0.9976,
+              "s=0.18": 1.0,
+              "s=0.15": 0.9976,
+              "s=0.12": 0.9976,
+              "s=0.1": 0.9714,
+              "s=0.07": 0.815
+            },
+            "per_scale_loss": {
+              "s=1.0": 0.0,
+              "s=0.8": 0.0,
+              "s=0.65": 0.0,
+              "s=0.5": 0.0,
+              "s=0.4": 0.0,
+              "s=0.35": 0.0,
+              "s=0.3": -0.0024,
+              "s=0.28": 0.0,
+              "s=0.25": 0.0,
+              "s=0.22": 0.0,
+              "s=0.18": 0.0,
+              "s=0.15": 0.0,
+              "s=0.12": 0.0,
+              "s=0.1": 0.0,
+              "s=0.07": 0.0
+            }
+          }
+        },
+        "pooled_bad": {
+          "B7": 8,
+          "B3": 0,
+          "RAW": 2,
+          "MED3": 0
+        },
+        "alert_hits_of_3": {
+          "B7": 3,
+          "B3": 3,
+          "RAW": 3,
+          "MED3": 3
+        },
+        "per_scene_bad": {
+          "B7": 27,
+          "B3": 4,
+          "RAW": 8,
+          "MED3": 0,
+          "n": 60
+        },
+        "med_ident_pooled": {
+          "s=1.0": "BLIND7",
+          "s=0.8": "BLIND7",
+          "s=0.65": "BLIND3",
+          "s=0.5": "BLIND7",
+          "s=0.4": "BLIND3",
+          "s=0.35": "BLIND3",
+          "s=0.3": "BLINDRAW",
+          "s=0.28": "BLINDRAW",
+          "s=0.25": "BLINDRAW",
+          "s=0.22": "BLINDRAW",
+          "s=0.18": "BLINDRAW",
+          "s=0.15": "BLINDRAW",
+          "s=0.12": "BLINDRAW",
+          "s=0.1": "BLIND3",
+          "s=0.07": "BLINDRAW"
+        }
+      }
+    }
+  },
+  "elapsed_sec": 14.2
+}
