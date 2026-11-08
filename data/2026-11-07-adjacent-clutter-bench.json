@@ -1,0 +1,922 @@
+{
+  "detector": "color-segmentation-v0.1",
+  "base_params": {
+    "min_area": 120,
+    "bloom_area_min": 900,
+    "morph_kernel": 7
+  },
+  "gaps": [
+    -18,
+    -8,
+    -3,
+    0,
+    2,
+    4,
+    6,
+    8,
+    12,
+    20,
+    35
+  ],
+  "clutter_r": 12,
+  "host_report": {
+    "101": {
+      "hosts": 28,
+      "bloom": 14,
+      "bud": 14,
+      "eligible_total": 28
+    },
+    "202": {
+      "hosts": 28,
+      "bloom": 14,
+      "bud": 14,
+      "eligible_total": 28
+    },
+    "303": {
+      "hosts": 28,
+      "bloom": 14,
+      "bud": 14,
+      "eligible_total": 28
+    },
+    "404": {
+      "hosts": 28,
+      "bloom": 14,
+      "bud": 14,
+      "eligible_total": 28
+    }
+  },
+  "prereg": "data/2026-11-07-adjacent-clutter-prereg.md",
+  "main": {
+    "gap=-18": {
+      "all": {
+        "n": 112,
+        "merged_rate": 1.0,
+        "correct": 112,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 1521.5
+      },
+      "bloom": {
+        "n": 56,
+        "merged_rate": 1.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 3681.5
+      },
+      "bud": {
+        "n": 56,
+        "merged_rate": 1.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 531.2
+      },
+      "scene": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "det_total": 210,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "nonhost_recall": 1.0,
+      "close_merge_rate": {
+        "none": 0.9196,
+        "3": 1.0,
+        "7": 1.0,
+        "11": 1.0,
+        "15": 1.0
+      },
+      "det_kernel": {
+        "3": {
+          "n": 112,
+          "merged_rate": 1.0,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1514.0
+        },
+        "11": {
+          "n": 112,
+          "merged_rate": 1.0,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1527.0
+        }
+      },
+      "area_account": {
+        "n": 112,
+        "median_rel_dev": 0.0029,
+        "p90_abs_dev": 0.0459
+      }
+    },
+    "gap=-8": {
+      "all": {
+        "n": 112,
+        "merged_rate": 1.0,
+        "correct": 112,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 1724.5
+      },
+      "bloom": {
+        "n": 56,
+        "merged_rate": 1.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 3879.8
+      },
+      "bud": {
+        "n": 56,
+        "merged_rate": 1.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 722.8
+      },
+      "scene": {
+        "tp": 210,
+        "fp": 0,
+        "fn": 0,
+        "det_total": 210,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "nonhost_recall": 1.0,
+      "close_merge_rate": {
+        "none": 0.9018,
+        "3": 0.9821,
+        "7": 1.0,
+        "11": 1.0,
+        "15": 1.0
+      },
+      "det_kernel": {
+        "3": {
+          "n": 112,
+          "merged_rate": 0.9821,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1709.2
+        },
+        "11": {
+          "n": 112,
+          "merged_rate": 1.0,
+          "correct": 110,
+          "correct_rate": 0.9821,
+          "migrated": 2,
+          "migrated_rate": 0.0179,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1736.2
+        }
+      },
+      "area_account": {
+        "n": 112,
+        "median_rel_dev": 0.0008,
+        "p90_abs_dev": 0.0515
+      }
+    },
+    "gap=-3": {
+      "all": {
+        "n": 112,
+        "merged_rate": 0.9732,
+        "correct": 104,
+        "correct_rate": 0.9286,
+        "migrated": 8,
+        "migrated_rate": 0.0714,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 1792.2
+      },
+      "bloom": {
+        "n": 56,
+        "merged_rate": 0.9464,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 3929.5
+      },
+      "bud": {
+        "n": 56,
+        "merged_rate": 1.0,
+        "correct": 48,
+        "correct_rate": 0.8571,
+        "migrated": 8,
+        "migrated_rate": 0.1429,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 772.0
+      },
+      "scene": {
+        "tp": 202,
+        "fp": 11,
+        "fn": 8,
+        "det_total": 213,
+        "precision": 0.9484,
+        "recall": 0.9619
+      },
+      "nonhost_recall": 1.0,
+      "close_merge_rate": {
+        "none": 0.6964,
+        "3": 0.8304,
+        "7": 0.9732,
+        "11": 1.0,
+        "15": 1.0
+      },
+      "det_kernel": {
+        "3": {
+          "n": 112,
+          "merged_rate": 0.875,
+          "correct": 109,
+          "correct_rate": 0.9732,
+          "migrated": 3,
+          "migrated_rate": 0.0268,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1743.0
+        },
+        "11": {
+          "n": 112,
+          "merged_rate": 0.9911,
+          "correct": 103,
+          "correct_rate": 0.9196,
+          "migrated": 9,
+          "migrated_rate": 0.0804,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1811.2
+        }
+      },
+      "area_account": {
+        "n": 109,
+        "median_rel_dev": 0.0093,
+        "p90_abs_dev": 0.0506
+      }
+    },
+    "gap=0": {
+      "all": {
+        "n": 112,
+        "merged_rate": 0.8482,
+        "correct": 107,
+        "correct_rate": 0.9554,
+        "migrated": 5,
+        "migrated_rate": 0.0446,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 1786.8
+      },
+      "bloom": {
+        "n": 56,
+        "merged_rate": 0.8214,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 3930.8
+      },
+      "bud": {
+        "n": 56,
+        "merged_rate": 0.875,
+        "correct": 51,
+        "correct_rate": 0.9107,
+        "migrated": 5,
+        "migrated_rate": 0.0893,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 766.5
+      },
+      "scene": {
+        "tp": 205,
+        "fp": 22,
+        "fn": 5,
+        "det_total": 227,
+        "precision": 0.9031,
+        "recall": 0.9762
+      },
+      "nonhost_recall": 1.0,
+      "close_merge_rate": {
+        "none": 0.4196,
+        "3": 0.5357,
+        "7": 0.8482,
+        "11": 0.9821,
+        "15": 1.0
+      },
+      "det_kernel": {
+        "3": {
+          "n": 112,
+          "merged_rate": 0.5536,
+          "correct": 111,
+          "correct_rate": 0.9911,
+          "migrated": 1,
+          "migrated_rate": 0.0089,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1542.0
+        },
+        "11": {
+          "n": 112,
+          "merged_rate": 0.9375,
+          "correct": 103,
+          "correct_rate": 0.9196,
+          "migrated": 9,
+          "migrated_rate": 0.0804,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1843.8
+        }
+      },
+      "area_account": {
+        "n": 95,
+        "median_rel_dev": 0.0211,
+        "p90_abs_dev": 0.0567
+      }
+    },
+    "gap=2": {
+      "all": {
+        "n": 112,
+        "merged_rate": 0.6607,
+        "correct": 109,
+        "correct_rate": 0.9732,
+        "migrated": 3,
+        "migrated_rate": 0.0268,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 1634.8
+      },
+      "bloom": {
+        "n": 56,
+        "merged_rate": 0.7143,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 3938.0
+      },
+      "bud": {
+        "n": 56,
+        "merged_rate": 0.6071,
+        "correct": 53,
+        "correct_rate": 0.9464,
+        "migrated": 3,
+        "migrated_rate": 0.0536,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 703.0
+      },
+      "scene": {
+        "tp": 207,
+        "fp": 41,
+        "fn": 3,
+        "det_total": 248,
+        "precision": 0.8347,
+        "recall": 0.9857
+      },
+      "nonhost_recall": 1.0,
+      "close_merge_rate": {
+        "none": 0.0804,
+        "3": 0.2679,
+        "7": 0.6607,
+        "11": 0.9196,
+        "15": 0.9911
+      },
+      "det_kernel": {
+        "3": {
+          "n": 112,
+          "merged_rate": 0.3839,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1525.8
+        },
+        "11": {
+          "n": 112,
+          "merged_rate": 0.8125,
+          "correct": 105,
+          "correct_rate": 0.9375,
+          "migrated": 7,
+          "migrated_rate": 0.0625,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1854.5
+        }
+      },
+      "area_account": {
+        "n": 74,
+        "median_rel_dev": 0.0117,
+        "p90_abs_dev": 0.0467
+      }
+    },
+    "gap=4": {
+      "all": {
+        "n": 112,
+        "merged_rate": 0.3661,
+        "correct": 111,
+        "correct_rate": 0.9911,
+        "migrated": 1,
+        "migrated_rate": 0.0089,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 1541.8
+      },
+      "bloom": {
+        "n": 56,
+        "merged_rate": 0.5,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 3931.5
+      },
+      "bud": {
+        "n": 56,
+        "merged_rate": 0.2321,
+        "correct": 55,
+        "correct_rate": 0.9821,
+        "migrated": 1,
+        "migrated_rate": 0.0179,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 368.8
+      },
+      "scene": {
+        "tp": 209,
+        "fp": 72,
+        "fn": 1,
+        "det_total": 281,
+        "precision": 0.7438,
+        "recall": 0.9952
+      },
+      "nonhost_recall": 1.0,
+      "close_merge_rate": {
+        "none": 0.0,
+        "3": 0.0179,
+        "7": 0.3661,
+        "11": 0.7589,
+        "15": 0.9643
+      },
+      "det_kernel": {
+        "3": {
+          "n": 112,
+          "merged_rate": 0.0357,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1331.2
+        },
+        "11": {
+          "n": 112,
+          "merged_rate": 0.5089,
+          "correct": 107,
+          "correct_rate": 0.9554,
+          "migrated": 5,
+          "migrated_rate": 0.0446,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1742.8
+        }
+      },
+      "area_account": {
+        "n": 41,
+        "median_rel_dev": 0.0093,
+        "p90_abs_dev": 0.0399
+      }
+    },
+    "gap=6": {
+      "all": {
+        "n": 112,
+        "merged_rate": 0.0714,
+        "correct": 112,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 1340.8
+      },
+      "bloom": {
+        "n": 56,
+        "merged_rate": 0.1429,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 3647.2
+      },
+      "bud": {
+        "n": 56,
+        "merged_rate": 0.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 344.2
+      },
+      "scene": {
+        "tp": 210,
+        "fp": 104,
+        "fn": 0,
+        "det_total": 314,
+        "precision": 0.6688,
+        "recall": 1.0
+      },
+      "nonhost_recall": 1.0,
+      "close_merge_rate": {
+        "none": 0.0,
+        "3": 0.0,
+        "7": 0.0714,
+        "11": 0.4286,
+        "15": 0.75
+      },
+      "det_kernel": {
+        "3": {
+          "n": 112,
+          "merged_rate": 0.0,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1331.2
+        },
+        "11": {
+          "n": 112,
+          "merged_rate": 0.2054,
+          "correct": 111,
+          "correct_rate": 0.9911,
+          "migrated": 1,
+          "migrated_rate": 0.0089,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1582.5
+        }
+      },
+      "area_account": {
+        "n": 8,
+        "median_rel_dev": 0.0081,
+        "p90_abs_dev": 0.01
+      }
+    },
+    "gap=8": {
+      "all": {
+        "n": 112,
+        "merged_rate": 0.0,
+        "correct": 112,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 1339.2
+      },
+      "bloom": {
+        "n": 56,
+        "merged_rate": 0.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 3545.0
+      },
+      "bud": {
+        "n": 56,
+        "merged_rate": 0.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 344.2
+      },
+      "scene": {
+        "tp": 210,
+        "fp": 112,
+        "fn": 0,
+        "det_total": 322,
+        "precision": 0.6522,
+        "recall": 1.0
+      },
+      "nonhost_recall": 1.0,
+      "close_merge_rate": {
+        "none": 0.0,
+        "3": 0.0,
+        "7": 0.0,
+        "11": 0.1429,
+        "15": 0.5
+      },
+      "det_kernel": {
+        "3": {
+          "n": 112,
+          "merged_rate": 0.0,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1331.2
+        },
+        "11": {
+          "n": 112,
+          "merged_rate": 0.0357,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1356.8
+        }
+      }
+    },
+    "gap=12": {
+      "all": {
+        "n": 112,
+        "merged_rate": 0.0,
+        "correct": 112,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 1339.2
+      },
+      "bloom": {
+        "n": 56,
+        "merged_rate": 0.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 3542.5
+      },
+      "bud": {
+        "n": 56,
+        "merged_rate": 0.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 344.2
+      },
+      "scene": {
+        "tp": 210,
+        "fp": 112,
+        "fn": 0,
+        "det_total": 322,
+        "precision": 0.6522,
+        "recall": 1.0
+      },
+      "nonhost_recall": 1.0,
+      "close_merge_rate": {
+        "none": 0.0,
+        "3": 0.0,
+        "7": 0.0,
+        "11": 0.0,
+        "15": 0.0268
+      },
+      "det_kernel": {
+        "3": {
+          "n": 112,
+          "merged_rate": 0.0,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1331.2
+        },
+        "11": {
+          "n": 112,
+          "merged_rate": 0.0,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1349.2
+        }
+      }
+    },
+    "gap=20": {
+      "all": {
+        "n": 112,
+        "merged_rate": 0.0,
+        "correct": 112,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 1339.2
+      },
+      "bloom": {
+        "n": 56,
+        "merged_rate": 0.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 3542.5
+      },
+      "bud": {
+        "n": 56,
+        "merged_rate": 0.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 344.2
+      },
+      "scene": {
+        "tp": 210,
+        "fp": 112,
+        "fn": 0,
+        "det_total": 322,
+        "precision": 0.6522,
+        "recall": 1.0
+      },
+      "nonhost_recall": 1.0,
+      "close_merge_rate": {
+        "none": 0.0,
+        "3": 0.0,
+        "7": 0.0,
+        "11": 0.0,
+        "15": 0.0
+      },
+      "det_kernel": {
+        "3": {
+          "n": 112,
+          "merged_rate": 0.0,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1331.2
+        },
+        "11": {
+          "n": 112,
+          "merged_rate": 0.0,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1349.2
+        }
+      }
+    },
+    "gap=35": {
+      "all": {
+        "n": 112,
+        "merged_rate": 0.0,
+        "correct": 112,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 1339.2
+      },
+      "bloom": {
+        "n": 56,
+        "merged_rate": 0.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 3542.5
+      },
+      "bud": {
+        "n": 56,
+        "merged_rate": 0.0,
+        "correct": 56,
+        "correct_rate": 1.0,
+        "migrated": 0,
+        "migrated_rate": 0.0,
+        "lost": 0,
+        "lost_rate": 0.0,
+        "median_area": 344.2
+      },
+      "scene": {
+        "tp": 210,
+        "fp": 111,
+        "fn": 0,
+        "det_total": 321,
+        "precision": 0.6542,
+        "recall": 1.0
+      },
+      "nonhost_recall": 1.0,
+      "close_merge_rate": {
+        "none": 0.0,
+        "3": 0.0,
+        "7": 0.0,
+        "11": 0.0,
+        "15": 0.0
+      },
+      "det_kernel": {
+        "3": {
+          "n": 112,
+          "merged_rate": 0.0,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1331.2
+        },
+        "11": {
+          "n": 112,
+          "merged_rate": 0.0,
+          "correct": 112,
+          "correct_rate": 1.0,
+          "migrated": 0,
+          "migrated_rate": 0.0,
+          "lost": 0,
+          "lost_rate": 0.0,
+          "median_area": 1349.2
+        }
+      }
+    }
+  },
+  "close_arm": {},
+  "det_kernel_arm": {},
+  "clean": {
+    "pooled": {
+      "tp": 210,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0
+    }
+  },
+  "clutter_alone_area_k7": 406.0
+}

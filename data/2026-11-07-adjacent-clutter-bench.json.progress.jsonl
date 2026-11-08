@@ -1,0 +1,17 @@
+{"stage": "hosts", "seed": 101, "hosts": 28, "bloom": 14, "bud": 14, "eligible_total": 28}
+{"stage": "hosts", "seed": 202, "hosts": 28, "bloom": 14, "bud": 14, "eligible_total": 28}
+{"stage": "hosts", "seed": 303, "hosts": 28, "bloom": 14, "bud": 14, "eligible_total": 28}
+{"stage": "hosts", "seed": 404, "hosts": 28, "bloom": 14, "bud": 14, "eligible_total": 28}
+{"stage": "clean", "tp": 210, "fp": 0, "fn": 0, "recall": 1.0, "clutter_alone": 406.0}
+{"stage": "gap_done", "gap": -18, "merged": 1.0, "correct": 1.0, "bud_migrated": 0.0, "close": {"none": 0.9196, "3": 1.0, "7": 1.0, "11": 1.0, "15": 1.0}}
+{"stage": "gap_done", "gap": -8, "merged": 1.0, "correct": 1.0, "bud_migrated": 0.0, "close": {"none": 0.9018, "3": 0.9821, "7": 1.0, "11": 1.0, "15": 1.0}}
+{"stage": "gap_done", "gap": -3, "merged": 0.9732, "correct": 0.9286, "bud_migrated": 0.1429, "close": {"none": 0.6964, "3": 0.8304, "7": 0.9732, "11": 1.0, "15": 1.0}}
+{"stage": "gap_done", "gap": 0, "merged": 0.8482, "correct": 0.9554, "bud_migrated": 0.0893, "close": {"none": 0.4196, "3": 0.5357, "7": 0.8482, "11": 0.9821, "15": 1.0}}
+{"stage": "gap_done", "gap": 2, "merged": 0.6607, "correct": 0.9732, "bud_migrated": 0.0536, "close": {"none": 0.0804, "3": 0.2679, "7": 0.6607, "11": 0.9196, "15": 0.9911}}
+{"stage": "gap_done", "gap": 4, "merged": 0.3661, "correct": 0.9911, "bud_migrated": 0.0179, "close": {"none": 0.0, "3": 0.0179, "7": 0.3661, "11": 0.7589, "15": 0.9643}}
+{"stage": "gap_done", "gap": 6, "merged": 0.0714, "correct": 1.0, "bud_migrated": 0.0, "close": {"none": 0.0, "3": 0.0, "7": 0.0714, "11": 0.4286, "15": 0.75}}
+{"stage": "gap_done", "gap": 8, "merged": 0.0, "correct": 1.0, "bud_migrated": 0.0, "close": {"none": 0.0, "3": 0.0, "7": 0.0, "11": 0.1429, "15": 0.5}}
+{"stage": "gap_done", "gap": 12, "merged": 0.0, "correct": 1.0, "bud_migrated": 0.0, "close": {"none": 0.0, "3": 0.0, "7": 0.0, "11": 0.0, "15": 0.0268}}
+{"stage": "gap_done", "gap": 20, "merged": 0.0, "correct": 1.0, "bud_migrated": 0.0, "close": {"none": 0.0, "3": 0.0, "7": 0.0, "11": 0.0, "15": 0.0}}
+{"stage": "gap_done", "gap": 35, "merged": 0.0, "correct": 1.0, "bud_migrated": 0.0, "close": {"none": 0.0, "3": 0.0, "7": 0.0, "11": 0.0, "15": 0.0}}
+{"stage": "DONE", "out": "/home/hatch/workspace/your_files/顶刊技术文章/data/2026-11-07-adjacent-clutter-bench.json"}

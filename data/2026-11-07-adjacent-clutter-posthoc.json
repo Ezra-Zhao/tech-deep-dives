@@ -1,0 +1,120 @@
+{
+  "bud_n": 76,
+  "bud_area_median": 343.8,
+  "bud_area_p25": 276.9,
+  "bud_area_p75": 436.5,
+  "bud_area_min": 242.0,
+  "bud_area_max": 499.5,
+  "bud_in_crossing_band_[900-clutter,900)": 3,
+  "bud_band_share": 0.0395,
+  "bloom_area_median": 3806.0,
+  "bloom_area_min": 2179.0,
+  "clutter_alone": 406.0,
+  "fp_accounting": {
+    "gap=-18": {
+      "scene_fp": 0,
+      "migrated": 0,
+      "unmerged_clutter_est": 0,
+      "pred_fp": 0,
+      "match": true
+    },
+    "gap=-8": {
+      "scene_fp": 0,
+      "migrated": 0,
+      "unmerged_clutter_est": 0,
+      "pred_fp": 0,
+      "match": true
+    },
+    "gap=-3": {
+      "scene_fp": 11,
+      "migrated": 8,
+      "unmerged_clutter_est": 3,
+      "pred_fp": 11,
+      "match": true
+    },
+    "gap=0": {
+      "scene_fp": 22,
+      "migrated": 5,
+      "unmerged_clutter_est": 17,
+      "pred_fp": 22,
+      "match": true
+    },
+    "gap=2": {
+      "scene_fp": 41,
+      "migrated": 3,
+      "unmerged_clutter_est": 38,
+      "pred_fp": 41,
+      "match": true
+    },
+    "gap=4": {
+      "scene_fp": 72,
+      "migrated": 1,
+      "unmerged_clutter_est": 71,
+      "pred_fp": 72,
+      "match": true
+    },
+    "gap=6": {
+      "scene_fp": 104,
+      "migrated": 0,
+      "unmerged_clutter_est": 104,
+      "pred_fp": 104,
+      "match": true
+    },
+    "gap=8": {
+      "scene_fp": 112,
+      "migrated": 0,
+      "unmerged_clutter_est": 112,
+      "pred_fp": 112,
+      "match": true
+    },
+    "gap=12": {
+      "scene_fp": 112,
+      "migrated": 0,
+      "unmerged_clutter_est": 112,
+      "pred_fp": 112,
+      "match": true
+    },
+    "gap=20": {
+      "scene_fp": 112,
+      "migrated": 0,
+      "unmerged_clutter_est": 112,
+      "pred_fp": 112,
+      "match": true
+    },
+    "gap=35": {
+      "scene_fp": 111,
+      "migrated": 0,
+      "unmerged_clutter_est": 112,
+      "pred_fp": 112,
+      "match": false
+    }
+  },
+  "close_merge_50pct_crossing_gap": {
+    "none": -0.87,
+    "3": 0.27,
+    "7": 3.09,
+    "11": 5.57,
+    "15": 8.0
+  },
+  "migrated_bud_detail": {
+    "note": "gap=-3 migrated 8 buds verified individually: all r=15-16, alone area 457.0-499.5, merged 909.0-935.5, sole GT inside merged contour in every case (no neighbor bridging)",
+    "alone_range": [
+      457.0,
+      499.5
+    ],
+    "merged_range": [
+      909.0,
+      935.5
+    ],
+    "effective_addition_gap-3_median_all_merged": "see bench rerun: ~449 (bud+bloom merged adds, computed in debug run)"
+  },
+  "bud_band_corrected": "crossing band with effective addition ~449 is alone>=451: the 8 migrated are exactly the largest buds; band [494,900) using clutter-alone 406 understates because CLOSE fills the neck wedges, making union polygon area larger than alone+disc-alone",
+  "median_addition_by_gap_(merged hosts, debug rerun of bench pipeline)": {
+    "-18": 186.0,
+    "-8": 360.8,
+    "-3": 421.0,
+    "0": 434.0,
+    "2": 437.0,
+    "4": 437.5
+  }
+}
