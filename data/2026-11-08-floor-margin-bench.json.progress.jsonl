@@ -1,0 +1,45 @@
+{"stage": "dist", "set": "orig", "bud_min": 242.0, "bud_n": 76, "band": 0}
+{"stage": "dist", "set": "hold1", "bud_min": 242.5, "bud_n": 72, "band": 0}
+{"stage": "dist", "set": "hold2", "bud_min": 246.0, "bud_n": 76, "band": 0}
+{"stage": "tail", "s": 1.0, "bud_min_norm": 242.0}
+{"stage": "tail", "s": 1.5, "bud_min_norm": 254.7}
+{"stage": "tail", "s": 2.0, "bud_min_norm": 259.0}
+{"stage": "tail", "s": 2.5, "bud_min_norm": 262.9}
+{"stage": "tail", "s": 3.0, "bud_min_norm": 266.4}
+{"stage": "planted", "report": {"101": 64, "202": 64, "303": 64, "404": 64}}
+{"stage": "cell", "s": 1.0, "m": 0.0, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.6863}
+{"stage": "cell", "s": 1.0, "m": 0.07, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7241}
+{"stage": "cell", "s": 1.0, "m": 0.15, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "cell", "s": 1.0, "m": 0.25, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "cell", "s": 1.0, "m": 0.4, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "cell", "s": 1.0, "m": 0.6, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "cell", "s": 1.0, "m": 1.0, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "cell", "s": 1.5, "m": 0.0, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 16, "total": 16, "rate": 1.0}, "clut_prec": 0.6522}
+{"stage": "cell", "s": 1.5, "m": 0.07, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 8, "total": 16, "rate": 0.5}, "clut_prec": 0.6688}
+{"stage": "cell", "s": 1.5, "m": 0.15, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 6, "total": 16, "rate": 0.375}, "clut_prec": 0.6796}
+{"stage": "cell", "s": 1.5, "m": 0.25, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.742}
+{"stage": "cell", "s": 1.5, "m": 0.4, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7636}
+{"stage": "cell", "s": 1.5, "m": 0.6, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "cell", "s": 1.5, "m": 1.0, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "cell", "s": 2.0, "m": 0.0, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 2, "total": 112, "rate": 0.0179}, "sq_leak": {"passed": 16, "total": 16, "rate": 1.0}, "clut_prec": 0.6481}
+{"stage": "cell", "s": 2.0, "m": 0.07, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 16, "total": 16, "rate": 1.0}, "clut_prec": 0.6522}
+{"stage": "cell", "s": 2.0, "m": 0.15, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 1, "total": 16, "rate": 0.0625}, "clut_prec": 0.684}
+{"stage": "cell", "s": 2.0, "m": 0.25, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 1, "total": 16, "rate": 0.0625}, "clut_prec": 0.7}
+{"stage": "cell", "s": 2.0, "m": 0.4, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7609}
+{"stage": "cell", "s": 2.0, "m": 0.6, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "cell", "s": 2.0, "m": 1.0, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "cell", "s": 2.5, "m": 0.0, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 2, "total": 112, "rate": 0.0179}, "sq_leak": {"passed": 16, "total": 16, "rate": 1.0}, "clut_prec": 0.6481}
+{"stage": "cell", "s": 2.5, "m": 0.07, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 16, "total": 16, "rate": 1.0}, "clut_prec": 0.6522}
+{"stage": "cell", "s": 2.5, "m": 0.15, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 6, "total": 16, "rate": 0.375}, "clut_prec": 0.6752}
+{"stage": "cell", "s": 2.5, "m": 0.25, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 1, "total": 16, "rate": 0.0625}, "clut_prec": 0.7023}
+{"stage": "cell", "s": 2.5, "m": 0.4, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7554}
+{"stage": "cell", "s": 2.5, "m": 0.6, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "cell", "s": 2.5, "m": 1.0, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "cell", "s": 3.0, "m": 0.0, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 2, "total": 112, "rate": 0.0179}, "sq_leak": {"passed": 15, "total": 16, "rate": 0.9375}, "clut_prec": 0.6481}
+{"stage": "cell", "s": 3.0, "m": 0.07, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 15, "total": 16, "rate": 0.9375}, "clut_prec": 0.6522}
+{"stage": "cell", "s": 3.0, "m": 0.15, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 4, "total": 16, "rate": 0.25}, "clut_prec": 0.6774}
+{"stage": "cell", "s": 3.0, "m": 0.25, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 4, "total": 16, "rate": 0.25}, "clut_prec": 0.6931}
+{"stage": "cell", "s": 3.0, "m": 0.4, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7554}
+{"stage": "cell", "s": 3.0, "m": 0.6, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "cell", "s": 3.0, "m": 1.0, "clean_bud_recall": 1.0, "true_sub_leak": {"passed": 0, "total": 112, "rate": 0.0}, "sq_leak": {"passed": 0, "total": 16, "rate": 0.0}, "clut_prec": 0.7664}
+{"stage": "DONE", "out": "/home/hatch/workspace/your_files/顶刊技术文章/data/2026-11-08-floor-margin-bench.json"}

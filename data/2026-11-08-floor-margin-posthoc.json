@@ -1,0 +1,174 @@
+{
+  "in_situ_contour_norm": {
+    "s=1.0": {
+      "r=6_circle": {
+        "n": 16,
+        "found": 16,
+        "min": 90.0,
+        "median": 90.0,
+        "max": 90.0
+      },
+      "r=6_square": {
+        "n": 16,
+        "found": 16,
+        "min": 109.0,
+        "median": 109.0,
+        "max": 109.0
+      },
+      "r=7_circle": {
+        "n": 16,
+        "found": 16,
+        "min": 124.0,
+        "median": 124.0,
+        "max": 124.0
+      },
+      "r=7_square": {
+        "n": 16,
+        "found": 16,
+        "min": 132.0,
+        "median": 132.0,
+        "max": 132.0
+      }
+    },
+    "s=1.5": {
+      "r=6_circle": {
+        "n": 16,
+        "found": 16,
+        "min": 96.2,
+        "median": 104.2,
+        "max": 111.3
+      },
+      "r=6_square": {
+        "n": 16,
+        "found": 16,
+        "min": 122.2,
+        "median": 128.3,
+        "max": 144.7
+      },
+      "r=7_circle": {
+        "n": 16,
+        "found": 16,
+        "min": 130.9,
+        "median": 144.2,
+        "max": 149.8
+      },
+      "r=7_square": {
+        "n": 16,
+        "found": 16,
+        "min": 138.7,
+        "median": 155.1,
+        "max": 172.4
+      }
+    },
+    "s=2.0": {
+      "r=6_circle": {
+        "n": 16,
+        "found": 16,
+        "min": 106.0,
+        "median": 109.9,
+        "max": 123.8
+      },
+      "r=6_square": {
+        "n": 16,
+        "found": 16,
+        "min": 129.2,
+        "median": 129.2,
+        "max": 153.2
+      },
+      "r=7_circle": {
+        "n": 16,
+        "found": 16,
+        "min": 140.8,
+        "median": 150.2,
+        "max": 161.8
+      },
+      "r=7_square": {
+        "n": 16,
+        "found": 16,
+        "min": 153.2,
+        "median": 154.1,
+        "max": 179.2
+      }
+    },
+    "s=2.5": {
+      "r=6_circle": {
+        "n": 16,
+        "found": 16,
+        "min": 102.8,
+        "median": 110.2,
+        "max": 120.6
+      },
+      "r=6_square": {
+        "n": 16,
+        "found": 16,
+        "min": 132.2,
+        "median": 136.9,
+        "max": 151.8
+      },
+      "r=7_circle": {
+        "n": 16,
+        "found": 16,
+        "min": 137.7,
+        "median": 152.1,
+        "max": 159.3
+      },
+      "r=7_square": {
+        "n": 16,
+        "found": 16,
+        "min": 151.8,
+        "median": 161.9,
+        "max": 172.3
+      }
+    },
+    "s=3.0": {
+      "r=6_circle": {
+        "n": 16,
+        "found": 16,
+        "min": 106.4,
+        "median": 108.0,
+        "max": 123.8
+      },
+      "r=6_square": {
+        "n": 16,
+        "found": 16,
+        "min": 134.8,
+        "median": 135.0,
+        "max": 150.8
+      },
+      "r=7_circle": {
+        "n": 16,
+        "found": 16,
+        "min": 141.8,
+        "median": 154.3,
+        "max": 161.8
+      },
+      "r=7_square": {
+        "n": 16,
+        "found": 16,
+        "min": 159.1,
+        "median": 159.1,
+        "max": 176.4
+      }
+    }
+  },
+  "prescription_candidates": [
+    0.4,
+    0.6,
+    1.0
+  ],
+  "prescription_m": 0.4,
+  "bud_min_norm_by_s": {
+    "s=1.0": 242.0,
+    "s=1.5": 254.7,
+    "s=2.0": 259.0,
+    "s=2.5": 262.9,
+    "s=3.0": 266.4
+  },
+  "precision_monotonic_by_s": {
+    "s=1.0": true,
+    "s=1.5": true,
+    "s=2.0": true,
+    "s=2.5": true,
+    "s=3.0": true
+  }
+}

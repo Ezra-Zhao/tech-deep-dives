@@ -1,0 +1,5770 @@
+{
+  "base_params": {
+    "min_area": 120,
+    "bloom_area_min": 900,
+    "morph_kernel": 7
+  },
+  "scales": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0
+  ],
+  "margins": [
+    0.0,
+    0.07,
+    0.15,
+    0.25,
+    0.4,
+    0.6,
+    1.0
+  ],
+  "prereg": "data/2026-11-08-floor-margin-prereg.md",
+  "distribution_s1": {
+    "orig": {
+      "bud": {
+        "n": 76,
+        "min": 242.0,
+        "p5": 247.9,
+        "p25": 276.9,
+        "median": 343.8,
+        "p75": 436.5,
+        "max": 499.5
+      },
+      "bloom": {
+        "n": 134,
+        "min": 2179.0,
+        "p5": 2352.7,
+        "p25": 2912.4,
+        "median": 3806.0,
+        "p75": 5015.4,
+        "max": 6768.5
+      },
+      "bud_missing": 0,
+      "bud_in_drift_band_111.6_128.4": 0,
+      "bud_below_150": 0,
+      "bud_below_180": 0,
+      "bud_below_192": 0,
+      "bud_below_240": 0
+    },
+    "hold1": {
+      "bud": {
+        "n": 72,
+        "min": 242.5,
+        "p5": 255.5,
+        "p25": 277.8,
+        "median": 347.5,
+        "p75": 448.1,
+        "max": 492.5
+      },
+      "bloom": {
+        "n": 131,
+        "min": 2187.5,
+        "p5": 2466.0,
+        "p25": 3156.0,
+        "median": 3983.0,
+        "p75": 4852.5,
+        "max": 6646.5
+      },
+      "bud_missing": 0,
+      "bud_in_drift_band_111.6_128.4": 0,
+      "bud_below_150": 0,
+      "bud_below_180": 0,
+      "bud_below_192": 0,
+      "bud_below_240": 0
+    },
+    "hold2": {
+      "bud": {
+        "n": 76,
+        "min": 246.0,
+        "p5": 250.9,
+        "p25": 281.4,
+        "median": 369.8,
+        "p75": 457.9,
+        "max": 499.5
+      },
+      "bloom": {
+        "n": 133,
+        "min": 2230.0,
+        "p5": 2404.6,
+        "p25": 2850.0,
+        "median": 3702.0,
+        "p75": 4731.0,
+        "max": 6662.5
+      },
+      "bud_missing": 0,
+      "bud_in_drift_band_111.6_128.4": 0,
+      "bud_below_150": 0,
+      "bud_below_180": 0,
+      "bud_below_192": 0,
+      "bud_below_240": 0
+    },
+    "all": {
+      "bud": {
+        "n": 224,
+        "min": 242.0,
+        "p5": 250.6,
+        "p25": 278.5,
+        "median": 347.5,
+        "p75": 451.6,
+        "max": 499.5
+      },
+      "bloom": {
+        "n": 398,
+        "min": 2179.0,
+        "p5": 2403.8,
+        "p25": 2928.8,
+        "median": 3766.5,
+        "p75": 4849.4,
+        "max": 6768.5
+      },
+      "bud_in_drift_band_111.6_128.4": 0
+    }
+  },
+  "orig_tail_vs_s": {
+    "s=1.0": {
+      "bud": {
+        "n": 76,
+        "min": 242.0,
+        "p5": 247.9,
+        "p25": 276.9,
+        "median": 343.8,
+        "p75": 436.5,
+        "max": 499.5
+      },
+      "bud_missing": 0
+    },
+    "s=1.5": {
+      "bud": {
+        "n": 76,
+        "min": 254.7,
+        "p5": 259.2,
+        "p25": 291.4,
+        "median": 355.0,
+        "p75": 449.8,
+        "max": 532.0
+      },
+      "bud_missing": 0
+    },
+    "s=2.0": {
+      "bud": {
+        "n": 76,
+        "min": 259.0,
+        "p5": 262.6,
+        "p25": 294.1,
+        "median": 362.1,
+        "p75": 454.5,
+        "max": 542.8
+      },
+      "bud_missing": 0
+    },
+    "s=2.5": {
+      "bud": {
+        "n": 76,
+        "min": 262.9,
+        "p5": 266.9,
+        "p25": 299.2,
+        "median": 365.6,
+        "p75": 461.1,
+        "max": 545.7
+      },
+      "bud_missing": 0
+    },
+    "s=3.0": {
+      "bud": {
+        "n": 76,
+        "min": 266.4,
+        "p5": 270.6,
+        "p25": 302.0,
+        "median": 368.0,
+        "p75": 464.6,
+        "max": 554.9
+      },
+      "bud_missing": 0
+    }
+  },
+  "plant_report": {
+    "101": 64,
+    "202": 64,
+    "303": 64,
+    "404": 64
+  },
+  "curve": {
+    "s=1.0": {
+      "m=0.0": {
+        "floor": 120,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 96,
+          "fn": 0,
+          "precision": 0.6863,
+          "recall": 1.0,
+          "f1": 0.814,
+          "det_total": 306,
+          "clutter_passed": 96,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.07": {
+        "floor": 128,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 80,
+          "fn": 0,
+          "precision": 0.7241,
+          "recall": 1.0,
+          "f1": 0.84,
+          "det_total": 290,
+          "clutter_passed": 80,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 48,
+            "total": 64,
+            "rate": 0.75
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 16,
+              "total": 32,
+              "rate": 0.5
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.15": {
+        "floor": 138,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.25": {
+        "floor": 150,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.4": {
+        "floor": 168,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.6": {
+        "floor": 192,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=1.0": {
+        "floor": 240,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      }
+    },
+    "s=1.5": {
+      "m=0.0": {
+        "floor": 270,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 112,
+          "fn": 0,
+          "precision": 0.6522,
+          "recall": 1.0,
+          "f1": 0.7895,
+          "det_total": 322,
+          "clutter_passed": 112,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 16,
+            "total": 16,
+            "rate": 1.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 16,
+            "total": 128,
+            "rate": 0.125
+          },
+          "pass_mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 16,
+              "total": 32,
+              "rate": 0.5
+            },
+            "r=7": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.07": {
+        "floor": 289,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 104,
+          "fn": 0,
+          "precision": 0.6688,
+          "recall": 1.0,
+          "f1": 0.8015,
+          "det_total": 314,
+          "clutter_passed": 104,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 8,
+            "total": 16,
+            "rate": 0.5
+          },
+          "pass_radius_subfloor": {
+            "passed": 8,
+            "total": 128,
+            "rate": 0.0625
+          },
+          "pass_mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 8,
+              "total": 32,
+              "rate": 0.25
+            },
+            "r=7": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.15": {
+        "floor": 310,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 99,
+          "fn": 0,
+          "precision": 0.6796,
+          "recall": 1.0,
+          "f1": 0.8092,
+          "det_total": 309,
+          "clutter_passed": 99,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 6,
+            "total": 16,
+            "rate": 0.375
+          },
+          "pass_radius_subfloor": {
+            "passed": 6,
+            "total": 128,
+            "rate": 0.0469
+          },
+          "pass_mid": {
+            "passed": 61,
+            "total": 64,
+            "rate": 0.9531
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 6,
+              "total": 32,
+              "rate": 0.1875
+            },
+            "r=7": {
+              "passed": 29,
+              "total": 32,
+              "rate": 0.9062
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.25": {
+        "floor": 338,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 73,
+          "fn": 0,
+          "precision": 0.742,
+          "recall": 1.0,
+          "f1": 0.8519,
+          "det_total": 283,
+          "clutter_passed": 73,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 41,
+            "total": 64,
+            "rate": 0.6406
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 9,
+              "total": 32,
+              "rate": 0.2812
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.4": {
+        "floor": 378,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 65,
+          "fn": 0,
+          "precision": 0.7636,
+          "recall": 1.0,
+          "f1": 0.866,
+          "det_total": 275,
+          "clutter_passed": 65,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 33,
+            "total": 64,
+            "rate": 0.5156
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 1,
+              "total": 32,
+              "rate": 0.0312
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.6": {
+        "floor": 432,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=1.0": {
+        "floor": 540,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      }
+    },
+    "s=2.0": {
+      "m=0.0": {
+        "floor": 480,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 114,
+          "fn": 0,
+          "precision": 0.6481,
+          "recall": 1.0,
+          "f1": 0.7865,
+          "det_total": 324,
+          "clutter_passed": 114,
+          "pass_true_subfloor": {
+            "passed": 2,
+            "total": 112,
+            "rate": 0.0179
+          },
+          "pass_r6_square": {
+            "passed": 16,
+            "total": 16,
+            "rate": 1.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 18,
+            "total": 128,
+            "rate": 0.1406
+          },
+          "pass_mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 18,
+              "total": 32,
+              "rate": 0.5625
+            },
+            "r=7": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.07": {
+        "floor": 514,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 112,
+          "fn": 0,
+          "precision": 0.6522,
+          "recall": 1.0,
+          "f1": 0.7895,
+          "det_total": 322,
+          "clutter_passed": 112,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 16,
+            "total": 16,
+            "rate": 1.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 16,
+            "total": 128,
+            "rate": 0.125
+          },
+          "pass_mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 16,
+              "total": 32,
+              "rate": 0.5
+            },
+            "r=7": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.15": {
+        "floor": 552,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 97,
+          "fn": 0,
+          "precision": 0.684,
+          "recall": 1.0,
+          "f1": 0.8124,
+          "det_total": 307,
+          "clutter_passed": 97,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 1,
+            "total": 16,
+            "rate": 0.0625
+          },
+          "pass_radius_subfloor": {
+            "passed": 1,
+            "total": 128,
+            "rate": 0.0078
+          },
+          "pass_mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 1,
+              "total": 32,
+              "rate": 0.0312
+            },
+            "r=7": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.25": {
+        "floor": 600,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 90,
+          "fn": 0,
+          "precision": 0.7,
+          "recall": 1.0,
+          "f1": 0.8235,
+          "det_total": 300,
+          "clutter_passed": 90,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 1,
+            "total": 16,
+            "rate": 0.0625
+          },
+          "pass_radius_subfloor": {
+            "passed": 1,
+            "total": 128,
+            "rate": 0.0078
+          },
+          "pass_mid": {
+            "passed": 57,
+            "total": 64,
+            "rate": 0.8906
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 1,
+              "total": 32,
+              "rate": 0.0312
+            },
+            "r=7": {
+              "passed": 25,
+              "total": 32,
+              "rate": 0.7812
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.4": {
+        "floor": 672,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 66,
+          "fn": 0,
+          "precision": 0.7609,
+          "recall": 1.0,
+          "f1": 0.8642,
+          "det_total": 276,
+          "clutter_passed": 66,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 34,
+            "total": 64,
+            "rate": 0.5312
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 2,
+              "total": 32,
+              "rate": 0.0625
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.6": {
+        "floor": 768,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=1.0": {
+        "floor": 960,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      }
+    },
+    "s=2.5": {
+      "m=0.0": {
+        "floor": 750,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 114,
+          "fn": 0,
+          "precision": 0.6481,
+          "recall": 1.0,
+          "f1": 0.7865,
+          "det_total": 324,
+          "clutter_passed": 114,
+          "pass_true_subfloor": {
+            "passed": 2,
+            "total": 112,
+            "rate": 0.0179
+          },
+          "pass_r6_square": {
+            "passed": 16,
+            "total": 16,
+            "rate": 1.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 18,
+            "total": 128,
+            "rate": 0.1406
+          },
+          "pass_mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 18,
+              "total": 32,
+              "rate": 0.5625
+            },
+            "r=7": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.07": {
+        "floor": 802,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 112,
+          "fn": 0,
+          "precision": 0.6522,
+          "recall": 1.0,
+          "f1": 0.7895,
+          "det_total": 322,
+          "clutter_passed": 112,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 16,
+            "total": 16,
+            "rate": 1.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 16,
+            "total": 128,
+            "rate": 0.125
+          },
+          "pass_mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 16,
+              "total": 32,
+              "rate": 0.5
+            },
+            "r=7": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.15": {
+        "floor": 862,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 101,
+          "fn": 0,
+          "precision": 0.6752,
+          "recall": 1.0,
+          "f1": 0.8061,
+          "det_total": 311,
+          "clutter_passed": 101,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 6,
+            "total": 16,
+            "rate": 0.375
+          },
+          "pass_radius_subfloor": {
+            "passed": 6,
+            "total": 128,
+            "rate": 0.0469
+          },
+          "pass_mid": {
+            "passed": 63,
+            "total": 64,
+            "rate": 0.9844
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 6,
+              "total": 32,
+              "rate": 0.1875
+            },
+            "r=7": {
+              "passed": 31,
+              "total": 32,
+              "rate": 0.9688
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.25": {
+        "floor": 938,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 89,
+          "fn": 0,
+          "precision": 0.7023,
+          "recall": 1.0,
+          "f1": 0.8251,
+          "det_total": 299,
+          "clutter_passed": 89,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 1,
+            "total": 16,
+            "rate": 0.0625
+          },
+          "pass_radius_subfloor": {
+            "passed": 1,
+            "total": 128,
+            "rate": 0.0078
+          },
+          "pass_mid": {
+            "passed": 56,
+            "total": 64,
+            "rate": 0.875
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 1,
+              "total": 32,
+              "rate": 0.0312
+            },
+            "r=7": {
+              "passed": 24,
+              "total": 32,
+              "rate": 0.75
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.4": {
+        "floor": 1050,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 68,
+          "fn": 0,
+          "precision": 0.7554,
+          "recall": 1.0,
+          "f1": 0.8607,
+          "det_total": 278,
+          "clutter_passed": 68,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 36,
+            "total": 64,
+            "rate": 0.5625
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 4,
+              "total": 32,
+              "rate": 0.125
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.6": {
+        "floor": 1200,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=1.0": {
+        "floor": 1500,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      }
+    },
+    "s=3.0": {
+      "m=0.0": {
+        "floor": 1080,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 114,
+          "fn": 0,
+          "precision": 0.6481,
+          "recall": 1.0,
+          "f1": 0.7865,
+          "det_total": 324,
+          "clutter_passed": 113,
+          "pass_true_subfloor": {
+            "passed": 2,
+            "total": 112,
+            "rate": 0.0179
+          },
+          "pass_r6_square": {
+            "passed": 15,
+            "total": 16,
+            "rate": 0.9375
+          },
+          "pass_radius_subfloor": {
+            "passed": 17,
+            "total": 128,
+            "rate": 0.1328
+          },
+          "pass_mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 17,
+              "total": 32,
+              "rate": 0.5312
+            },
+            "r=7": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.07": {
+        "floor": 1156,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 112,
+          "fn": 0,
+          "precision": 0.6522,
+          "recall": 1.0,
+          "f1": 0.7895,
+          "det_total": 322,
+          "clutter_passed": 111,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 15,
+            "total": 16,
+            "rate": 0.9375
+          },
+          "pass_radius_subfloor": {
+            "passed": 15,
+            "total": 128,
+            "rate": 0.1172
+          },
+          "pass_mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 15,
+              "total": 32,
+              "rate": 0.4688
+            },
+            "r=7": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.15": {
+        "floor": 1242,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 100,
+          "fn": 0,
+          "precision": 0.6774,
+          "recall": 1.0,
+          "f1": 0.8077,
+          "det_total": 310,
+          "clutter_passed": 100,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 4,
+            "total": 16,
+            "rate": 0.25
+          },
+          "pass_radius_subfloor": {
+            "passed": 4,
+            "total": 128,
+            "rate": 0.0312
+          },
+          "pass_mid": {
+            "passed": 64,
+            "total": 64,
+            "rate": 1.0
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 4,
+              "total": 32,
+              "rate": 0.125
+            },
+            "r=7": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.25": {
+        "floor": 1350,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 93,
+          "fn": 0,
+          "precision": 0.6931,
+          "recall": 1.0,
+          "f1": 0.8187,
+          "det_total": 303,
+          "clutter_passed": 93,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 4,
+            "total": 16,
+            "rate": 0.25
+          },
+          "pass_radius_subfloor": {
+            "passed": 4,
+            "total": 128,
+            "rate": 0.0312
+          },
+          "pass_mid": {
+            "passed": 57,
+            "total": 64,
+            "rate": 0.8906
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 4,
+              "total": 32,
+              "rate": 0.125
+            },
+            "r=7": {
+              "passed": 25,
+              "total": 32,
+              "rate": 0.7812
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.4": {
+        "floor": 1512,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 68,
+          "fn": 0,
+          "precision": 0.7554,
+          "recall": 1.0,
+          "f1": 0.8607,
+          "det_total": 278,
+          "clutter_passed": 68,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 36,
+            "total": 64,
+            "rate": 0.5625
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 4,
+              "total": 32,
+              "rate": 0.125
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=0.6": {
+        "floor": 1728,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      },
+      "m=1.0": {
+        "floor": 2160,
+        "clean": {
+          "tp": 210,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "det_total": 210,
+          "clutter_passed": 0,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_mid": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_large": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 0,
+            "rate": null
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=10": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            },
+            "r=14": {
+              "passed": 0,
+              "total": 0,
+              "rate": null
+            }
+          },
+          "bud_recall": 1.0
+        },
+        "cluttered": {
+          "tp": 210,
+          "fp": 64,
+          "fn": 0,
+          "precision": 0.7664,
+          "recall": 1.0,
+          "f1": 0.8678,
+          "det_total": 274,
+          "clutter_passed": 64,
+          "pass_true_subfloor": {
+            "passed": 0,
+            "total": 112,
+            "rate": 0.0
+          },
+          "pass_r6_square": {
+            "passed": 0,
+            "total": 16,
+            "rate": 0.0
+          },
+          "pass_radius_subfloor": {
+            "passed": 0,
+            "total": 128,
+            "rate": 0.0
+          },
+          "pass_mid": {
+            "passed": 32,
+            "total": 64,
+            "rate": 0.5
+          },
+          "pass_large": {
+            "passed": 32,
+            "total": 32,
+            "rate": 1.0
+          },
+          "pass_control": {
+            "passed": 0,
+            "total": 32,
+            "rate": 0.0
+          },
+          "pass_by_radius": {
+            "r=3": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=4": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=5": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=6": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=7": {
+              "passed": 0,
+              "total": 32,
+              "rate": 0.0
+            },
+            "r=10": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            },
+            "r=14": {
+              "passed": 32,
+              "total": 32,
+              "rate": 1.0
+            }
+          },
+          "bud_recall": 1.0
+        }
+      }
+    }
+  }
+}
