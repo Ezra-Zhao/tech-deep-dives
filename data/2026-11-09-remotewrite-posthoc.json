@@ -1,0 +1,106 @@
+{
+ "control": {
+  "t_kill_epoch": 1794277296.249861,
+  "kill_event_emit_epoch": 1794277296.2532327,
+  "pending_after_kill_s": 10.1,
+  "firing_lower_bound_s": 70.1,
+  "firing_poll_after_kill_s": 70.1,
+  "present_first_empty_poll_s": 5.0,
+  "absent_first_one_poll_s": 5.0,
+  "up_post_kill_values": [
+   0.0,
+   1.0
+  ],
+  "up_first_empty_poll_s": null,
+  "up_last_nonempty_poll_s": 85.1,
+  "baseline_polls": 10,
+  "baseline_alert_states": [
+   [
+    -30.0,
+    [
+     "pending"
+    ]
+   ],
+   [
+    -30.0,
+    [
+     "pending"
+    ]
+   ],
+   [
+    -25.0,
+    [
+     "pending"
+    ]
+   ],
+   [
+    -20.0,
+    [
+     "pending"
+    ]
+   ]
+  ],
+  "baseline_any_firing": false
+ },
+ "remotewrite": {
+  "t_kill_epoch": 1794277434.5588558,
+  "kill_event_emit_epoch": 1794277434.6227803,
+  "pending_after_kill_s": 306.8,
+  "firing_lower_bound_s": 366.8,
+  "firing_poll_after_kill_s": 371.1,
+  "present_first_empty_poll_s": 301.0,
+  "absent_first_one_poll_s": 301.0,
+  "up_post_kill_values": [
+   1.0
+  ],
+  "up_first_empty_poll_s": 301.0,
+  "up_last_nonempty_poll_s": 296.0,
+  "baseline_polls": 10,
+  "baseline_alert_states": [
+   [
+    -35.0,
+    [
+     "pending"
+    ]
+   ],
+   [
+    -30.0,
+    [
+     "pending"
+    ]
+   ],
+   [
+    -30.0,
+    [
+     "pending"
+    ]
+   ],
+   [
+    -25.0,
+    [
+     "pending"
+    ]
+   ]
+  ],
+  "baseline_any_firing": false,
+  "sender_exit_after_kill_s": 0.1,
+  "last_sample_ts_bracket": [
+   1794277429.6,
+   1794277434.6
+  ],
+  "visibility_after_last_sample_s": [
+   300.9,
+   306.0
+  ]
+ },
+ "contrasts": {
+  "pending_diff_s": 296.7,
+  "firing_lower_bound_diff_s": 296.7,
+  "firing_lower_bound_ratio": 5.23
+ },
+ "prereg_verdicts": {
+  "P-C": "hit",
+  "P-W1": "hit",
+  "P-W3": true
+ }
+}

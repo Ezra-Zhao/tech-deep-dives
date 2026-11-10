@@ -1,0 +1,19 @@
+# Alert rules for the 2026-11-09 remote-write live run, used verbatim
+# by both the control (C, direct scrape) and remote-write receiver (W)
+# instances. The absent expression is verbatim the one measured in the
+# 2026-10-27 / 2026-10-31 articles; for: 1m and the 15s group interval
+# match those articles.
+groups:
+  - name: net-assurance-lab.anti-blind-rw
+    interval: 15s
+    rules:
+      - alert: NalExporterSeriesAbsent
+        expr: absent(nal_exporter_results_present{group="scenario_summaries"})
+        for: 1m
+        labels:
+          severity: critical
+          team: net-assurance
+        annotations:
+          summary: "Exporter series nal_exporter_results_present has disappeared"
+          description: >-
+            No sample of the exporter's self-report series is visible.
