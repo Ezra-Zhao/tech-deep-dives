@@ -1,0 +1,25 @@
+{
+ "article": "2026-11-10 scrape-timeout hang staleness",
+ "prometheus_version": "prometheus, version 3.15.0 (branch: HEAD, revision: 5241a27fe3c6983549fccc32f6e65917408c63cd)",
+ "prometheus_tarball_bytes": 111651578,
+ "promtool_check": {
+  "control_rules": "SUCCESS: 1 rules found",
+  "recorded_rules": "SUCCESS: 3 rules found"
+ },
+ "death_shape": "SIGSTOP freeze of the real exporter process; out-of-band probe per phase: /proc state 'T (stopped)', raw TCP connect OK (~0.0s), HTTP GET /metrics 0 bytes in 5.005-5.008s probe timeout, probe_ok=true x3",
+ "scrape_timeout_self_proof": "scrape_duration_seconds after freeze: control 18 values all 4.0005-4.0153; timestamped/recorded: first post-freeze poll can still show the last healthy scrape (0.0018/0.0823), every later value ~4.000-4.002 (one 4.0562 in recorded)",
+ "prereg_verdicts": {
+  "P-C": "半中：present 首空轮询 +10.0s 在 ≤10.5s 内、量级同档；但 pending 7.1s 低于预注册 9-25s 带下沿 1.9s、firing 区间下界 67.1s 低于 69s 带下沿 1.9s——超时成本被 15s 评估对齐噪声淹没且方向为负，数字带按字面未中",
+  "P-T": "全中：present 首空 +300.7s、pending 308.6s（带 300-330）、firing 368.6-371.1s（带 360-395）",
+  "P-R": "全中：同轮双告警 pending 同为 19.9s（activeAt 逐微秒相同）、firing 同为 79.9-80.3s（带 69-105）",
+  "P-UP": "全中：三路径 up 首个 0 轮询均为冻结后 +10.0s（带 5-10.5s）；冻结后抓取时长约 4.00s（≥3.9s）"
+ },
+ "sigterm_baseline_source": "2026-10-31 篇正文 §3（C/T 第一轮、R 补跑轮）",
+ "files": [
+  "2026-11-10-hang-stale-prereg.md",
+  "2026-11-10-hang-stale-live.py",
+  "2026-11-10-hang-stale-live-progress.jsonl",
+  "2026-11-10-hang-stale-live.json",
+  "2026-11-10-hang-stale-posthoc.json"
+ ]
+}

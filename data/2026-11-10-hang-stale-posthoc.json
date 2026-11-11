@@ -1,0 +1,57 @@
+{
+ "control": {
+  "hang_epoch": 1794363610.3095913,
+  "pending": 7.1,
+  "firing_low": 67.1,
+  "firing_poll": 70.1,
+  "present_empty_poll": 10.0,
+  "up_first_zero_poll": 10.0,
+  "delta_vs_sigterm": {
+   "pending": -7.1,
+   "firing_low": -7.1,
+   "firing_high": -5.4,
+   "present_empty_poll": 4.9
+  }
+ },
+ "timestamped": {
+  "hang_epoch": 1794363743.833317,
+  "pending": 308.6,
+  "firing_low": 368.6,
+  "firing_poll": 371.1,
+  "present_empty_poll": 300.7,
+  "up_first_zero_poll": 10.0,
+  "delta_vs_sigterm": {
+   "pending": -0.8,
+   "firing_low": -0.8,
+   "firing_high": -2.7,
+   "present_empty_poll": -2.4
+  },
+  "last_sample_ts": 1794363738.823,
+  "hang_minus_last_sample_s": 5.01,
+  "present_survival_after_sample_ts_range_s": [
+   300.7,
+   305.7
+  ]
+ },
+ "recorded": {
+  "hang_epoch": 1794364188.6263137,
+  "pending": 19.9,
+  "firing_low": 79.9,
+  "firing_poll": 80.3,
+  "present_empty_poll": 10.0,
+  "up_first_zero_poll": 10.0,
+  "delta_vs_sigterm": {
+   "pending": 5.8,
+   "firing_low": 5.8,
+   "firing_high": 5.1,
+   "present_empty_poll": 5.0
+  },
+  "recorded_alert": {
+   "pending": 19.9,
+   "firing_low": 79.9,
+   "firing_poll": 80.3
+  },
+  "recorded_empty_poll": 15.1
+ },
+ "note": "SIGTERM 基线为 2026-10-31 篇 C/T 与 R 补跑轮数字（该篇正文 §3）。firing_high 口径：SIGTERM 篇给的是轮询区间上界，本轮以 firing_poll_after_hang_s 对照。"
+}
