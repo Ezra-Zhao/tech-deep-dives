@@ -1,0 +1,2718 @@
+{
+  "generated_at_local": "2026-11-12 02:24:57 UTC",
+  "iohog_ops_by_tier": {
+    "I1": 1459,
+    "I2": 2066,
+    "I3": 3901
+  },
+  "ma0_median_kb": 1227984,
+  "ma0_samples_kb": [
+    1248388,
+    1227984,
+    1293296,
+    1218252,
+    1199800
+  ],
+  "reps_per_tier": 4,
+  "runs": [
+    {
+      "D": 0.0,
+      "F_c": 6084,
+      "L": 0.526,
+      "L_iso": 0.526,
+      "arm": "MEM",
+      "echoed": 4740,
+      "exporter": {
+        "L": 0.526,
+        "echoed": 4740.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.029585798816568046,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        4.04,
+        1.99,
+        1.51
+      ],
+      "loss_rate": 0.526,
+      "mem_samples_median_kb": 1241338,
+      "mem_samples_min_kb": 1169684,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "memhog 0 MiB (0.0xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1516,
+        "c2s:forward": 6084,
+        "s2c:drop_flap": 180,
+        "s2c:drop_loss": 1164,
+        "s2c:forward": 4740
+      },
+      "proxy_summary": {
+        "delayed": 10824,
+        "dropped_flap": 2580,
+        "dropped_loss": 2680,
+        "forwarded": 10824,
+        "in_client": 10000,
+        "in_server": 6084
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 1603194.0,
+        "io_some_total_us_delta": 3007815.0,
+        "memory_full_total_us_delta": 70948.0,
+        "memory_some_total_us_delta": 121156.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 1,
+      "rtt_p99_ms": 152.134,
+      "run_index": 1,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6084,
+        "malformed": 0,
+        "received_total": 6084,
+        "valid": 6084
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6084,
+        "forwarded_server": 6084,
+        "in_client": 6084,
+        "in_server": 6084
+      },
+      "tag": "M0-r1",
+      "tier": "M0",
+      "vm_delta": {
+        "pgscan_kswapd": 76558,
+        "pgsteal_kswapd": 74771,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6065,
+      "L": 0.5261,
+      "L_iso": 0.5261,
+      "arm": "MEM",
+      "echoed": 4739,
+      "exporter": {
+        "L": 0.5261,
+        "echoed": 4739.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.031162407254740312,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        4.18,
+        2.09,
+        1.55
+      ],
+      "loss_rate": 0.5261,
+      "mem_samples_median_kb": 1242880,
+      "mem_samples_min_kb": 1202992,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "memhog 0 MiB (0.0xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1535,
+        "c2s:forward": 6065,
+        "s2c:drop_flap": 189,
+        "s2c:drop_loss": 1137,
+        "s2c:forward": 4739
+      },
+      "proxy_summary": {
+        "delayed": 10804,
+        "dropped_flap": 2589,
+        "dropped_loss": 2672,
+        "forwarded": 10804,
+        "in_client": 10000,
+        "in_server": 6065
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 1242265.0,
+        "io_some_total_us_delta": 2562113.0,
+        "memory_full_total_us_delta": 145962.0,
+        "memory_some_total_us_delta": 240181.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 2,
+      "rtt_p99_ms": 138.305,
+      "run_index": 2,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6065,
+        "malformed": 0,
+        "received_total": 6065,
+        "valid": 6065
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6065,
+        "forwarded_server": 6065,
+        "in_client": 6065,
+        "in_server": 6065
+      },
+      "tag": "M0-r2",
+      "tier": "M0",
+      "vm_delta": {
+        "pgscan_kswapd": 48246,
+        "pgsteal_kswapd": 43467,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6031,
+      "L": 0.5303,
+      "L_iso": 0.5303,
+      "arm": "MEM",
+      "echoed": 4697,
+      "exporter": {
+        "L": 0.5303,
+        "echoed": 4697.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.245,
+      "flap_share_s2c": 0.0328303763886586,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        4.97,
+        2.29,
+        1.61
+      ],
+      "loss_rate": 0.5303,
+      "mem_samples_median_kb": 1250244,
+      "mem_samples_min_kb": 1023060,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "memhog 0 MiB (0.0xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2450,
+        "c2s:drop_loss": 1519,
+        "c2s:forward": 6031,
+        "s2c:drop_flap": 198,
+        "s2c:drop_loss": 1136,
+        "s2c:forward": 4697
+      },
+      "proxy_summary": {
+        "delayed": 10728,
+        "dropped_flap": 2648,
+        "dropped_loss": 2655,
+        "forwarded": 10728,
+        "in_client": 10000,
+        "in_server": 6031
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 1383590.0,
+        "io_some_total_us_delta": 3443167.0,
+        "memory_full_total_us_delta": 115067.0,
+        "memory_some_total_us_delta": 202793.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 3,
+      "rtt_p99_ms": 142.379,
+      "run_index": 3,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6031,
+        "malformed": 0,
+        "received_total": 6031,
+        "valid": 6031
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6031,
+        "forwarded_server": 6031,
+        "in_client": 6031,
+        "in_server": 6031
+      },
+      "tag": "M0-r3",
+      "tier": "M0",
+      "vm_delta": {
+        "pgscan_kswapd": 135830,
+        "pgsteal_kswapd": 123834,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6095,
+      "L": 0.5268,
+      "L_iso": 0.5267999999999999,
+      "arm": "MEM",
+      "echoed": 4732,
+      "exporter": {
+        "L": 0.5268,
+        "echoed": 4732.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2402,
+      "flap_share_s2c": 0.03051681706316653,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        5.44,
+        2.48,
+        1.68
+      ],
+      "loss_rate": 0.5268,
+      "mem_samples_median_kb": 1219466,
+      "mem_samples_min_kb": 1143396,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "memhog 0 MiB (0.0xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2402,
+        "c2s:drop_loss": 1503,
+        "c2s:forward": 6095,
+        "s2c:drop_flap": 186,
+        "s2c:drop_loss": 1177,
+        "s2c:forward": 4732
+      },
+      "proxy_summary": {
+        "delayed": 10827,
+        "dropped_flap": 2588,
+        "dropped_loss": 2680,
+        "forwarded": 10827,
+        "in_client": 10000,
+        "in_server": 6095
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 753301.0,
+        "io_some_total_us_delta": 1373695.0,
+        "memory_full_total_us_delta": 4974.0,
+        "memory_some_total_us_delta": 6334.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 4,
+      "rtt_p99_ms": 139.209,
+      "run_index": 4,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6095,
+        "malformed": 0,
+        "received_total": 6095,
+        "valid": 6095
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6095,
+        "forwarded_server": 6095,
+        "in_client": 6095,
+        "in_server": 6095
+      },
+      "tag": "M0-r4",
+      "tier": "M0",
+      "vm_delta": {
+        "pgscan_kswapd": 2880,
+        "pgsteal_kswapd": 2770,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6121,
+      "L": 0.5271,
+      "L_iso": 0.5271,
+      "arm": "MEM",
+      "echoed": 4729,
+      "exporter": {
+        "L": 0.5271,
+        "echoed": 4729.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.02989707564123509,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        5.21,
+        2.53,
+        1.71
+      ],
+      "loss_rate": 0.5271,
+      "mem_samples_median_kb": 765006,
+      "mem_samples_min_kb": 601448,
+      "mem_samples_n": 34,
+      "memhog_mb": 599,
+      "old_fires": false,
+      "pressure_spec": "memhog 599 MiB (0.5xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1479,
+        "c2s:forward": 6121,
+        "s2c:drop_flap": 183,
+        "s2c:drop_loss": 1209,
+        "s2c:forward": 4729
+      },
+      "proxy_summary": {
+        "delayed": 10850,
+        "dropped_flap": 2583,
+        "dropped_loss": 2688,
+        "forwarded": 10850,
+        "in_client": 10000,
+        "in_server": 6121
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 1026084.0,
+        "io_some_total_us_delta": 1822146.0,
+        "memory_full_total_us_delta": 4545.0,
+        "memory_some_total_us_delta": 4813.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 1,
+      "rtt_p99_ms": 137.815,
+      "run_index": 5,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6121,
+        "malformed": 0,
+        "received_total": 6121,
+        "valid": 6121
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6121,
+        "forwarded_server": 6121,
+        "in_client": 6121,
+        "in_server": 6121
+      },
+      "tag": "M1-r1",
+      "tier": "M1",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6081,
+      "L": 0.5264,
+      "L_iso": 0.5264,
+      "arm": "MEM",
+      "echoed": 4736,
+      "exporter": {
+        "L": 0.5264,
+        "echoed": 4736.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.03042262785726032,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        5.26,
+        2.63,
+        1.75
+      ],
+      "loss_rate": 0.5264,
+      "mem_samples_median_kb": 756068,
+      "mem_samples_min_kb": 678376,
+      "mem_samples_n": 34,
+      "memhog_mb": 599,
+      "old_fires": false,
+      "pressure_spec": "memhog 599 MiB (0.5xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1519,
+        "c2s:forward": 6081,
+        "s2c:drop_flap": 185,
+        "s2c:drop_loss": 1160,
+        "s2c:forward": 4736
+      },
+      "proxy_summary": {
+        "delayed": 10817,
+        "dropped_flap": 2585,
+        "dropped_loss": 2679,
+        "forwarded": 10817,
+        "in_client": 10000,
+        "in_server": 6081
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 273301.0,
+        "io_some_total_us_delta": 395797.0,
+        "memory_full_total_us_delta": 49916.0,
+        "memory_some_total_us_delta": 72126.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 2,
+      "rtt_p99_ms": 136.338,
+      "run_index": 6,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6081,
+        "malformed": 0,
+        "received_total": 6081,
+        "valid": 6081
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6081,
+        "forwarded_server": 6081,
+        "in_client": 6081,
+        "in_server": 6081
+      },
+      "tag": "M1-r2",
+      "tier": "M1",
+      "vm_delta": {
+        "pgscan_kswapd": 3221,
+        "pgsteal_kswapd": 2881,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6107,
+      "L": 0.5268,
+      "L_iso": 0.5267999999999999,
+      "arm": "MEM",
+      "echoed": 4732,
+      "exporter": {
+        "L": 0.5268,
+        "echoed": 4732.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2401,
+      "flap_share_s2c": 0.03012935975110529,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        5.09,
+        2.67,
+        1.77
+      ],
+      "loss_rate": 0.5268,
+      "mem_samples_median_kb": 971828,
+      "mem_samples_min_kb": 750756,
+      "mem_samples_n": 34,
+      "memhog_mb": 599,
+      "old_fires": false,
+      "pressure_spec": "memhog 599 MiB (0.5xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2401,
+        "c2s:drop_loss": 1492,
+        "c2s:forward": 6107,
+        "s2c:drop_flap": 184,
+        "s2c:drop_loss": 1191,
+        "s2c:forward": 4732
+      },
+      "proxy_summary": {
+        "delayed": 10839,
+        "dropped_flap": 2585,
+        "dropped_loss": 2683,
+        "forwarded": 10839,
+        "in_client": 10000,
+        "in_server": 6107
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 672131.0,
+        "io_some_total_us_delta": 1079847.0,
+        "memory_full_total_us_delta": 89478.0,
+        "memory_some_total_us_delta": 94027.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 3,
+      "rtt_p99_ms": 137.721,
+      "run_index": 7,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6107,
+        "malformed": 0,
+        "received_total": 6107,
+        "valid": 6107
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6107,
+        "forwarded_server": 6107,
+        "in_client": 6107,
+        "in_server": 6107
+      },
+      "tag": "M1-r3",
+      "tier": "M1",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6131,
+      "L": 0.5279,
+      "L_iso": 0.5279,
+      "arm": "MEM",
+      "echoed": 4721,
+      "exporter": {
+        "L": 0.5279,
+        "echoed": 4721.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.030826945033436633,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        4.92,
+        2.68,
+        1.78
+      ],
+      "loss_rate": 0.5279,
+      "mem_samples_median_kb": 1163366,
+      "mem_samples_min_kb": 1127052,
+      "mem_samples_n": 34,
+      "memhog_mb": 599,
+      "old_fires": false,
+      "pressure_spec": "memhog 599 MiB (0.5xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1469,
+        "c2s:forward": 6131,
+        "s2c:drop_flap": 189,
+        "s2c:drop_loss": 1221,
+        "s2c:forward": 4721
+      },
+      "proxy_summary": {
+        "delayed": 10852,
+        "dropped_flap": 2589,
+        "dropped_loss": 2690,
+        "forwarded": 10852,
+        "in_client": 10000,
+        "in_server": 6131
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 1022724.0,
+        "io_some_total_us_delta": 1996204.0,
+        "memory_full_total_us_delta": 72765.0,
+        "memory_some_total_us_delta": 154694.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 4,
+      "rtt_p99_ms": 148.456,
+      "run_index": 8,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6131,
+        "malformed": 0,
+        "received_total": 6131,
+        "valid": 6131
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6131,
+        "forwarded_server": 6131,
+        "in_client": 6131,
+        "in_server": 6131
+      },
+      "tag": "M1-r4",
+      "tier": "M1",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6071,
+      "L": 0.5255,
+      "L_iso": 0.5255000000000001,
+      "arm": "MEM",
+      "echoed": 4745,
+      "exporter": {
+        "L": 0.5255,
+        "echoed": 4745.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.028990281666941196,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        4.49,
+        2.69,
+        1.8
+      ],
+      "loss_rate": 0.5255,
+      "mem_samples_median_kb": 812800,
+      "mem_samples_min_kb": 776628,
+      "mem_samples_n": 34,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "memhog 1000 MiB (1.0xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1529,
+        "c2s:forward": 6071,
+        "s2c:drop_flap": 176,
+        "s2c:drop_loss": 1150,
+        "s2c:forward": 4745
+      },
+      "proxy_summary": {
+        "delayed": 10816,
+        "dropped_flap": 2576,
+        "dropped_loss": 2679,
+        "forwarded": 10816,
+        "in_client": 10000,
+        "in_server": 6071
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 60691.0,
+        "io_some_total_us_delta": 101293.0,
+        "memory_full_total_us_delta": 1709.0,
+        "memory_some_total_us_delta": 1709.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 1,
+      "rtt_p99_ms": 136.813,
+      "run_index": 9,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6071,
+        "malformed": 0,
+        "received_total": 6071,
+        "valid": 6071
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6071,
+        "forwarded_server": 6071,
+        "in_client": 6071,
+        "in_server": 6071
+      },
+      "tag": "M2-r1",
+      "tier": "M2",
+      "vm_delta": {
+        "pgscan_kswapd": 4335,
+        "pgsteal_kswapd": 4335,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6077,
+      "L": 0.5256,
+      "L_iso": 0.5256000000000001,
+      "arm": "MEM",
+      "echoed": 4744,
+      "exporter": {
+        "L": 0.5256,
+        "echoed": 4744.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2403,
+      "flap_share_s2c": 0.028467994076024353,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        4.21,
+        2.67,
+        1.79
+      ],
+      "loss_rate": 0.5256,
+      "mem_samples_median_kb": 785816,
+      "mem_samples_min_kb": 695292,
+      "mem_samples_n": 34,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "memhog 1000 MiB (1.0xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2403,
+        "c2s:drop_loss": 1520,
+        "c2s:forward": 6077,
+        "s2c:drop_flap": 173,
+        "s2c:drop_loss": 1160,
+        "s2c:forward": 4744
+      },
+      "proxy_summary": {
+        "delayed": 10821,
+        "dropped_flap": 2576,
+        "dropped_loss": 2680,
+        "forwarded": 10821,
+        "in_client": 10000,
+        "in_server": 6077
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 201307.0,
+        "io_some_total_us_delta": 668163.0,
+        "memory_full_total_us_delta": 31744.0,
+        "memory_some_total_us_delta": 39340.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 2,
+      "rtt_p99_ms": 138.569,
+      "run_index": 10,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6077,
+        "malformed": 0,
+        "received_total": 6077,
+        "valid": 6077
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6077,
+        "forwarded_server": 6077,
+        "in_client": 6077,
+        "in_server": 6077
+      },
+      "tag": "M2-r2",
+      "tier": "M2",
+      "vm_delta": {
+        "pgscan_kswapd": 58307,
+        "pgsteal_kswapd": 52504,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6101,
+      "L": 0.5271,
+      "L_iso": 0.5271,
+      "arm": "MEM",
+      "echoed": 4729,
+      "exporter": {
+        "L": 0.5271,
+        "echoed": 4729.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2403,
+      "flap_share_s2c": 0.0306507129978692,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        3.81,
+        2.63,
+        1.79
+      ],
+      "loss_rate": 0.5271,
+      "mem_samples_median_kb": 929724,
+      "mem_samples_min_kb": 396988,
+      "mem_samples_n": 34,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "memhog 1000 MiB (1.0xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2403,
+        "c2s:drop_loss": 1496,
+        "c2s:forward": 6101,
+        "s2c:drop_flap": 187,
+        "s2c:drop_loss": 1185,
+        "s2c:forward": 4729
+      },
+      "proxy_summary": {
+        "delayed": 10830,
+        "dropped_flap": 2590,
+        "dropped_loss": 2681,
+        "forwarded": 10830,
+        "in_client": 10000,
+        "in_server": 6101
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 548751.0,
+        "io_some_total_us_delta": 1105263.0,
+        "memory_full_total_us_delta": 116437.0,
+        "memory_some_total_us_delta": 122147.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 3,
+      "rtt_p99_ms": 143.146,
+      "run_index": 11,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6101,
+        "malformed": 0,
+        "received_total": 6101,
+        "valid": 6101
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6101,
+        "forwarded_server": 6101,
+        "in_client": 6101,
+        "in_server": 6101
+      },
+      "tag": "M2-r3",
+      "tier": "M2",
+      "vm_delta": {
+        "pgscan_kswapd": 74311,
+        "pgsteal_kswapd": 63143,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6086,
+      "L": 0.5245,
+      "L_iso": 0.5245,
+      "arm": "MEM",
+      "echoed": 4755,
+      "exporter": {
+        "L": 0.5245,
+        "echoed": 4755.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2379,
+      "flap_share_s2c": 0.03006901084456129,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        3.6,
+        2.62,
+        1.8
+      ],
+      "loss_rate": 0.5245,
+      "mem_samples_median_kb": 863960,
+      "mem_samples_min_kb": 829820,
+      "mem_samples_n": 34,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "memhog 1000 MiB (1.0xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2379,
+        "c2s:drop_loss": 1535,
+        "c2s:forward": 6086,
+        "s2c:drop_flap": 183,
+        "s2c:drop_loss": 1148,
+        "s2c:forward": 4755
+      },
+      "proxy_summary": {
+        "delayed": 10841,
+        "dropped_flap": 2562,
+        "dropped_loss": 2683,
+        "forwarded": 10841,
+        "in_client": 10000,
+        "in_server": 6086
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 191572.0,
+        "io_some_total_us_delta": 348883.0,
+        "memory_full_total_us_delta": 8084.0,
+        "memory_some_total_us_delta": 8446.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 4,
+      "rtt_p99_ms": 158.351,
+      "run_index": 12,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6086,
+        "malformed": 0,
+        "received_total": 6086,
+        "valid": 6086
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6086,
+        "forwarded_server": 6086,
+        "in_client": 6086,
+        "in_server": 6086
+      },
+      "tag": "M2-r4",
+      "tier": "M2",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6132,
+      "L": 0.5273,
+      "L_iso": 0.5273,
+      "arm": "MEM",
+      "echoed": 4727,
+      "exporter": {
+        "L": 0.5273,
+        "echoed": 4727.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.029517286366601433,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        3.2,
+        2.57,
+        1.79
+      ],
+      "loss_rate": 0.5273,
+      "mem_samples_median_kb": 858520,
+      "mem_samples_min_kb": 843776,
+      "mem_samples_n": 34,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "memhog 1000 MiB (1.6xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1468,
+        "c2s:forward": 6132,
+        "s2c:drop_flap": 181,
+        "s2c:drop_loss": 1224,
+        "s2c:forward": 4727
+      },
+      "proxy_summary": {
+        "delayed": 10859,
+        "dropped_flap": 2581,
+        "dropped_loss": 2692,
+        "forwarded": 10859,
+        "in_client": 10000,
+        "in_server": 6132
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 337220.0,
+        "io_some_total_us_delta": 391676.0,
+        "memory_full_total_us_delta": 6132.0,
+        "memory_some_total_us_delta": 6993.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 1,
+      "rtt_p99_ms": 153.352,
+      "run_index": 13,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6132,
+        "malformed": 0,
+        "received_total": 6132,
+        "valid": 6132
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6132,
+        "forwarded_server": 6132,
+        "in_client": 6132,
+        "in_server": 6132
+      },
+      "tag": "M3-r1",
+      "tier": "M3",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6207,
+      "L": 0.5157,
+      "L_iso": 0.51346192485433,
+      "arm": "MEM",
+      "echoed": 4843,
+      "exporter": {
+        "L": 0.5157,
+        "echoed": 4843.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2185051235684147,
+      "flap_share_s2c": 0.03173835991622362,
+      "gap": 0.0046000000000000485,
+      "gap_packets": 46,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 46,
+      "iohogs": 0,
+      "loadavg_before": [
+        2.86,
+        2.52,
+        1.78
+      ],
+      "loss_rate": 0.5157,
+      "mem_samples_median_kb": 809396,
+      "mem_samples_min_kb": 629548,
+      "mem_samples_n": 33,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "memhog 1000 MiB (1.6xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2175,
+        "c2s:drop_loss": 1572,
+        "c2s:forward": 6207,
+        "s2c:drop_flap": 197,
+        "s2c:drop_loss": 1167,
+        "s2c:forward": 4843
+      },
+      "proxy_summary": {
+        "delayed": 11050,
+        "dropped_flap": 2372,
+        "dropped_loss": 2739,
+        "forwarded": 11050,
+        "in_client": 9954,
+        "in_server": 6207
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 339217.0,
+        "io_some_total_us_delta": 917376.0,
+        "memory_full_total_us_delta": 65052.0,
+        "memory_some_total_us_delta": 84436.0
+      },
+      "rcvbuf_errors_delta": 46,
+      "rep": 2,
+      "rtt_p99_ms": 532.715,
+      "run_index": 14,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6207,
+        "malformed": 0,
+        "received_total": 6207,
+        "valid": 6207
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6207,
+        "forwarded_server": 6207,
+        "in_client": 6207,
+        "in_server": 6207
+      },
+      "tag": "M3-r2",
+      "tier": "M3",
+      "vm_delta": {
+        "pgscan_kswapd": 73213,
+        "pgsteal_kswapd": 64803,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6113,
+      "L": 0.5285,
+      "L_iso": 0.5285,
+      "arm": "MEM",
+      "echoed": 4715,
+      "exporter": {
+        "L": 0.5285,
+        "echoed": 4715.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.03353508915426141,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        2.71,
+        2.49,
+        1.78
+      ],
+      "loss_rate": 0.5285,
+      "mem_samples_median_kb": 904828,
+      "mem_samples_min_kb": 799156,
+      "mem_samples_n": 34,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "memhog 1000 MiB (1.6xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1487,
+        "c2s:forward": 6113,
+        "s2c:drop_flap": 205,
+        "s2c:drop_loss": 1193,
+        "s2c:forward": 4715
+      },
+      "proxy_summary": {
+        "delayed": 10828,
+        "dropped_flap": 2605,
+        "dropped_loss": 2680,
+        "forwarded": 10828,
+        "in_client": 10000,
+        "in_server": 6113
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 45149.0,
+        "io_some_total_us_delta": 74399.0,
+        "memory_full_total_us_delta": 4004.0,
+        "memory_some_total_us_delta": 4689.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 3,
+      "rtt_p99_ms": 142.528,
+      "run_index": 15,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6113,
+        "malformed": 0,
+        "received_total": 6113,
+        "valid": 6113
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6113,
+        "forwarded_server": 6113,
+        "in_client": 6113,
+        "in_server": 6113
+      },
+      "tag": "M3-r3",
+      "tier": "M3",
+      "vm_delta": {
+        "pgscan_kswapd": 3087,
+        "pgsteal_kswapd": 2856,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6051,
+      "L": 0.5279,
+      "L_iso": 0.5279,
+      "arm": "MEM",
+      "echoed": 4721,
+      "exporter": {
+        "L": 0.5279,
+        "echoed": 4721.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.034870269376962484,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "loadavg_before": [
+        2.7,
+        2.49,
+        1.79
+      ],
+      "loss_rate": 0.5279,
+      "mem_samples_median_kb": 921316,
+      "mem_samples_min_kb": 862948,
+      "mem_samples_n": 34,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "memhog 1000 MiB (1.6xMA0)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1549,
+        "c2s:forward": 6051,
+        "s2c:drop_flap": 211,
+        "s2c:drop_loss": 1119,
+        "s2c:forward": 4721
+      },
+      "proxy_summary": {
+        "delayed": 10772,
+        "dropped_flap": 2611,
+        "dropped_loss": 2668,
+        "forwarded": 10772,
+        "in_client": 10000,
+        "in_server": 6051
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 55523.0,
+        "io_some_total_us_delta": 72921.0,
+        "memory_full_total_us_delta": 99.0,
+        "memory_some_total_us_delta": 103.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 4,
+      "rtt_p99_ms": 154.054,
+      "run_index": 16,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6051,
+        "malformed": 0,
+        "received_total": 6051,
+        "valid": 6051
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6051,
+        "forwarded_server": 6051,
+        "in_client": 6051,
+        "in_server": 6051
+      },
+      "tag": "M3-r4",
+      "tier": "M3",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6108,
+      "L": 0.5265,
+      "L_iso": 0.5265,
+      "arm": "IO",
+      "echoed": 4735,
+      "exporter": {
+        "L": 0.5265,
+        "echoed": 4735.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2402,
+      "flap_share_s2c": 0.029305828421741977,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": null,
+      "iohogs": 0,
+      "loadavg_before": [
+        2.59,
+        2.48,
+        1.79
+      ],
+      "loss_rate": 0.5265,
+      "mem_samples_median_kb": 1856436,
+      "mem_samples_min_kb": 1823820,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "0 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2402,
+        "c2s:drop_loss": 1490,
+        "c2s:forward": 6108,
+        "s2c:drop_flap": 179,
+        "s2c:drop_loss": 1194,
+        "s2c:forward": 4735
+      },
+      "proxy_summary": {
+        "delayed": 10843,
+        "dropped_flap": 2581,
+        "dropped_loss": 2684,
+        "forwarded": 10843,
+        "in_client": 10000,
+        "in_server": 6108
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 411653.0,
+        "io_some_total_us_delta": 463809.0,
+        "memory_full_total_us_delta": 789.0,
+        "memory_some_total_us_delta": 865.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 1,
+      "rtt_p99_ms": 138.026,
+      "run_index": 17,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6108,
+        "malformed": 0,
+        "received_total": 6108,
+        "valid": 6108
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6108,
+        "forwarded_server": 6108,
+        "in_client": 6108,
+        "in_server": 6108
+      },
+      "tag": "I0-r1",
+      "tier": "I0",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6071,
+      "L": 0.5256,
+      "L_iso": 0.5256000000000001,
+      "arm": "IO",
+      "echoed": 4744,
+      "exporter": {
+        "L": 0.5256,
+        "echoed": 4744.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.02915499917641245,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": null,
+      "iohogs": 0,
+      "loadavg_before": [
+        2.46,
+        2.45,
+        1.78
+      ],
+      "loss_rate": 0.5256,
+      "mem_samples_median_kb": 1819916,
+      "mem_samples_min_kb": 1514092,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "0 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1529,
+        "c2s:forward": 6071,
+        "s2c:drop_flap": 177,
+        "s2c:drop_loss": 1150,
+        "s2c:forward": 4744
+      },
+      "proxy_summary": {
+        "delayed": 10815,
+        "dropped_flap": 2577,
+        "dropped_loss": 2679,
+        "forwarded": 10815,
+        "in_client": 10000,
+        "in_server": 6071
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 168889.0,
+        "io_some_total_us_delta": 238112.0,
+        "memory_full_total_us_delta": 6.0,
+        "memory_some_total_us_delta": 6.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 2,
+      "rtt_p99_ms": 136.5,
+      "run_index": 18,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6071,
+        "malformed": 0,
+        "received_total": 6071,
+        "valid": 6071
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6071,
+        "forwarded_server": 6071,
+        "in_client": 6071,
+        "in_server": 6071
+      },
+      "tag": "I0-r2",
+      "tier": "I0",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6098,
+      "L": 0.5265,
+      "L_iso": 0.5265,
+      "arm": "IO",
+      "echoed": 4735,
+      "exporter": {
+        "L": 0.5265,
+        "echoed": 4735.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.029845851098720892,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": null,
+      "iohogs": 0,
+      "loadavg_before": [
+        2.56,
+        2.47,
+        1.8
+      ],
+      "loss_rate": 0.5265,
+      "mem_samples_median_kb": 1718132,
+      "mem_samples_min_kb": 1669552,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "0 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1502,
+        "c2s:forward": 6098,
+        "s2c:drop_flap": 182,
+        "s2c:drop_loss": 1181,
+        "s2c:forward": 4735
+      },
+      "proxy_summary": {
+        "delayed": 10833,
+        "dropped_flap": 2582,
+        "dropped_loss": 2683,
+        "forwarded": 10833,
+        "in_client": 10000,
+        "in_server": 6098
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 46509.0,
+        "io_some_total_us_delta": 68412.0,
+        "memory_full_total_us_delta": 0.0,
+        "memory_some_total_us_delta": 0.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 3,
+      "rtt_p99_ms": 136.216,
+      "run_index": 19,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6098,
+        "malformed": 0,
+        "received_total": 6098,
+        "valid": 6098
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6098,
+        "forwarded_server": 6098,
+        "in_client": 6098,
+        "in_server": 6098
+      },
+      "tag": "I0-r3",
+      "tier": "I0",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6084,
+      "L": 0.5268,
+      "L_iso": 0.5267999999999999,
+      "arm": "IO",
+      "echoed": 4732,
+      "exporter": {
+        "L": 0.5268,
+        "echoed": 4732.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2404,
+      "flap_share_s2c": 0.030407626561472716,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": null,
+      "iohogs": 0,
+      "loadavg_before": [
+        2.84,
+        2.54,
+        1.83
+      ],
+      "loss_rate": 0.5268,
+      "mem_samples_median_kb": 1691654,
+      "mem_samples_min_kb": 1647212,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "0 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2404,
+        "c2s:drop_loss": 1512,
+        "c2s:forward": 6084,
+        "s2c:drop_flap": 185,
+        "s2c:drop_loss": 1167,
+        "s2c:forward": 4732
+      },
+      "proxy_summary": {
+        "delayed": 10816,
+        "dropped_flap": 2589,
+        "dropped_loss": 2679,
+        "forwarded": 10816,
+        "in_client": 10000,
+        "in_server": 6084
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 59998.0,
+        "io_some_total_us_delta": 71271.0,
+        "memory_full_total_us_delta": 22.0,
+        "memory_some_total_us_delta": 22.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 4,
+      "rtt_p99_ms": 136.233,
+      "run_index": 20,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6084,
+        "malformed": 0,
+        "received_total": 6084,
+        "valid": 6084
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6084,
+        "forwarded_server": 6084,
+        "in_client": 6084,
+        "in_server": 6084
+      },
+      "tag": "I0-r4",
+      "tier": "I0",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6094,
+      "L": 0.5266,
+      "L_iso": 0.5266,
+      "arm": "IO",
+      "echoed": 4734,
+      "exporter": {
+        "L": 0.5266,
+        "echoed": 4734.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.03052182474565146,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": 1459,
+      "iohogs": 1,
+      "loadavg_before": [
+        2.63,
+        2.5,
+        1.82
+      ],
+      "loss_rate": 0.5266,
+      "mem_samples_median_kb": 1683734,
+      "mem_samples_min_kb": 1581608,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "1 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1506,
+        "c2s:forward": 6094,
+        "s2c:drop_flap": 186,
+        "s2c:drop_loss": 1174,
+        "s2c:forward": 4734
+      },
+      "proxy_summary": {
+        "delayed": 10828,
+        "dropped_flap": 2586,
+        "dropped_loss": 2680,
+        "forwarded": 10828,
+        "in_client": 10000,
+        "in_server": 6094
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 2710246.0,
+        "io_some_total_us_delta": 3070994.0,
+        "memory_full_total_us_delta": 202.0,
+        "memory_some_total_us_delta": 240.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 1,
+      "rtt_p99_ms": 136.132,
+      "run_index": 21,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6094,
+        "malformed": 0,
+        "received_total": 6094,
+        "valid": 6094
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6094,
+        "forwarded_server": 6094,
+        "in_client": 6094,
+        "in_server": 6094
+      },
+      "tag": "I1-r1",
+      "tier": "I1",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6144,
+      "L": 0.5268,
+      "L_iso": 0.5267999999999999,
+      "arm": "IO",
+      "echoed": 4732,
+      "exporter": {
+        "L": 0.5268,
+        "echoed": 4732.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2386,
+      "flap_share_s2c": 0.030924479166666668,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": 1459,
+      "iohogs": 1,
+      "loadavg_before": [
+        2.77,
+        2.53,
+        1.84
+      ],
+      "loss_rate": 0.5268,
+      "mem_samples_median_kb": 1518550,
+      "mem_samples_min_kb": 1247292,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "1 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2386,
+        "c2s:drop_loss": 1470,
+        "c2s:forward": 6144,
+        "s2c:drop_flap": 190,
+        "s2c:drop_loss": 1222,
+        "s2c:forward": 4732
+      },
+      "proxy_summary": {
+        "delayed": 10876,
+        "dropped_flap": 2576,
+        "dropped_loss": 2692,
+        "forwarded": 10876,
+        "in_client": 10000,
+        "in_server": 6144
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 2867142.0,
+        "io_some_total_us_delta": 3568566.0,
+        "memory_full_total_us_delta": 4.0,
+        "memory_some_total_us_delta": 4.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 2,
+      "rtt_p99_ms": 148.001,
+      "run_index": 22,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6144,
+        "malformed": 0,
+        "received_total": 6144,
+        "valid": 6144
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6144,
+        "forwarded_server": 6144,
+        "in_client": 6144,
+        "in_server": 6144
+      },
+      "tag": "I1-r2",
+      "tier": "I1",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6108,
+      "L": 0.5273,
+      "L_iso": 0.5273,
+      "arm": "IO",
+      "echoed": 4727,
+      "exporter": {
+        "L": 0.5273,
+        "echoed": 4727.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.031106745252128355,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": 1459,
+      "iohogs": 1,
+      "loadavg_before": [
+        2.95,
+        2.58,
+        1.86
+      ],
+      "loss_rate": 0.5273,
+      "mem_samples_median_kb": 1564582,
+      "mem_samples_min_kb": 1547320,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "1 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1492,
+        "c2s:forward": 6108,
+        "s2c:drop_flap": 190,
+        "s2c:drop_loss": 1191,
+        "s2c:forward": 4727
+      },
+      "proxy_summary": {
+        "delayed": 10835,
+        "dropped_flap": 2590,
+        "dropped_loss": 2683,
+        "forwarded": 10835,
+        "in_client": 10000,
+        "in_server": 6108
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 1889441.0,
+        "io_some_total_us_delta": 2045351.0,
+        "memory_full_total_us_delta": 0.0,
+        "memory_some_total_us_delta": 0.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 3,
+      "rtt_p99_ms": 136.062,
+      "run_index": 23,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6108,
+        "malformed": 0,
+        "received_total": 6108,
+        "valid": 6108
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6108,
+        "forwarded_server": 6108,
+        "in_client": 6108,
+        "in_server": 6108
+      },
+      "tag": "I1-r3",
+      "tier": "I1",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6089,
+      "L": 0.5268,
+      "L_iso": 0.5267999999999999,
+      "arm": "IO",
+      "echoed": 4732,
+      "exporter": {
+        "L": 0.5268,
+        "echoed": 4732.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2401,
+      "flap_share_s2c": 0.030711118410247987,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": 1459,
+      "iohogs": 1,
+      "loadavg_before": [
+        2.87,
+        2.57,
+        1.86
+      ],
+      "loss_rate": 0.5268,
+      "mem_samples_median_kb": 1519260,
+      "mem_samples_min_kb": 1470032,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "1 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2401,
+        "c2s:drop_loss": 1510,
+        "c2s:forward": 6089,
+        "s2c:drop_flap": 187,
+        "s2c:drop_loss": 1170,
+        "s2c:forward": 4732
+      },
+      "proxy_summary": {
+        "delayed": 10821,
+        "dropped_flap": 2588,
+        "dropped_loss": 2680,
+        "forwarded": 10821,
+        "in_client": 10000,
+        "in_server": 6089
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 2003426.0,
+        "io_some_total_us_delta": 2204407.0,
+        "memory_full_total_us_delta": 0.0,
+        "memory_some_total_us_delta": 0.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 4,
+      "rtt_p99_ms": 137.977,
+      "run_index": 24,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6089,
+        "malformed": 0,
+        "received_total": 6089,
+        "valid": 6089
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6089,
+        "forwarded_server": 6089,
+        "in_client": 6089,
+        "in_server": 6089
+      },
+      "tag": "I1-r4",
+      "tier": "I1",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6079,
+      "L": 0.5261,
+      "L_iso": 0.5261,
+      "arm": "IO",
+      "echoed": 4739,
+      "exporter": {
+        "L": 0.5261,
+        "echoed": 4739.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.029939134726106268,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": 2066,
+      "iohogs": 2,
+      "loadavg_before": [
+        2.81,
+        2.57,
+        1.87
+      ],
+      "loss_rate": 0.5261,
+      "mem_samples_median_kb": 1515060,
+      "mem_samples_min_kb": 1508520,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "2 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1521,
+        "c2s:forward": 6079,
+        "s2c:drop_flap": 182,
+        "s2c:drop_loss": 1158,
+        "s2c:forward": 4739
+      },
+      "proxy_summary": {
+        "delayed": 10818,
+        "dropped_flap": 2582,
+        "dropped_loss": 2679,
+        "forwarded": 10818,
+        "in_client": 10000,
+        "in_server": 6079
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 2320085.0,
+        "io_some_total_us_delta": 2786286.0,
+        "memory_full_total_us_delta": 0.0,
+        "memory_some_total_us_delta": 0.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 1,
+      "rtt_p99_ms": 136.34,
+      "run_index": 25,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6079,
+        "malformed": 0,
+        "received_total": 6079,
+        "valid": 6079
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6079,
+        "forwarded_server": 6079,
+        "in_client": 6079,
+        "in_server": 6079
+      },
+      "tag": "I2-r1",
+      "tier": "I2",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6111,
+      "L": 0.5273,
+      "L_iso": 0.5273,
+      "arm": "IO",
+      "echoed": 4727,
+      "exporter": {
+        "L": 0.5273,
+        "echoed": 4727.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.031091474390443463,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": 2066,
+      "iohogs": 2,
+      "loadavg_before": [
+        2.84,
+        2.58,
+        1.88
+      ],
+      "loss_rate": 0.5273,
+      "mem_samples_median_kb": 1498522,
+      "mem_samples_min_kb": 1234012,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "2 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1489,
+        "c2s:forward": 6111,
+        "s2c:drop_flap": 190,
+        "s2c:drop_loss": 1194,
+        "s2c:forward": 4727
+      },
+      "proxy_summary": {
+        "delayed": 10838,
+        "dropped_flap": 2590,
+        "dropped_loss": 2683,
+        "forwarded": 10838,
+        "in_client": 10000,
+        "in_server": 6111
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 2037752.0,
+        "io_some_total_us_delta": 2884569.0,
+        "memory_full_total_us_delta": 9099.0,
+        "memory_some_total_us_delta": 11133.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 2,
+      "rtt_p99_ms": 176.482,
+      "run_index": 26,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6111,
+        "malformed": 0,
+        "received_total": 6111,
+        "valid": 6111
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6111,
+        "forwarded_server": 6111,
+        "in_client": 6111,
+        "in_server": 6111
+      },
+      "tag": "I2-r2",
+      "tier": "I2",
+      "vm_delta": {
+        "pgscan_kswapd": 5810,
+        "pgsteal_kswapd": 5410,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6082,
+      "L": 0.5265,
+      "L_iso": 0.5265,
+      "arm": "IO",
+      "echoed": 4735,
+      "exporter": {
+        "L": 0.5265,
+        "echoed": 4735.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.030582045379809273,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": 2066,
+      "iohogs": 2,
+      "loadavg_before": [
+        3.02,
+        2.63,
+        1.9
+      ],
+      "loss_rate": 0.5265,
+      "mem_samples_median_kb": 1496172,
+      "mem_samples_min_kb": 1468884,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "2 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1518,
+        "c2s:forward": 6082,
+        "s2c:drop_flap": 186,
+        "s2c:drop_loss": 1161,
+        "s2c:forward": 4735
+      },
+      "proxy_summary": {
+        "delayed": 10817,
+        "dropped_flap": 2586,
+        "dropped_loss": 2679,
+        "forwarded": 10817,
+        "in_client": 10000,
+        "in_server": 6082
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 2559193.0,
+        "io_some_total_us_delta": 2859289.0,
+        "memory_full_total_us_delta": 140.0,
+        "memory_some_total_us_delta": 150.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 3,
+      "rtt_p99_ms": 136.241,
+      "run_index": 27,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6082,
+        "malformed": 0,
+        "received_total": 6082,
+        "valid": 6082
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6082,
+        "forwarded_server": 6082,
+        "in_client": 6082,
+        "in_server": 6082
+      },
+      "tag": "I2-r3",
+      "tier": "I2",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6099,
+      "L": 0.5266,
+      "L_iso": 0.5266,
+      "arm": "IO",
+      "echoed": 4734,
+      "exporter": {
+        "L": 0.5266,
+        "echoed": 4734.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.030332841449417936,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": 2066,
+      "iohogs": 2,
+      "loadavg_before": [
+        2.94,
+        2.62,
+        1.91
+      ],
+      "loss_rate": 0.5266,
+      "mem_samples_median_kb": 1500978,
+      "mem_samples_min_kb": 1422548,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "2 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1501,
+        "c2s:forward": 6099,
+        "s2c:drop_flap": 185,
+        "s2c:drop_loss": 1180,
+        "s2c:forward": 4734
+      },
+      "proxy_summary": {
+        "delayed": 10833,
+        "dropped_flap": 2585,
+        "dropped_loss": 2681,
+        "forwarded": 10833,
+        "in_client": 10000,
+        "in_server": 6099
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 2427814.0,
+        "io_some_total_us_delta": 2989176.0,
+        "memory_full_total_us_delta": 4388.0,
+        "memory_some_total_us_delta": 4809.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 4,
+      "rtt_p99_ms": 138.68,
+      "run_index": 28,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6099,
+        "malformed": 0,
+        "received_total": 6099,
+        "valid": 6099
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6099,
+        "forwarded_server": 6099,
+        "in_client": 6099,
+        "in_server": 6099
+      },
+      "tag": "I2-r4",
+      "tier": "I2",
+      "vm_delta": {
+        "pgscan_kswapd": 5862,
+        "pgsteal_kswapd": 5315,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6131,
+      "L": 0.5279,
+      "L_iso": 0.5279,
+      "arm": "IO",
+      "echoed": 4721,
+      "exporter": {
+        "L": 0.5279,
+        "echoed": 4721.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24,
+      "flap_share_s2c": 0.030826945033436633,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": 3901,
+      "iohogs": 4,
+      "loadavg_before": [
+        2.95,
+        2.63,
+        1.92
+      ],
+      "loss_rate": 0.5279,
+      "mem_samples_median_kb": 1462230,
+      "mem_samples_min_kb": 1214020,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "4 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2400,
+        "c2s:drop_loss": 1469,
+        "c2s:forward": 6131,
+        "s2c:drop_flap": 189,
+        "s2c:drop_loss": 1221,
+        "s2c:forward": 4721
+      },
+      "proxy_summary": {
+        "delayed": 10852,
+        "dropped_flap": 2589,
+        "dropped_loss": 2690,
+        "forwarded": 10852,
+        "in_client": 10000,
+        "in_server": 6131
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 2572603.0,
+        "io_some_total_us_delta": 3172322.0,
+        "memory_full_total_us_delta": 55271.0,
+        "memory_some_total_us_delta": 63824.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 1,
+      "rtt_p99_ms": 137.407,
+      "run_index": 29,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6131,
+        "malformed": 0,
+        "received_total": 6131,
+        "valid": 6131
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6131,
+        "forwarded_server": 6131,
+        "in_client": 6131,
+        "in_server": 6131
+      },
+      "tag": "I3-r1",
+      "tier": "I3",
+      "vm_delta": {
+        "pgscan_kswapd": 95665,
+        "pgsteal_kswapd": 90338,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6054,
+      "L": 0.5261,
+      "L_iso": 0.5261,
+      "arm": "IO",
+      "echoed": 4739,
+      "exporter": {
+        "L": 0.5261,
+        "echoed": 4739.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2399,
+      "flap_share_s2c": 0.03138420878757846,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": 3901,
+      "iohogs": 4,
+      "loadavg_before": [
+        3.27,
+        2.71,
+        1.95
+      ],
+      "loss_rate": 0.5261,
+      "mem_samples_median_kb": 1425166,
+      "mem_samples_min_kb": 1280636,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "4 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2399,
+        "c2s:drop_loss": 1547,
+        "c2s:forward": 6054,
+        "s2c:drop_flap": 190,
+        "s2c:drop_loss": 1125,
+        "s2c:forward": 4739
+      },
+      "proxy_summary": {
+        "delayed": 10793,
+        "dropped_flap": 2589,
+        "dropped_loss": 2672,
+        "forwarded": 10793,
+        "in_client": 10000,
+        "in_server": 6054
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 2393070.0,
+        "io_some_total_us_delta": 3210492.0,
+        "memory_full_total_us_delta": 12395.0,
+        "memory_some_total_us_delta": 23265.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 2,
+      "rtt_p99_ms": 195.18,
+      "run_index": 30,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6054,
+        "malformed": 0,
+        "received_total": 6054,
+        "valid": 6054
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6054,
+        "forwarded_server": 6054,
+        "in_client": 6054,
+        "in_server": 6054
+      },
+      "tag": "I3-r2",
+      "tier": "I3",
+      "vm_delta": {
+        "pgscan_kswapd": 16702,
+        "pgsteal_kswapd": 14335,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6114,
+      "L": 0.5278,
+      "L_iso": 0.5278,
+      "arm": "IO",
+      "echoed": 4722,
+      "exporter": {
+        "L": 0.5278,
+        "echoed": 4722.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2397,
+      "flap_share_s2c": 0.0323846908734053,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": 3901,
+      "iohogs": 4,
+      "loadavg_before": [
+        3.72,
+        2.82,
+        1.99
+      ],
+      "loss_rate": 0.5278,
+      "mem_samples_median_kb": 1359326,
+      "mem_samples_min_kb": 1308812,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "4 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2397,
+        "c2s:drop_loss": 1489,
+        "c2s:forward": 6114,
+        "s2c:drop_flap": 198,
+        "s2c:drop_loss": 1194,
+        "s2c:forward": 4722
+      },
+      "proxy_summary": {
+        "delayed": 10836,
+        "dropped_flap": 2595,
+        "dropped_loss": 2683,
+        "forwarded": 10836,
+        "in_client": 10000,
+        "in_server": 6114
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 2306174.0,
+        "io_some_total_us_delta": 3209977.0,
+        "memory_full_total_us_delta": 13782.0,
+        "memory_some_total_us_delta": 14020.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 3,
+      "rtt_p99_ms": 174.455,
+      "run_index": 31,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6114,
+        "malformed": 0,
+        "received_total": 6114,
+        "valid": 6114
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6114,
+        "forwarded_server": 6114,
+        "in_client": 6114,
+        "in_server": 6114
+      },
+      "tag": "I3-r3",
+      "tier": "I3",
+      "vm_delta": {
+        "pgscan_kswapd": 32074,
+        "pgsteal_kswapd": 30117,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6098,
+      "L": 0.5265,
+      "L_iso": 0.5265,
+      "arm": "IO",
+      "echoed": 4735,
+      "exporter": {
+        "L": 0.5265,
+        "echoed": 4735.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2402,
+      "flap_share_s2c": 0.029681862905870778,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohog_ops_tier_total": 3901,
+      "iohogs": 4,
+      "loadavg_before": [
+        4.07,
+        2.92,
+        2.04
+      ],
+      "loss_rate": 0.5265,
+      "mem_samples_median_kb": 1379238,
+      "mem_samples_min_kb": 1341688,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "4 sync writers",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2402,
+        "c2s:drop_loss": 1500,
+        "c2s:forward": 6098,
+        "s2c:drop_flap": 181,
+        "s2c:drop_loss": 1182,
+        "s2c:forward": 4735
+      },
+      "proxy_summary": {
+        "delayed": 10833,
+        "dropped_flap": 2583,
+        "dropped_loss": 2682,
+        "forwarded": 10833,
+        "in_client": 10000,
+        "in_server": 6098
+      },
+      "psi_delta": {
+        "io_full_total_us_delta": 2633824.0,
+        "io_some_total_us_delta": 3271933.0,
+        "memory_full_total_us_delta": 4771.0,
+        "memory_some_total_us_delta": 6411.0
+      },
+      "rcvbuf_errors_delta": 0,
+      "rep": 4,
+      "rtt_p99_ms": 136.74,
+      "run_index": 32,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6098,
+        "malformed": 0,
+        "received_total": 6098,
+        "valid": 6098
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6098,
+        "forwarded_server": 6098,
+        "in_client": 6098,
+        "in_server": 6098
+      },
+      "tag": "I3-r4",
+      "tier": "I3",
+      "vm_delta": {
+        "pgscan_kswapd": 11630,
+        "pgsteal_kswapd": 11138,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    }
+  ],
+  "threshold": 0.75,
+  "tiers": [
+    {
+      "arm": "MEM",
+      "iohogs": 0,
+      "memhog_mb": 0,
+      "spec": "memhog 0 MiB (0.0xMA0)",
+      "tier": "M0"
+    },
+    {
+      "arm": "MEM",
+      "iohogs": 0,
+      "memhog_mb": 599,
+      "spec": "memhog 599 MiB (0.5xMA0)",
+      "tier": "M1"
+    },
+    {
+      "arm": "MEM",
+      "iohogs": 0,
+      "memhog_mb": 1000,
+      "spec": "memhog 1000 MiB (1.0xMA0)",
+      "tier": "M2"
+    },
+    {
+      "arm": "MEM",
+      "iohogs": 0,
+      "memhog_mb": 1000,
+      "spec": "memhog 1000 MiB (1.6xMA0)",
+      "tier": "M3"
+    },
+    {
+      "arm": "IO",
+      "iohogs": 0,
+      "memhog_mb": 0,
+      "spec": "0 sync writers",
+      "tier": "I0"
+    },
+    {
+      "arm": "IO",
+      "iohogs": 1,
+      "memhog_mb": 0,
+      "spec": "1 sync writers",
+      "tier": "I1"
+    },
+    {
+      "arm": "IO",
+      "iohogs": 2,
+      "memhog_mb": 0,
+      "spec": "2 sync writers",
+      "tier": "I2"
+    },
+    {
+      "arm": "IO",
+      "iohogs": 4,
+      "memhog_mb": 0,
+      "spec": "4 sync writers",
+      "tier": "I3"
+    }
+  ]
+}
