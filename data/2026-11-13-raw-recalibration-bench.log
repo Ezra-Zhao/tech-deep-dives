@@ -1,0 +1,11 @@
+[T1] scene 5111 done actual=34+20
+[T1] scene 5212 done actual=30+17
+[T1] scene 5313 done actual=37+21
+[T1] scene 5414 done actual=32+18
+[T1] cal_refs={"R1": {"ref": 4226.0, "cal_upper_median_at_cal_s": 1056.5, "n_cal_areas": 54, "cal_seeds": [5111]}, "R2": {"ref": 4174.0, "cal_upper_median_at_cal_s": 1043.5, "n_cal_areas": 101, "cal_seeds": [5111, 5212]}, "R4": {"ref": 4280.0, "cal_upper_median_at_cal_s": 1070.0, "n_cal_areas": 209, "cal_seeds": [5111, 5212, 5313, 5414]}}
+[T2] scene 6111 done actual=35+19
+[T2] scene 6212 done actual=31+18
+[T2] scene 6313 done actual=36+20
+[T2] scene 6414 done actual=33+19
+[T2] cal_refs={"R1": {"ref": 3608.0, "cal_upper_median_at_cal_s": 902.0, "n_cal_areas": 54, "cal_seeds": [6111]}, "R2": {"ref": 3766.0, "cal_upper_median_at_cal_s": 941.5, "n_cal_areas": 103, "cal_seeds": [6111, 6212]}, "R4": {"ref": 4152.0, "cal_upper_median_at_cal_s": 1038.0, "n_cal_areas": 211, "cal_seeds": [6111, 6212, 6313, 6414]}}
+DONE /home/hatch/workspace/your_files/顶刊技术文章/data/2026-11-13-raw-recalibration-bench.json 2.2
