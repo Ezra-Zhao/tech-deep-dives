@@ -1,0 +1,9 @@
+I found no factual errors in the article. The data presented is consistent, and the logical flow of the article is clear. The claims made are supported by the data, and there are no exaggerated statements that are not backed up by evidence. 
+
+However, I do have some minor suggestions for improvement:
+
+* Section 3.1: The table could be improved by adding more decimal places to the percentages to make the comparison easier.
+* Section 3.2: The sentence "这个点与其说是校正的失败，不如说是守卫线与 BAD 线之间 2 个点的缝隙在起作用" could be rephrased for better clarity.
+* Section 5: The limitations and unresolved issues are clearly stated, which is good practice.
+
+Overall, the article appears to be well-written and well-structured, with clear explanations and supporting data.

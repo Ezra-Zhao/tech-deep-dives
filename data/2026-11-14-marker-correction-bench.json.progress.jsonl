@@ -1,0 +1,15 @@
+{"set": "holdout4", "s": 1.0, "med": 1.025, "errmed": 0.025, "D_raw": 0.025, "D_corr": 0.025}
+{"set": "holdout4", "s": 0.8, "med": 0.8197, "errmed": 0.0246, "D_raw": 0.0257, "D_corr": 0.0253}
+{"set": "holdout4", "s": 0.65, "med": 0.6636, "errmed": 0.0209, "D_raw": 0.0257, "D_corr": 0.0231}
+{"set": "holdout4", "s": 0.5, "med": 0.5076, "errmed": 0.0152, "D_raw": 0.0246, "D_corr": 0.0181}
+{"set": "holdout4", "s": 0.4, "med": 0.4031, "errmed": 0.0077, "D_raw": 0.0234, "D_corr": 0.0103}
+{"set": "holdout4", "s": 0.35, "med": 0.3518, "errmed": 0.0051, "D_raw": 0.0251, "D_corr": 0.0069}
+{"set": "holdout4", "s": 0.3, "med": 0.3101, "errmed": 0.0337, "D_raw": 0.0616, "D_corr": 0.0382}
+{"set": "holdout4", "s": 0.28, "med": 0.2897, "errmed": 0.0346, "D_raw": 0.067, "D_corr": 0.0376}
+{"set": "holdout4", "s": 0.25, "med": 0.2593, "errmed": 0.0372, "D_raw": 0.0697, "D_corr": 0.038}
+{"set": "holdout4", "s": 0.22, "med": 0.2281, "errmed": 0.0368, "D_raw": 0.0816, "D_corr": 0.0401}
+{"set": "holdout4", "s": 0.18, "med": 0.1863, "errmed": 0.035, "D_raw": 0.092, "D_corr": 0.0402}
+{"set": "holdout4", "s": 0.15, "med": 0.1538, "errmed": 0.0253, "D_raw": 0.1057, "D_corr": 0.0385}
+{"set": "holdout4", "s": 0.12, "med": 0.1227, "errmed": 0.0225, "D_raw": 0.1247, "D_corr": 0.0337}
+{"set": "holdout4", "s": 0.1, "med": 0.1078, "errmed": 0.078, "D_raw": 0.2099, "D_corr": 0.078}
+{"set": "holdout4", "s": 0.07, "med": 0.0722, "errmed": 0.0314, "D_raw": 0.2279, "D_corr": -0.015}

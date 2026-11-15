@@ -1,0 +1,40 @@
+cal ref=4912.0 bias={1.0: 0.0, 0.8: -0.0004, 0.65: -0.0025, 0.5: -0.0064, 0.4: -0.0128, 0.35: -0.0177, 0.3: -0.0217, 0.28: -0.0275, 0.25: -0.0296, 0.22: -0.0382, 0.18: -0.0472, 0.15: -0.0593, 0.12: -0.0792, 0.1: -0.106, 0.07: -0.21}
+val ref=4912.0 raw={1.0: 0.0, 0.8: -0.001, 0.65: -0.0046, 0.5: -0.0092, 0.4: -0.0153, 0.35: -0.0194, 0.3: -0.0263, 0.28: -0.0304, 0.25: -0.0304, 0.22: -0.0414, 0.18: -0.0522, 0.15: -0.0727, 0.12: -0.0908, 0.1: -0.109, 0.07: -0.16}
+val corr={1.0: 0.0, 0.8: -0.0006, 0.65: -0.0022, 0.5: -0.0028, 0.4: -0.0025, 0.35: -0.0017, 0.3: -0.0043, 0.28: -0.0029, 0.25: -0.0008, 0.22: -0.0032, 0.18: -0.005, 0.15: -0.0127, 0.12: -0.0108, 0.1: 0.0, 0.07: 0.0471}
+[retro] done
+[holdout4] n=208 sanityF1=1.0
+[holdout4] s=1.0 med=1.025 errmed=0.025 Draw=0.025 Dcorr=0.025
+[holdout4] s=0.8 med=0.8197 errmed=0.0246 Draw=0.0257 Dcorr=0.0253
+[holdout4] s=0.65 med=0.6636 errmed=0.0209 Draw=0.0257 Dcorr=0.0231
+[holdout4] s=0.5 med=0.5076 errmed=0.0152 Draw=0.0246 Dcorr=0.0181
+[holdout4] s=0.4 med=0.4031 errmed=0.0077 Draw=0.0234 Dcorr=0.0103
+[holdout4] s=0.35 med=0.3518 errmed=0.0051 Draw=0.0251 Dcorr=0.0069
+[holdout4] s=0.3 med=0.3101 errmed=0.0337 Draw=0.0616 Dcorr=0.0382
+[holdout4] s=0.28 med=0.2897 errmed=0.0346 Draw=0.067 Dcorr=0.0376
+[holdout4] s=0.25 med=0.2593 errmed=0.0372 Draw=0.0697 Dcorr=0.038
+[holdout4] s=0.22 med=0.2281 errmed=0.0368 Draw=0.0816 Dcorr=0.0401
+[holdout4] s=0.18 med=0.1863 errmed=0.035 Draw=0.092 Dcorr=0.0402
+[holdout4] s=0.15 med=0.1538 errmed=0.0253 Draw=0.1057 Dcorr=0.0385
+[holdout4] s=0.12 med=0.1227 errmed=0.0225 Draw=0.1247 Dcorr=0.0337
+[holdout4] s=0.1 med=0.1078 errmed=0.078 Draw=0.2099 Dcorr=0.078
+[holdout4] s=0.07 med=0.0722 errmed=0.0314 Draw=0.2279 Dcorr=-0.015
+[holdout4] summary={'deployment_loss_vs_oracle': {'MED3': 0.0, 'MED3_GUARD_RAW': 0.0, 'MED3_GUARD_CORR': 0.0}, 'pooled_bad_med3': 0}
+[inj] g=0.85 s=1.0 med=0.8716 errmed=-0.1284 Draw=-0.1284 Dcorr=-0.1284
+[inj] g=0.85 s=0.5 med=0.4318 errmed=-0.1364 Draw=-0.1284 Dcorr=-0.134
+[inj] g=0.85 s=0.3 med=0.2611 errmed=-0.1297 Draw=-0.1061 Dcorr=-0.1259
+[inj] g=0.85 s=0.22 med=0.1912 errmed=-0.1309 Draw=-0.0934 Dcorr=-0.1281
+[inj] g=0.85 s=0.15 med=0.1312 errmed=-0.1253 Draw=-0.0568 Dcorr=-0.1141
+[inj] g=0.85 s=0.12 med=0.1047 errmed=-0.1275 Draw=-0.0403 Dcorr=-0.1179
+[inj] g=1.15 s=1.0 med=1.1942 errmed=0.1942 Draw=0.1942 Dcorr=0.1942
+[inj] g=1.15 s=0.5 med=0.5939 errmed=0.1878 Draw=0.1988 Dcorr=0.1911
+[inj] g=1.15 s=0.3 med=0.3516 errmed=0.172 Draw=0.2037 Dcorr=0.1771
+[inj] g=1.15 s=0.22 med=0.2634 errmed=0.1973 Draw=0.2489 Dcorr=0.2011
+[inj] g=1.15 s=0.15 med=0.1789 errmed=0.1927 Draw=0.2861 Dcorr=0.208
+[inj] g=1.15 s=0.12 med=0.1444 errmed=0.2033 Draw=0.3236 Dcorr=0.2165
+[inj] g=1.3 s=1.0 med=1.3387 errmed=0.3387 Draw=0.3387 Dcorr=0.3387
+[inj] g=1.3 s=0.5 med=0.6654 errmed=0.3308 Draw=0.3432 Dcorr=0.3345
+[inj] g=1.3 s=0.3 med=0.3951 errmed=0.317 Draw=0.3526 Dcorr=0.3227
+[inj] g=1.3 s=0.22 med=0.2952 errmed=0.3418 Draw=0.3997 Dcorr=0.3461
+[inj] g=1.3 s=0.15 med=0.2022 errmed=0.348 Draw=0.4536 Dcorr=0.3653
+[inj] g=1.3 s=0.12 med=0.1611 errmed=0.3425 Draw=0.4766 Dcorr=0.3572
+ALL DONE 11.7
