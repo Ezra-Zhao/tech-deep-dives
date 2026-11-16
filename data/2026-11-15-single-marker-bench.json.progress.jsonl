@@ -1,0 +1,16 @@
+{"arm": "B", "recal": {"s_ge_0.12": {"thr": 0.08, "healthy_flag_rate": 0.0451, "bad_catch_rate": 0.9944}, "bands": {"hi_ge_0.30": {"thr": 0.08, "healthy_flag_rate": 0.0481, "bad_catch_rate": 1.0}, "mid_0.18_0.28": {"thr": 0.08, "healthy_flag_rate": 0.0387, "bad_catch_rate": 0.9967}, "low_0.12_0.15": {"thr": 0.08, "healthy_flag_rate": 0.0469, "bad_catch_rate": 0.975}, "sub_lt_0.12": {"thr": 0.12, "healthy_flag_rate": 0.0338, "bad_catch_rate": 0.5611}}}}
+{"arm": "C", "s": 1.0, "pooled_med": 0.9863}
+{"arm": "C", "s": 0.8, "pooled_med": 0.7915}
+{"arm": "C", "s": 0.65, "pooled_med": 0.6421}
+{"arm": "C", "s": 0.5, "pooled_med": 0.4895}
+{"arm": "C", "s": 0.4, "pooled_med": 0.3913}
+{"arm": "C", "s": 0.35, "pooled_med": 0.3408}
+{"arm": "C", "s": 0.3, "pooled_med": 0.3013}
+{"arm": "C", "s": 0.28, "pooled_med": 0.2802}
+{"arm": "C", "s": 0.25, "pooled_med": 0.2503}
+{"arm": "C", "s": 0.22, "pooled_med": 0.2221}
+{"arm": "C", "s": 0.18, "pooled_med": 0.1804}
+{"arm": "C", "s": 0.15, "pooled_med": 0.1485}
+{"arm": "C", "s": 0.12, "pooled_med": 0.1205}
+{"arm": "C", "s": 0.1, "pooled_med": 0.1001}
+{"arm": "C", "s": 0.07, "pooled_med": 0.0715}

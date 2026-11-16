@@ -1,0 +1,37 @@
+[A] s=1.0 single_corr sd=0.0 mean=0.0 med5sd=0.0
+[A] s=0.8 single_corr sd=0.0015 mean=0.0006 med5sd=0.0006
+[A] s=0.65 single_corr sd=0.0019 mean=-0.0008 med5sd=0.0009
+[A] s=0.5 single_corr sd=0.0022 mean=-0.0018 med5sd=0.001
+[A] s=0.4 single_corr sd=0.0027 mean=-0.0005 med5sd=0.0007
+[A] s=0.35 single_corr sd=0.0036 mean=-0.0002 med5sd=0.0022
+[A] s=0.3 single_corr sd=0.0052 mean=-0.001 med5sd=0.0015
+[A] s=0.28 single_corr sd=0.004 mean=0.0032 med5sd=0.0026
+[A] s=0.25 single_corr sd=0.0038 mean=-0.0009 med5sd=0.0018
+[A] s=0.22 single_corr sd=0.0051 mean=0.0023 med5sd=0.0028
+[A] s=0.18 single_corr sd=0.0077 mean=-0.0015 med5sd=0.0055
+[A] s=0.15 single_corr sd=0.0105 mean=0.0006 med5sd=0.0054
+[A] s=0.12 single_corr sd=0.0144 mean=0.0009 med5sd=0.0051
+[A] s=0.1 single_corr sd=0.0159 mean=0.0034 med5sd=0.0074
+[A] s=0.07 single_corr sd=0.0435 mean=0.0395 med5sd=0.0291
+[B] archived points=300
+[B] recal={'s_ge_0.12': {'thr': 0.08, 'healthy_flag_rate': 0.0451, 'bad_catch_rate': 0.9944}, 'bands': {'hi_ge_0.30': {'thr': 0.08, 'healthy_flag_rate': 0.0481, 'bad_catch_rate': 1.0}, 'mid_0.18_0.28': {'thr': 0.08, 'healthy_flag_rate': 0.0387, 'bad_catch_rate': 0.9967}, 'low_0.12_0.15': {'thr': 0.08, 'healthy_flag_rate': 0.0469, 'bad_catch_rate': 0.975}, 'sub_lt_0.12': {'thr': 0.12, 'healthy_flag_rate': 0.0338, 'bad_catch_rate': 0.5611}}}
+[B] thr0.08 s_ge_0.15={'n_points': 240, 'n_healthy': 229, 'n_bad': 11, 'healthy_flag_rate': 0.0413, 'bad_catch_rate': 0.997} baseline={'all_s': {'healthy_flags': 19, 'n_healthy': 285, 'healthy_flag_rate': 0.0667, 'bad_caught': 15, 'n_bad': 15}, 's_ge_0.12': {'healthy_flags': 14, 'n_healthy': 248, 'healthy_flag_rate': 0.0565, 'bad_caught': 12, 'n_bad': 12}, 's_ge_0.15': {'healthy_flags': 11, 'n_healthy': 229, 'healthy_flag_rate': 0.048, 'bad_caught': 11, 'n_bad': 11}}
+[C] n_objects=210 sanityF1(mean per-scene)=1.0
+[C] s=1.0 pooled_med=0.9863 err=-0.0137
+[C] s=0.8 pooled_med=0.7915 err=-0.0106
+[C] s=0.65 pooled_med=0.6421 err=-0.0122
+[C] s=0.5 pooled_med=0.4895 err=-0.021
+[C] s=0.4 pooled_med=0.3913 err=-0.0218
+[C] s=0.35 pooled_med=0.3408 err=-0.0263
+[C] s=0.3 pooled_med=0.3013 err=0.0043
+[C] s=0.28 pooled_med=0.2802 err=0.0007
+[C] s=0.25 pooled_med=0.2503 err=0.0012
+[C] s=0.22 pooled_med=0.2221 err=0.0095
+[C] s=0.18 pooled_med=0.1804 err=0.0022
+[C] s=0.15 pooled_med=0.1485 err=-0.01
+[C] s=0.12 pooled_med=0.1205 err=0.0042
+[C] s=0.1 pooled_med=0.1001 err=0.001
+[C] s=0.07 pooled_med=0.0715 err=0.0214
+[C] thr0.08={'all_s': {'healthy_flag_rate': 0.0778, 'n_healthy_points': 60, 'bad_catch_rate': None, 'n_bad_points': 0}, 's_ge_0.12': {'healthy_flag_rate': 0.0513, 'n_healthy_points': 52, 'bad_catch_rate': None, 'n_bad_points': 0}, 's_ge_0.15': {'healthy_flag_rate': 0.0417, 'n_healthy_points': 48, 'bad_catch_rate': None, 'n_bad_points': 0}}
+[C] recal_thr=0.08 -> {'all_s': {'healthy_flag_rate': 0.0778, 'n_healthy_points': 60, 'bad_catch_rate': None, 'n_bad_points': 0}, 's_ge_0.12': {'healthy_flag_rate': 0.0513, 'n_healthy_points': 52, 'bad_catch_rate': None, 'n_bad_points': 0}, 's_ge_0.15': {'healthy_flag_rate': 0.0417, 'n_healthy_points': 48, 'bad_catch_rate': None, 'n_bad_points': 0}}
+ALL DONE 21.1
