@@ -1,0 +1,881 @@
+{
+  "alone": {
+    "bloom": {
+      "areas": [
+        3482.0,
+        3888.5,
+        3907.5,
+        3874.5,
+        3853.5,
+        3675.0
+      ],
+      "mask_px": [
+        3548,
+        3941,
+        3959,
+        3930,
+        3910,
+        3756
+      ],
+      "area_median": 3864.0,
+      "mask_px_median": 3920
+    },
+    "bud": {
+      "areas": [
+        459.0,
+        453.0,
+        447.0,
+        464.0,
+        455.0,
+        452.0
+      ],
+      "mask_px": [
+        478,
+        469,
+        464,
+        481,
+        477,
+        477
+      ],
+      "area_median": 454.0,
+      "mask_px_median": 477
+    }
+  },
+  "green_alone": {
+    "12": {
+      "n_contours_ge120": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mask_px": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "24": {
+      "n_contours_ge120": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mask_px": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "36": {
+      "n_contours_ge120": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mask_px": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "curves": {
+    "bloom|rc=12": {
+      "rows": [
+        {
+          "dc": 60,
+          "bite": -10,
+          "area_ratio": 0.8904,
+          "mask_ratio": 0.8963,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 50,
+          "bite": 0,
+          "area_ratio": 0.9829,
+          "mask_ratio": 0.9849,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 44,
+          "bite": 6,
+          "area_ratio": 0.9381,
+          "mask_ratio": 0.9414,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 38,
+          "bite": 12,
+          "area_ratio": 0.9175,
+          "mask_ratio": 0.921,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 32,
+          "bite": 18,
+          "area_ratio": 0.924,
+          "mask_ratio": 0.9254,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 12,
+          "bite": 38,
+          "area_ratio": 0.8345,
+          "mask_ratio": 0.8442,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.5,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 6,
+          "bite": 44,
+          "area_ratio": 0.9817,
+          "mask_ratio": 0.8713,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 0,
+          "bite": 50,
+          "area_ratio": 0.9624,
+          "mask_ratio": 0.852,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        }
+      ],
+      "mono_violations": [
+        0.1472
+      ]
+    },
+    "bloom|rc=24": {
+      "rows": [
+        {
+          "dc": 72,
+          "bite": -10,
+          "area_ratio": 0.9577,
+          "mask_ratio": 0.961,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 62,
+          "bite": 0,
+          "area_ratio": 0.9828,
+          "mask_ratio": 0.9846,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 50,
+          "bite": 12,
+          "area_ratio": 0.9169,
+          "mask_ratio": 0.9213,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 44,
+          "bite": 18,
+          "area_ratio": 0.888,
+          "mask_ratio": 0.8902,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 38,
+          "bite": 24,
+          "area_ratio": 0.7725,
+          "mask_ratio": 0.7783,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 32,
+          "bite": 30,
+          "area_ratio": 0.7349,
+          "mask_ratio": 0.739,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 12,
+          "bite": 50,
+          "area_ratio": 0.4788,
+          "mask_ratio": 0.5132,
+          "split": 0.1667,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 1.0,
+          "fp": 0.1667,
+          "fn": 0.0
+        },
+        {
+          "dc": 6,
+          "bite": 56,
+          "area_ratio": 0.309,
+          "mask_ratio": 0.4797,
+          "split": 1.0,
+          "lost_f": 0.0,
+          "mig_f": 0.1667,
+          "cor_f": 0.8333,
+          "lost_c": 1.0,
+          "fp": 2.3333,
+          "fn": 0.1667
+        },
+        {
+          "dc": 0,
+          "bite": 62,
+          "area_ratio": 0.1699,
+          "mask_ratio": 0.453,
+          "split": 0.8333,
+          "lost_f": 0.0,
+          "mig_f": 0.6667,
+          "cor_f": 0.3333,
+          "lost_c": 1.0,
+          "fp": 3.5,
+          "fn": 0.6667
+        }
+      ],
+      "mono_violations": []
+    },
+    "bloom|rc=36": {
+      "rows": [
+        {
+          "dc": 84,
+          "bite": -10,
+          "area_ratio": 0.9603,
+          "mask_ratio": 0.9624,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 74,
+          "bite": 0,
+          "area_ratio": 0.986,
+          "mask_ratio": 0.9869,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 62,
+          "bite": 12,
+          "area_ratio": 0.9304,
+          "mask_ratio": 0.9317,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 44,
+          "bite": 30,
+          "area_ratio": 0.6713,
+          "mask_ratio": 0.679,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 38,
+          "bite": 36,
+          "area_ratio": 0.6265,
+          "mask_ratio": 0.6313,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 32,
+          "bite": 42,
+          "area_ratio": 0.5174,
+          "mask_ratio": 0.5289,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 12,
+          "bite": 62,
+          "area_ratio": 0.1104,
+          "mask_ratio": 0.1653,
+          "split": 0.6667,
+          "lost_f": 0.0,
+          "mig_f": 1.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 1.6667,
+          "fn": 1.0
+        },
+        {
+          "dc": 6,
+          "bite": 68,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0592,
+          "split": 0.0,
+          "lost_f": 0.8333,
+          "mig_f": 0.1667,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.1667,
+          "fn": 1.0
+        },
+        {
+          "dc": 0,
+          "bite": 74,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        }
+      ],
+      "mono_violations": []
+    },
+    "bud|rc=12": {
+      "rows": [
+        {
+          "dc": 37,
+          "bite": -10,
+          "area_ratio": 1.0022,
+          "mask_ratio": 0.9948,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 27,
+          "bite": 0,
+          "area_ratio": 1.0066,
+          "mask_ratio": 1.0,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 21,
+          "bite": 6,
+          "area_ratio": 0.9676,
+          "mask_ratio": 0.9518,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 15,
+          "bite": 12,
+          "area_ratio": 0.7918,
+          "mask_ratio": 0.7956,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 12,
+          "bite": 15,
+          "area_ratio": 0.5225,
+          "mask_ratio": 0.5388,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.8333,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 9,
+          "bite": 18,
+          "area_ratio": 0.381,
+          "mask_ratio": 0.392,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 6,
+          "bite": 21,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.1971,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        },
+        {
+          "dc": 0,
+          "bite": 27,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        }
+      ],
+      "mono_violations": []
+    },
+    "bud|rc=24": {
+      "rows": [
+        {
+          "dc": 49,
+          "bite": -10,
+          "area_ratio": 1.0044,
+          "mask_ratio": 0.999,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 39,
+          "bite": 0,
+          "area_ratio": 1.0011,
+          "mask_ratio": 0.9916,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 27,
+          "bite": 12,
+          "area_ratio": 0.7048,
+          "mask_ratio": 0.7232,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 21,
+          "bite": 18,
+          "area_ratio": 0.3166,
+          "mask_ratio": 0.3301,
+          "split": 0.0,
+          "lost_f": 0.1667,
+          "mig_f": 0.0,
+          "cor_f": 0.8333,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 0.1667
+        },
+        {
+          "dc": 15,
+          "bite": 24,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        },
+        {
+          "dc": 12,
+          "bite": 27,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        },
+        {
+          "dc": 9,
+          "bite": 30,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        },
+        {
+          "dc": 6,
+          "bite": 33,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        },
+        {
+          "dc": 0,
+          "bite": 39,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        }
+      ],
+      "mono_violations": []
+    },
+    "bud|rc=36": {
+      "rows": [
+        {
+          "dc": 61,
+          "bite": -10,
+          "area_ratio": 1.0099,
+          "mask_ratio": 0.9885,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 51,
+          "bite": 0,
+          "area_ratio": 1.0088,
+          "mask_ratio": 0.999,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 39,
+          "bite": 12,
+          "area_ratio": 0.6834,
+          "mask_ratio": 0.6898,
+          "split": 0.0,
+          "lost_f": 0.0,
+          "mig_f": 0.0,
+          "cor_f": 1.0,
+          "lost_c": 0.0,
+          "fp": 0.0,
+          "fn": 0.0
+        },
+        {
+          "dc": 21,
+          "bite": 30,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        },
+        {
+          "dc": 15,
+          "bite": 36,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        },
+        {
+          "dc": 12,
+          "bite": 39,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        },
+        {
+          "dc": 9,
+          "bite": 42,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        },
+        {
+          "dc": 6,
+          "bite": 45,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        },
+        {
+          "dc": 0,
+          "bite": 51,
+          "area_ratio": 0.0,
+          "mask_ratio": 0.0,
+          "split": 0.0,
+          "lost_f": 1.0,
+          "mig_f": 0.0,
+          "cor_f": 0.0,
+          "lost_c": 1.0,
+          "fp": 0.0,
+          "fn": 1.0
+        }
+      ],
+      "mono_violations": []
+    }
+  },
+  "verdicts": {
+    "P1_green_alone_zero": true,
+    "P1_fp_nonsplit_max": 1,
+    "P1_fp_split_mean": 2.75,
+    "P1_fp_total": 47,
+    "P2_bloom_concentric_rc12": {
+      "area_ratio": 0.9624,
+      "mask_ratio": 0.852,
+      "correct_f": 1.0,
+      "lost_f": 0.0
+    },
+    "P2_bloom_concentric_rc24": {
+      "area_ratio": 0.1699,
+      "mask_ratio": 0.453,
+      "correct_f": 0.3333,
+      "lost_f": 0.0
+    },
+    "P2_bloom_concentric_rc36": {
+      "area_ratio": 0.0,
+      "mask_ratio": 0.0,
+      "correct_f": 0.0,
+      "lost_f": 1.0
+    },
+    "P4_bloom_migrated_cells": {
+      "bloom|rc=24|dc=6": 0.1667,
+      "bloom|rc=24|dc=0": 0.6667,
+      "bloom|rc=36|dc=12": 1.0,
+      "bloom|rc=36|dc=6": 0.1667
+    },
+    "P4_bud_migrated_max": 0.0,
+    "P5_bud_deep_lost": {
+      "bud|rc=24|dc=6": 1.0,
+      "bud|rc=24|dc=0": 1.0,
+      "bud|rc=36|dc=6": 1.0,
+      "bud|rc=36|dc=0": 1.0
+    },
+    "P5_bud_concentric_lost": {
+      "rc=12": 1.0,
+      "rc=24": 1.0,
+      "rc=36": 1.0
+    },
+    "P6_bloom_rc36_split_band": {
+      "bloom|rc=36|dc=32": 0.0,
+      "bloom|rc=36|dc=12": 0.6667,
+      "bloom|rc=36|dc=6": 0.0
+    }
+  },
+  "extras": {
+    "n_trials": 312,
+    "bloom_sep_area_ratio": {
+      "12": 0.8904,
+      "24": 0.9577,
+      "36": 0.9603
+    },
+    "bud_sep_area_ratio": {
+      "12": 1.0022,
+      "24": 1.0044,
+      "36": 1.0099
+    },
+    "max_fp_mean_cell": [
+      3.5,
+      "bloom|rc=24|dc=0"
+    ],
+    "cells_with_fp": {
+      "bloom|rc=24|dc=12": 0.1667,
+      "bloom|rc=24|dc=6": 2.3333,
+      "bloom|rc=24|dc=0": 3.5,
+      "bloom|rc=36|dc=12": 1.6667,
+      "bloom|rc=36|dc=6": 0.1667
+    }
+  }
+}

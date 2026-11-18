@@ -1,0 +1,56 @@
+{"stage": "green_mask_assertion", "mask_px": 0}
+{"stage": "backgrounds", "n": 6}
+{"stage": "alone", "alone": {"bloom": {"areas": [3482.0, 3888.5, 3907.5, 3874.5, 3853.5, 3675.0], "mask_px": [3548, 3941, 3959, 3930, 3910, 3756], "area_median": 3864.0, "mask_px_median": 3920}, "bud": {"areas": [459.0, 453.0, 447.0, 464.0, 455.0, 452.0], "mask_px": [478, 469, 464, 481, 477, 477], "area_median": 454.0, "mask_px_median": 477}}, "green_alone": {"12": {"n_contours_ge120": [0, 0, 0, 0, 0, 0], "mask_px": [0, 0, 0, 0, 0, 0]}, "24": {"n_contours_ge120": [0, 0, 0, 0, 0, 0], "mask_px": [0, 0, 0, 0, 0, 0]}, "36": {"n_contours_ge120": [0, 0, 0, 0, 0, 0], "mask_px": [0, 0, 0, 0, 0, 0]}}}
+{"stage": "cell", "host": "bloom", "rc": 12, "dc": 60, "ar": 0.8904, "mr": 0.8963, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 12, "dc": 50, "ar": 0.9829, "mr": 0.9849, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 12, "dc": 44, "ar": 0.9381, "mr": 0.9414, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 12, "dc": 38, "ar": 0.9175, "mr": 0.921, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 12, "dc": 32, "ar": 0.924, "mr": 0.9254, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 12, "dc": 12, "ar": 0.8345, "mr": 0.8442, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 12, "dc": 6, "ar": 0.9817, "mr": 0.8713, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 12, "dc": 0, "ar": 0.9624, "mr": 0.852, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 24, "dc": 72, "ar": 0.9577, "mr": 0.961, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 24, "dc": 62, "ar": 0.9828, "mr": 0.9846, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 24, "dc": 50, "ar": 0.9169, "mr": 0.9213, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 24, "dc": 44, "ar": 0.888, "mr": 0.8902, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 24, "dc": 38, "ar": 0.7725, "mr": 0.7783, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 24, "dc": 32, "ar": 0.7349, "mr": 0.739, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 24, "dc": 12, "ar": 0.4788, "mr": 0.5132, "split": 0.1667, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.1667}
+{"stage": "cell", "host": "bloom", "rc": 24, "dc": 6, "ar": 0.309, "mr": 0.4797, "split": 1.0, "lost_f": 0.0, "mig_f": 0.1667, "fp": 2.3333}
+{"stage": "cell", "host": "bloom", "rc": 24, "dc": 0, "ar": 0.1699, "mr": 0.453, "split": 0.8333, "lost_f": 0.0, "mig_f": 0.6667, "fp": 3.5}
+{"stage": "cell", "host": "bloom", "rc": 36, "dc": 84, "ar": 0.9603, "mr": 0.9624, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 36, "dc": 74, "ar": 0.986, "mr": 0.9869, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 36, "dc": 62, "ar": 0.9304, "mr": 0.9317, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 36, "dc": 44, "ar": 0.6713, "mr": 0.679, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 36, "dc": 38, "ar": 0.6265, "mr": 0.6313, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 36, "dc": 32, "ar": 0.5174, "mr": 0.5289, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bloom", "rc": 36, "dc": 12, "ar": 0.1104, "mr": 0.1653, "split": 0.6667, "lost_f": 0.0, "mig_f": 1.0, "fp": 1.6667}
+{"stage": "cell", "host": "bloom", "rc": 36, "dc": 6, "ar": 0.0, "mr": 0.0592, "split": 0.0, "lost_f": 0.8333, "mig_f": 0.1667, "fp": 0.1667}
+{"stage": "cell", "host": "bloom", "rc": 36, "dc": 0, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 12, "dc": 37, "ar": 1.0022, "mr": 0.9948, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 12, "dc": 27, "ar": 1.0066, "mr": 1.0, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 12, "dc": 21, "ar": 0.9676, "mr": 0.9518, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 12, "dc": 15, "ar": 0.7918, "mr": 0.7956, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 12, "dc": 12, "ar": 0.5225, "mr": 0.5388, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 12, "dc": 9, "ar": 0.381, "mr": 0.392, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 12, "dc": 6, "ar": 0.0, "mr": 0.1971, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 12, "dc": 0, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 24, "dc": 49, "ar": 1.0044, "mr": 0.999, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 24, "dc": 39, "ar": 1.0011, "mr": 0.9916, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 24, "dc": 27, "ar": 0.7048, "mr": 0.7232, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 24, "dc": 21, "ar": 0.3166, "mr": 0.3301, "split": 0.0, "lost_f": 0.1667, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 24, "dc": 15, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 24, "dc": 12, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 24, "dc": 9, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 24, "dc": 6, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 24, "dc": 0, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 36, "dc": 61, "ar": 1.0099, "mr": 0.9885, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 36, "dc": 51, "ar": 1.0088, "mr": 0.999, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 36, "dc": 39, "ar": 0.6834, "mr": 0.6898, "split": 0.0, "lost_f": 0.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 36, "dc": 21, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 36, "dc": 15, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 36, "dc": 12, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 36, "dc": 9, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 36, "dc": 6, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "cell", "host": "bud", "rc": 36, "dc": 0, "ar": 0.0, "mr": 0.0, "split": 0.0, "lost_f": 1.0, "mig_f": 0.0, "fp": 0.0}
+{"stage": "DONE", "out": "/home/hatch/workspace/your_files/顶刊技术文章/data/2026-11-17-green-occlusion-bench.json"}
