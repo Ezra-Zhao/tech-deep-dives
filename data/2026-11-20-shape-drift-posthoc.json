@@ -1,0 +1,503 @@
+{
+ "full_linear": {
+  "circle6": {
+   "s=1.0": {
+    "median": 90.0,
+    "max": 90.0,
+    "drift_med_pct": -20.42,
+    "n_found": 16
+   },
+   "s=1.5": {
+    "median": 96.22,
+    "max": 96.22,
+    "drift_med_pct": -14.92,
+    "n_found": 16
+   },
+   "s=2.0": {
+    "median": 107.25,
+    "max": 107.25,
+    "drift_med_pct": -5.17,
+    "n_found": 16
+   },
+   "s=2.5": {
+    "median": 103.44,
+    "max": 103.44,
+    "drift_med_pct": -8.54,
+    "n_found": 16
+   },
+   "s=3.0": {
+    "median": 116.67,
+    "max": 116.67,
+    "drift_med_pct": 3.16,
+    "n_found": 16
+   }
+  },
+  "square11": {
+   "s=1.0": {
+    "median": 109.0,
+    "max": 109.0,
+    "drift_med_pct": -9.92,
+    "n_found": 16
+   },
+   "s=1.5": {
+    "median": 115.56,
+    "max": 123.11,
+    "drift_med_pct": -4.5,
+    "n_found": 16
+   },
+   "s=2.0": {
+    "median": 129.25,
+    "max": 129.25,
+    "drift_med_pct": 6.82,
+    "n_found": 16
+   },
+   "s=2.5": {
+    "median": 128.0,
+    "max": 132.64,
+    "drift_med_pct": 5.79,
+    "n_found": 16
+   },
+   "s=3.0": {
+    "median": 134.78,
+    "max": 134.78,
+    "drift_med_pct": 11.39,
+    "n_found": 16
+   }
+  },
+  "triangle17": {
+   "s=1.0": {
+    "median": 110.0,
+    "max": 118.0,
+    "drift_med_pct": -12.07,
+    "n_found": 16
+   },
+   "s=1.5": {
+    "median": 125.22,
+    "max": 136.22,
+    "drift_med_pct": 0.1,
+    "n_found": 16
+   },
+   "s=2.0": {
+    "median": 145.25,
+    "max": 152.0,
+    "drift_med_pct": 16.11,
+    "n_found": 16
+   },
+   "s=2.5": {
+    "median": 138.6,
+    "max": 147.6,
+    "drift_med_pct": 10.79,
+    "n_found": 16
+   },
+   "s=3.0": {
+    "median": 155.44,
+    "max": 163.44,
+    "drift_med_pct": 24.25,
+    "n_found": 16
+   }
+  },
+  "pentagon10": {
+   "s=1.0": {
+    "median": 231.5,
+    "max": 240.0,
+    "drift_med_pct": -2.65,
+    "n_found": 16
+   },
+   "s=1.5": {
+    "median": 241.44,
+    "max": 248.89,
+    "drift_med_pct": 1.53,
+    "n_found": 16
+   },
+   "s=2.0": {
+    "median": 257.75,
+    "max": 266.12,
+    "drift_med_pct": 8.39,
+    "n_found": 16
+   },
+   "s=2.5": {
+    "median": 251.2,
+    "max": 258.96,
+    "drift_med_pct": 5.63,
+    "n_found": 16
+   },
+   "s=3.0": {
+    "median": 268.86,
+    "max": 277.89,
+    "drift_med_pct": 13.06,
+    "n_found": 16
+   }
+  },
+  "hexagon7": {
+   "s=1.0": {
+    "median": 118.0,
+    "max": 131.0,
+    "drift_med_pct": -7.31,
+    "n_found": 16
+   },
+   "s=1.5": {
+    "median": 126.78,
+    "max": 138.22,
+    "drift_med_pct": -0.41,
+    "n_found": 16
+   },
+   "s=2.0": {
+    "median": 139.38,
+    "max": 149.5,
+    "drift_med_pct": 9.49,
+    "n_found": 16
+   },
+   "s=2.5": {
+    "median": 135.04,
+    "max": 145.36,
+    "drift_med_pct": 6.08,
+    "n_found": 16
+   },
+   "s=3.0": {
+    "median": 147.89,
+    "max": 158.33,
+    "drift_med_pct": 16.17,
+    "n_found": 16
+   }
+  },
+  "diamond16": {
+   "s=1.0": {
+    "median": 120.0,
+    "max": 120.0,
+    "drift_med_pct": -6.25,
+    "n_found": 16
+   },
+   "s=1.5": {
+    "median": 128.67,
+    "max": 128.67,
+    "drift_med_pct": 0.52,
+    "n_found": 16
+   },
+   "s=2.0": {
+    "median": 141.25,
+    "max": 141.25,
+    "drift_med_pct": 10.35,
+    "n_found": 16
+   },
+   "s=2.5": {
+    "median": 136.08,
+    "max": 136.08,
+    "drift_med_pct": 6.31,
+    "n_found": 16
+   },
+   "s=3.0": {
+    "median": 160.44,
+    "max": 160.44,
+    "drift_med_pct": 25.34,
+    "n_found": 16
+   }
+  },
+  "circle12": {
+   "s=1.0": {
+    "median": 406.0,
+    "max": 406.0,
+    "drift_med_pct": -10.26,
+    "n_found": 16
+   },
+   "s=1.5": {
+    "median": 412.22,
+    "max": 412.22,
+    "drift_med_pct": -8.88,
+    "n_found": 16
+   },
+   "s=2.0": {
+    "median": 433.25,
+    "max": 433.25,
+    "drift_med_pct": -4.23,
+    "n_found": 16
+   },
+   "s=2.5": {
+    "median": 424.08,
+    "max": 424.08,
+    "drift_med_pct": -6.26,
+    "n_found": 16
+   },
+   "s=3.0": {
+    "median": 448.67,
+    "max": 448.67,
+    "drift_med_pct": -0.82,
+    "n_found": 16
+   }
+  },
+  "square21": {
+   "s=1.0": {
+    "median": 429.0,
+    "max": 429.0,
+    "drift_med_pct": -2.72,
+    "n_found": 16
+   },
+   "s=1.5": {
+    "median": 435.56,
+    "max": 449.78,
+    "drift_med_pct": -1.23,
+    "n_found": 16
+   },
+   "s=2.0": {
+    "median": 459.25,
+    "max": 459.25,
+    "drift_med_pct": 4.14,
+    "n_found": 16
+   },
+   "s=2.5": {
+    "median": 456.0,
+    "max": 464.64,
+    "drift_med_pct": 3.4,
+    "n_found": 16
+   },
+   "s=3.0": {
+    "median": 468.11,
+    "max": 468.11,
+    "drift_med_pct": 6.15,
+    "n_found": 16
+   }
+  }
+ },
+ "decomp": {
+  "circle6": {
+   "base_none_nearest_pct": 6.79,
+   "interp_share_pts": -0.49,
+   "cubic_minus_linear_none_pts": 2.97,
+   "close_share_pts": 4.93,
+   "open_share_pts": 1.34,
+   "total_full_linear_pts": 15.25,
+   "interaction_residual_pts": 2.68,
+   "full_nearest_total_pts": 15.25
+  },
+  "square11": {
+   "base_none_nearest_pct": 11.21,
+   "interp_share_pts": -1.91,
+   "cubic_minus_linear_none_pts": 3.74,
+   "close_share_pts": 0.0,
+   "open_share_pts": 8.33,
+   "total_full_linear_pts": 16.74,
+   "interaction_residual_pts": -0.89,
+   "full_nearest_total_pts": 19.54
+  },
+  "triangle17": {
+   "base_none_nearest_pct": 9.88,
+   "interp_share_pts": -1.53,
+   "cubic_minus_linear_none_pts": 4.98,
+   "close_share_pts": 5.95,
+   "open_share_pts": 9.27,
+   "total_full_linear_pts": 28.18,
+   "interaction_residual_pts": 4.61,
+   "full_nearest_total_pts": 28.49
+  },
+  "pentagon10": {
+   "base_none_nearest_pct": 5.95,
+   "interp_share_pts": -0.88,
+   "cubic_minus_linear_none_pts": 2.99,
+   "close_share_pts": 3.28,
+   "open_share_pts": 0.64,
+   "total_full_linear_pts": 11.04,
+   "interaction_residual_pts": 2.05,
+   "full_nearest_total_pts": 11.25
+  },
+  "hexagon7": {
+   "base_none_nearest_pct": 7.89,
+   "interp_share_pts": -1.45,
+   "cubic_minus_linear_none_pts": 4.21,
+   "close_share_pts": 3.02,
+   "open_share_pts": 3.8,
+   "total_full_linear_pts": 16.79,
+   "interaction_residual_pts": 3.53,
+   "full_nearest_total_pts": 16.79
+  },
+  "diamond16": {
+   "base_none_nearest_pct": 4.69,
+   "interp_share_pts": 1.37,
+   "cubic_minus_linear_none_pts": 1.88,
+   "close_share_pts": 6.0,
+   "open_share_pts": 2.81,
+   "total_full_linear_pts": 16.6,
+   "interaction_residual_pts": 1.73,
+   "full_nearest_total_pts": 15.5
+  },
+  "circle12": {
+   "base_none_nearest_pct": 3.45,
+   "interp_share_pts": -0.32,
+   "cubic_minus_linear_none_pts": 1.35,
+   "close_share_pts": 2.35,
+   "open_share_pts": -0.96,
+   "total_full_linear_pts": 6.02,
+   "interaction_residual_pts": 1.5,
+   "full_nearest_total_pts": 5.89
+  },
+  "square21": {
+   "base_none_nearest_pct": 5.8,
+   "interp_share_pts": -0.98,
+   "cubic_minus_linear_none_pts": 1.78,
+   "close_share_pts": 0.0,
+   "open_share_pts": 2.28,
+   "total_full_linear_pts": 6.86,
+   "interaction_residual_pts": -0.24,
+   "full_nearest_total_pts": 8.08
+  }
+ },
+ "band": {
+  "circle6": {
+   "median": 107.25,
+   "max": 116.67,
+   "band_width_pts": 8.33,
+   "n": 48
+  },
+  "square11": {
+   "median": 129.25,
+   "max": 134.78,
+   "band_width_pts": 4.57,
+   "n": 48
+  },
+  "triangle17": {
+   "median": 146.74,
+   "max": 163.44,
+   "band_width_pts": 13.35,
+   "n": 48
+  },
+  "pentagon10": {
+   "median": 258.75,
+   "max": 277.89,
+   "band_width_pts": 8.05,
+   "n": 48
+  },
+  "hexagon7": {
+   "median": 141.75,
+   "max": 158.33,
+   "band_width_pts": 13.02,
+   "n": 48
+  },
+  "diamond16": {
+   "median": 141.25,
+   "max": 160.44,
+   "band_width_pts": 14.99,
+   "n": 48
+  },
+  "circle12": {
+   "median": 433.25,
+   "max": 448.67,
+   "band_width_pts": 3.41,
+   "n": 48
+  },
+  "square21": {
+   "median": 459.25,
+   "max": 468.11,
+   "band_width_pts": 2.01,
+   "n": 48
+  }
+ },
+ "abs_pooled": {
+  "circle6": {
+   "s1": {
+    "none": 96.0,
+    "close": 96.0,
+    "open": 90.0,
+    "full": 90.0
+   },
+   "pooled_NEAREST": {
+    "none": 103.68,
+    "close": 109.25,
+    "open": 99.2,
+    "full": 107.25
+   },
+   "pooled_LINEAR": {
+    "none": 103.12,
+    "close": 109.25,
+    "open": 101.2,
+    "full": 107.25
+   },
+   "pooled_CUBIC_none": 106.48
+  },
+  "square11": {
+   "s1": {
+    "none": 121.0,
+    "close": 121.0,
+    "open": 109.0,
+    "full": 109.0
+   },
+   "pooled_NEAREST": {
+    "none": 134.56,
+    "close": 134.56,
+    "open": 132.64,
+    "full": 132.64
+   },
+   "pooled_LINEAR": {
+    "none": 132.25,
+    "close": 132.25,
+    "open": 129.25,
+    "full": 129.25
+   },
+   "pooled_CUBIC_none": 136.78
+  },
+  "triangle17": {
+   "s1": {
+    "none": 129.0,
+    "close": 129.0,
+    "open": 110.0,
+    "full": 110.0
+   },
+   "pooled_NEAREST": {
+    "none": 141.36,
+    "close": 148.8,
+    "open": 133.96,
+    "full": 145.64
+   },
+   "pooled_LINEAR": {
+    "none": 139.44,
+    "close": 148.0,
+    "open": 134.36,
+    "full": 145.25
+   },
+   "pooled_CUBIC_none": 145.67
+  },
+  "hexagon7": {
+   "s1": {
+    "none": 127.0,
+    "close": 127.0,
+    "open": 118.0,
+    "full": 118.0
+   },
+   "pooled_NEAREST": {
+    "none": 137.04,
+    "close": 140.89,
+    "open": 132.88,
+    "full": 139.38
+   },
+   "pooled_LINEAR": {
+    "none": 135.2,
+    "close": 140.25,
+    "open": 133.2,
+    "full": 139.38
+   },
+   "pooled_CUBIC_none": 140.56
+  },
+  "diamond16": {
+   "s1": {
+    "none": 128.0,
+    "close": 128.0,
+    "open": 120.0,
+    "full": 120.0
+   },
+   "pooled_NEAREST": {
+    "none": 134.0,
+    "close": 141.68,
+    "open": 129.6,
+    "full": 139.84
+   },
+   "pooled_LINEAR": {
+    "none": 135.76,
+    "close": 144.25,
+    "open": 134.48,
+    "full": 141.25
+   },
+   "pooled_CUBIC_none": 138.16
+  }
+ },
+ "notes": [
+  "pentagon nominal: prereg printed 118.9 by arithmetic slip; correct (5/2)R^2 sin72 with R=10 is 237.8, used in all computations; pentagon drawn size is ~2x the small shapes, treat as mid-size.",
+  "s=1 full-pipeline medians replicate 2026-11-08 in-situ exactly: circle6 90.0, square11 109.0; square full+LINEAR s=2 median 129.25 vs in-situ 129.2, s=3 134.78 vs 135.0."
+ ]
+}
