@@ -1,0 +1,30 @@
+# Alert rules for the 2026-11-21 exporter-death live run.
+# NalExporterSeriesAbsent is verbatim the rule measured in the
+# 2026-10-27 / 2026-10-31 / 2026-11-09 articles. NalExporterUpZero is
+# this run's new candidate on the receiver (and mirrored on the sender
+# for the local contrast). Both use for: 1m; group interval 15s matches
+# the earlier articles.
+groups:
+  - name: net-assurance-lab.anti-blind-ed
+    interval: 15s
+    rules:
+      - alert: NalExporterSeriesAbsent
+        expr: absent(nal_exporter_results_present{group="scenario_summaries"})
+        for: 1m
+        labels:
+          severity: critical
+          team: net-assurance
+        annotations:
+          summary: "Exporter series nal_exporter_results_present has disappeared"
+          description: >-
+            No sample of the exporter's self-report series is visible.
+      - alert: NalExporterUpZero
+        expr: up{job="net-assurance-lab"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          team: net-assurance
+        annotations:
+          summary: "Exporter scrape target reports up == 0"
+          description: >-
+            The scrape of the exporter is failing (up == 0 sustained).

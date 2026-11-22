@@ -1,0 +1,47 @@
+{
+ "exporter-death": {
+  "t_kill_epoch": 1795314317.6944585,
+  "receiver": {
+   "up_first_zero_poll_s": 5.1,
+   "up_ones_after_first_zero_s": [],
+   "up_post_kill_nonempty": 21,
+   "up_post_kill_polls": 21,
+   "last_present_sample_ts": 1795314317.706,
+   "last_present_sample_age_at_kill_s": -0.0
+  },
+  "sender": {
+   "up_first_zero_poll_s": 5.1,
+   "up_ones_after_first_zero_s": [],
+   "up_post_kill_nonempty": 21,
+   "up_post_kill_polls": 21,
+   "last_present_sample_ts": 1795314317.719,
+   "last_present_sample_age_at_kill_s": -0.0
+  }
+ },
+ "control": {
+  "t_kill_epoch": 1795314470.597309,
+  "local": {
+   "up_first_zero_poll_s": 5.1,
+   "up_ones_after_first_zero_s": [],
+   "up_post_kill_nonempty": 18,
+   "up_post_kill_polls": 18,
+   "last_present_sample_ts": 1795314470.607,
+   "last_present_sample_age_at_kill_s": -0.0
+  }
+ },
+ "contrasts": {
+  "receiver_absent_minus_sender_absent_pending_s": 15.0,
+  "receiver_absent_minus_sender_absent_firing_lb_s": 15.0,
+  "receiver_absent_minus_up_firing_lb_s": 0.0,
+  "receiver_absent_same_activeAt_as_up": true,
+  "sender_absent_same_activeAt_as_up": true
+ },
+ "prereg_verdicts": {
+  "P-E1": "hit",
+  "P-E2": "miss",
+  "P-E3": "miss",
+  "P-E4": "hit",
+  "P-E5": "hit",
+  "P-C": "hit"
+ }
+}
