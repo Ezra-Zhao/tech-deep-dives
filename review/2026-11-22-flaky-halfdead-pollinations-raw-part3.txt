@@ -1,0 +1,50 @@
+**Verdict:** NEEDS FIXES  
+
+**Findings**
+
+1. **Mis‑stated alert pending time for arm B**  
+   - *Text*: “`absent, up==0` to heal itself … Arm B’s target … lit for 10 s… the alert did not move for over six minutes.”  
+   - *Ground truth*: alert pending +19.8 s, not “six minutes” (~360 s).  
+   - *Offender*: `"the alert did not move for over six minutes."`
+
+2. **Incorrect firing lower‑bound for arm B**  
+   - *Text*: no explicit number, but the narrative implies longer than reported.  
+   - *Ground truth*: firing lower bound +80.3 s.  
+   - *Offender*: none quoted, but the implied claim conflicts with the actual +80.3 s.
+
+3. **Wrong continuous duration for arm B**  
+   - *Text*: no explicit number, but “continuous 386.6 s” is mentioned elsewhere.  
+   - *Ground truth*: continuous 386.6 s, which matches, so no issue here.
+
+4. **Number of successful scrapes for arm B**  
+   - *Text*: “13 successes”.  
+   - *Ground truth*: 13 successes, matches.
+
+5. **Poll count for arm B**  
+   - *Text*: “22 polls present=1 while firing.”  
+   - *Ground truth*: 22 polls, matches.
+
+6. **Arm B visibility window claim**  
+   - *Text*: “visible window ~9‑10 s” is cited; this is correct per evaluation beat 15 s and scrape 30 s?
+
+7. **Arm D alerts**  
+   - *Text*: no numeric conflict noted.
+
+8. **Arm A pending claim**  
+   - *Text*: “arm A is not 'healthy'—half of its scrapes failed; its invisible window was simply too short”.  
+   - *Ground truth*: arm A never pending. The text implies an incomplete pending state, but it does not state a numeric inconsistency.
+
+9. **Evaluation interval for arm B**  
+   - *Text*: evaluation 15 s, correct.
+
+10. **Phase lock‑in description**  
+    - *Text*: “evaluation never saw false from 78 consecutive polls.”  
+    - *Ground truth*: 78 consecutive polls with alert present, consistent.
+
+**Summary**
+
+The primary factual inconsistency is the exaggerated “six minutes” duration for arm B’s pending state. This misrepresents the ground‑truth +19.8 s pending window. No other numeric discrepancies are present.
+
+Please correct the offending sentence to reflect the actual pending duration.
+
+STDERR:

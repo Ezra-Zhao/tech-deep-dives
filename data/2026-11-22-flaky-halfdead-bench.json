@@ -1,0 +1,204 @@
+{
+ "live_file": "2026-11-22-flaky-halfdead-live.json",
+ "prometheus": "3.15.0",
+ "summary": {
+  "flip_epoch": 1795400236.250713,
+  "arms": {
+   "A": {
+    "period": 2,
+    "timestamped": false,
+    "attempts_flaky_window": 83,
+    "successes_flaky_window": 42,
+    "success_gaps_s": [
+     5.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0,
+     10.0
+    ],
+    "polls_flaky_tail": 82,
+    "present_empty_polls": 0,
+    "present_one_polls": 82,
+    "up_zero_polls": 0,
+    "up_one_polls": 82,
+    "episodes": {
+     "NalExporterSeriesAbsent": [],
+     "NalExporterUpZero": []
+    }
+   },
+   "B": {
+    "period": 6,
+    "timestamped": false,
+    "attempts_flaky_window": 83,
+    "successes_flaky_window": 14,
+    "success_gaps_s": [
+     25.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0
+    ],
+    "polls_flaky_tail": 82,
+    "present_empty_polls": 54,
+    "present_one_polls": 28,
+    "up_zero_polls": 54,
+    "up_one_polls": 28,
+    "episodes": {
+     "NalExporterSeriesAbsent": [
+      {
+       "start_epoch": 1795400256.024019,
+       "fired": true,
+       "first_firing_poll_rel": 127.6,
+       "last_seen_epoch": 1795400642.657723,
+       "first_firing_epoch": 1795400316.5014968,
+       "duration_s": 386.6,
+       "start_rel_flip": 19.8,
+       "open_at_end": true
+      }
+     ],
+     "NalExporterUpZero": [
+      {
+       "start_epoch": 1795400256.024019,
+       "fired": true,
+       "first_firing_poll_rel": 127.6,
+       "last_seen_epoch": 1795400642.657723,
+       "first_firing_epoch": 1795400316.5014968,
+       "duration_s": 386.6,
+       "start_rel_flip": 19.8,
+       "open_at_end": true
+      }
+     ]
+    }
+   },
+   "C": {
+    "period": 24,
+    "timestamped": false,
+    "attempts_flaky_window": 84,
+    "successes_flaky_window": 5,
+    "success_gaps_s": [
+     5.0,
+     85.0,
+     120.0,
+     120.0
+    ],
+    "polls_flaky_tail": 82,
+    "present_empty_polls": 74,
+    "present_one_polls": 8,
+    "up_zero_polls": 74,
+    "up_one_polls": 8,
+    "episodes": {
+     "NalExporterSeriesAbsent": [
+      {
+       "start_epoch": 1795400256.024019,
+       "fired": true,
+       "first_firing_poll_rel": 127.6,
+       "last_seen_epoch": 1795400642.657723,
+       "first_firing_epoch": 1795400316.5014968,
+       "duration_s": 386.6,
+       "start_rel_flip": 19.8,
+       "open_at_end": true
+      }
+     ],
+     "NalExporterUpZero": [
+      {
+       "start_epoch": 1795400256.024019,
+       "fired": true,
+       "first_firing_poll_rel": 127.6,
+       "last_seen_epoch": 1795400642.657723,
+       "first_firing_epoch": 1795400316.5014968,
+       "duration_s": 386.6,
+       "start_rel_flip": 19.8,
+       "open_at_end": true
+      }
+     ]
+    }
+   },
+   "D": {
+    "period": 6,
+    "timestamped": true,
+    "attempts_flaky_window": 84,
+    "successes_flaky_window": 15,
+    "success_gaps_s": [
+     25.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0,
+     30.0
+    ],
+    "polls_flaky_tail": 82,
+    "present_empty_polls": 0,
+    "present_one_polls": 82,
+    "up_zero_polls": 61,
+    "up_one_polls": 21,
+    "episodes": {
+     "NalExporterSeriesAbsent": [],
+     "NalExporterUpZero": [
+      {
+       "start_epoch": 1795400241.024019,
+       "fired": true,
+       "first_firing_poll_rel": 112.6,
+       "last_seen_epoch": 1795400642.657723,
+       "first_firing_epoch": 1795400301.4593136,
+       "duration_s": 401.6,
+       "start_rel_flip": 4.8,
+       "open_at_end": true
+      }
+     ]
+    }
+   }
+  }
+ }
+}

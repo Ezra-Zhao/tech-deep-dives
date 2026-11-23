@@ -1,0 +1,18 @@
+groups:
+  - name: flaky-halfdead
+    interval: 15s
+    rules:
+      - alert: NalExporterSeriesAbsent
+        expr: absent(nal_exporter_results_present{group="scenario_summaries"})
+        for: 1m
+        labels:
+          severity: page
+        annotations:
+          summary: "exporter results series absent"
+      - alert: NalExporterUpZero
+        expr: up{job="net-assurance-lab"} == 0
+        for: 1m
+        labels:
+          severity: page
+        annotations:
+          summary: "exporter scrape failing"

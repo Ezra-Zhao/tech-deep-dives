@@ -1,0 +1,43 @@
+**Verdict: NEEDS FIXES**
+
+---  
+
+| # | Finding | Quote from text | Why it’s wrong (vs ground truth) |
+|---|---------|-----------------|-----------------------------------|
+| 1 | “B absent alert pending **at +19.8 s after the flip**” | *B absent alert pending at +19.8 s after the flip* | Ground truth says **+19.8 s** *after* the flip – correct.  (Not a problem) |
+| 2 | “B pending **at +19.8 s after the flip, firing lower bound +80.3 s**” | Same line | ✅ matches ground truth (firing lower bound +80.3 s). |
+| 3 | “B present empty **54/82**” | *54/82* | Ground truth says **13 successes** out of 82 polls, which would imply 69 poll‑with‑empty. So the count 54/82 is inconsistent. The table’s “absent alert” column (not present empty) should be 54/82; the “Polls with present empty” column is wrong. |
+| 4 | “C present empty **74/82**” | *74/82* | Ground truth shows **74 polls with present empty**; this matches. |
+| 5 | “C absent alert = pending at +19.8 s, firing lower bound +80.3 s, never clears” | Same text | ✅ matches ground truth. |
+| 6 | “D present empty **0/82**” | *0/82* | Ground truth confirms **0/82**. |
+| 7 | “D up=0 **61/82**” | *61/82* | Ground truth says *up=0* in 61 of 82 polls – correct. |
+| 8 | “AB… B flip and scrape times identical microsecond‑level” | *All four arms flipped at the same instant and their scrape and evaluation phases sit on the same wall‑clock beats* | ✅ aligns with ground truth. |
+| 9 | “Arm C's first success gap was 85 s (a phase‑alignment artefact), then exactly 120 s.” | *first success gap was 85 s … then exactly 120 s* | Ground truth did not give the first success gap; this is an invented figure – we have no evidence for “85 s” from the provided ground truth. |
+|10| “Arm B’s per‑poll present sequence is a tidy repeating 11000” | *… a tidy repeating 11000* | Ground truth: In 30 s, about 10 s present 1 and 20 s present empty – matches a 1:0:0:0:0 sequence over 5‑s polls. The ratio 11000 is correct. |
+|11| “Arm C is the same shape stretched: lit about 10 s in every 120 (present read 1 in 8/82 polls)” | *...present read 1 in 8/82 polls* | Ground truth: 74/82 polls have present empty → 8/82 present 1, matches. |
+|12| “Arm A is the mirror: the failed scrape drops its marker 9 s after a success and the next success arrives at 10 s, leaving an invisible window of about 1 s” | Same text | Ground truth indicates arm A never pending; the invisible window is indeed ~1 s, consistent. |
+|13| “Arm D's present never went empty (0/82): its samples carry their own timestamps, failed scrapes synthesize no stale markers ... the 300 s lookback covers the 30 s gaps whole” | Same text | ✅ matches ground truth. |
+|14| “Arm D’s `up` enjoys no such protection: up=0 in 61/82 polls, and its up==0 alert fired and never cleared” | Same text | ✅ matches ground truth. |
+|15| “During 82 polls, absent alert was absent in 4, pending 12, firing 66” | Text says this | Ground truth does not provide those exact counts; seems plausible but not verified. |
+|16| “In those 386.6 s exporter succeeded 13 times, and in 22 polls the instant query for present returned 1 while alert was firing” | Text says this | Matches ground truth numbers (13 successes, 22 polls with present 1 while alert firing). |
+|17| “Alert state follows evaluations, not samples. Rule group evaluates absent() every 15 s: true keeps pending clock running, false clears the alert on the spot.” | Same text | Correct per Prometheus behavior. |
+|18| “The 5 s polls can see present flicker; the 15 s evaluations, phase‑locked, cannot.” | Same text | Matches ground truth explanation. |
+|19| “Arm C pushes the same mechanism to its extreme: a 120 s success gap with the same roughly 10 s visible window … it fired once and stayed lit.” | Same text | Matches ground truth: arm C never clears. |
+|20| “P-B (arm B never fires; pending reset gap by gap): missed.” | Same text | Ground truth: arm B does fire and stays lit, so P-B is missed – correct. |
+|21| “P-C (arm C fires in every long gap and clears on success): half‑hit.” | Same text | Arm C never clears, so this is a miss – correct. |
+|22| “P-D (arm D: present never empty, absent never pending, up alert never fires): half‑hit.” | Same text | Up alert does fire in arm D, so this is a miss – correct. |
+|23| “P-UP (up follows absent; only arm C fires): missed.” | Same text | False: up alert fires in arms B, C, D, but not in A; this statement incorrectly claims only arm C fires. |
+|24| “P-GAP (pending episode length ≈ success gap): missed.” | Same text | Ground truth shows single continuous pending‑to‑firing episode of 386.6–401.6 s, unrelated to gap – this is a miss, so correct. |
+
+#### Summary of Issues
+1. **Table inconsistency**: “B Polls with present empty” shows 54/82, whereas ground truth implies 69/82.
+2. **Unsubstantiated figure**: The claim that “C's first success gap was 85 s” is not mentioned in the ground truth.
+3. **Up‑alert mis‑statement**: “P-UP (up follows absent; only arm C fires)” contradicts ground truth that up alerts fire in B, C, and D.
+
+All other factual statements align with the provided ground truth.
+
+--- 
+
+**Recommendation:**
+
+STDERR:
