@@ -1,0 +1,322 @@
+{
+  "arms": {
+    "C0": {
+      "D_list": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "D_max": 0.0,
+      "L_iso_mean": 0.5396994810037288,
+      "L_list": [
+        0.5358,
+        0.5356,
+        0.5567,
+        0.5343
+      ],
+      "L_max": 0.5567,
+      "L_min": 0.5343,
+      "flap_c2s_pooled": 0.24244170027302558,
+      "gap_list_pct": [
+        0.77,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gap_max": 0.00770000000000004,
+      "gap_mean": 0.00192500000000001,
+      "gap_median": 0.0,
+      "gap_packets_total": 77,
+      "guard_killed_runs": [],
+      "identity_failures": [],
+      "in_errors_delta_total": 77,
+      "iohogs_ops_total": 0,
+      "loadavg1_max": 9.43,
+      "mem_min_kb_median": 1735832.0,
+      "n": 4,
+      "old_fires_any": false,
+      "psi_cpu_some_us_median": 7831205.5,
+      "psi_io_full_us_median": 3658.0,
+      "psi_mem_full_us_median": 2203.0,
+      "pulse_off_list_s": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "pulse_segments": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "rcvbuf_delta_total": 77,
+      "rtt_p99_median": 281.144,
+      "sixhop_by_hop_total": {
+        "gen_to_proxy": 77,
+        "proxy_to_gen": 0,
+        "proxy_to_shim": 0,
+        "server_to_shim": 0,
+        "shim_to_proxy": 0,
+        "shim_to_server": 0
+      },
+      "sixhop_gap_packets_total": 77,
+      "spec": "no pressure"
+    },
+    "C1": {
+      "D_list": [
+        0.0,
+        0.009759012148974344,
+        0.9242677824267782,
+        0.0014998125234345627
+      ],
+      "D_max": 0.9242677824267782,
+      "L_iso_mean": 0.6801400493738893,
+      "L_list": [
+        0.6161,
+        0.6491,
+        1.0,
+        0.5909
+      ],
+      "L_max": 1.0,
+      "L_min": 0.5909,
+      "flap_c2s_pooled": 0.2863243746588318,
+      "gap_list_pct": [
+        8.7,
+        14.33,
+        56.58,
+        8.96
+      ],
+      "gap_max": 0.5658000000000001,
+      "gap_mean": 0.221425,
+      "gap_median": 0.11645,
+      "gap_packets_total": 8857,
+      "guard_killed_runs": [],
+      "identity_failures": [],
+      "in_errors_delta_total": 8851,
+      "iohogs_ops_total": 2599,
+      "loadavg1_max": 18.95,
+      "mem_min_kb_median": 945698.0,
+      "n": 4,
+      "old_fires_any": true,
+      "psi_cpu_some_us_median": 18167057.0,
+      "psi_io_full_us_median": 53903.5,
+      "psi_mem_full_us_median": 260101.0,
+      "pulse_off_list_s": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "pulse_segments": [
+        {},
+        {},
+        {},
+        {}
+      ],
+      "rcvbuf_delta_total": 8851,
+      "rtt_p99_median": 494.625,
+      "sixhop_by_hop_total": {
+        "gen_to_proxy": 8857,
+        "proxy_to_gen": 143,
+        "proxy_to_shim": 559,
+        "server_to_shim": 0,
+        "shim_to_proxy": 819,
+        "shim_to_server": 0
+      },
+      "sixhop_gap_packets_total": 10378,
+      "spec": "6 CPU hogs + memhog 1000 MB + 4 sync IO writers, sustained"
+    },
+    "C2": {
+      "D_list": [
+        0.015846814130075937,
+        0.008606142423219665,
+        0.05987412825310423,
+        0.009824561403508736
+      ],
+      "D_max": 0.05987412825310423,
+      "L_iso_mean": 0.5562122888005271,
+      "L_list": [
+        0.5543,
+        0.5615,
+        0.593,
+        0.5753
+      ],
+      "L_max": 0.593,
+      "L_min": 0.5543,
+      "flap_c2s_pooled": 0.24103678410678256,
+      "gap_list_pct": [
+        0.92,
+        1.98,
+        4.92,
+        5.6
+      ],
+      "gap_max": 0.05600000000000005,
+      "gap_mean": 0.033550000000000024,
+      "gap_median": 0.03450000000000003,
+      "gap_packets_total": 1342,
+      "guard_killed_runs": [],
+      "identity_failures": [],
+      "in_errors_delta_total": 1897,
+      "iohogs_ops_total": 1362,
+      "loadavg1_max": 19.45,
+      "mem_min_kb_median": 3294910.0,
+      "n": 4,
+      "old_fires_any": false,
+      "psi_cpu_some_us_median": 18115096.0,
+      "psi_io_full_us_median": 19010.5,
+      "psi_mem_full_us_median": 5931.0,
+      "pulse_off_list_s": [
+        2.066,
+        2.008,
+        2.003,
+        2.012
+      ],
+      "pulse_segments": [
+        {
+          "mem_median_after_pulse_kb": 4924954,
+          "mem_median_during_pulse_kb": 3836432,
+          "n_after": 16,
+          "n_during": 6
+        },
+        {
+          "mem_median_after_pulse_kb": 4763520,
+          "mem_median_during_pulse_kb": 3726696,
+          "n_after": 15,
+          "n_during": 7
+        },
+        {
+          "mem_median_after_pulse_kb": 3272938,
+          "mem_median_during_pulse_kb": 2169630,
+          "n_after": 16,
+          "n_during": 6
+        },
+        {
+          "mem_median_after_pulse_kb": 3599296,
+          "mem_median_during_pulse_kb": 2904876,
+          "n_after": 15,
+          "n_during": 7
+        }
+      ],
+      "rcvbuf_delta_total": 1897,
+      "rtt_p99_median": 451.2935,
+      "sixhop_by_hop_total": {
+        "gen_to_proxy": 1342,
+        "proxy_to_gen": 4,
+        "proxy_to_shim": 197,
+        "server_to_shim": 0,
+        "shim_to_proxy": 354,
+        "shim_to_server": 0
+      },
+      "sixhop_gap_packets_total": 1897,
+      "spec": "same as C1, all killed at t=+2.0 s (pulse, first 40%)"
+    },
+    "C3": {
+      "D_list": [
+        0.0,
+        0.013326319480974957,
+        0.0011482939632545541,
+        0.0036787247087676223
+      ],
+      "D_max": 0.013326319480974957,
+      "L_iso_mean": 0.5509478470968674,
+      "L_list": [
+        0.5921,
+        0.57,
+        0.5362,
+        0.6242
+      ],
+      "L_max": 0.6242,
+      "L_min": 0.5362,
+      "flap_c2s_pooled": 0.25968597609988747,
+      "gap_list_pct": [
+        6.77,
+        4.81,
+        0.0,
+        15.2
+      ],
+      "gap_max": 0.15200000000000002,
+      "gap_mean": 0.06695000000000001,
+      "gap_median": 0.05790000000000001,
+      "gap_packets_total": 2678,
+      "guard_killed_runs": [],
+      "identity_failures": [],
+      "in_errors_delta_total": 1493,
+      "iohogs_ops_total": 0,
+      "loadavg1_max": 15.72,
+      "mem_min_kb_median": 1390784.0,
+      "n": 4,
+      "old_fires_any": false,
+      "psi_cpu_some_us_median": 10677700.0,
+      "psi_io_full_us_median": 5376.0,
+      "psi_mem_full_us_median": 124712.0,
+      "pulse_off_list_s": [
+        2.002,
+        2.007,
+        2.006,
+        2.021
+      ],
+      "pulse_segments": [
+        {
+          "mem_median_after_pulse_kb": 2873764,
+          "mem_median_during_pulse_kb": 3156840,
+          "n_after": 15,
+          "n_during": 7
+        },
+        {
+          "mem_median_after_pulse_kb": 2250388,
+          "mem_median_during_pulse_kb": 2385868,
+          "n_after": 15,
+          "n_during": 7
+        },
+        {
+          "mem_median_after_pulse_kb": 1342236,
+          "mem_median_during_pulse_kb": 1557360,
+          "n_after": 15,
+          "n_during": 7
+        },
+        {
+          "mem_median_after_pulse_kb": 703668,
+          "mem_median_during_pulse_kb": 711992,
+          "n_after": 15,
+          "n_during": 7
+        }
+      ],
+      "rcvbuf_delta_total": 1493,
+      "rtt_p99_median": 443.5545,
+      "sixhop_by_hop_total": {
+        "gen_to_proxy": 2678,
+        "proxy_to_gen": 0,
+        "proxy_to_shim": 0,
+        "server_to_shim": 0,
+        "shim_to_proxy": 101,
+        "shim_to_server": 0
+      },
+      "sixhop_gap_packets_total": 2779,
+      "spec": "6 CPU hogs only, killed at t=+2.0 s (pulse)"
+    }
+  },
+  "g_star_from_C0_L_iso": 0.45687656284822653,
+  "ma0_median_kb": 1926964,
+  "manipulation_checks": {
+    "C1_mem_min_median_at_least_300MB_below_C0": true,
+    "C1_psi_io_full_median_ge_3x_C0": true,
+    "C2_mem_recovers_after_pulse": true,
+    "C2_psi_io_full_median_lt_C1": true,
+    "pulse_off_within_2.0_plusminus_0.5s_all": true
+  },
+  "total_runs": 16,
+  "verdicts": {
+    "P1_C1_median_lt_20pct_and_max_lt_29.8pct": false,
+    "P2_C0_all_le_2pct": true,
+    "P3_C1_median_ge_C0_plus_1pct": true,
+    "P4_pulse_median_between": true,
+    "P5_rcvbuf_attribution": {
+      "C1": true,
+      "C2": true,
+      "C3": true
+    },
+    "P6_D_all_le_0.03_and_no_old": false
+  }
+}

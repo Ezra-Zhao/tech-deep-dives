@@ -1,0 +1,20 @@
+Here are the concrete, data‑driven points I found when comparing the raw numbers, the narrative, and the tables:
+
+| Issue | Where it shows up | Why it’s a problem |
+|-------|-------------------|---------------------|
+| **C0 gaps – unit mismatch** | Raw data: “C0 gaps pct [0.77,0,0,0]”; Table: “C0 77 0 0 0 77 77 100%” | The narrative says “0.77 %” but the table lists “77”. 77 % and 0.77 % are two completely different figures; the table is off by a factor of 100. |
+| **C1 metrics – units out of sync** | Raw data: “C1 [8.70,14.33,56.58,8.96] median 11.65 L max 1.0”; Table: “C1 8,857 559 819 143 10,378 8,851 85 %” | The narrative gives decimal‑point values (e.g., 8.70 L), yet the table uses whole numbers without a decimal point and an extra “L” column. 8,857 L versus 8.70 L is a 1 000× difference. If the former are thousand‑thousand‑byte counts and the latter are kilobytes, the units are inconsistent. |
+| **C2 median vs table totals** | Raw: “C2 median 3.45”; Table: “C2 1,342 197 354 4 1,897 1,897 100 %” | The median of 3.45 L conflicts with a table entry of 1,342. Even if we ignore the prefix, 3.45 vs 1,342 is a vast disparity. |
+| **C3 median vs table figures** | Raw: “C3 median 5.79”; Table: “C3 2,678 0 101 0 2,779 1,493 54 %” | Similar to C2: the median reported in the text (5.79 L) does not match the large integer figures in the table. |
+| **G* value consistency** | Raw: “g*=45.69”; Narrative: “g* = 45.69 points” | These numbers match exactly, so no issue here. |
+| **“Dominant account is unchanged”** | Narrative claim vs table | The table shows a 54–100 % range for RcvbufErrors covering the shortfall, which the narrative summarises as “unchanged.” That’s a matter of interpretation, not a factual error. |
+| **“Combination is weaker than sustained pressure”** | Narrative: “combined pulse median 3.45 points is about 30 % of the sustained median, against a 40 % time coverage.” | The sustained median is 11.65 points (C1), so 30 % of 11.65 is ~3.5 points. The statement is numerically consistent. |
+| **“CPU‑only pulse median (C3) above combined pulse (C2)”** | Narrative: C3 median 5.79 > C2 median 3.45 | This is a factual claim that holds as written. |
+| **Pre‑registered predictions** | P1: “maximum clause failed — 56.58 points exceeds both 29.8 % and g*=45.69 points.” | The text correctly notes that 56.58 L > 45.69 L and > 29.8 %.|
+| **P6 violation** | Narrative: “C1‑r3 read L = 1.0 through the 0.75 line” | The table shows a similar L of 1,342 for C2‑r3, but the narrative indicates a line crossing. No numeric inconsistency beyond the fact that the line is indeed crossed, which is a result, not a mismatch. |
+
+### Bottom line
+
+- **Hard factual errors** exist in three places: the C0 percentage, the C1 values, and the C2/C3 medians versus their table representations. These are unit or formatting mismatches that would mislead a reader about the actual magnitudes.  
+- The rest of the narrative is numerically self‑consistent or at worst interprets the data in a mixed‑unit fashion that does not achieve a new contradiction.  
+- No logical jumps or exaggerations beyond the unit confusion were detected.

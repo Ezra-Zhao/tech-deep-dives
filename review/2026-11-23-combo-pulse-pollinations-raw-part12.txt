@@ -1,0 +1,3 @@
+**No hard factual or numeric errors were found in the excerpt.**  
+
+All of the figures cited—gap percentages, medians, the g* threshold, loss values, run counts, and system‐level metrics—are internally consistent and match the raw data as you presented them. The logic flows from the described methodology into the reported outcomes without any detectable jump or exaggeration. If you have a specific section or assertion you’d like to double‑check in more depth, let me know!

@@ -1,0 +1,9 @@
+The numbers and logical flow line up, so no hard factual errors or glaring inconsistencies appear in the excerpt. Here are the points that stood out:
+
+- **Table structure** – the column heading “Gap per run (points)” matches the raw gaps given for each arm (C0: 0.77 / 0 / 0 / 0; C1: 8.70 / 14.33 / 56.58 / 8.96; C2: 0.92 / 1.98 / 4.92 / 5.60; C3: 6.77 / 4.81 / 0 / 15.20).  
+- **Median calculations** – C1’s median of 11.65 points and C2’s 3.45, C3’s 5.79 all come straight from those four‑run lists.  
+- **L range and mean L_iso** – Every arm’s L range contains its reported mean L_iso (e.g., C0: 0.5397 lies between 0.5343 and 0.5567).  
+- **Max D** – The maximum D value in the table (0.9243 for C1) matches the narrative discussion of run 3.  
+- **RcvbufErrors** – The lone baseline run’s 77‑packet loss and the 6,217 delta for run 3 are consistent with the gaps described (first‑hop gap 5,658 plus second‑hop overflow).  
+
+Everything else reads well‑reasoned, and the conclusion that the “line can be crossed in practice” is indeed supported by that single, largest run. No logical jumps or overstated claims are evident in the provided passage.

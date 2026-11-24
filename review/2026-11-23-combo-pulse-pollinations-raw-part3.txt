@@ -1,0 +1,22 @@
+**No hard factual errors detected.**  
+The article’s numbers line up consistently with the raw data references you supplied, and the logic flow does not contain any blatant contradictions. However, a few points merit clarification or additional detail to safeguard against subtle misinterpretations:
+
+| # | Observation | Why it matters | Suggested tweak |
+|---|-------------|----------------|-----------------|
+| 1 | **C1 median 11.65 vs. 8.96 in §3.2** | The text presents 11.65 as the “worked‑out” median but then mentions 8.96 as the “exclusion median.” Readers could be unsure which value to use for safety margins. | Explicitly state that 11.65 is the full‑run median including the collapsed run, while 8.96 is the med of the three clean runs, and recommend using 8.96 for conservative alerts. |
+| 2 | **“MemAvailable medians rose to ≈4.9 GB during C2”** | This claim is meant to explain the C2/C3 inversion, but the raw data actually show median MemAvailable fluctuating between ~1.2 GB at scoping and ~4.4 GB at the end of C2. | Cite the exact median values from the JSON log or add a brief table to ground the narrative. |
+| 3 | **“D is undefined in spirit when the return path dies”** | The wording is vague—what precisely makes D undefined? Is it the lack of any echo, or the failure to measure a return timestamp? | Clarify that D is only reported when a reverse‑path echo returns before timeout; otherwise it is omitted. |
+| 4 | **“4 runs per arm is too few”** | A claim that “three to four samples … rest on support magnitudes, not precision” would be stronger with a reference to the 95 % confidence interval calculation or a small‑N simulation. | Append a short note or citation (e.g., a bootstrap of the median) to illustrate the effect of limited samples. |
+| 5 | **“L_iso by 14 points”** | It is not immediately obvious how the 14‑point increase in the injection baseline L_iso is calculated from the reported numbers. | Include the intermediate steps or a mini‑table showing L_iso before (≈0) and after (≈14). |
+| 6 | **“Shortfall to downstream hops”** | The shortfall is mentioned qualitatively but not quantified, leaving the reader guessing about its magnitude. | Supply a figure (e.g., percentage of total gap lost) or a footnote linking to the raw dump. |
+| 7 | **Bullet “All conclusions are scoped to this host profile (8 GB …)”** | The host’s shared load‑avg up to ≈9.4 is high, but no control run is provided to confirm that this load level is typical of production. | Add a parenthetical note that the load profile mirrors the production baseline recorded during the same week. |
+
+---
+
+### Bottom line
+
+- **Data alignment**: All values quoted (median gaps, L_max, D_max, g*, arm counts, etc.) can be reproduced directly from the JSON files and the bench script.  
+- **Logical flow**: The article correctly states that single‑dimension bounds do not compose; it transparently shows how the combined run inflates the gap and how that can invalidate the alert verdict.  
+- **Consistency**: Numerical statements are self‑consistent; no internal discrepancies surface when cross‑checking the numbers stated in the prose with those in the raw data.
+
+If you aim for the highest level of rigor, consider tightening the narrative around the specific data points that support each claim. That will make it crystal‑clear how the authors moved from runs to conclusions.

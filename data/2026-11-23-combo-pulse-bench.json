@@ -1,0 +1,3570 @@
+{
+  "arms": [
+    {
+      "arm": "C0",
+      "cpu_hogs": 0,
+      "iohogs": 0,
+      "memhog_mb": 0,
+      "pulse": false,
+      "spec": "no pressure"
+    },
+    {
+      "arm": "C1",
+      "cpu_hogs": 6,
+      "iohogs": 4,
+      "memhog_mb": 1000,
+      "pulse": false,
+      "spec": "6 CPU hogs + memhog 1000 MB + 4 sync IO writers, sustained"
+    },
+    {
+      "arm": "C2",
+      "cpu_hogs": 6,
+      "iohogs": 4,
+      "memhog_mb": 1000,
+      "pulse": true,
+      "spec": "same as C1, all killed at t=+2.0 s (pulse, first 40%)"
+    },
+    {
+      "arm": "C3",
+      "cpu_hogs": 6,
+      "iohogs": 0,
+      "memhog_mb": 0,
+      "pulse": true,
+      "spec": "6 CPU hogs only, killed at t=+2.0 s (pulse)"
+    }
+  ],
+  "generated_at_local": "2026-11-24 02:23:37 UTC",
+  "guard_floor_kb": 122880,
+  "ma0_median_kb": 1926964,
+  "ma0_samples_kb": [
+    1924592,
+    1926964,
+    1926840,
+    1928812,
+    1986784
+  ],
+  "pulse_s": 2.0,
+  "reps_per_arm": 4,
+  "runs": [
+    {
+      "D": 0.0,
+      "F_c": 6021,
+      "L": 0.5358,
+      "L_iso": 0.5321979240149148,
+      "arm": "C0",
+      "cpu_hogs": 0,
+      "echoed": 4642,
+      "exporter": {
+        "L": 0.5358,
+        "echoed": 4642.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.241560012093117,
+      "flap_share_s2c": 0.040524829762497924,
+      "gap": 0.00770000000000004,
+      "gap_packets": 77,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 77,
+      "iohogs": 0,
+      "iohogs_ops": null,
+      "loadavg_before": [
+        7.52,
+        5.38,
+        5.59
+      ],
+      "loss_rate": 0.5358,
+      "mem_samples": [
+        [
+          -1.28,
+          1941852
+        ],
+        [
+          -1.01,
+          1938032
+        ],
+        [
+          -0.71,
+          1940104
+        ],
+        [
+          -0.41,
+          1941772
+        ],
+        [
+          -0.11,
+          1940656
+        ],
+        [
+          0.19,
+          1938664
+        ],
+        [
+          0.49,
+          1935512
+        ],
+        [
+          0.79,
+          1936604
+        ],
+        [
+          1.09,
+          1936240
+        ],
+        [
+          1.39,
+          1934316
+        ],
+        [
+          1.69,
+          1933420
+        ],
+        [
+          1.99,
+          1928772
+        ],
+        [
+          2.25,
+          1882212
+        ],
+        [
+          2.5,
+          1871664
+        ],
+        [
+          2.79,
+          1872420
+        ],
+        [
+          3.05,
+          1868296
+        ],
+        [
+          3.3,
+          1873620
+        ],
+        [
+          3.59,
+          1872716
+        ],
+        [
+          3.9,
+          1826128
+        ],
+        [
+          4.19,
+          1819896
+        ],
+        [
+          4.49,
+          1769068
+        ],
+        [
+          4.8,
+          1802956
+        ],
+        [
+          5.09,
+          1782212
+        ],
+        [
+          5.39,
+          1781232
+        ],
+        [
+          5.69,
+          1796792
+        ],
+        [
+          5.99,
+          1802624
+        ],
+        [
+          6.29,
+          1799288
+        ],
+        [
+          6.6,
+          1817284
+        ],
+        [
+          6.89,
+          1817188
+        ],
+        [
+          7.19,
+          1835072
+        ],
+        [
+          7.49,
+          1846152
+        ],
+        [
+          7.79,
+          1858132
+        ]
+      ],
+      "mem_samples_median_kb": 1872042,
+      "mem_samples_min_kb": 1769068,
+      "mem_samples_n": 32,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "no pressure",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2397,
+        "c2s:drop_loss": 1505,
+        "c2s:forward": 6021,
+        "s2c:drop_flap": 244,
+        "s2c:drop_loss": 1135,
+        "s2c:forward": 4642
+      },
+      "proxy_summary": {
+        "delayed": 10663,
+        "dropped_flap": 2641,
+        "dropped_loss": 2640,
+        "forwarded": 10663,
+        "in_client": 9923,
+        "in_server": 6021
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 8330421.0,
+        "io_full_total_us_delta": 5399.0,
+        "io_some_total_us_delta": 681356.0,
+        "memory_full_total_us_delta": 1885.0,
+        "memory_some_total_us_delta": 86507.0
+      },
+      "pulse": false,
+      "pulse_off_elapsed_s": null,
+      "rcvbuf_errors_delta": 77,
+      "rep": 1,
+      "rtt_p99_ms": 301.748,
+      "run_index": 1,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6021,
+        "malformed": 0,
+        "received_total": 6021,
+        "valid": 6021
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6021,
+        "forwarded_server": 6021,
+        "in_client": 6021,
+        "in_server": 6021
+      },
+      "tag": "C0-r1",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6102,
+      "L": 0.5356,
+      "L_iso": 0.5356000000000001,
+      "arm": "C0",
+      "cpu_hogs": 0,
+      "echoed": 4644,
+      "exporter": {
+        "L": 0.5356,
+        "echoed": 4644.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2409,
+      "flap_share_s2c": 0.0471976401179941,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "iohogs_ops": null,
+      "loadavg_before": [
+        8.51,
+        5.66,
+        5.68
+      ],
+      "loss_rate": 0.5356,
+      "mem_samples": [
+        [
+          -1.21,
+          1873356
+        ],
+        [
+          -0.93,
+          1880216
+        ],
+        [
+          -0.64,
+          1918312
+        ],
+        [
+          -0.34,
+          1917812
+        ],
+        [
+          -0.03,
+          1918164
+        ],
+        [
+          0.27,
+          1919712
+        ],
+        [
+          0.57,
+          1921728
+        ],
+        [
+          0.86,
+          1921220
+        ],
+        [
+          1.16,
+          1916340
+        ],
+        [
+          1.47,
+          1917348
+        ],
+        [
+          1.76,
+          1918288
+        ],
+        [
+          2.06,
+          1919316
+        ],
+        [
+          2.37,
+          1904092
+        ],
+        [
+          2.67,
+          1904092
+        ],
+        [
+          2.97,
+          1903336
+        ],
+        [
+          3.27,
+          1897792
+        ],
+        [
+          3.52,
+          1865832
+        ],
+        [
+          3.77,
+          1812704
+        ],
+        [
+          4.06,
+          1823492
+        ],
+        [
+          4.36,
+          1852960
+        ],
+        [
+          4.66,
+          1856560
+        ],
+        [
+          4.96,
+          1807024
+        ],
+        [
+          5.28,
+          1831536
+        ],
+        [
+          5.56,
+          1831984
+        ],
+        [
+          5.86,
+          1832312
+        ],
+        [
+          6.16,
+          1822408
+        ],
+        [
+          6.46,
+          1824004
+        ],
+        [
+          6.76,
+          1830776
+        ],
+        [
+          7.01,
+          1813048
+        ],
+        [
+          7.27,
+          1809640
+        ],
+        [
+          7.56,
+          1811648
+        ],
+        [
+          7.87,
+          1818556
+        ]
+      ],
+      "mem_samples_median_kb": 1869594,
+      "mem_samples_min_kb": 1807024,
+      "mem_samples_n": 32,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "no pressure",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2409,
+        "c2s:drop_loss": 1489,
+        "c2s:forward": 6102,
+        "s2c:drop_flap": 288,
+        "s2c:drop_loss": 1170,
+        "s2c:forward": 4644
+      },
+      "proxy_summary": {
+        "delayed": 10746,
+        "dropped_flap": 2697,
+        "dropped_loss": 2659,
+        "forwarded": 10746,
+        "in_client": 10000,
+        "in_server": 6102
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 7787569.0,
+        "io_full_total_us_delta": 1917.0,
+        "io_some_total_us_delta": 940374.0,
+        "memory_full_total_us_delta": 450.0,
+        "memory_some_total_us_delta": 64643.0
+      },
+      "pulse": false,
+      "pulse_off_elapsed_s": null,
+      "rcvbuf_errors_delta": 0,
+      "rep": 2,
+      "rtt_p99_ms": 263.426,
+      "run_index": 2,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6102,
+        "malformed": 0,
+        "received_total": 6102,
+        "valid": 6102
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6102,
+        "forwarded_server": 6102,
+        "in_client": 6102,
+        "in_server": 6102
+      },
+      "tag": "C0-r2",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6005,
+      "L": 0.5567,
+      "L_iso": 0.5567,
+      "arm": "C0",
+      "cpu_hogs": 0,
+      "echoed": 4433,
+      "exporter": {
+        "L": 0.5567,
+        "echoed": 4433.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2479,
+      "flap_share_s2c": 0.0835970024979184,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "iohogs_ops": null,
+      "loadavg_before": [
+        8.75,
+        5.81,
+        5.73
+      ],
+      "loss_rate": 0.5567,
+      "mem_samples": [
+        [
+          -1.21,
+          1859980
+        ],
+        [
+          -0.93,
+          1859000
+        ],
+        [
+          -0.63,
+          1860492
+        ],
+        [
+          -0.33,
+          1857076
+        ],
+        [
+          -0.03,
+          1855256
+        ],
+        [
+          0.27,
+          1858340
+        ],
+        [
+          0.58,
+          1855820
+        ],
+        [
+          0.88,
+          1848780
+        ],
+        [
+          1.18,
+          1850748
+        ],
+        [
+          1.48,
+          1850788
+        ],
+        [
+          1.78,
+          1850568
+        ],
+        [
+          2.08,
+          1850332
+        ],
+        [
+          2.38,
+          1858512
+        ],
+        [
+          2.68,
+          1850220
+        ],
+        [
+          2.98,
+          1787060
+        ],
+        [
+          3.28,
+          1785180
+        ],
+        [
+          3.57,
+          1702596
+        ],
+        [
+          3.87,
+          1748024
+        ],
+        [
+          4.17,
+          1760784
+        ],
+        [
+          4.48,
+          1728676
+        ],
+        [
+          4.79,
+          1729532
+        ],
+        [
+          5.08,
+          1734404
+        ],
+        [
+          5.38,
+          1745628
+        ],
+        [
+          5.68,
+          1757776
+        ],
+        [
+          5.98,
+          1752796
+        ],
+        [
+          6.27,
+          1788648
+        ],
+        [
+          6.53,
+          1792860
+        ],
+        [
+          6.78,
+          1786280
+        ],
+        [
+          7.07,
+          1784796
+        ],
+        [
+          7.38,
+          1783780
+        ],
+        [
+          7.68,
+          1801008
+        ]
+      ],
+      "mem_samples_median_kb": 1792860,
+      "mem_samples_min_kb": 1702596,
+      "mem_samples_n": 31,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "no pressure",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2479,
+        "c2s:drop_loss": 1516,
+        "c2s:forward": 6005,
+        "s2c:drop_flap": 502,
+        "s2c:drop_loss": 1070,
+        "s2c:forward": 4433
+      },
+      "proxy_summary": {
+        "delayed": 10438,
+        "dropped_flap": 2981,
+        "dropped_loss": 2586,
+        "forwarded": 10438,
+        "in_client": 10000,
+        "in_server": 6005
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 7654857.0,
+        "io_full_total_us_delta": 864.0,
+        "io_some_total_us_delta": 1684383.0,
+        "memory_full_total_us_delta": 2521.0,
+        "memory_some_total_us_delta": 83592.0
+      },
+      "pulse": false,
+      "pulse_off_elapsed_s": null,
+      "rcvbuf_errors_delta": 0,
+      "rep": 3,
+      "rtt_p99_ms": 278.721,
+      "run_index": 3,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6005,
+        "malformed": 0,
+        "received_total": 6005,
+        "valid": 6005
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6005,
+        "forwarded_server": 6005,
+        "in_client": 6005,
+        "in_server": 6005
+      },
+      "tag": "C0-r3",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 6101,
+      "L": 0.5343,
+      "L_iso": 0.5343,
+      "arm": "C0",
+      "cpu_hogs": 0,
+      "echoed": 4657,
+      "exporter": {
+        "L": 0.5343,
+        "echoed": 4657.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2394,
+      "flap_share_s2c": 0.04622193083101131,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 0,
+      "iohogs": 0,
+      "iohogs_ops": null,
+      "loadavg_before": [
+        9.43,
+        6.05,
+        5.8
+      ],
+      "loss_rate": 0.5343,
+      "mem_samples": [
+        [
+          -1.27,
+          1791640
+        ],
+        [
+          -1.0,
+          1725360
+        ],
+        [
+          -0.7,
+          1696088
+        ],
+        [
+          -0.4,
+          1684612
+        ],
+        [
+          -0.11,
+          1645076
+        ],
+        [
+          0.14,
+          1644808
+        ],
+        [
+          0.39,
+          1650848
+        ],
+        [
+          0.7,
+          1694096
+        ],
+        [
+          0.99,
+          1699580
+        ],
+        [
+          1.29,
+          1687608
+        ],
+        [
+          1.6,
+          1683760
+        ],
+        [
+          1.9,
+          1683232
+        ],
+        [
+          2.2,
+          1691968
+        ],
+        [
+          2.5,
+          1690832
+        ],
+        [
+          2.79,
+          1690528
+        ],
+        [
+          3.09,
+          1677784
+        ],
+        [
+          3.39,
+          1665932
+        ],
+        [
+          3.69,
+          1646368
+        ],
+        [
+          3.99,
+          1622656
+        ],
+        [
+          4.29,
+          1642024
+        ],
+        [
+          4.59,
+          1618676
+        ],
+        [
+          4.84,
+          1649020
+        ],
+        [
+          5.09,
+          1665628
+        ],
+        [
+          5.4,
+          1663136
+        ],
+        [
+          5.69,
+          1697628
+        ],
+        [
+          5.99,
+          1683160
+        ],
+        [
+          6.29,
+          1676460
+        ],
+        [
+          6.59,
+          1669752
+        ],
+        [
+          6.89,
+          1662768
+        ],
+        [
+          7.19,
+          1683584
+        ],
+        [
+          7.49,
+          1706996
+        ]
+      ],
+      "mem_samples_median_kb": 1683160,
+      "mem_samples_min_kb": 1618676,
+      "mem_samples_n": 31,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "no pressure",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2394,
+        "c2s:drop_loss": 1505,
+        "c2s:forward": 6101,
+        "s2c:drop_flap": 282,
+        "s2c:drop_loss": 1162,
+        "s2c:forward": 4657
+      },
+      "proxy_summary": {
+        "delayed": 10758,
+        "dropped_flap": 2676,
+        "dropped_loss": 2667,
+        "forwarded": 10758,
+        "in_client": 10000,
+        "in_server": 6101
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 7874842.0,
+        "io_full_total_us_delta": 12542.0,
+        "io_some_total_us_delta": 2097414.0,
+        "memory_full_total_us_delta": 4826.0,
+        "memory_some_total_us_delta": 106111.0
+      },
+      "pulse": false,
+      "pulse_off_elapsed_s": null,
+      "rcvbuf_errors_delta": 0,
+      "rep": 4,
+      "rtt_p99_ms": 283.567,
+      "run_index": 4,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6101,
+        "malformed": 0,
+        "received_total": 6101,
+        "valid": 6101
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6101,
+        "forwarded_server": 6101,
+        "in_client": 6101,
+        "in_server": 6101
+      },
+      "tag": "C0-r4",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 5273,
+      "L": 0.6161,
+      "L_iso": 0.5795180722891566,
+      "arm": "C1",
+      "cpu_hogs": 6,
+      "echoed": 3839,
+      "exporter": {
+        "L": 0.6161,
+        "echoed": 3839.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2806133625410734,
+      "flap_share_s2c": 0.0917883557747013,
+      "gap": 0.08699999999999997,
+      "gap_packets": 870,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 870,
+      "iohogs": 4,
+      "iohogs_ops": 545,
+      "loadavg_before": [
+        9.88,
+        6.2,
+        5.85
+      ],
+      "loss_rate": 0.6161,
+      "mem_samples": [
+        [
+          -1.27,
+          965224
+        ],
+        [
+          -0.99,
+          955120
+        ],
+        [
+          -0.67,
+          943628
+        ],
+        [
+          -0.39,
+          932712
+        ],
+        [
+          -0.09,
+          939168
+        ],
+        [
+          0.21,
+          945648
+        ],
+        [
+          0.6,
+          971148
+        ],
+        [
+          0.91,
+          975972
+        ],
+        [
+          1.21,
+          976072
+        ],
+        [
+          1.51,
+          975300
+        ],
+        [
+          1.81,
+          975516
+        ],
+        [
+          2.11,
+          975396
+        ],
+        [
+          2.4,
+          977100
+        ],
+        [
+          2.7,
+          979020
+        ],
+        [
+          3.01,
+          982944
+        ],
+        [
+          3.31,
+          983600
+        ],
+        [
+          3.6,
+          988080
+        ],
+        [
+          3.91,
+          1014396
+        ],
+        [
+          4.22,
+          949396
+        ],
+        [
+          4.5,
+          1015736
+        ],
+        [
+          4.81,
+          1037324
+        ],
+        [
+          5.1,
+          1033296
+        ],
+        [
+          5.41,
+          1022808
+        ],
+        [
+          5.7,
+          1020064
+        ],
+        [
+          6.01,
+          1017384
+        ],
+        [
+          6.3,
+          1027672
+        ],
+        [
+          6.61,
+          1027724
+        ],
+        [
+          6.9,
+          1018588
+        ],
+        [
+          7.21,
+          1844328
+        ],
+        [
+          7.5,
+          1975236
+        ],
+        [
+          7.8,
+          2004408
+        ]
+      ],
+      "mem_samples_median_kb": 982944,
+      "mem_samples_min_kb": 932712,
+      "mem_samples_n": 31,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "6 CPU hogs + memhog 1000 MB + 4 sync IO writers, sustained",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2562,
+        "c2s:drop_loss": 1295,
+        "c2s:forward": 5273,
+        "s2c:drop_flap": 484,
+        "s2c:drop_loss": 950,
+        "s2c:forward": 3839
+      },
+      "proxy_summary": {
+        "delayed": 9112,
+        "dropped_flap": 3046,
+        "dropped_loss": 2245,
+        "forwarded": 9112,
+        "in_client": 9130,
+        "in_server": 5273
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 17682130.0,
+        "io_full_total_us_delta": 18813.0,
+        "io_some_total_us_delta": 7596647.0,
+        "memory_full_total_us_delta": 236571.0,
+        "memory_some_total_us_delta": 1271398.0
+      },
+      "pulse": false,
+      "pulse_off_elapsed_s": null,
+      "rcvbuf_errors_delta": 870,
+      "rep": 1,
+      "rtt_p99_ms": 494.625,
+      "run_index": 5,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 5273,
+        "malformed": 0,
+        "received_total": 5273,
+        "valid": 5273
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 5273,
+        "forwarded_server": 5273,
+        "in_client": 5273,
+        "in_server": 5273
+      },
+      "tag": "C1-r1",
+      "vm_delta": {
+        "pgscan_kswapd": 263324,
+        "pgsteal_kswapd": 236063,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.009759012148974344,
+      "F_c": 5021,
+      "L": 0.6491,
+      "L_iso": 0.5904050426053461,
+      "arm": "C1",
+      "cpu_hogs": 6,
+      "echoed": 3509,
+      "exporter": {
+        "L": 0.6491,
+        "echoed": 3509.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.27617602427921095,
+      "flap_share_s2c": 0.11283185840707964,
+      "gap": 0.14329999999999998,
+      "gap_packets": 1433,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 1482,
+      "iohogs": 4,
+      "iohogs_ops": 569,
+      "loadavg_before": [
+        13.7,
+        7.28,
+        6.22
+      ],
+      "loss_rate": 0.6491,
+      "mem_samples": [
+        [
+          -1.28,
+          1297408
+        ],
+        [
+          -1.0,
+          1280484
+        ],
+        [
+          -0.7,
+          1274572
+        ],
+        [
+          -0.4,
+          1270288
+        ],
+        [
+          -0.09,
+          1264608
+        ],
+        [
+          0.21,
+          1246672
+        ],
+        [
+          0.5,
+          1234392
+        ],
+        [
+          0.82,
+          1205116
+        ],
+        [
+          1.1,
+          1180464
+        ],
+        [
+          1.42,
+          1176968
+        ],
+        [
+          1.71,
+          1166004
+        ],
+        [
+          2.0,
+          1158916
+        ],
+        [
+          2.31,
+          1158844
+        ],
+        [
+          2.61,
+          1139044
+        ],
+        [
+          2.91,
+          1143680
+        ],
+        [
+          3.19,
+          1090012
+        ],
+        [
+          3.51,
+          1082396
+        ],
+        [
+          3.8,
+          1107892
+        ],
+        [
+          4.1,
+          1114448
+        ],
+        [
+          4.41,
+          1096156
+        ],
+        [
+          4.71,
+          1078260
+        ],
+        [
+          5.01,
+          1069716
+        ],
+        [
+          5.31,
+          1067324
+        ],
+        [
+          5.6,
+          1061284
+        ],
+        [
+          5.91,
+          1047976
+        ],
+        [
+          6.21,
+          1039800
+        ],
+        [
+          6.5,
+          1044984
+        ],
+        [
+          6.81,
+          1022392
+        ],
+        [
+          7.1,
+          1004040
+        ],
+        [
+          7.4,
+          1000976
+        ],
+        [
+          7.7,
+          958684
+        ],
+        [
+          7.99,
+          1995308
+        ],
+        [
+          8.3,
+          1910172
+        ],
+        [
+          8.6,
+          1790384
+        ],
+        [
+          8.9,
+          1840156
+        ],
+        [
+          9.19,
+          1857408
+        ]
+      ],
+      "mem_samples_median_kb": 1151262,
+      "mem_samples_min_kb": 958684,
+      "mem_samples_n": 36,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "6 CPU hogs + memhog 1000 MB + 4 sync IO writers, sustained",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2366,
+        "c2s:drop_loss": 1180,
+        "c2s:forward": 5021,
+        "s2c:drop_flap": 561,
+        "s2c:drop_loss": 902,
+        "s2c:forward": 3509
+      },
+      "proxy_summary": {
+        "delayed": 8530,
+        "dropped_flap": 2927,
+        "dropped_loss": 2082,
+        "forwarded": 8530,
+        "in_client": 8567,
+        "in_server": 4972
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 18651984.0,
+        "io_full_total_us_delta": 5321.0,
+        "io_some_total_us_delta": 8418436.0,
+        "memory_full_total_us_delta": 283631.0,
+        "memory_some_total_us_delta": 1520127.0
+      },
+      "pulse": false,
+      "pulse_off_elapsed_s": null,
+      "rcvbuf_errors_delta": 1482,
+      "rep": 2,
+      "rtt_p99_ms": 507.183,
+      "run_index": 6,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 5021,
+        "malformed": 0,
+        "received_total": 5021,
+        "valid": 5021
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 5021,
+        "forwarded_server": 5021,
+        "in_client": 5021,
+        "in_server": 5021
+      },
+      "tag": "C1-r2",
+      "vm_delta": {
+        "pgscan_kswapd": 429585,
+        "pgsteal_kswapd": 391430,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.9242677824267782,
+      "F_c": 2390,
+      "L": 1.0,
+      "L_iso": 1.0,
+      "arm": "C1",
+      "cpu_hogs": 6,
+      "echoed": 0,
+      "exporter": {
+        "L": 1.0,
+        "echoed": 0.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.35214187010594195,
+      "flap_share_s2c": 0.0,
+      "gap": 0.5658000000000001,
+      "gap_packets": 5658,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 6217,
+      "iohogs": 4,
+      "iohogs_ops": 846,
+      "loadavg_before": [
+        16.96,
+        8.41,
+        6.61
+      ],
+      "loss_rate": 1.0,
+      "mem_samples": [
+        [
+          -2.71,
+          528328
+        ],
+        [
+          -2.43,
+          524532
+        ],
+        [
+          -1.37,
+          557276
+        ],
+        [
+          -1.11,
+          664116
+        ],
+        [
+          -0.51,
+          666172
+        ],
+        [
+          -0.13,
+          667964
+        ],
+        [
+          0.27,
+          674144
+        ],
+        [
+          0.59,
+          654332
+        ],
+        [
+          0.88,
+          666508
+        ],
+        [
+          1.19,
+          743676
+        ],
+        [
+          1.49,
+          742116
+        ],
+        [
+          1.89,
+          722220
+        ],
+        [
+          2.19,
+          716940
+        ],
+        [
+          2.61,
+          727548
+        ],
+        [
+          2.89,
+          726428
+        ],
+        [
+          3.38,
+          727712
+        ],
+        [
+          3.72,
+          728160
+        ],
+        [
+          4.0,
+          732488
+        ],
+        [
+          4.68,
+          729040
+        ],
+        [
+          5.11,
+          732592
+        ],
+        [
+          5.5,
+          731936
+        ],
+        [
+          6.0,
+          732236
+        ],
+        [
+          6.82,
+          743072
+        ],
+        [
+          7.19,
+          752364
+        ],
+        [
+          8.22,
+          743492
+        ],
+        [
+          9.11,
+          737252
+        ],
+        [
+          10.01,
+          732288
+        ],
+        [
+          10.3,
+          730168
+        ],
+        [
+          11.5,
+          733232
+        ],
+        [
+          12.0,
+          723896
+        ],
+        [
+          12.3,
+          1386192
+        ],
+        [
+          12.68,
+          4264020
+        ],
+        [
+          12.98,
+          5323820
+        ],
+        [
+          13.23,
+          5238120
+        ],
+        [
+          13.48,
+          5250164
+        ],
+        [
+          13.77,
+          5170828
+        ],
+        [
+          14.02,
+          5099668
+        ]
+      ],
+      "mem_samples_median_kb": 731936,
+      "mem_samples_min_kb": 524532,
+      "mem_samples_n": 37,
+      "memhog_mb": 1000,
+      "old_fires": true,
+      "pressure_spec": "6 CPU hogs + memhog 1000 MB + 4 sync IO writers, sustained",
+      "proxy_decisions": {
+        "c2s:drop_flap": 1529,
+        "c2s:drop_loss": 566,
+        "c2s:forward": 2247,
+        "s2c:drop_loss": 38,
+        "s2c:forward": 143
+      },
+      "proxy_summary": {
+        "delayed": 2390,
+        "dropped_flap": 1529,
+        "dropped_loss": 604,
+        "forwarded": 2390,
+        "in_client": 4342,
+        "in_server": 181
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 27794039.0,
+        "io_full_total_us_delta": 128058.0,
+        "io_some_total_us_delta": 9552371.0,
+        "memory_full_total_us_delta": 1522965.0,
+        "memory_some_total_us_delta": 5905041.0
+      },
+      "pulse": false,
+      "pulse_off_elapsed_s": null,
+      "rcvbuf_errors_delta": 6217,
+      "rep": 3,
+      "rtt_p99_ms": null,
+      "run_index": 7,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 181,
+        "malformed": 0,
+        "received_total": 181,
+        "valid": 181
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 943,
+        "forwarded_server": 181,
+        "in_client": 1688,
+        "in_server": 181
+      },
+      "tag": "C1-r3",
+      "vm_delta": {
+        "pgscan_kswapd": 87228,
+        "pgsteal_kswapd": 80315,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0014998125234345627,
+      "F_c": 5334,
+      "L": 0.5909,
+      "L_iso": 0.5506370826010545,
+      "arm": "C1",
+      "cpu_hogs": 6,
+      "echoed": 4091,
+      "exporter": {
+        "L": 0.5909,
+        "echoed": 4091.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2702108963093146,
+      "flap_share_s2c": 0.04280886218550507,
+      "gap": 0.08960000000000001,
+      "gap_packets": 896,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 282,
+      "iohogs": 4,
+      "iohogs_ops": 639,
+      "loadavg_before": [
+        18.95,
+        9.65,
+        7.08
+      ],
+      "loss_rate": 0.5909,
+      "mem_samples": [
+        [
+          -1.22,
+          4247940
+        ],
+        [
+          -0.92,
+          4247544
+        ],
+        [
+          -0.62,
+          4242840
+        ],
+        [
+          -0.31,
+          4232612
+        ],
+        [
+          -0.02,
+          4201284
+        ],
+        [
+          0.28,
+          4195512
+        ],
+        [
+          0.58,
+          4204812
+        ],
+        [
+          0.88,
+          4196464
+        ],
+        [
+          1.19,
+          4177292
+        ],
+        [
+          1.5,
+          4175056
+        ],
+        [
+          1.79,
+          4176844
+        ],
+        [
+          2.09,
+          4177772
+        ],
+        [
+          2.38,
+          4181388
+        ],
+        [
+          2.68,
+          4182756
+        ],
+        [
+          2.98,
+          4189612
+        ],
+        [
+          3.28,
+          4198668
+        ],
+        [
+          3.53,
+          4200884
+        ],
+        [
+          3.78,
+          4186972
+        ],
+        [
+          4.08,
+          4188864
+        ],
+        [
+          4.38,
+          4190184
+        ],
+        [
+          4.69,
+          4200632
+        ],
+        [
+          4.99,
+          4197236
+        ],
+        [
+          5.29,
+          4181692
+        ],
+        [
+          5.59,
+          4176636
+        ],
+        [
+          5.89,
+          4151792
+        ],
+        [
+          6.19,
+          4089100
+        ],
+        [
+          6.49,
+          4087740
+        ],
+        [
+          6.79,
+          4090764
+        ],
+        [
+          7.08,
+          4091584
+        ],
+        [
+          7.38,
+          4051984
+        ],
+        [
+          7.68,
+          5097716
+        ],
+        [
+          7.98,
+          4994620
+        ]
+      ],
+      "mem_samples_median_kb": 4189238,
+      "mem_samples_min_kb": 4051984,
+      "mem_samples_n": 32,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "6 CPU hogs + memhog 1000 MB + 4 sync IO writers, sustained",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2460,
+        "c2s:drop_loss": 1310,
+        "c2s:forward": 5334,
+        "s2c:drop_flap": 228,
+        "s2c:drop_loss": 1007,
+        "s2c:forward": 4091
+      },
+      "proxy_summary": {
+        "delayed": 9425,
+        "dropped_flap": 2688,
+        "dropped_loss": 2317,
+        "forwarded": 9425,
+        "in_client": 9104,
+        "in_server": 5326
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 16390454.0,
+        "io_full_total_us_delta": 88994.0,
+        "io_some_total_us_delta": 4561826.0,
+        "memory_full_total_us_delta": 4658.0,
+        "memory_some_total_us_delta": 848700.0
+      },
+      "pulse": false,
+      "pulse_off_elapsed_s": null,
+      "rcvbuf_errors_delta": 282,
+      "rep": 4,
+      "rtt_p99_ms": 381.161,
+      "run_index": 8,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 5334,
+        "malformed": 0,
+        "received_total": 5334,
+        "valid": 5334
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 5334,
+        "forwarded_server": 5334,
+        "in_client": 5334,
+        "in_server": 5334
+      },
+      "tag": "C1-r4",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.015846814130075937,
+      "F_c": 6058,
+      "L": 0.5543,
+      "L_iso": 0.5501614856681469,
+      "arm": "C2",
+      "cpu_hogs": 6,
+      "echoed": 4457,
+      "exporter": {
+        "L": 0.5543,
+        "echoed": 4457.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2412192167945095,
+      "flap_share_s2c": 0.06071787990607179,
+      "gap": 0.009199999999999986,
+      "gap_packets": 92,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 188,
+      "iohogs": 4,
+      "iohogs_ops": 371,
+      "loadavg_before": [
+        19.45,
+        10.34,
+        7.36
+      ],
+      "loss_rate": 0.5543,
+      "mem_samples": [
+        [
+          -1.22,
+          3719192
+        ],
+        [
+          -0.93,
+          3805288
+        ],
+        [
+          -0.63,
+          3796272
+        ],
+        [
+          -0.33,
+          3798036
+        ],
+        [
+          -0.03,
+          3801492
+        ],
+        [
+          0.26,
+          3808492
+        ],
+        [
+          0.57,
+          3809568
+        ],
+        [
+          0.87,
+          3833040
+        ],
+        [
+          1.17,
+          3839824
+        ],
+        [
+          1.47,
+          3839936
+        ],
+        [
+          1.77,
+          3853620
+        ],
+        [
+          2.07,
+          3865396
+        ],
+        [
+          2.37,
+          4884512
+        ],
+        [
+          2.66,
+          4832924
+        ],
+        [
+          2.96,
+          4943308
+        ],
+        [
+          3.26,
+          4939500
+        ],
+        [
+          3.51,
+          4932924
+        ],
+        [
+          3.77,
+          4920364
+        ],
+        [
+          4.06,
+          4921792
+        ],
+        [
+          4.36,
+          4843704
+        ],
+        [
+          4.66,
+          4822732
+        ],
+        [
+          4.96,
+          4924724
+        ],
+        [
+          5.26,
+          4925184
+        ],
+        [
+          5.56,
+          4966196
+        ],
+        [
+          5.87,
+          4980256
+        ],
+        [
+          6.17,
+          5021840
+        ],
+        [
+          6.46,
+          4932960
+        ],
+        [
+          6.77,
+          4857068
+        ],
+        [
+          7.07,
+          4851856
+        ],
+        [
+          7.36,
+          4945444
+        ],
+        [
+          7.66,
+          4932200
+        ],
+        [
+          7.96,
+          4891568
+        ],
+        [
+          8.26,
+          4836184
+        ],
+        [
+          8.56,
+          4697492
+        ]
+      ],
+      "mem_samples_median_kb": 4847780,
+      "mem_samples_min_kb": 3719192,
+      "mem_samples_n": 34,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "same as C1, all killed at t=+2.0 s (pulse, first 40%)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2390,
+        "c2s:drop_loss": 1460,
+        "c2s:forward": 6058,
+        "s2c:drop_flap": 362,
+        "s2c:drop_loss": 1143,
+        "s2c:forward": 4457
+      },
+      "proxy_summary": {
+        "delayed": 10515,
+        "dropped_flap": 2752,
+        "dropped_loss": 2603,
+        "forwarded": 10515,
+        "in_client": 9908,
+        "in_server": 5962
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 15926758.0,
+        "io_full_total_us_delta": 20274.0,
+        "io_some_total_us_delta": 3729663.0,
+        "memory_full_total_us_delta": 6473.0,
+        "memory_some_total_us_delta": 566487.0
+      },
+      "pulse": true,
+      "pulse_off_elapsed_s": 2.066,
+      "rcvbuf_errors_delta": 188,
+      "rep": 1,
+      "rtt_p99_ms": 391.792,
+      "run_index": 9,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6058,
+        "malformed": 0,
+        "received_total": 6058,
+        "valid": 6058
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6058,
+        "forwarded_server": 6058,
+        "in_client": 6058,
+        "in_server": 6058
+      },
+      "tag": "C2-r1",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.008606142423219665,
+      "F_c": 5926,
+      "L": 0.5615,
+      "L_iso": 0.5526423178943073,
+      "arm": "C2",
+      "cpu_hogs": 6,
+      "echoed": 4385,
+      "exporter": {
+        "L": 0.5615,
+        "echoed": 4385.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.24280759028769638,
+      "flap_share_s2c": 0.07370212765957447,
+      "gap": 0.01980000000000004,
+      "gap_packets": 198,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 249,
+      "iohogs": 4,
+      "iohogs_ops": 348,
+      "loadavg_before": [
+        18.12,
+        10.63,
+        7.52
+      ],
+      "loss_rate": 0.5615,
+      "mem_samples": [
+        [
+          -1.29,
+          3789000
+        ],
+        [
+          -1.0,
+          3754408
+        ],
+        [
+          -0.7,
+          3746916
+        ],
+        [
+          -0.41,
+          3753520
+        ],
+        [
+          -0.11,
+          3754940
+        ],
+        [
+          0.19,
+          3748816
+        ],
+        [
+          0.49,
+          3726696
+        ],
+        [
+          0.79,
+          3727540
+        ],
+        [
+          1.09,
+          3725952
+        ],
+        [
+          1.39,
+          3725448
+        ],
+        [
+          1.69,
+          3726684
+        ],
+        [
+          1.99,
+          3729544
+        ],
+        [
+          2.3,
+          4785064
+        ],
+        [
+          2.59,
+          4777232
+        ],
+        [
+          2.89,
+          4790948
+        ],
+        [
+          3.2,
+          4802060
+        ],
+        [
+          3.49,
+          4742384
+        ],
+        [
+          3.79,
+          4739104
+        ],
+        [
+          4.09,
+          4765476
+        ],
+        [
+          4.39,
+          4769084
+        ],
+        [
+          4.69,
+          4763508
+        ],
+        [
+          4.99,
+          4763520
+        ],
+        [
+          5.29,
+          4765088
+        ],
+        [
+          5.59,
+          4760268
+        ],
+        [
+          5.89,
+          4757512
+        ],
+        [
+          6.19,
+          4761360
+        ],
+        [
+          6.49,
+          4742556
+        ],
+        [
+          6.79,
+          4740364
+        ],
+        [
+          7.09,
+          4737812
+        ],
+        [
+          7.39,
+          4729720
+        ],
+        [
+          7.69,
+          4686200
+        ]
+      ],
+      "mem_samples_median_kb": 4739104,
+      "mem_samples_min_kb": 3725448,
+      "mem_samples_n": 31,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "same as C1, all killed at t=+2.0 s (pulse, first 40%)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2380,
+        "c2s:drop_loss": 1496,
+        "c2s:forward": 5926,
+        "s2c:drop_flap": 433,
+        "s2c:drop_loss": 1057,
+        "s2c:forward": 4385
+      },
+      "proxy_summary": {
+        "delayed": 10311,
+        "dropped_flap": 2813,
+        "dropped_loss": 2553,
+        "forwarded": 10311,
+        "in_client": 9802,
+        "in_server": 5875
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 17153483.0,
+        "io_full_total_us_delta": 20646.0,
+        "io_some_total_us_delta": 4577273.0,
+        "memory_full_total_us_delta": 1432.0,
+        "memory_some_total_us_delta": 541064.0
+      },
+      "pulse": true,
+      "pulse_off_elapsed_s": 2.008,
+      "rcvbuf_errors_delta": 249,
+      "rep": 2,
+      "rtt_p99_ms": 331.086,
+      "run_index": 10,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 5926,
+        "malformed": 0,
+        "received_total": 5926,
+        "valid": 5926
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 5926,
+        "forwarded_server": 5926,
+        "in_client": 5926,
+        "in_server": 5926
+      },
+      "tag": "C2-r2",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.05987412825310423,
+      "F_c": 5879,
+      "L": 0.593,
+      "L_iso": 0.5719394194362641,
+      "arm": "C2",
+      "cpu_hogs": 6,
+      "echoed": 4070,
+      "exporter": {
+        "L": 0.593,
+        "echoed": 4070.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.22665124106015985,
+      "flap_share_s2c": 0.08630360050660395,
+      "gap": 0.04920000000000002,
+      "gap_packets": 492,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 844,
+      "iohogs": 4,
+      "iohogs_ops": 268,
+      "loadavg_before": [
+        16.81,
+        10.82,
+        7.65
+      ],
+      "loss_rate": 0.593,
+      "mem_samples": [
+        [
+          -1.22,
+          2837400
+        ],
+        [
+          -0.92,
+          2781380
+        ],
+        [
+          -0.63,
+          2668468
+        ],
+        [
+          -0.31,
+          2607820
+        ],
+        [
+          -0.01,
+          2470424
+        ],
+        [
+          0.29,
+          2373568
+        ],
+        [
+          0.57,
+          2324260
+        ],
+        [
+          0.87,
+          2208856
+        ],
+        [
+          1.17,
+          2130404
+        ],
+        [
+          1.47,
+          2130284
+        ],
+        [
+          1.77,
+          2129204
+        ],
+        [
+          2.06,
+          2126260
+        ],
+        [
+          2.37,
+          3164664
+        ],
+        [
+          2.66,
+          3189984
+        ],
+        [
+          2.97,
+          3382796
+        ],
+        [
+          3.22,
+          3350696
+        ],
+        [
+          3.47,
+          3350360
+        ],
+        [
+          3.77,
+          3354532
+        ],
+        [
+          4.02,
+          3341144
+        ],
+        [
+          4.27,
+          3322672
+        ],
+        [
+          4.57,
+          3292156
+        ],
+        [
+          4.82,
+          3261444
+        ],
+        [
+          5.07,
+          3221320
+        ],
+        [
+          5.37,
+          3260212
+        ],
+        [
+          5.67,
+          3250492
+        ],
+        [
+          5.97,
+          3250744
+        ],
+        [
+          6.27,
+          3284432
+        ],
+        [
+          6.57,
+          3296864
+        ],
+        [
+          6.82,
+          3323672
+        ],
+        [
+          7.07,
+          3303024
+        ],
+        [
+          7.36,
+          3298880
+        ],
+        [
+          7.61,
+          3322004
+        ],
+        [
+          7.86,
+          3326156
+        ],
+        [
+          8.12,
+          3333204
+        ]
+      ],
+      "mem_samples_median_kb": 3255478,
+      "mem_samples_min_kb": 2126260,
+      "mem_samples_n": 34,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "same as C1, all killed at t=+2.0 s (pulse, first 40%)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2155,
+        "c2s:drop_loss": 1474,
+        "c2s:forward": 5879,
+        "s2c:drop_flap": 477,
+        "s2c:drop_loss": 980,
+        "s2c:forward": 4070
+      },
+      "proxy_summary": {
+        "delayed": 9949,
+        "dropped_flap": 2632,
+        "dropped_loss": 2454,
+        "forwarded": 9949,
+        "in_client": 9508,
+        "in_server": 5527
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 19182806.0,
+        "io_full_total_us_delta": 5866.0,
+        "io_some_total_us_delta": 4111935.0,
+        "memory_full_total_us_delta": 161657.0,
+        "memory_some_total_us_delta": 775996.0
+      },
+      "pulse": true,
+      "pulse_off_elapsed_s": 2.003,
+      "rcvbuf_errors_delta": 844,
+      "rep": 3,
+      "rtt_p99_ms": 510.795,
+      "run_index": 11,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 5699,
+        "malformed": 0,
+        "received_total": 5699,
+        "valid": 5699
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 5699,
+        "forwarded_server": 5699,
+        "in_client": 5699,
+        "in_server": 5699
+      },
+      "tag": "C2-r3",
+      "vm_delta": {
+        "pgscan_kswapd": 404049,
+        "pgsteal_kswapd": 377567,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.009824561403508736,
+      "F_c": 5700,
+      "L": 0.5753,
+      "L_iso": 0.5501059322033899,
+      "arm": "C2",
+      "cpu_hogs": 6,
+      "echoed": 4247,
+      "exporter": {
+        "L": 0.5753,
+        "echoed": 4247.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2534957627118644,
+      "flap_share_s2c": 0.051381998582565556,
+      "gap": 0.05600000000000005,
+      "gap_packets": 560,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 616,
+      "iohogs": 4,
+      "iohogs_ops": 375,
+      "loadavg_before": [
+        14.54,
+        10.68,
+        7.67
+      ],
+      "loss_rate": 0.5753,
+      "mem_samples": [
+        [
+          -1.21,
+          3181720
+        ],
+        [
+          -0.89,
+          3136328
+        ],
+        [
+          -0.56,
+          3084904
+        ],
+        [
+          -0.31,
+          3061036
+        ],
+        [
+          0.09,
+          3006552
+        ],
+        [
+          0.39,
+          2973060
+        ],
+        [
+          0.69,
+          2943632
+        ],
+        [
+          1.0,
+          2904876
+        ],
+        [
+          1.3,
+          2893244
+        ],
+        [
+          1.6,
+          2883472
+        ],
+        [
+          1.9,
+          2870628
+        ],
+        [
+          2.19,
+          3811488
+        ],
+        [
+          2.49,
+          3769276
+        ],
+        [
+          2.78,
+          3765844
+        ],
+        [
+          3.09,
+          3727652
+        ],
+        [
+          3.39,
+          3668968
+        ],
+        [
+          3.69,
+          3649892
+        ],
+        [
+          3.99,
+          3616916
+        ],
+        [
+          4.29,
+          3599296
+        ],
+        [
+          4.59,
+          3580272
+        ],
+        [
+          4.89,
+          3564588
+        ],
+        [
+          5.19,
+          3524124
+        ],
+        [
+          5.49,
+          3533956
+        ],
+        [
+          5.79,
+          3553360
+        ],
+        [
+          6.09,
+          3521496
+        ],
+        [
+          6.34,
+          3498124
+        ],
+        [
+          6.6,
+          3473820
+        ],
+        [
+          6.88,
+          3408944
+        ],
+        [
+          7.19,
+          3380744
+        ],
+        [
+          7.49,
+          3350320
+        ]
+      ],
+      "mem_samples_median_kb": 3485972,
+      "mem_samples_min_kb": 2870628,
+      "mem_samples_n": 30,
+      "memhog_mb": 1000,
+      "old_fires": false,
+      "pressure_spec": "same as C1, all killed at t=+2.0 s (pulse, first 40%)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2393,
+        "c2s:drop_loss": 1351,
+        "c2s:forward": 5696,
+        "s2c:drop_flap": 290,
+        "s2c:drop_loss": 1103,
+        "s2c:forward": 4251
+      },
+      "proxy_summary": {
+        "delayed": 9947,
+        "dropped_flap": 2683,
+        "dropped_loss": 2454,
+        "forwarded": 9947,
+        "in_client": 9440,
+        "in_server": 5644
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 19076709.0,
+        "io_full_total_us_delta": 17747.0,
+        "io_some_total_us_delta": 5058545.0,
+        "memory_full_total_us_delta": 5389.0,
+        "memory_some_total_us_delta": 642693.0
+      },
+      "pulse": true,
+      "pulse_off_elapsed_s": 2.012,
+      "rcvbuf_errors_delta": 616,
+      "rep": 4,
+      "rtt_p99_ms": 531.465,
+      "run_index": 12,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 5679,
+        "malformed": 0,
+        "received_total": 5679,
+        "valid": 5679
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 5679,
+        "forwarded_server": 5679,
+        "in_client": 5679,
+        "in_server": 5679
+      },
+      "tag": "C2-r4",
+      "vm_delta": {
+        "pgscan_kswapd": 0,
+        "pgsteal_kswapd": 0,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0,
+      "F_c": 5466,
+      "L": 0.5921,
+      "L_iso": 0.5624798884479245,
+      "arm": "C3",
+      "cpu_hogs": 6,
+      "echoed": 4079,
+      "exporter": {
+        "L": 0.5921,
+        "echoed": 4079.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2641853480639279,
+      "flap_share_s2c": 0.07885107939992682,
+      "gap": 0.06769999999999998,
+      "gap_packets": 677,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 677,
+      "iohogs": 0,
+      "iohogs_ops": null,
+      "loadavg_before": [
+        15.72,
+        11.22,
+        7.91
+      ],
+      "loss_rate": 0.5921,
+      "mem_samples": [
+        [
+          -1.28,
+          3271984
+        ],
+        [
+          -1.01,
+          3259764
+        ],
+        [
+          -0.71,
+          3250812
+        ],
+        [
+          -0.41,
+          3239644
+        ],
+        [
+          -0.11,
+          3232488
+        ],
+        [
+          0.19,
+          3265824
+        ],
+        [
+          0.49,
+          3164372
+        ],
+        [
+          0.79,
+          3127332
+        ],
+        [
+          1.09,
+          3139092
+        ],
+        [
+          1.4,
+          3149788
+        ],
+        [
+          1.69,
+          3156840
+        ],
+        [
+          1.99,
+          3157856
+        ],
+        [
+          2.28,
+          3167044
+        ],
+        [
+          2.58,
+          3136216
+        ],
+        [
+          2.88,
+          3111868
+        ],
+        [
+          3.18,
+          3098912
+        ],
+        [
+          3.48,
+          3094628
+        ],
+        [
+          3.78,
+          3082136
+        ],
+        [
+          4.03,
+          3032788
+        ],
+        [
+          4.28,
+          2869536
+        ],
+        [
+          4.54,
+          2815972
+        ],
+        [
+          4.79,
+          2798528
+        ],
+        [
+          5.08,
+          2838756
+        ],
+        [
+          5.39,
+          2873764
+        ],
+        [
+          5.68,
+          2855012
+        ],
+        [
+          5.98,
+          2845312
+        ],
+        [
+          6.29,
+          2809888
+        ],
+        [
+          6.58,
+          2796476
+        ],
+        [
+          6.88,
+          2775572
+        ],
+        [
+          7.18,
+          2761360
+        ],
+        [
+          7.49,
+          2732412
+        ],
+        [
+          7.78,
+          2721636
+        ]
+      ],
+      "mem_samples_median_kb": 3096770,
+      "mem_samples_min_kb": 2721636,
+      "mem_samples_n": 32,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "6 CPU hogs only, killed at t=+2.0 s (pulse)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2463,
+        "c2s:drop_loss": 1394,
+        "c2s:forward": 5466,
+        "s2c:drop_flap": 431,
+        "s2c:drop_loss": 956,
+        "s2c:forward": 4079
+      },
+      "proxy_summary": {
+        "delayed": 9545,
+        "dropped_flap": 2894,
+        "dropped_loss": 2350,
+        "forwarded": 9545,
+        "in_client": 9323,
+        "in_server": 5466
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 10664907.0,
+        "io_full_total_us_delta": 5107.0,
+        "io_some_total_us_delta": 3741977.0,
+        "memory_full_total_us_delta": 51723.0,
+        "memory_some_total_us_delta": 117770.0
+      },
+      "pulse": true,
+      "pulse_off_elapsed_s": 2.002,
+      "rcvbuf_errors_delta": 677,
+      "rep": 1,
+      "rtt_p99_ms": 501.951,
+      "run_index": 13,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 5466,
+        "malformed": 0,
+        "received_total": 5466,
+        "valid": 5466
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 5466,
+        "forwarded_server": 5466,
+        "in_client": 5466,
+        "in_server": 5466
+      },
+      "tag": "C3-r1",
+      "vm_delta": {
+        "pgscan_kswapd": 171102,
+        "pgsteal_kswapd": 169848,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.013326319480974957,
+      "F_c": 5703,
+      "L": 0.57,
+      "L_iso": 0.5482718772980355,
+      "arm": "C3",
+      "cpu_hogs": 6,
+      "echoed": 4300,
+      "exporter": {
+        "L": 0.57,
+        "echoed": 4300.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.25202227124697973,
+      "flap_share_s2c": 0.04887151235116403,
+      "gap": 0.04810000000000003,
+      "gap_packets": 481,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 557,
+      "iohogs": 0,
+      "iohogs_ops": null,
+      "loadavg_before": [
+        13.77,
+        10.95,
+        7.86
+      ],
+      "loss_rate": 0.57,
+      "mem_samples": [
+        [
+          -1.29,
+          2484688
+        ],
+        [
+          -1.0,
+          2449524
+        ],
+        [
+          -0.69,
+          2453012
+        ],
+        [
+          -0.4,
+          2444484
+        ],
+        [
+          -0.1,
+          2432908
+        ],
+        [
+          0.2,
+          2417384
+        ],
+        [
+          0.5,
+          2401548
+        ],
+        [
+          0.8,
+          2400444
+        ],
+        [
+          1.1,
+          2385868
+        ],
+        [
+          1.4,
+          2385468
+        ],
+        [
+          1.7,
+          2384944
+        ],
+        [
+          2.0,
+          2375244
+        ],
+        [
+          2.3,
+          2374396
+        ],
+        [
+          2.6,
+          2363128
+        ],
+        [
+          2.9,
+          2338900
+        ],
+        [
+          3.2,
+          2317616
+        ],
+        [
+          3.5,
+          2293140
+        ],
+        [
+          3.8,
+          2278948
+        ],
+        [
+          4.1,
+          2260160
+        ],
+        [
+          4.4,
+          2250388
+        ],
+        [
+          4.7,
+          2226808
+        ],
+        [
+          5.0,
+          2138332
+        ],
+        [
+          5.3,
+          2095644
+        ],
+        [
+          5.6,
+          2073532
+        ],
+        [
+          5.9,
+          2043424
+        ],
+        [
+          6.2,
+          2003208
+        ],
+        [
+          6.5,
+          1968208
+        ],
+        [
+          6.76,
+          1937104
+        ],
+        [
+          7.02,
+          1892400
+        ],
+        [
+          7.3,
+          1884236
+        ],
+        [
+          7.6,
+          1864752
+        ]
+      ],
+      "mem_samples_median_kb": 2317616,
+      "mem_samples_min_kb": 1864752,
+      "mem_samples_n": 31,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "6 CPU hogs only, killed at t=+2.0 s (pulse)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2399,
+        "c2s:drop_loss": 1417,
+        "c2s:forward": 5703,
+        "s2c:drop_flap": 275,
+        "s2c:drop_loss": 1052,
+        "s2c:forward": 4300
+      },
+      "proxy_summary": {
+        "delayed": 10003,
+        "dropped_flap": 2674,
+        "dropped_loss": 2469,
+        "forwarded": 10003,
+        "in_client": 9519,
+        "in_server": 5627
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 10305181.0,
+        "io_full_total_us_delta": 1573.0,
+        "io_some_total_us_delta": 5008886.0,
+        "memory_full_total_us_delta": 56995.0,
+        "memory_some_total_us_delta": 146622.0
+      },
+      "pulse": true,
+      "pulse_off_elapsed_s": 2.007,
+      "rcvbuf_errors_delta": 557,
+      "rep": 2,
+      "rtt_p99_ms": 486.732,
+      "run_index": 14,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 5703,
+        "malformed": 0,
+        "received_total": 5703,
+        "valid": 5703
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 5703,
+        "forwarded_server": 5703,
+        "in_client": 5703,
+        "in_server": 5703
+      },
+      "tag": "C3-r2",
+      "vm_delta": {
+        "pgscan_kswapd": 221921,
+        "pgsteal_kswapd": 221462,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0011482939632545541,
+      "F_c": 6096,
+      "L": 0.5362,
+      "L_iso": 0.5362,
+      "arm": "C3",
+      "cpu_hogs": 6,
+      "echoed": 4638,
+      "exporter": {
+        "L": 0.5362,
+        "echoed": 4638.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2399,
+      "flap_share_s2c": 0.049269173920183935,
+      "gap": 0.0,
+      "gap_packets": 0,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 7,
+      "iohogs": 0,
+      "iohogs_ops": null,
+      "loadavg_before": [
+        12.35,
+        10.76,
+        7.85
+      ],
+      "loss_rate": 0.5362,
+      "mem_samples": [
+        [
+          -1.28,
+          1690572
+        ],
+        [
+          -1.0,
+          1709720
+        ],
+        [
+          -0.7,
+          1697860
+        ],
+        [
+          -0.4,
+          1672944
+        ],
+        [
+          -0.1,
+          1670264
+        ],
+        [
+          0.2,
+          1649292
+        ],
+        [
+          0.49,
+          1621956
+        ],
+        [
+          0.79,
+          1573020
+        ],
+        [
+          1.09,
+          1557360
+        ],
+        [
+          1.39,
+          1543060
+        ],
+        [
+          1.65,
+          1500808
+        ],
+        [
+          1.9,
+          1502056
+        ],
+        [
+          2.2,
+          1507228
+        ],
+        [
+          2.5,
+          1501728
+        ],
+        [
+          2.8,
+          1474512
+        ],
+        [
+          3.1,
+          1458644
+        ],
+        [
+          3.4,
+          1434276
+        ],
+        [
+          3.69,
+          1390808
+        ],
+        [
+          3.99,
+          1356756
+        ],
+        [
+          4.3,
+          1342236
+        ],
+        [
+          4.59,
+          1324456
+        ],
+        [
+          4.89,
+          1320424
+        ],
+        [
+          5.19,
+          1293244
+        ],
+        [
+          5.44,
+          1269176
+        ],
+        [
+          5.7,
+          1239656
+        ],
+        [
+          5.99,
+          1188396
+        ],
+        [
+          6.29,
+          1141892
+        ],
+        [
+          6.6,
+          1094644
+        ],
+        [
+          6.89,
+          1070084
+        ],
+        [
+          7.2,
+          1044628
+        ],
+        [
+          7.49,
+          1023728
+        ],
+        [
+          7.8,
+          986536
+        ],
+        [
+          8.1,
+          940744
+        ],
+        [
+          8.4,
+          916816
+        ]
+      ],
+      "mem_samples_median_kb": 1412542,
+      "mem_samples_min_kb": 916816,
+      "mem_samples_n": 34,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "6 CPU hogs only, killed at t=+2.0 s (pulse)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2399,
+        "c2s:drop_loss": 1505,
+        "c2s:forward": 6096,
+        "s2c:drop_flap": 300,
+        "s2c:drop_loss": 1151,
+        "s2c:forward": 4638
+      },
+      "proxy_summary": {
+        "delayed": 10734,
+        "dropped_flap": 2699,
+        "dropped_loss": 2656,
+        "forwarded": 10734,
+        "in_client": 10000,
+        "in_server": 6089
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 10690493.0,
+        "io_full_total_us_delta": 5645.0,
+        "io_some_total_us_delta": 5379602.0,
+        "memory_full_total_us_delta": 192429.0,
+        "memory_some_total_us_delta": 275520.0
+      },
+      "pulse": true,
+      "pulse_off_elapsed_s": 2.006,
+      "rcvbuf_errors_delta": 7,
+      "rep": 3,
+      "rtt_p99_ms": 290.161,
+      "run_index": 15,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 6096,
+        "malformed": 0,
+        "received_total": 6096,
+        "valid": 6096
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 6096,
+        "forwarded_server": 6096,
+        "in_client": 6096,
+        "in_server": 6096
+      },
+      "tag": "C3-r3",
+      "vm_delta": {
+        "pgscan_kswapd": 131491,
+        "pgsteal_kswapd": 117288,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    {
+      "D": 0.0036787247087676223,
+      "F_c": 4893,
+      "L": 0.6242,
+      "L_iso": 0.5568396226415094,
+      "arm": "C3",
+      "cpu_hogs": 6,
+      "echoed": 3758,
+      "exporter": {
+        "L": 0.6242,
+        "echoed": 3758.0,
+        "sent": 10000.0
+      },
+      "exporter_error": null,
+      "flap_share_c2s": 0.2866745283018868,
+      "flap_share_s2c": 0.03405128205128205,
+      "gap": 0.15200000000000002,
+      "gap_packets": 1520,
+      "gen_rc": 0,
+      "guard_killed": false,
+      "in_errors_delta": 252,
+      "iohogs": 0,
+      "iohogs_ops": null,
+      "loadavg_before": [
+        10.84,
+        10.48,
+        7.79
+      ],
+      "loss_rate": 0.6242,
+      "mem_samples": [
+        [
+          -1.29,
+          678392
+        ],
+        [
+          -1.02,
+          676168
+        ],
+        [
+          -0.72,
+          673196
+        ],
+        [
+          -0.41,
+          649952
+        ],
+        [
+          -0.11,
+          810580
+        ],
+        [
+          0.18,
+          789808
+        ],
+        [
+          0.48,
+          754864
+        ],
+        [
+          0.78,
+          733880
+        ],
+        [
+          1.08,
+          711992
+        ],
+        [
+          1.38,
+          705068
+        ],
+        [
+          1.68,
+          699552
+        ],
+        [
+          1.99,
+          693744
+        ],
+        [
+          2.28,
+          712928
+        ],
+        [
+          2.6,
+          714892
+        ],
+        [
+          2.89,
+          714000
+        ],
+        [
+          3.19,
+          714856
+        ],
+        [
+          3.49,
+          713448
+        ],
+        [
+          3.81,
+          704336
+        ],
+        [
+          4.12,
+          703616
+        ],
+        [
+          4.39,
+          704164
+        ],
+        [
+          4.71,
+          703668
+        ],
+        [
+          5.0,
+          703136
+        ],
+        [
+          5.29,
+          700900
+        ],
+        [
+          5.61,
+          700240
+        ],
+        [
+          5.92,
+          698584
+        ],
+        [
+          6.2,
+          695736
+        ],
+        [
+          6.5,
+          696908
+        ],
+        [
+          6.9,
+          684448
+        ],
+        [
+          7.21,
+          618396
+        ],
+        [
+          7.63,
+          632244
+        ],
+        [
+          7.91,
+          646708
+        ],
+        [
+          8.18,
+          666044
+        ],
+        [
+          8.49,
+          775324
+        ],
+        [
+          8.81,
+          756512
+        ],
+        [
+          9.08,
+          779056
+        ],
+        [
+          9.34,
+          781564
+        ]
+      ],
+      "mem_samples_median_kb": 703642,
+      "mem_samples_min_kb": 618396,
+      "mem_samples_n": 36,
+      "memhog_mb": 0,
+      "old_fires": false,
+      "pressure_spec": "6 CPU hogs only, killed at t=+2.0 s (pulse)",
+      "proxy_decisions": {
+        "c2s:drop_flap": 2431,
+        "c2s:drop_loss": 1156,
+        "c2s:forward": 4893,
+        "s2c:drop_flap": 166,
+        "s2c:drop_loss": 951,
+        "s2c:forward": 3758
+      },
+      "proxy_summary": {
+        "delayed": 8651,
+        "dropped_flap": 2597,
+        "dropped_loss": 2107,
+        "forwarded": 8651,
+        "in_client": 8480,
+        "in_server": 4875
+      },
+      "psi_delta": {
+        "cpu_full_total_us_delta": 0.0,
+        "cpu_some_total_us_delta": 11072122.0,
+        "io_full_total_us_delta": 165735.0,
+        "io_some_total_us_delta": 6833463.0,
+        "memory_full_total_us_delta": 660657.0,
+        "memory_some_total_us_delta": 1403770.0
+      },
+      "pulse": true,
+      "pulse_off_elapsed_s": 2.021,
+      "rcvbuf_errors_delta": 252,
+      "rep": 4,
+      "rtt_p99_ms": 400.377,
+      "run_index": 16,
+      "sent": 10000,
+      "server_stats": {
+        "echoed": 4875,
+        "malformed": 0,
+        "received_total": 4875,
+        "valid": 4875
+      },
+      "shim_stats": {
+        "dropped_extra": 0,
+        "forwarded_client": 4893,
+        "forwarded_server": 4875,
+        "in_client": 4893,
+        "in_server": 4875
+      },
+      "tag": "C3-r4",
+      "vm_delta": {
+        "pgscan_kswapd": 14089,
+        "pgsteal_kswapd": 13305,
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    }
+  ],
+  "threshold": 0.75
+}

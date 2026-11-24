@@ -1,0 +1,17 @@
+done C0-r1 gap=0.00770000000000004 L=0.5358 D=0.0 guard=False pulse_off=None
+done C0-r2 gap=0.0 L=0.5356 D=0.0 guard=False pulse_off=None
+done C0-r3 gap=0.0 L=0.5567 D=0.0 guard=False pulse_off=None
+done C0-r4 gap=0.0 L=0.5343 D=0.0 guard=False pulse_off=None
+done C1-r1 gap=0.08699999999999997 L=0.6161 D=0.0 guard=False pulse_off=None
+done C1-r2 gap=0.14329999999999998 L=0.6491 D=0.009759012148974344 guard=False pulse_off=None
+done C1-r3 gap=0.5658000000000001 L=1.0 D=0.9242677824267782 guard=False pulse_off=None
+done C1-r4 gap=0.08960000000000001 L=0.5909 D=0.0014998125234345627 guard=False pulse_off=None
+done C2-r1 gap=0.009199999999999986 L=0.5543 D=0.015846814130075937 guard=False pulse_off=2.066
+done C2-r2 gap=0.01980000000000004 L=0.5615 D=0.008606142423219665 guard=False pulse_off=2.008
+done C2-r3 gap=0.04920000000000002 L=0.593 D=0.05987412825310423 guard=False pulse_off=2.003
+done C2-r4 gap=0.05600000000000005 L=0.5753 D=0.009824561403508736 guard=False pulse_off=2.012
+done C3-r1 gap=0.06769999999999998 L=0.5921 D=0.0 guard=False pulse_off=2.002
+done C3-r2 gap=0.04810000000000003 L=0.57 D=0.013326319480974957 guard=False pulse_off=2.007
+done C3-r3 gap=0.0 L=0.5362 D=0.0011482939632545541 guard=False pulse_off=2.006
+done C3-r4 gap=0.15200000000000002 L=0.6242 D=0.0036787247087676223 guard=False pulse_off=2.021
+wrote /home/hatch/workspace/github/tech-deep-dives/data/2026-11-23-combo-pulse-bench.json

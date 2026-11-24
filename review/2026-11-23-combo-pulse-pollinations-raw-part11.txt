@@ -1,0 +1,15 @@
+**Quick “no hard errors” check**
+
+1. **C0 gaps** – the raw table lists \([0.77, 0, 0, 0]\) for C0, yet the prose claims the first‑hop bench‑gap drifted “between 0 % and 29.8 % across 28 runs.” Those two ranges don’t overlap; if 29.8 % was observed, the minimum gap can’t be 0 %.  
+
+2. **C1 median vs. max** – the data provide a median 11.65 points and a *maximum* 1.0 point. A maximum that’s much smaller than the median is logically impossible unless the measurement was mis‑reported (max should be ≥ median).  
+
+3. **g\* versus reported gap** – the section headline claims “All Three Pressures at Once... Bench Gap to 56.6 Points.” Yet the supplied value of \(g^*=45.69\) is a different figure. Either g* is something else, or the 56.6 pts figure is wrong.  
+
+4. **CPU‑only numbers** – the story says a CPU‑only run produced a median gap of 3.99 points and a max of 9.69. In the raw data you’ve only provided the C1 median; there’s no mention of a “CPU only” dataset at all, so the claim can’t be verified from the numbers you gave.  
+
+5. **Memory residency** – the article says “0.46 points at a 1000 MB resident cap, and exactly zero for four sync writers.” In the raw data, no C2 numbers near 0.46 appear; all C2 statistics are in the 0–5 point range.  
+
+6. **Repository timelines** – the article references a preregistration file dated 2026‑11‑23, but the manuscript’s outset narrative cites an observation date of 2026‑10‑28, with subsequent runs on 2026‑11‑03 and 2026‑11‑11. The timing sequence is plausible, but the raw data set does not contain any timestamps, so you can’t confirm the chronology.  
+
+**Bottom line** – the numbers in the raw data conflict with several claims made in the written section. Either some of the pre‑published statistics were mistyped, or the text is citing a different, unpublished data set. If you can provide the full, run‑by‑run table (including CPU‑only, memory‑resident, and sync‑writer runs), we can iron out the disparities.
