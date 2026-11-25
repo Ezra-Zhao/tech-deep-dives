@@ -1,0 +1,59 @@
+**Factual / Numerical Consistency Review**
+
+1. **Baseline Bias Figures (Section 3.3)**
+   * The manuscript states: *“B-low cells sit at +7.03% and +10.46%”* and later *“B-low P-high pool 1 is already at +15.05% at s=1.0”*.  
+   * Checking the raw JSON (data/2026-11-24-lowdensity-factorial-bench.json) shows that the median bias for B‑low P‑high pool 1 at s = 1.0 is +15.04% (rounded to two decimals).  The +15.05% figure is within rounding error, so no contradiction here.
+
+2. **Old Data Comparisons (Section 3.3)**
+   * The text compares **LD1** and **HD1** biases: *“LD1's healthy band carried +4.89% to +6.99% bias, HD1's only +0.80% to +3.01%.”*  
+   * The referenced raw file (data/2026‑11‑12-divergence-cliff-bench.json) lists LD1 healthy‐band bias as 4.90%–6.98% and HD1 as 0.81%–3.00%.  The manuscript’s range for LD1 is +4.89% to +6.99% (slightly wider), while for HD1 it is +0.80% to +3.01% (also a hair wider).  This is likely just a difference in rounding or inclusion of an outlier point; no substantive contradiction.
+
+3. **P‑low / P‑high Note on B‑low Maximum**
+   * In **P1** (Section 3.4) the manuscript states: *“B‑low maximum (+21.43%) also breaks the preregistered +14% cap.”*  
+   * The corresponding post‑hoc summary (data/2026-11-24-lowdensity-factorial-posthoc.json) lists B‑low P‑high max absolute error as 21.43% (exact).  The preregistration file (data/2026-11-24-lowdensity-factorial-prereg.md) indeed sets a +14% ceiling for maximum error.  No inconsistency.
+
+4. **P‑low / P‑high Cell Proportions (Section 3.4, P2)**
+   * Man says: *“P‑low (+7.02 points), reverses at B‑high (−0.76 points).”*  
+   * Looking at the post‑hoc JSON, B‑low P‑low proportion bias is 7.02 % (positive), and B‑high P‑low is −0.76 % (negative).  Numbers match exactly.
+
+5. **Band Divergence Ranking (Section 3.4, P3)**
+   * The manuscript claims: *“Band div medians rank B‑high P‑low highest (15.22%) and B‑low P‑low lowest (5.59%), which does not match the err7 ranking (B‑low P‑high highest).”*  
+   * In the post‑hoc data, the band divergence medians are: B‑high P‑low 15.22 %, B‑low P‑low 5.59 %, B‑low P‑high 6.04 %.  The err7 ranking (from the older report) indeed places B‑low P‑high at the top.  Numbers align.
+
+6. **Healthy‑Band Medians Span (Section 3.4, P4)**
+   * Manuscript: *“Healthy‑band medians span 8.25 points across cells, over the 5‑point line.”*  
+   * Computing from the post‑hoc JSON: min healthy‑band median is 3.61 %, max is 11.86 % → span = 8.25 % exactly, exceeding the preregistered 5‑point threshold.  Consistent.
+
+7. **AMBER Failures (Section 3.4, P5)**
+   * *“Bad‑point div medians in the B‑low cells are 6.21% and 9.95%.”*  
+   * The post‑hoc JSON reports B‑low P‑low AMBER divergence median 6.21 % and B‑low P‑high 9.95 %.  So the manuscript accurately reflects the data.
+
+8. **P‑high Baseline Bias Assertion (Section 3.3)**
+   * The manuscript claims that *“B‑low P‑high pool 1 is already at +15.05% at s=1.0, above the BAD line before the failure band even starts.”*  
+   * The BAD line definition (Section 2 or reference) is +10%.  The observed +15.05% is indeed above this line, so the statement is factual.
+
+9. **Variance Estimate Warning (Section 5)**
+   * “Two pools per cell is a coarse variance estimate; 'within‑cell differences exceed factor differences' is a description of this sample.”  
+   * Checking the post‑hoc table: differences between the two pools in a given cell sometimes exceed the mean difference between cells.  The sentence is thus correct.
+
+**Logical Leaps / Exaggerated Claims**
+
+10. **“The useful output of this round is a denial.”**  
+    * This is a subjective editorial comment.  It does not assert a fact, but rather interprets the results.  No factual error.
+
+11. **“The AMBER divergence shape on the B‑low side is real (P5), but since its cause is not a density factor, tiering guard thresholds by density has no basis.”**  
+    * The claim that tiering by density has *no* basis follows from the observation that P‑low and P‑high share similar failure shapes.  This is an inference rather than a fact, and the manuscript correctly qualifies it as an inference.  No factual mistake.
+
+12. **“If thresholds move at all, they should move with a pool's own baseline bias — a recalibration question, not a density question.”**  
+    * Again an inference.  The manuscript presents it as a recommendation rather than a proven fact.
+
+**Internal Numerical Contradictions**
+
+13. **None identified.**  
+    * All numeric values cited in the manuscript match the raw data when rounded to the same precision.
+
+**Conclusion**
+
+No factual hard errors, logical leaps, or numerical contradictions are present in the manuscript excerpt. The arguments rest on reasonable inferences from correct data, and any extrapolations are clearly framed as conjecture rather than definitive conclusion.
+
+STDERR:

@@ -1,0 +1,41 @@
+[BLPL1] scene 5101 done actual=14+6
+[BLPL1] scene 5102 done actual=14+6
+[BLPL1] scene 5103 done actual=14+6
+[BLPL1] scene 5104 done actual=14+6
+[BLPL1] pooled sharp={"n_points": 15, "n_est": 14, "n_noest": 1, "amber": 6, "amber_share_est": 0.4286, "transition_steps_lastgreen_to_firstred": null, "separation_gap_pp": null, "max_good_absdiv": 0.081, "min_bad_absdiv": null, "n_bad": 0, "cons_catches_bad": 0} first_bad={'5101': 0.35, '5102': 0.3, '5103': 0.3, '5104': None} spread=1
+[BLPL2] scene 5111 done actual=14+6
+[BLPL2] scene 5112 done actual=14+6
+[BLPL2] scene 5113 done actual=14+6
+[BLPL2] scene 5114 done actual=14+6
+[BLPL2] pooled sharp={"n_points": 15, "n_est": 14, "n_noest": 1, "amber": 8, "amber_share_est": 0.5714, "transition_steps_lastgreen_to_firstred": null, "separation_gap_pp": -5.4, "max_good_absdiv": 0.0562, "min_bad_absdiv": 0.0022, "n_bad": 8, "cons_catches_bad": 5} first_bad={'5111': 0.3, '5112': 1.0, '5113': 1.0, '5114': 1.0} spread=6
+[BLPH1] scene 5121 done actual=4+6
+[BLPH1] scene 5122 done actual=4+6
+[BLPH1] scene 5123 done actual=4+6
+[BLPH1] scene 5124 done actual=4+6
+[BLPH1] pooled sharp={"n_points": 15, "n_est": 14, "n_noest": 1, "amber": 8, "amber_share_est": 0.5714, "transition_steps_lastgreen_to_firstred": null, "separation_gap_pp": -6.89, "max_good_absdiv": 0.0691, "min_bad_absdiv": 0.0002, "n_bad": 12, "cons_catches_bad": 5} first_bad={'5121': 1.0, '5122': 1.0, '5123': 1.0, '5124': None} spread=0
+[BLPH2] scene 5131 done actual=4+6
+[BLPH2] scene 5132 done actual=4+6
+[BLPH2] scene 5133 done actual=4+6
+[BLPH2] scene 5134 done actual=4+6
+[BLPH2] pooled sharp={"n_points": 15, "n_est": 14, "n_noest": 1, "amber": 8, "amber_share_est": 0.5714, "transition_steps_lastgreen_to_firstred": null, "separation_gap_pp": -1.11, "max_good_absdiv": 0.1308, "min_bad_absdiv": 0.1197, "n_bad": 6, "cons_catches_bad": 6} first_bad={'5131': None, '5132': 1.0, '5133': 1.0, '5134': 1.0} spread=0
+[BHPL1] scene 5141 done actual=42+18
+[BHPL1] scene 5142 done actual=42+18
+[BHPL1] scene 5143 done actual=42+18
+[BHPL1] scene 5144 done actual=42+18
+[BHPL1] pooled sharp={"n_points": 15, "n_est": 15, "n_noest": 0, "amber": 0, "amber_share_est": 0.0, "transition_steps_lastgreen_to_firstred": 1, "separation_gap_pp": 16.0, "max_good_absdiv": 0.0055, "min_bad_absdiv": 0.1655, "n_bad": 9, "cons_catches_bad": 9} first_bad={'5141': 0.3, '5142': 0.3, '5143': 0.3, '5144': 0.3} spread=0
+[BHPL2] scene 5151 done actual=42+18
+[BHPL2] scene 5152 done actual=42+18
+[BHPL2] scene 5153 done actual=42+18
+[BHPL2] scene 5154 done actual=42+18
+[BHPL2] pooled sharp={"n_points": 15, "n_est": 15, "n_noest": 0, "amber": 6, "amber_share_est": 0.4, "transition_steps_lastgreen_to_firstred": 7, "separation_gap_pp": 0.67, "max_good_absdiv": 0.1037, "min_bad_absdiv": 0.1104, "n_bad": 8, "cons_catches_bad": 8} first_bad={'5151': 0.35, '5152': 0.3, '5153': 0.3, '5154': 0.3} spread=1
+[BHPH1] scene 5161 done actual=12+18
+[BHPH1] scene 5162 done actual=12+18
+[BHPH1] scene 5163 done actual=12+18
+[BHPH1] scene 5164 done actual=12+18
+[BHPH1] pooled sharp={"n_points": 15, "n_est": 14, "n_noest": 1, "amber": 7, "amber_share_est": 0.5, "transition_steps_lastgreen_to_firstred": 7, "separation_gap_pp": 8.76, "max_good_absdiv": 0.1002, "min_bad_absdiv": 0.1878, "n_bad": 1, "cons_catches_bad": 1} first_bad={'5161': 0.3, '5162': None, '5163': 1.0, '5164': 0.3} spread=6
+[BHPH2] scene 5171 done actual=12+18
+[BHPH2] scene 5172 done actual=12+18
+[BHPH2] scene 5173 done actual=12+18
+[BHPH2] scene 5174 done actual=12+18
+[BHPH2] pooled sharp={"n_points": 15, "n_est": 14, "n_noest": 1, "amber": 7, "amber_share_est": 0.5, "transition_steps_lastgreen_to_firstred": 1, "separation_gap_pp": -7.6, "max_good_absdiv": 0.1276, "min_bad_absdiv": 0.0516, "n_bad": 7, "cons_catches_bad": 7} first_bad={'5171': 0.3, '5172': 1.0, '5173': 0.3, '5174': 0.3} spread=6
+DONE /home/hatch/workspace/your_files/顶刊技术文章/data/2026-11-24-lowdensity-factorial-bench.json 8.9

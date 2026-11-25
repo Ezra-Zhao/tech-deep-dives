@@ -1,0 +1,39 @@
+**Review of Manuscript Part 1**
+
+After reading the excerpt carefully, I found no glaring factual errors (e.g., wrong numerical values that contradict the data tables) or internally inconsistent statements. However, a few logical points and wording choices could be sharpened for clarity and to avoid potential misinterpretation. Below are the issues I noted:
+
+1. **Terminology “Buds per scene” vs “total targets per scene”**  
+   - The text says: “LD1 and HD1 differed in two ways at once: buds per scene (5 vs about 19) and total targets per scene (14 vs about 54)”. In the factorial design, a “target” seems to refer to a “bloom” (the object counted by the estimator). Thus, “total targets per scene” should be described as “bloom count” to avoid confusing the reader with the later statement that “bud proportion was nearly identical (about 36 %)”. Clarifying that “targets” = “blooms” prevents readers from thinking targets could be another category.
+
+2. **Assumption that “bud proportion” is computed from bloom count**  
+   - The manuscript states “bud proportion … set via bloom count”. While this is mathematically correct (proportion = buds / (buds + blooms)), explicitly stating how the bloom count was chosen or how “proportion” values of 30 % and 60 % were achieved (i.e., solving buds / total = 0.30 or 0.60) would make the design more transparent.
+
+3. **Redundant mention of “absolute bud count” and “bud proportion” separation**  
+   - In section 2, the author writes: “This design separates absolute‑count effects, proportion effects, and their interaction; a total‑count effect cannot be separated from them here.” The phrase “cannot be separated from them” may be interpreted as a limitation of the design, but it is not explicitly stated why total‑count cannot be uniquely identified. Adding a brief comment (e.g., “because total = buds / proportion, total is a deterministic function of the other two factors”) would eliminate ambiguity.
+
+4. **Clarify the meaning of “Failure‑band err7”**  
+   - The table headers list “Failure-band err7 median”. The suffix “err7” presumably refers to the error at the scale level 0.07 (“s in {0.30, 0.28, 0.25, 0.22} …”). The manuscript does not define “err7” earlier, which can confuse readers unfamiliar with this shorthand. A brief parenthetical definition (“error at the lowest test scale, 0.07”) would aid comprehension.
+
+5. **Use of “median” vs “maximum” phrasing**  
+   - In the opening of section 3.1 it states: “Band medians crowd into 11–18%; no cell reproduces LD1’s tidy shrinkage.” Yet within the table, “Band max” is shown as a separate column. The narrative does not explain why the max values (e.g., +21.43 %) are so much larger than the medians, or what that implies about the distribution. A quick comment could prevent readers from misreading the term “crowding” as merely saying “most medians lie in this range” rather than indicating a narrow spread.
+
+6. **Possible confusion over “paired comparisons reverse”**  
+   - The sentence: “Paired comparisons reverse. For bud count: at P-low, B-high exceeds B-low by 2.94 points (+14.31 % vs +11.37 %); at P-high the sign flips…” might be clearer with a more explicit logical structure, e.g., “When P is held low, increasing B raises the error by ~2.9 %; when P is held high, increasing B lowers the error by ~4.8 %.” The current wording could be read as re‑scanning the numbers rather than summarizing the pattern.
+
+7. **Potential ambiguity about “preregistered rule P6”**  
+   - The rule is mentioned but its exact definition isn’t restated. Readers unfamiliar with the broader series might not know that P6 designates a classification “interaction pattern” based on the sign reversal across factor pairings. Consider adding a parenthetical explanation or a brief citation to the preregistration document.
+
+8. **Consistency in naming of “pool”**  
+   - In section 3.2 the term “pool” is used interchangeably with “cell”. While it is clear that each pool belongs to one of the four cells, clarifying that each cell contains exactly two pools could help avoid confusion (e.g., “Each of the four factorial cells contains two independent pools of 4 scenes…”).
+
+9. **Clarification on “Bad” vs “Bad points”**  
+   - The term “Bad points” appears in the table but is abbreviated in the column header as “Bad”. Ensuring consistency in naming would improve readability.
+
+10. **Improvement of sentence structure in the concluding paragraph**  
+    - “In this bench, how badly a pool fails is first a sampling question: which four scene sets got pooled matters more than the factor levels.” The phrase “is first a sampling question” is somewhat awkward. A revision such as “In this experiment, the magnitude of pool failure is driven primarily by which four scene sets are pooled rather than by the factor levels” would read more smoothly.
+
+**Overall Assessment**
+
+The manuscript presents a clear factorial design and thorough reporting of results. The issues identified above are mainly about precision of language and clarifications that prevent potential misinterpretation, rather than factual inaccuracies or logical leaps. Addressing them would enhance the manuscript’s readability and ensure that its conclusions are conveyed unambiguously.
+
+STDERR:
